@@ -14,6 +14,16 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
     email: initialData?.email || "", // Add email to formData state
   });
 
+  const [emailError, setEmailError] = useState("");
+
+  const allowedDomains = ["rice.edu", "utd.edu", "uh.edu", "cougarnet.uh.edu"];
+
+  const isValidEmailDomain = (email) => {
+    if (!email) return false;
+    const domain = email.split("@")[1];
+    return allowedDomains.includes(domain);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -24,6 +34,11 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!isValidEmailDomain(formData.email)) {
+      setEmailError("Invalid email domain. Only Rice, UTD, or UH emails are allowed.");
+      return;
+    }
 
     try {
       const response = await fetch(
@@ -71,6 +86,25 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
             onChange={handleChange}
             required
           />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            onBlur={() => {
+              if (!isValidEmailDomain(formData.email)) {
+                setEmailError("Invalid email domain. Only Rice, UTD, or UH emails are allowed.");
+              } else {
+                setEmailError("");
+              }
+            }}
+            required
+          />
+          {emailError && <p className="error-message">{emailError}</p>}
         </div>
         <div className="form-group">
           <label htmlFor="age">Age</label>

@@ -191,7 +191,7 @@ function App() {
                   fontWeight: "500",
                 }}
               >
-                Welcome, {user.name || user.email}!
+                Welcome, {user.name || "User"}!
               </p>
               {/* Use navigate for profile creation */}
               <button
