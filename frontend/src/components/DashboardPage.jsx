@@ -17,6 +17,8 @@ import InteractiveScheduleDisplay from './InteractiveScheduleDisplay';
 import ToastContainer, { showSuccessToast, showErrorToast } from './ToastContainer';
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../utils/localStorageUtils';
 
+import SettingsDropdown from './SettingsDropdown'; // Import SettingsDropdown
+
 /**
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
  */
