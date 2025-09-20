@@ -21,6 +21,47 @@
   margin-bottom: 2rem;
 }
 
+/* Upload Type Selector Styles */
+.upload-type-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.upload-type-button {
+  background: var(--bg-light);
+  border: 2px solid #e0e0e0;
+  color: var(--text-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-type-button:hover {
+  border-color: var(--primary-color);
+  background: rgba(72, 187, 120, 0.1);
+  transform: translateY(-1px);
+}
+
+.upload-type-button.active {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+  color: var(--light-text-color);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-medium);
+}
+
+.upload-type-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .upload-area {
   margin-bottom: 2rem;
   border: 2px dashed #e0e0e0;
@@ -55,6 +96,12 @@
 .upload-button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.upload-help-text {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.5rem;
 }
 
 .ocr-status {
@@ -96,6 +143,20 @@
   border-radius: var(--border-radius-sm);
 }
 
+.status-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--primary-color);
+}
+
+.status-message p {
+  margin: 0;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
 .extracted-text-preview {
   margin-top: 3rem;
   background: #f8f9fa;
@@ -131,6 +192,17 @@
 
   .schedule-uploader-container p {
     font-size: 1rem;
+  }
+
+  .upload-type-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-type-button {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
   }
 
   .upload-button {
