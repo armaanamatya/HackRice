@@ -83,7 +83,7 @@ const DashboardPage = ({
   const renderContent = () => {
     switch (viewMode) {
       case 'uploader':
-        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} />;
+        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} userId={userData?._id} />;
       case 'reviewer':
         return (
           <ScheduleReviewForm
@@ -101,7 +101,7 @@ const DashboardPage = ({
           />
         );
       default:
-        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} />;
+        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} userId={userData?._id} />;
     }
   };
 

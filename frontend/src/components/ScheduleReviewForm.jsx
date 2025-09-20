@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 /**
  * @typedef {object} ClassDataWithId
  * @property {string} id - Unique ID for the class.
- * @property {string} course - Course name (e.g., "CSC 101").
+ * @property {string} courseCode - Course name (e.g., "CSC 101").
  * @property {string[]} days - Array of days the class meets (e.g., ["Mon", "Wed"]).
  * @property {string} startTime - Start time of the class (e.g., "09:00").
  * @property {string} endTime - End time of the class (e.g., "09:50").
@@ -80,7 +80,7 @@ const ScheduleReviewForm = ({ initialClasses, onScheduleValidated, onBackToUploa
               <input
                 type="text"
                 id={`course-${cls.id}`}
-                value={cls.course}
+                value={cls.courseCode}
                 onChange={(e) => handleClassChange(cls.id, 'course', e.target.value)}
                 required
               />

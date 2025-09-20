@@ -1,0 +1,8 @@
+# Auth0 Configuration Example
+VITE_AUTH0_DOMAIN=your-auth0-domain.auth0.com
+VITE_AUTH0_CLIENT_ID=your-auth0-client-id
+VITE_AUTH0_REDIRECT_URI=http://localhost:5173/dashboard
+
+# Note: You need to configure BOTH redirect URIs in your Auth0 Dashboard:
+# - http://localhost:5173/dashboard (for existing users)
+# - http://localhost:5173/create-profile (for new users)
