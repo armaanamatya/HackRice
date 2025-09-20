@@ -1,0 +1,15 @@
+department,code,title,description,credit_hours,prerequisites
+Mathematics,MATH 165,Fundamentals of Calculus,Examination of key concepts and methodologies in calculus. Includes hands-on experience and case studies.,3,None
+Mathematics,MATH 103,Fundamentals of Linear Algebra,Rigorous treatment of linear algebra theory and applications with emphasis on research methodology.,3,None
+Mathematics,MATH 249,Abstract Algebra,Rigorous treatment of abstract algebra theory and applications with emphasis on research methodology.,3,MATH 168 or equivalent
+Mathematics,MATH 235,Applied Calculus,Rigorous treatment of calculus theory and applications with emphasis on research methodology.,3,MATH 143 or equivalent
+Mathematics,MATH 332,Linear Algebra,Fundamental concepts and applications of linear algebra. Designed for students pursuing careers in related fields.,4,MATH 294 and junior standing
+Mathematics,MATH 348,Advanced Differential Equations,In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.,3,MATH 293 and junior standing
+Mathematics,MATH 304,Advanced Calculus,Interdisciplinary approach to calculus combining theoretical knowledge with practical problem-solving.,3,MATH 293 and junior standing
+Mathematics,MATH 415,Graduate Differential Equations,Fundamental concepts and applications of differential equations. Designed for students pursuing careers in related fields.,3,MATH 365 and senior standing or graduate status
+Mathematics,MATH 467,Graduate Linear Algebra,Examination of key concepts and methodologies in linear algebra. Includes hands-on experience and case studies.,4,MATH 332 and senior standing or graduate status
+Mathematics,MATH 419,Advanced Statistics,Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.,3,MATH 315 and senior standing or graduate status
+Mathematics,MATH 686,Advanced Probability,Advanced exploration of probability covering current research and industry practices.,4,MATH 359 and senior standing or graduate status
+Mathematics,MATH 626,Graduate Statistics,Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.,4,MATH 356 and senior standing or graduate status
+Mathematics,MATH 692,Special Topics in Differential Equations,Examination of key concepts and methodologies in differential equations. Includes hands-on experience and case studies.,4,MATH 339 and senior standing or graduate status
+Mathematics,MATH 673,Graduate Statistics,Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.,3,MATH 314 and senior standing or graduate status

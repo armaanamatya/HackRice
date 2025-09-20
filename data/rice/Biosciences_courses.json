@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Biosciences",
+    "code": "BIOC 111",
+    "title": "Principles of Biochemistry",
+    "description": "Fundamental concepts and applications of biochemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 124",
+    "title": "Fundamentals of Physiology",
+    "description": "Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 221",
+    "title": "Evolution",
+    "description": "Comprehensive study of evolution with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 198 or equivalent"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 234",
+    "title": "Applied Bioinformatics",
+    "description": "Interdisciplinary approach to bioinformatics combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 172 or equivalent"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 349",
+    "title": "Evolution",
+    "description": "Examination of key concepts and methodologies in evolution. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 291 and junior standing"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 351",
+    "title": "Advanced Microbiology",
+    "description": "Interdisciplinary approach to microbiology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "BIOC 200 and junior standing"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 313",
+    "title": "Advanced Physiology",
+    "description": "Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 287 and junior standing"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 406",
+    "title": "Graduate Biotechnology",
+    "description": "Rigorous treatment of biotechnology theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 300 and senior standing or graduate status"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 465",
+    "title": "Advanced Microbiology",
+    "description": "Examination of key concepts and methodologies in microbiology. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 323 and senior standing or graduate status"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 414",
+    "title": "Advanced Genetics",
+    "description": "Examination of key concepts and methodologies in genetics. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 340 and senior standing or graduate status"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 717",
+    "title": "Special Topics in Molecular Biology",
+    "description": "In-depth analysis of molecular biology principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 387 and senior standing or graduate status"
+  }
+]

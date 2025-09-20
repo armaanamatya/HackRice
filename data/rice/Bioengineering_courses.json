@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 150",
+    "title": "Principles of Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 139",
+    "title": "Introduction to Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 246",
+    "title": "Applied Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 197 or equivalent"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 217",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 197 or equivalent"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 377",
+    "title": "Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 282 and junior standing"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 372",
+    "title": "Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 275 and junior standing"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 389",
+    "title": "Seminar",
+    "description": "In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 250 and junior standing"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 491",
+    "title": "Advanced Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "BIOE 339 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 435",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 361 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 428",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 303 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 672",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 335 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 730",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 386 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 765",
+    "title": "Advanced Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 373 and senior standing or graduate status"
+  }
+]

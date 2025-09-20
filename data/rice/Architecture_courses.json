@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Architecture",
+    "code": "ARCH 158",
+    "title": "Fundamentals of Urban Planning",
+    "description": "Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 139",
+    "title": "Introduction to Urban Planning",
+    "description": "In-depth analysis of urban planning principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 275",
+    "title": "Applied Urban Planning",
+    "description": "Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ARCH 118 or equivalent"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 232",
+    "title": "Architectural History",
+    "description": "Rigorous treatment of architectural history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 164 or equivalent"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 303",
+    "title": "Design Studio",
+    "description": "Rigorous treatment of design studio theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 257 and junior standing"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 376",
+    "title": "Advanced Sustainability",
+    "description": "In-depth analysis of sustainability principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "ARCH 251 and junior standing"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 358",
+    "title": "Building Technology",
+    "description": "Rigorous treatment of building technology theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "ARCH 274 and junior standing"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 466",
+    "title": "Graduate Digital Design",
+    "description": "In-depth analysis of digital design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 433",
+    "title": "Graduate Digital Design",
+    "description": "Fundamental concepts and applications of digital design. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 495",
+    "title": "Advanced Architectural History",
+    "description": "Advanced exploration of architectural history covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 359 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 740",
+    "title": "Special Topics in Architectural History",
+    "description": "Rigorous treatment of architectural history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 300 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 522",
+    "title": "Graduate Design Studio",
+    "description": "Fundamental concepts and applications of design studio. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 300 and senior standing or graduate status"
+  }
+]

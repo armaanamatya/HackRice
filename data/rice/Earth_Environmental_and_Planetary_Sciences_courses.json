@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 115",
+    "title": "Introduction to Artificial Intelligence",
+    "description": "Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 120",
+    "title": "Principles of Artificial Intelligence",
+    "description": "Advanced exploration of artificial intelligence covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 210",
+    "title": "Intermediate Programming",
+    "description": "Fundamental concepts and applications of programming. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 120 or equivalent"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 270",
+    "title": "Applied Software Engineering",
+    "description": "In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 195 or equivalent"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 378",
+    "title": "Advanced Human-Computer Interaction",
+    "description": "Rigorous treatment of human-computer interaction theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 254 and junior standing"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 312",
+    "title": "Cybersecurity",
+    "description": "Interdisciplinary approach to cybersecurity combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "EEPS 251 and junior standing"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 310",
+    "title": "Machine Learning",
+    "description": "Rigorous treatment of machine learning theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "EEPS 284 and junior standing"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 464",
+    "title": "Advanced Human-Computer Interaction",
+    "description": "Fundamental concepts and applications of human-computer interaction. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "EEPS 325 and senior standing or graduate status"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 443",
+    "title": "Graduate Human-Computer Interaction",
+    "description": "In-depth analysis of human-computer interaction principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 448",
+    "title": "Graduate Database Systems",
+    "description": "Advanced exploration of database systems covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 392 and senior standing or graduate status"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 641",
+    "title": "Advanced Computer Graphics",
+    "description": "In-depth analysis of computer graphics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 391 and senior standing or graduate status"
+  }
+]

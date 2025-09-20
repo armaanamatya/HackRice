@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 186",
+    "title": "Introduction to Computer Graphics",
+    "description": "Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 119",
+    "title": "Principles of Database Systems",
+    "description": "Comprehensive study of database systems with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 257",
+    "title": "Algorithms",
+    "description": "In-depth analysis of algorithms principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 177 or equivalent"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 289",
+    "title": "Applied Algorithms",
+    "description": "Fundamental concepts and applications of algorithms. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 101 or equivalent"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 354",
+    "title": "Advanced Web Development",
+    "description": "Advanced exploration of web development covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 296 and junior standing"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 371",
+    "title": "Advanced Programming",
+    "description": "Rigorous treatment of programming theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MSNE 228 and junior standing"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 339",
+    "title": "Computer Networks",
+    "description": "Fundamental concepts and applications of computer networks. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 252 and junior standing"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 463",
+    "title": "Graduate Computer Networks",
+    "description": "Examination of key concepts and methodologies in computer networks. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 348 and senior standing or graduate status"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 434",
+    "title": "Graduate Data Structures",
+    "description": "Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 372 and senior standing or graduate status"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 410",
+    "title": "Advanced Computer Graphics",
+    "description": "Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MSNE 388 and senior standing or graduate status"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 727",
+    "title": "Special Topics in Programming",
+    "description": "Comprehensive study of programming with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MSNE 305 and senior standing or graduate status"
+  }
+]

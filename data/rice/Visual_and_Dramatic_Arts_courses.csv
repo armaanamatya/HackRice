@@ -1,0 +1,9 @@
+department,code,title,description,credit_hours,prerequisites
+Visual and Dramatic Arts,VADA 180,Fundamentals of Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,2,None
+Visual and Dramatic Arts,VADA 127,Fundamentals of Analysis,Advanced exploration of analysis covering current research and industry practices.,4,None
+Visual and Dramatic Arts,VADA 203,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,VADA 136 or equivalent
+Visual and Dramatic Arts,VADA 201,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,VADA 182 or equivalent
+Visual and Dramatic Arts,VADA 304,Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,VADA 258 and junior standing
+Visual and Dramatic Arts,VADA 366,Advanced Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,4,VADA 227 and junior standing
+Visual and Dramatic Arts,VADA 385,Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,2,VADA 276 and junior standing
+Visual and Dramatic Arts,VADA 416,Special Topics in Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,4,VADA 300 and senior standing or graduate status

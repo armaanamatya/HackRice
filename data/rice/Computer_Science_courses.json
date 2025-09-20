@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Computer Science",
+    "code": "COMP 175",
+    "title": "Fundamentals of Programming",
+    "description": "Interdisciplinary approach to programming combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 132",
+    "title": "Fundamentals of Artificial Intelligence",
+    "description": "Rigorous treatment of artificial intelligence theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 295",
+    "title": "Intermediate Cybersecurity",
+    "description": "Advanced exploration of cybersecurity covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 103 or equivalent"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 280",
+    "title": "Applied Web Development",
+    "description": "Fundamental concepts and applications of web development. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 112 or equivalent"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 346",
+    "title": "Advanced Software Engineering",
+    "description": "Examination of key concepts and methodologies in software engineering. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 211 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 331",
+    "title": "Advanced Human-Computer Interaction",
+    "description": "Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 214 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 317",
+    "title": "Software Engineering",
+    "description": "In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 295 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 412",
+    "title": "Advanced Data Structures",
+    "description": "Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 399 and senior standing or graduate status"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 463",
+    "title": "Special Topics in Database Systems",
+    "description": "Fundamental concepts and applications of database systems. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 346 and senior standing or graduate status"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 446",
+    "title": "Special Topics in Human-Computer Interaction",
+    "description": "Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 399 and senior standing or graduate status"
+  }
+]

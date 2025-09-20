@@ -1,0 +1,90 @@
+[
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 163",
+    "title": "Principles of Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 131",
+    "title": "Introduction to Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 203",
+    "title": "Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "GERM 176 or equivalent"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 236",
+    "title": "Applied Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 150 or equivalent"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 323",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 242 and junior standing"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 394",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 233 and junior standing"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 326",
+    "title": "Advanced Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 298 and junior standing"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 443",
+    "title": "Advanced Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 337 and senior standing or graduate status"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 458",
+    "title": "Advanced Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 325 and senior standing or graduate status"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 497",
+    "title": "Advanced Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 367 and senior standing or graduate status"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 670",
+    "title": "Special Topics in Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "GERM 334 and senior standing or graduate status"
+  }
+]

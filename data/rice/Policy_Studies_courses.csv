@@ -1,0 +1,16 @@
+department,code,title,description,credit_hours,prerequisites
+Policy Studies,POLS 176,Introduction to Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,None
+Policy Studies,POLS 160,Introduction to Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,4,None
+Policy Studies,POLS 218,Intermediate Workshop,Advanced exploration of workshop covering current research and industry practices.,3,POLS 128 or equivalent
+Policy Studies,POLS 210,Applied Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,1,POLS 137 or equivalent
+Policy Studies,POLS 394,Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,4,POLS 210 and junior standing
+Policy Studies,POLS 333,Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,POLS 291 and junior standing
+Policy Studies,POLS 304,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,POLS 246 and junior standing
+Policy Studies,POLS 453,Advanced Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,4,POLS 326 and senior standing or graduate status
+Policy Studies,POLS 493,Special Topics in Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,4,POLS 315 and senior standing or graduate status
+Policy Studies,POLS 437,Graduate Analysis,Advanced exploration of analysis covering current research and industry practices.,2,POLS 337 and senior standing or graduate status
+Policy Studies,POLS 794,Graduate Practice,Advanced exploration of practice covering current research and industry practices.,1,POLS 389 and senior standing or graduate status
+Policy Studies,POLS 535,Advanced Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,POLS 305 and senior standing or graduate status
+Policy Studies,POLS 515,Graduate Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,1,POLS 317 and senior standing or graduate status
+Policy Studies,POLS 588,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,POLS 306 and senior standing or graduate status
+Policy Studies,POLS 796,Graduate Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,POLS 303 and senior standing or graduate status

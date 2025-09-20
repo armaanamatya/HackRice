@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Psychology",
+    "code": "PSYC 129",
+    "title": "Introduction to Personality",
+    "description": "Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 156",
+    "title": "Introduction to Personality",
+    "description": "In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 242",
+    "title": "Applied Abnormal Psychology",
+    "description": "Comprehensive study of abnormal psychology with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 127 or equivalent"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 224",
+    "title": "Applied Personality",
+    "description": "In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 192 or equivalent"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 351",
+    "title": "Advanced Abnormal Psychology",
+    "description": "Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 226 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 361",
+    "title": "Research Methods",
+    "description": "Rigorous treatment of research methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 241 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 330",
+    "title": "Research Methods",
+    "description": "Fundamental concepts and applications of research methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 289 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 486",
+    "title": "Advanced Social Psychology",
+    "description": "Fundamental concepts and applications of social psychology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "PSYC 329 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 494",
+    "title": "Graduate Social Psychology",
+    "description": "Comprehensive study of social psychology with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "PSYC 358 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 485",
+    "title": "Special Topics in Abnormal Psychology",
+    "description": "Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "PSYC 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 513",
+    "title": "Advanced Personality",
+    "description": "Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 542",
+    "title": "Special Topics in Cognitive Psychology",
+    "description": "Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "PSYC 383 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 515",
+    "title": "Special Topics in Cognitive Psychology",
+    "description": "In-depth analysis of cognitive psychology principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 320 and senior standing or graduate status"
+  }
+]

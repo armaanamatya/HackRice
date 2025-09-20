@@ -1,0 +1,11 @@
+department,code,title,description,credit_hours,prerequisites
+Marketing,MKTG 156,Fundamentals of Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,None
+Marketing,MKTG 101,Fundamentals of Analysis,Advanced exploration of analysis covering current research and industry practices.,3,None
+Marketing,MKTG 200,Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,4,MKTG 118 or equivalent
+Marketing,MKTG 260,Intermediate Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,MKTG 186 or equivalent
+Marketing,MKTG 357,Advanced Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,MKTG 246 and junior standing
+Marketing,MKTG 366,Advanced Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,MKTG 235 and junior standing
+Marketing,MKTG 320,Methods,Advanced exploration of methods covering current research and industry practices.,3,MKTG 245 and junior standing
+Marketing,MKTG 422,Advanced Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,MKTG 398 and senior standing or graduate status
+Marketing,MKTG 420,Advanced Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,2,MKTG 341 and senior standing or graduate status
+Marketing,MKTG 474,Graduate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,1,MKTG 329 and senior standing or graduate status

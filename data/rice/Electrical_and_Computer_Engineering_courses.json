@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 120",
+    "title": "Fundamentals of Data Structures",
+    "description": "Comprehensive study of data structures with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 144",
+    "title": "Fundamentals of Algorithms",
+    "description": "Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 230",
+    "title": "Applied Computer Networks",
+    "description": "Rigorous treatment of computer networks theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 122 or equivalent"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 293",
+    "title": "Intermediate Data Structures",
+    "description": "Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 166 or equivalent"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 354",
+    "title": "Advanced Computer Graphics",
+    "description": "In-depth analysis of computer graphics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 247 and junior standing"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 378",
+    "title": "Artificial Intelligence",
+    "description": "Advanced exploration of artificial intelligence covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 202 and junior standing"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 314",
+    "title": "Advanced Computer Graphics",
+    "description": "Advanced exploration of computer graphics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 290 and junior standing"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 422",
+    "title": "Graduate Programming",
+    "description": "In-depth analysis of programming principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 302 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 465",
+    "title": "Advanced Machine Learning",
+    "description": "In-depth analysis of machine learning principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 301 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 483",
+    "title": "Graduate Computer Graphics",
+    "description": "Fundamental concepts and applications of computer graphics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 333 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 701",
+    "title": "Advanced Computer Graphics",
+    "description": "Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ELEC 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 654",
+    "title": "Graduate Computer Networks",
+    "description": "In-depth analysis of computer networks principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 369 and senior standing or graduate status"
+  }
+]

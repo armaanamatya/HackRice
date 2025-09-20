@@ -1,0 +1,15 @@
+department,code,title,description,credit_hours,prerequisites
+Kinesiology,KINE 145,Introduction to Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,None
+Kinesiology,KINE 192,Introduction to Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,None
+Kinesiology,KINE 226,Intermediate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,KINE 189 or equivalent
+Kinesiology,KINE 218,Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,KINE 130 or equivalent
+Kinesiology,KINE 395,Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,2,KINE 278 and junior standing
+Kinesiology,KINE 321,Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,KINE 286 and junior standing
+Kinesiology,KINE 384,Methods,Advanced exploration of methods covering current research and industry practices.,2,KINE 214 and junior standing
+Kinesiology,KINE 483,Special Topics in Methods,Advanced exploration of methods covering current research and industry practices.,4,KINE 334 and senior standing or graduate status
+Kinesiology,KINE 478,Graduate Applications,Advanced exploration of applications covering current research and industry practices.,3,KINE 385 and senior standing or graduate status
+Kinesiology,KINE 444,Graduate Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,KINE 326 and senior standing or graduate status
+Kinesiology,KINE 752,Special Topics in Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,3,KINE 388 and senior standing or graduate status
+Kinesiology,KINE 760,Graduate Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,KINE 350 and senior standing or graduate status
+Kinesiology,KINE 592,Graduate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,KINE 327 and senior standing or graduate status
+Kinesiology,KINE 657,Special Topics in Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,KINE 326 and senior standing or graduate status

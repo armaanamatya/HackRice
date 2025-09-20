@@ -1,0 +1,15 @@
+department,code,title,description,credit_hours,prerequisites
+Statistics,STAT 131,Principles of Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,None
+Statistics,STAT 131,Introduction to Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,None
+Statistics,STAT 280,Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,4,STAT 131 or equivalent
+Statistics,STAT 275,Applied Analysis,Advanced exploration of analysis covering current research and industry practices.,2,STAT 134 or equivalent
+Statistics,STAT 301,Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,STAT 295 and junior standing
+Statistics,STAT 322,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,1,STAT 269 and junior standing
+Statistics,STAT 370,Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,STAT 214 and junior standing
+Statistics,STAT 419,Special Topics in Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,4,STAT 350 and senior standing or graduate status
+Statistics,STAT 429,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,STAT 322 and senior standing or graduate status
+Statistics,STAT 464,Graduate Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,STAT 379 and senior standing or graduate status
+Statistics,STAT 555,Graduate Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,4,STAT 386 and senior standing or graduate status
+Statistics,STAT 705,Advanced Applications,Advanced exploration of applications covering current research and industry practices.,4,STAT 303 and senior standing or graduate status
+Statistics,STAT 575,Graduate Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,STAT 376 and senior standing or graduate status
+Statistics,STAT 659,Graduate Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,STAT 384 and senior standing or graduate status

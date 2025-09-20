@@ -1,0 +1,14 @@
+department,code,title,description,credit_hours,prerequisites
+Psychology,PSYC 129,Introduction to Personality,Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.,3,None
+Psychology,PSYC 156,Introduction to Personality,In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.,2,None
+Psychology,PSYC 242,Applied Abnormal Psychology,Comprehensive study of abnormal psychology with emphasis on theoretical foundations and practical applications.,3,PSYC 127 or equivalent
+Psychology,PSYC 224,Applied Personality,In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.,3,PSYC 192 or equivalent
+Psychology,PSYC 351,Advanced Abnormal Psychology,Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.,3,PSYC 226 and junior standing
+Psychology,PSYC 361,Research Methods,Rigorous treatment of research methods theory and applications with emphasis on research methodology.,3,PSYC 241 and junior standing
+Psychology,PSYC 330,Research Methods,Fundamental concepts and applications of research methods. Designed for students pursuing careers in related fields.,3,PSYC 289 and junior standing
+Psychology,PSYC 486,Advanced Social Psychology,Fundamental concepts and applications of social psychology. Designed for students pursuing careers in related fields.,1,PSYC 329 and senior standing or graduate status
+Psychology,PSYC 494,Graduate Social Psychology,Comprehensive study of social psychology with emphasis on theoretical foundations and practical applications.,2,PSYC 358 and senior standing or graduate status
+Psychology,PSYC 485,Special Topics in Abnormal Psychology,Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.,4,PSYC 384 and senior standing or graduate status
+Psychology,PSYC 513,Advanced Personality,Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.,3,PSYC 320 and senior standing or graduate status
+Psychology,PSYC 542,Special Topics in Cognitive Psychology,Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.,4,PSYC 383 and senior standing or graduate status
+Psychology,PSYC 515,Special Topics in Cognitive Psychology,In-depth analysis of cognitive psychology principles. Students will develop critical thinking and problem-solving skills.,3,PSYC 320 and senior standing or graduate status

@@ -1,0 +1,16 @@
+department,code,title,description,credit_hours,prerequisites
+Linguistics,LING 183,Introduction to Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,None
+Linguistics,LING 187,Principles of Seminar,In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.,4,None
+Linguistics,LING 204,Applied Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,4,LING 158 or equivalent
+Linguistics,LING 290,Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,LING 185 or equivalent
+Linguistics,LING 339,Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,LING 251 and junior standing
+Linguistics,LING 353,Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,3,LING 268 and junior standing
+Linguistics,LING 369,Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,4,LING 277 and junior standing
+Linguistics,LING 465,Advanced Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,3,LING 319 and senior standing or graduate status
+Linguistics,LING 424,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,LING 317 and senior standing or graduate status
+Linguistics,LING 491,Special Topics in Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,2,LING 394 and senior standing or graduate status
+Linguistics,LING 526,Special Topics in Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,LING 358 and senior standing or graduate status
+Linguistics,LING 758,Graduate Seminar,Advanced exploration of seminar covering current research and industry practices.,3,LING 302 and senior standing or graduate status
+Linguistics,LING 566,Advanced Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,3,LING 321 and senior standing or graduate status
+Linguistics,LING 682,Advanced Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,3,LING 340 and senior standing or graduate status
+Linguistics,LING 735,Advanced Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,4,LING 380 and senior standing or graduate status

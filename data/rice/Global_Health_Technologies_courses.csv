@@ -1,0 +1,14 @@
+department,code,title,description,credit_hours,prerequisites
+Global Health Technologies,GLHT 132,Introduction to Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,2,None
+Global Health Technologies,GLHT 157,Fundamentals of Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,4,None
+Global Health Technologies,GLHT 224,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,3,GLHT 185 or equivalent
+Global Health Technologies,GLHT 234,Applied Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,GLHT 167 or equivalent
+Global Health Technologies,GLHT 364,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,4,GLHT 251 and junior standing
+Global Health Technologies,GLHT 363,Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,2,GLHT 261 and junior standing
+Global Health Technologies,GLHT 376,Advanced Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,3,GLHT 223 and junior standing
+Global Health Technologies,GLHT 415,Graduate Methods,Advanced exploration of methods covering current research and industry practices.,3,GLHT 328 and senior standing or graduate status
+Global Health Technologies,GLHT 402,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,GLHT 329 and senior standing or graduate status
+Global Health Technologies,GLHT 448,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,GLHT 362 and senior standing or graduate status
+Global Health Technologies,GLHT 571,Graduate Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,GLHT 376 and senior standing or graduate status
+Global Health Technologies,GLHT 749,Graduate Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,1,GLHT 316 and senior standing or graduate status
+Global Health Technologies,GLHT 601,Graduate Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,GLHT 334 and senior standing or graduate status

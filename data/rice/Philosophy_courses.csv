@@ -1,0 +1,10 @@
+department,code,title,description,credit_hours,prerequisites
+Philosophy,PHIL 103,Introduction to Research,Advanced exploration of research covering current research and industry practices.,3,None
+Philosophy,PHIL 113,Fundamentals of Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,2,None
+Philosophy,PHIL 270,Intermediate Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,1,PHIL 104 or equivalent
+Philosophy,PHIL 246,Intermediate Seminar,Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.,3,PHIL 192 or equivalent
+Philosophy,PHIL 311,Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,PHIL 207 and junior standing
+Philosophy,PHIL 326,Advanced Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,3,PHIL 227 and junior standing
+Philosophy,PHIL 377,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,1,PHIL 246 and junior standing
+Philosophy,PHIL 403,Advanced Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,1,PHIL 391 and senior standing or graduate status
+Philosophy,PHIL 408,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,PHIL 343 and senior standing or graduate status

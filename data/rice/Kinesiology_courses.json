@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Kinesiology",
+    "code": "KINE 145",
+    "title": "Introduction to Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 192",
+    "title": "Introduction to Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 226",
+    "title": "Intermediate Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 189 or equivalent"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 218",
+    "title": "Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 130 or equivalent"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 395",
+    "title": "Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "KINE 278 and junior standing"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 321",
+    "title": "Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 286 and junior standing"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 384",
+    "title": "Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "KINE 214 and junior standing"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 483",
+    "title": "Special Topics in Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 334 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 478",
+    "title": "Graduate Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 385 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 444",
+    "title": "Graduate Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 326 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 752",
+    "title": "Special Topics in Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 388 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 760",
+    "title": "Graduate Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 350 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 592",
+    "title": "Graduate Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 327 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 657",
+    "title": "Special Topics in Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 326 and senior standing or graduate status"
+  }
+]

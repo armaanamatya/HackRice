@@ -1,0 +1,13 @@
+department,code,title,description,credit_hours,prerequisites
+Liberal Studies,LIBS 106,Principles of Theory,Advanced exploration of theory covering current research and industry practices.,4,None
+Liberal Studies,LIBS 151,Principles of Seminar,Advanced exploration of seminar covering current research and industry practices.,4,None
+Liberal Studies,LIBS 209,Intermediate Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,LIBS 109 or equivalent
+Liberal Studies,LIBS 216,Intermediate Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,LIBS 193 or equivalent
+Liberal Studies,LIBS 317,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,LIBS 234 and junior standing
+Liberal Studies,LIBS 367,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,LIBS 221 and junior standing
+Liberal Studies,LIBS 386,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,LIBS 224 and junior standing
+Liberal Studies,LIBS 488,Graduate Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,3,LIBS 363 and senior standing or graduate status
+Liberal Studies,LIBS 470,Advanced Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,1,LIBS 383 and senior standing or graduate status
+Liberal Studies,LIBS 461,Graduate Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,4,LIBS 329 and senior standing or graduate status
+Liberal Studies,LIBS 601,Special Topics in Applications,Advanced exploration of applications covering current research and industry practices.,3,LIBS 301 and senior standing or graduate status
+Liberal Studies,LIBS 657,Graduate Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,LIBS 398 and senior standing or graduate status

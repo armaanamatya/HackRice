@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Economics",
+    "code": "ECON 154",
+    "title": "Fundamentals of Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 156",
+    "title": "Principles of Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 201",
+    "title": "Applied Workshop",
+    "description": "Examination of key concepts and methodologies in workshop. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "ECON 123 or equivalent"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 261",
+    "title": "Applied Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 198 or equivalent"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 394",
+    "title": "Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 283 and junior standing"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 319",
+    "title": "Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 253 and junior standing"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 335",
+    "title": "Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 228 and junior standing"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 409",
+    "title": "Graduate Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 322 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 466",
+    "title": "Special Topics in Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 308 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 448",
+    "title": "Special Topics in Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 554",
+    "title": "Graduate Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 392 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 707",
+    "title": "Advanced Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 563",
+    "title": "Advanced Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 303 and senior standing or graduate status"
+  }
+]

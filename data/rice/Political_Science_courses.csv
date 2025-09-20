@@ -1,0 +1,14 @@
+department,code,title,description,credit_hours,prerequisites
+Political Science,POLI 121,Fundamentals of Programming,Fundamental concepts and applications of programming. Designed for students pursuing careers in related fields.,4,None
+Political Science,POLI 149,Principles of Web Development,Comprehensive study of web development with emphasis on theoretical foundations and practical applications.,3,None
+Political Science,POLI 236,Intermediate Machine Learning,Fundamental concepts and applications of machine learning. Designed for students pursuing careers in related fields.,1,POLI 162 or equivalent
+Political Science,POLI 217,Applied Algorithms,Comprehensive study of algorithms with emphasis on theoretical foundations and practical applications.,3,POLI 180 or equivalent
+Political Science,POLI 337,Software Engineering,Rigorous treatment of software engineering theory and applications with emphasis on research methodology.,2,POLI 214 and junior standing
+Political Science,POLI 321,Advanced Computer Graphics,Advanced exploration of computer graphics covering current research and industry practices.,4,POLI 283 and junior standing
+Political Science,POLI 336,Advanced Data Structures,Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.,3,POLI 215 and junior standing
+Political Science,POLI 416,Special Topics in Web Development,Interdisciplinary approach to web development combining theoretical knowledge with practical problem-solving.,3,POLI 317 and senior standing or graduate status
+Political Science,POLI 415,Advanced Artificial Intelligence,Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.,4,POLI 382 and senior standing or graduate status
+Political Science,POLI 478,Special Topics in Computer Graphics,Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.,3,POLI 361 and senior standing or graduate status
+Political Science,POLI 676,Special Topics in Software Engineering,Advanced exploration of software engineering covering current research and industry practices.,3,POLI 346 and senior standing or graduate status
+Political Science,POLI 536,Graduate Data Structures,Interdisciplinary approach to data structures combining theoretical knowledge with practical problem-solving.,2,POLI 316 and senior standing or graduate status
+Political Science,POLI 643,Graduate Algorithms,Rigorous treatment of algorithms theory and applications with emphasis on research methodology.,3,POLI 306 and senior standing or graduate status

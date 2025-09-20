@@ -1,0 +1,15 @@
+department,code,title,description,credit_hours,prerequisites
+Sports Medicine,SMGT 107,Principles of Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,4,None
+Sports Medicine,SMGT 180,Introduction to Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,None
+Sports Medicine,SMGT 232,Applied Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,SMGT 196 or equivalent
+Sports Medicine,SMGT 259,Intermediate Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,4,SMGT 132 or equivalent
+Sports Medicine,SMGT 361,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,SMGT 237 and junior standing
+Sports Medicine,SMGT 365,Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,SMGT 276 and junior standing
+Sports Medicine,SMGT 325,Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,4,SMGT 205 and junior standing
+Sports Medicine,SMGT 435,Graduate Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,4,SMGT 352 and senior standing or graduate status
+Sports Medicine,SMGT 490,Special Topics in Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,3,SMGT 391 and senior standing or graduate status
+Sports Medicine,SMGT 437,Graduate Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,2,SMGT 320 and senior standing or graduate status
+Sports Medicine,SMGT 718,Graduate Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,SMGT 328 and senior standing or graduate status
+Sports Medicine,SMGT 539,Advanced Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,4,SMGT 379 and senior standing or graduate status
+Sports Medicine,SMGT 581,Special Topics in Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,4,SMGT 319 and senior standing or graduate status
+Sports Medicine,SMGT 668,Special Topics in Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,SMGT 362 and senior standing or graduate status

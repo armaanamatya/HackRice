@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 106",
+    "title": "Principles of Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 151",
+    "title": "Principles of Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 209",
+    "title": "Intermediate Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 109 or equivalent"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 216",
+    "title": "Intermediate Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 193 or equivalent"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 317",
+    "title": "Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 234 and junior standing"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 367",
+    "title": "Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 221 and junior standing"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 386",
+    "title": "Advanced Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "LIBS 224 and junior standing"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 488",
+    "title": "Graduate Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 363 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 470",
+    "title": "Advanced Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "LIBS 383 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 461",
+    "title": "Graduate Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LIBS 329 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 601",
+    "title": "Special Topics in Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 301 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 657",
+    "title": "Graduate Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "LIBS 398 and senior standing or graduate status"
+  }
+]

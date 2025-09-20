@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 109",
+    "title": "Introduction to Innovation",
+    "description": "Advanced exploration of innovation covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 127",
+    "title": "Fundamentals of Design",
+    "description": "Rigorous treatment of design theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 210",
+    "title": "Applied Optimization",
+    "description": "Interdisciplinary approach to optimization combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 180 or equivalent"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 280",
+    "title": "Applied Controls",
+    "description": "In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 159 or equivalent"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 373",
+    "title": "Design",
+    "description": "Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 289 and junior standing"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 385",
+    "title": "Advanced Design",
+    "description": "In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 219 and junior standing"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 344",
+    "title": "Design",
+    "description": "Advanced exploration of design covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 203 and junior standing"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 429",
+    "title": "Special Topics in Controls",
+    "description": "Fundamental concepts and applications of controls. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CHBE 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 451",
+    "title": "Special Topics in Project Management",
+    "description": "Interdisciplinary approach to project management combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "CHBE 375 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 466",
+    "title": "Advanced Innovation",
+    "description": "Fundamental concepts and applications of innovation. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 332 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 512",
+    "title": "Advanced Controls",
+    "description": "Advanced exploration of controls covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CHBE 358 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 666",
+    "title": "Special Topics in Thermodynamics",
+    "description": "Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.",
+    "credit_hours": "1",
+    "prerequisites": "CHBE 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 741",
+    "title": "Graduate Optimization",
+    "description": "In-depth analysis of optimization principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CHBE 318 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 738",
+    "title": "Advanced Dynamics",
+    "description": "Interdisciplinary approach to dynamics combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "CHBE 318 and senior standing or graduate status"
+  }
+]

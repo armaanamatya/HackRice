@@ -1,0 +1,11 @@
+department,code,title,description,credit_hours,prerequisites
+Computer Science,COMP 175,Fundamentals of Programming,Interdisciplinary approach to programming combining theoretical knowledge with practical problem-solving.,2,None
+Computer Science,COMP 132,Fundamentals of Artificial Intelligence,Rigorous treatment of artificial intelligence theory and applications with emphasis on research methodology.,4,None
+Computer Science,COMP 295,Intermediate Cybersecurity,Advanced exploration of cybersecurity covering current research and industry practices.,3,COMP 103 or equivalent
+Computer Science,COMP 280,Applied Web Development,Fundamental concepts and applications of web development. Designed for students pursuing careers in related fields.,4,COMP 112 or equivalent
+Computer Science,COMP 346,Advanced Software Engineering,Examination of key concepts and methodologies in software engineering. Includes hands-on experience and case studies.,3,COMP 211 and junior standing
+Computer Science,COMP 331,Advanced Human-Computer Interaction,Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.,4,COMP 214 and junior standing
+Computer Science,COMP 317,Software Engineering,In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.,3,COMP 295 and junior standing
+Computer Science,COMP 412,Advanced Data Structures,Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.,4,COMP 399 and senior standing or graduate status
+Computer Science,COMP 463,Special Topics in Database Systems,Fundamental concepts and applications of database systems. Designed for students pursuing careers in related fields.,3,COMP 346 and senior standing or graduate status
+Computer Science,COMP 446,Special Topics in Human-Computer Interaction,Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.,4,COMP 399 and senior standing or graduate status

@@ -1,0 +1,15 @@
+department,code,title,description,credit_hours,prerequisites
+Entrepreneurship,ENTR 155,Principles of Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,None
+Entrepreneurship,ENTR 159,Introduction to Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,None
+Entrepreneurship,ENTR 201,Intermediate Methods,Advanced exploration of methods covering current research and industry practices.,4,ENTR 169 or equivalent
+Entrepreneurship,ENTR 246,Applied Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,4,ENTR 163 or equivalent
+Entrepreneurship,ENTR 334,Advanced Seminar,Fundamental concepts and applications of seminar. Designed for students pursuing careers in related fields.,3,ENTR 281 and junior standing
+Entrepreneurship,ENTR 326,Research,Advanced exploration of research covering current research and industry practices.,3,ENTR 226 and junior standing
+Entrepreneurship,ENTR 338,Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,ENTR 247 and junior standing
+Entrepreneurship,ENTR 489,Advanced Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,ENTR 387 and senior standing or graduate status
+Entrepreneurship,ENTR 404,Special Topics in Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,ENTR 343 and senior standing or graduate status
+Entrepreneurship,ENTR 464,Advanced Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,4,ENTR 381 and senior standing or graduate status
+Entrepreneurship,ENTR 666,Graduate Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,ENTR 359 and senior standing or graduate status
+Entrepreneurship,ENTR 599,Advanced Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,ENTR 315 and senior standing or graduate status
+Entrepreneurship,ENTR 613,Advanced Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,4,ENTR 344 and senior standing or graduate status
+Entrepreneurship,ENTR 678,Special Topics in Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,4,ENTR 364 and senior standing or graduate status

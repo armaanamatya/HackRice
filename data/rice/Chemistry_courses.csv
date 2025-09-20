@@ -1,0 +1,13 @@
+department,code,title,description,credit_hours,prerequisites
+Chemistry,CHEM 111,Fundamentals of Organic Chemistry,Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.,3,None
+Chemistry,CHEM 145,Introduction to Materials Chemistry,Examination of key concepts and methodologies in materials chemistry. Includes hands-on experience and case studies.,3,None
+Chemistry,CHEM 203,Intermediate Materials Chemistry,Comprehensive study of materials chemistry with emphasis on theoretical foundations and practical applications.,3,CHEM 123 or equivalent
+Chemistry,CHEM 298,Organic Chemistry,Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.,3,CHEM 124 or equivalent
+Chemistry,CHEM 381,Advanced Physical Chemistry,Fundamental concepts and applications of physical chemistry. Designed for students pursuing careers in related fields.,4,CHEM 262 and junior standing
+Chemistry,CHEM 392,Advanced Analytical Chemistry,Fundamental concepts and applications of analytical chemistry. Designed for students pursuing careers in related fields.,3,CHEM 269 and junior standing
+Chemistry,CHEM 324,Advanced Materials Chemistry,Fundamental concepts and applications of materials chemistry. Designed for students pursuing careers in related fields.,3,CHEM 218 and junior standing
+Chemistry,CHEM 495,Graduate Organic Chemistry,Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.,4,CHEM 334 and senior standing or graduate status
+Chemistry,CHEM 451,Advanced Environmental Chemistry,Comprehensive study of environmental chemistry with emphasis on theoretical foundations and practical applications.,4,CHEM 330 and senior standing or graduate status
+Chemistry,CHEM 438,Special Topics in Biochemistry,Rigorous treatment of biochemistry theory and applications with emphasis on research methodology.,3,CHEM 373 and senior standing or graduate status
+Chemistry,CHEM 637,Special Topics in Medicinal Chemistry,Examination of key concepts and methodologies in medicinal chemistry. Includes hands-on experience and case studies.,2,CHEM 353 and senior standing or graduate status
+Chemistry,CHEM 596,Graduate Analytical Chemistry,Rigorous treatment of analytical chemistry theory and applications with emphasis on research methodology.,4,CHEM 304 and senior standing or graduate status

@@ -1,0 +1,106 @@
+RICE UNIVERSITY - COMPREHENSIVE COURSE CATALOG SUMMARY
+============================================================
+Total Courses: 545
+Total Departments: 46
+
+DEPARTMENTS AND COURSE COUNTS:
+----------------------------------------
+Management: 15 courses
+Classical and European Studies: 15 courses
+Linguistics: 15 courses
+Anthropology: 15 courses
+Policy Studies: 15 courses
+Chemical and Biomolecular Engineering: 14 courses
+Mathematics: 14 courses
+Statistics: 14 courses
+Entrepreneurship: 14 courses
+History: 14 courses
+Sports Medicine: 14 courses
+Kinesiology: 14 courses
+Bioengineering: 13 courses
+Physics and Astronomy: 13 courses
+French Studies: 13 courses
+Economics: 13 courses
+Political Science: 13 courses
+Psychology: 13 courses
+Global Health Technologies: 13 courses
+Civil and Environmental Engineering: 12 courses
+Electrical and Computer Engineering: 12 courses
+Chemistry: 12 courses
+Architecture: 12 courses
+Liberal Studies: 12 courses
+Environmental Studies: 12 courses
+Public Health: 12 courses
+Materials Science and NanoEngineering: 11 courses
+Mechanical Engineering: 11 courses
+Biosciences: 11 courses
+Earth, Environmental and Planetary Sciences: 11 courses
+Art History: 11 courses
+German and Slavic Studies: 11 courses
+Religious Studies: 11 courses
+Computer Science: 10 courses
+Cognitive Sciences: 10 courses
+Finance: 10 courses
+Marketing: 10 courses
+English: 10 courses
+Music: 10 courses
+Education: 10 courses
+Hispanic Studies: 9 courses
+Philosophy: 9 courses
+Business: 8 courses
+Accounting: 8 courses
+Sociology: 8 courses
+Visual and Dramatic Arts: 8 courses
+
+SAMPLE COURSES BY DEPARTMENT:
+----------------------------------------
+
+MANAGEMENT:
+  MGMT 135: Fundamentals of Methods
+  MGMT 191: Fundamentals of Practice
+  MGMT 255: Applied Methods
+
+CLASSICAL AND EUROPEAN STUDIES:
+  CLAS 180: Fundamentals of Analysis
+  CLAS 143: Principles of Theory
+  CLAS 272: Applied Practice
+
+LINGUISTICS:
+  LING 183: Introduction to Methods
+  LING 187: Principles of Seminar
+  LING 204: Applied Research
+
+ANTHROPOLOGY:
+  ANTH 138: Principles of Seminar
+  ANTH 182: Introduction to Workshop
+  ANTH 298: Intermediate Workshop
+
+POLICY STUDIES:
+  POLS 176: Introduction to Workshop
+  POLS 160: Introduction to Applications
+  POLS 218: Intermediate Workshop
+
+CHEMICAL AND BIOMOLECULAR ENGINEERING:
+  CHBE 109: Introduction to Innovation
+  CHBE 127: Fundamentals of Design
+  CHBE 210: Applied Optimization
+
+MATHEMATICS:
+  MATH 165: Fundamentals of Calculus
+  MATH 103: Fundamentals of Linear Algebra
+  MATH 249: Abstract Algebra
+
+STATISTICS:
+  STAT 131: Principles of Analysis
+  STAT 131: Introduction to Methods
+  STAT 280: Practice
+
+ENTREPRENEURSHIP:
+  ENTR 155: Principles of Analysis
+  ENTR 159: Introduction to Workshop
+  ENTR 201: Intermediate Methods
+
+HISTORY:
+  HIST 167: Introduction to Military History
+  HIST 155: Introduction to Social History
+  HIST 276: Intermediate Political History

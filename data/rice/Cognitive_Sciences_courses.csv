@@ -1,0 +1,11 @@
+department,code,title,description,credit_hours,prerequisites
+Cognitive Sciences,COGS 103,Principles of Web Development,In-depth analysis of web development principles. Students will develop critical thinking and problem-solving skills.,3,None
+Cognitive Sciences,COGS 152,Principles of Algorithms,Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.,3,None
+Cognitive Sciences,COGS 257,Applied Computer Graphics,Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.,2,COGS 108 or equivalent
+Cognitive Sciences,COGS 254,Applied Human-Computer Interaction,Rigorous treatment of human-computer interaction theory and applications with emphasis on research methodology.,4,COGS 187 or equivalent
+Cognitive Sciences,COGS 372,Advanced Cybersecurity,Comprehensive study of cybersecurity with emphasis on theoretical foundations and practical applications.,3,COGS 225 and junior standing
+Cognitive Sciences,COGS 346,Advanced Computer Networks,Interdisciplinary approach to computer networks combining theoretical knowledge with practical problem-solving.,4,COGS 269 and junior standing
+Cognitive Sciences,COGS 312,Data Structures,Rigorous treatment of data structures theory and applications with emphasis on research methodology.,4,COGS 253 and junior standing
+Cognitive Sciences,COGS 421,Advanced Artificial Intelligence,Comprehensive study of artificial intelligence with emphasis on theoretical foundations and practical applications.,3,COGS 305 and senior standing or graduate status
+Cognitive Sciences,COGS 400,Advanced Programming,Comprehensive study of programming with emphasis on theoretical foundations and practical applications.,4,COGS 394 and senior standing or graduate status
+Cognitive Sciences,COGS 401,Special Topics in Software Engineering,In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.,4,COGS 389 and senior standing or graduate status

@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Accounting",
+    "code": "ACCT 133",
+    "title": "Principles of Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 139",
+    "title": "Principles of Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 287",
+    "title": "Applied Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "ACCT 150 or equivalent"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 296",
+    "title": "Intermediate Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ACCT 106 or equivalent"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 316",
+    "title": "Advanced Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ACCT 280 and junior standing"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 373",
+    "title": "Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "ACCT 259 and junior standing"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 303",
+    "title": "Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ACCT 237 and junior standing"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 434",
+    "title": "Advanced Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ACCT 356 and senior standing or graduate status"
+  }
+]

@@ -1,0 +1,16 @@
+department,code,title,description,credit_hours,prerequisites
+Anthropology,ANTH 138,Principles of Seminar,Fundamental concepts and applications of seminar. Designed for students pursuing careers in related fields.,3,None
+Anthropology,ANTH 182,Introduction to Workshop,Advanced exploration of workshop covering current research and industry practices.,3,None
+Anthropology,ANTH 298,Intermediate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,2,ANTH 155 or equivalent
+Anthropology,ANTH 217,Applied Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,4,ANTH 143 or equivalent
+Anthropology,ANTH 339,Advanced Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,1,ANTH 207 and junior standing
+Anthropology,ANTH 369,Workshop,Advanced exploration of workshop covering current research and industry practices.,4,ANTH 237 and junior standing
+Anthropology,ANTH 357,Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,ANTH 253 and junior standing
+Anthropology,ANTH 425,Graduate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,ANTH 325 and senior standing or graduate status
+Anthropology,ANTH 428,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,4,ANTH 311 and senior standing or graduate status
+Anthropology,ANTH 489,Graduate Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,ANTH 324 and senior standing or graduate status
+Anthropology,ANTH 534,Advanced Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,4,ANTH 391 and senior standing or graduate status
+Anthropology,ANTH 602,Advanced Seminar,Advanced exploration of seminar covering current research and industry practices.,3,ANTH 378 and senior standing or graduate status
+Anthropology,ANTH 585,Graduate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,ANTH 307 and senior standing or graduate status
+Anthropology,ANTH 711,Graduate Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,ANTH 323 and senior standing or graduate status
+Anthropology,ANTH 555,Special Topics in Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,1,ANTH 375 and senior standing or graduate status

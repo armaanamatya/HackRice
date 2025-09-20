@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Statistics",
+    "code": "STAT 131",
+    "title": "Principles of Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 131",
+    "title": "Introduction to Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 280",
+    "title": "Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 131 or equivalent"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 275",
+    "title": "Applied Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "STAT 134 or equivalent"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 301",
+    "title": "Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 295 and junior standing"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 322",
+    "title": "Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "STAT 269 and junior standing"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 370",
+    "title": "Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 214 and junior standing"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 419",
+    "title": "Special Topics in Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 350 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 429",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 322 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 464",
+    "title": "Graduate Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 555",
+    "title": "Graduate Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 386 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 705",
+    "title": "Advanced Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 303 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 575",
+    "title": "Graduate Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 659",
+    "title": "Graduate Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 384 and senior standing or graduate status"
+  }
+]

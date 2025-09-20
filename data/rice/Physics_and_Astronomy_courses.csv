@@ -1,0 +1,14 @@
+department,code,title,description,credit_hours,prerequisites
+Physics and Astronomy,ASTR 155,Principles of Thermodynamics,In-depth analysis of thermodynamics principles. Students will develop critical thinking and problem-solving skills.,4,None
+Physics and Astronomy,ASTR 138,Fundamentals of Classical Mechanics,Advanced exploration of classical mechanics covering current research and industry practices.,4,None
+Physics and Astronomy,ASTR 260,Intermediate Astrophysics,Advanced exploration of astrophysics covering current research and industry practices.,3,ASTR 112 or equivalent
+Physics and Astronomy,PHYS 205,Applied Particle Physics,Advanced exploration of particle physics covering current research and industry practices.,3,PHYS 130 or equivalent
+Physics and Astronomy,ASTR 335,Quantum Mechanics,Examination of key concepts and methodologies in quantum mechanics. Includes hands-on experience and case studies.,3,ASTR 295 and junior standing
+Physics and Astronomy,PHYS 383,Advanced Condensed Matter,Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.,3,PHYS 291 and junior standing
+Physics and Astronomy,ASTR 350,Condensed Matter,Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.,4,ASTR 202 and junior standing
+Physics and Astronomy,ASTR 428,Special Topics in Quantum Mechanics,Comprehensive study of quantum mechanics with emphasis on theoretical foundations and practical applications.,3,ASTR 347 and senior standing or graduate status
+Physics and Astronomy,PHYS 481,Advanced Astrophysics,In-depth analysis of astrophysics principles. Students will develop critical thinking and problem-solving skills.,3,PHYS 314 and senior standing or graduate status
+Physics and Astronomy,PHYS 410,Special Topics in Astrophysics,Advanced exploration of astrophysics covering current research and industry practices.,3,PHYS 320 and senior standing or graduate status
+Physics and Astronomy,ASTR 543,Graduate Condensed Matter,In-depth analysis of condensed matter principles. Students will develop critical thinking and problem-solving skills.,3,ASTR 352 and senior standing or graduate status
+Physics and Astronomy,ASTR 524,Advanced Quantum Mechanics,Fundamental concepts and applications of quantum mechanics. Designed for students pursuing careers in related fields.,3,ASTR 360 and senior standing or graduate status
+Physics and Astronomy,ASTR 558,Graduate Classical Mechanics,Advanced exploration of classical mechanics covering current research and industry practices.,4,ASTR 336 and senior standing or graduate status

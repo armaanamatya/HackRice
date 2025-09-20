@@ -1,0 +1,12 @@
+department,code,title,description,credit_hours,prerequisites
+Mechanical Engineering,MECH 150,Principles of Dynamics,In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.,2,None
+Mechanical Engineering,MECH 163,Principles of Design,Interdisciplinary approach to design combining theoretical knowledge with practical problem-solving.,3,None
+Mechanical Engineering,MECH 278,Ethics,In-depth analysis of ethics principles. Students will develop critical thinking and problem-solving skills.,3,MECH 134 or equivalent
+Mechanical Engineering,MECH 279,Design,Interdisciplinary approach to design combining theoretical knowledge with practical problem-solving.,4,MECH 146 or equivalent
+Mechanical Engineering,MECH 396,Advanced Dynamics,Fundamental concepts and applications of dynamics. Designed for students pursuing careers in related fields.,1,MECH 276 and junior standing
+Mechanical Engineering,MECH 300,Dynamics,In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.,3,MECH 245 and junior standing
+Mechanical Engineering,MECH 392,Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,MECH 246 and junior standing
+Mechanical Engineering,MECH 494,Advanced Materials,Examination of key concepts and methodologies in materials. Includes hands-on experience and case studies.,3,MECH 355 and senior standing or graduate status
+Mechanical Engineering,MECH 469,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,4,MECH 384 and senior standing or graduate status
+Mechanical Engineering,MECH 450,Advanced Optimization,Rigorous treatment of optimization theory and applications with emphasis on research methodology.,4,MECH 369 and senior standing or graduate status
+Mechanical Engineering,MECH 580,Graduate Controls,Fundamental concepts and applications of controls. Designed for students pursuing careers in related fields.,1,MECH 302 and senior standing or graduate status

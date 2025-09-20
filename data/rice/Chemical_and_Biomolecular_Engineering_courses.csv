@@ -1,0 +1,15 @@
+department,code,title,description,credit_hours,prerequisites
+Chemical and Biomolecular Engineering,CHBE 109,Introduction to Innovation,Advanced exploration of innovation covering current research and industry practices.,3,None
+Chemical and Biomolecular Engineering,CHBE 127,Fundamentals of Design,Rigorous treatment of design theory and applications with emphasis on research methodology.,4,None
+Chemical and Biomolecular Engineering,CHBE 210,Applied Optimization,Interdisciplinary approach to optimization combining theoretical knowledge with practical problem-solving.,3,CHBE 180 or equivalent
+Chemical and Biomolecular Engineering,CHBE 280,Applied Controls,In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.,3,CHBE 159 or equivalent
+Chemical and Biomolecular Engineering,CHBE 373,Design,Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.,3,CHBE 289 and junior standing
+Chemical and Biomolecular Engineering,CHBE 385,Advanced Design,In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.,3,CHBE 219 and junior standing
+Chemical and Biomolecular Engineering,CHBE 344,Design,Advanced exploration of design covering current research and industry practices.,3,CHBE 203 and junior standing
+Chemical and Biomolecular Engineering,CHBE 429,Special Topics in Controls,Fundamental concepts and applications of controls. Designed for students pursuing careers in related fields.,4,CHBE 384 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 451,Special Topics in Project Management,Interdisciplinary approach to project management combining theoretical knowledge with practical problem-solving.,1,CHBE 375 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 466,Advanced Innovation,Fundamental concepts and applications of innovation. Designed for students pursuing careers in related fields.,3,CHBE 332 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 512,Advanced Controls,Advanced exploration of controls covering current research and industry practices.,4,CHBE 358 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 666,Special Topics in Thermodynamics,Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.,1,CHBE 379 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 741,Graduate Optimization,In-depth analysis of optimization principles. Students will develop critical thinking and problem-solving skills.,4,CHBE 318 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 738,Advanced Dynamics,Interdisciplinary approach to dynamics combining theoretical knowledge with practical problem-solving.,1,CHBE 318 and senior standing or graduate status

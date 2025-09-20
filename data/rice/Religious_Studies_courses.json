@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Religious Studies",
+    "code": "RELI 172",
+    "title": "Principles of Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 190",
+    "title": "Fundamentals of Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 218",
+    "title": "Applied Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 159 or equivalent"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 299",
+    "title": "Applied Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "RELI 118 or equivalent"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 352",
+    "title": "Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 241 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 399",
+    "title": "Advanced Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 200 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 346",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "RELI 265 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 438",
+    "title": "Special Topics in Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 318 and senior standing or graduate status"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 452",
+    "title": "Graduate Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "RELI 394 and senior standing or graduate status"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 483",
+    "title": "Graduate Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 321 and senior standing or graduate status"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 501",
+    "title": "Graduate Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "RELI 363 and senior standing or graduate status"
+  }
+]

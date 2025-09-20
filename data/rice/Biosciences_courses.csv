@@ -1,0 +1,12 @@
+department,code,title,description,credit_hours,prerequisites
+Biosciences,BIOC 111,Principles of Biochemistry,Fundamental concepts and applications of biochemistry. Designed for students pursuing careers in related fields.,3,None
+Biosciences,BIOC 124,Fundamentals of Physiology,Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.,4,None
+Biosciences,BIOC 221,Evolution,Comprehensive study of evolution with emphasis on theoretical foundations and practical applications.,4,BIOC 198 or equivalent
+Biosciences,BIOC 234,Applied Bioinformatics,Interdisciplinary approach to bioinformatics combining theoretical knowledge with practical problem-solving.,3,BIOC 172 or equivalent
+Biosciences,BIOC 349,Evolution,Examination of key concepts and methodologies in evolution. Includes hands-on experience and case studies.,4,BIOC 291 and junior standing
+Biosciences,BIOC 351,Advanced Microbiology,Interdisciplinary approach to microbiology combining theoretical knowledge with practical problem-solving.,1,BIOC 200 and junior standing
+Biosciences,BIOC 313,Advanced Physiology,Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.,3,BIOC 287 and junior standing
+Biosciences,BIOC 406,Graduate Biotechnology,Rigorous treatment of biotechnology theory and applications with emphasis on research methodology.,4,BIOC 300 and senior standing or graduate status
+Biosciences,BIOC 465,Advanced Microbiology,Examination of key concepts and methodologies in microbiology. Includes hands-on experience and case studies.,3,BIOC 323 and senior standing or graduate status
+Biosciences,BIOC 414,Advanced Genetics,Examination of key concepts and methodologies in genetics. Includes hands-on experience and case studies.,4,BIOC 340 and senior standing or graduate status
+Biosciences,BIOC 717,Special Topics in Molecular Biology,In-depth analysis of molecular biology principles. Students will develop critical thinking and problem-solving skills.,3,BIOC 387 and senior standing or graduate status

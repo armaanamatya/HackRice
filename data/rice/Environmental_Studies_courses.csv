@@ -1,0 +1,13 @@
+department,code,title,description,credit_hours,prerequisites
+Environmental Studies,ENVS 131,Principles of Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,4,None
+Environmental Studies,ENVS 132,Principles of Analysis,Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.,4,None
+Environmental Studies,ENVS 276,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,ENVS 197 or equivalent
+Environmental Studies,ENVS 204,Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,4,ENVS 170 or equivalent
+Environmental Studies,ENVS 388,Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,ENVS 288 and junior standing
+Environmental Studies,ENVS 338,Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,ENVS 272 and junior standing
+Environmental Studies,ENVS 372,Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,ENVS 227 and junior standing
+Environmental Studies,ENVS 400,Graduate Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,ENVS 338 and senior standing or graduate status
+Environmental Studies,ENVS 477,Special Topics in Analysis,Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.,4,ENVS 390 and senior standing or graduate status
+Environmental Studies,ENVS 467,Graduate Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,ENVS 364 and senior standing or graduate status
+Environmental Studies,ENVS 762,Graduate Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,ENVS 301 and senior standing or graduate status
+Environmental Studies,ENVS 713,Special Topics in Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,ENVS 330 and senior standing or graduate status

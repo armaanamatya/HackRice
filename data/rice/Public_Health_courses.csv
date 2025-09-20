@@ -1,0 +1,13 @@
+department,code,title,description,credit_hours,prerequisites
+Public Health,PBHL 175,Introduction to Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,None
+Public Health,PBHL 157,Introduction to Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,None
+Public Health,PBHL 249,Applied Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,PBHL 114 or equivalent
+Public Health,PBHL 247,Applied Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,PBHL 133 or equivalent
+Public Health,PBHL 383,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,PBHL 295 and junior standing
+Public Health,PBHL 380,Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,PBHL 214 and junior standing
+Public Health,PBHL 349,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,4,PBHL 290 and junior standing
+Public Health,PBHL 469,Special Topics in Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,PBHL 367 and senior standing or graduate status
+Public Health,PBHL 434,Graduate Seminar,Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.,3,PBHL 376 and senior standing or graduate status
+Public Health,PBHL 449,Special Topics in Applications,Advanced exploration of applications covering current research and industry practices.,2,PBHL 338 and senior standing or graduate status
+Public Health,PBHL 763,Graduate Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,4,PBHL 377 and senior standing or graduate status
+Public Health,PBHL 630,Graduate Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,4,PBHL 306 and senior standing or graduate status

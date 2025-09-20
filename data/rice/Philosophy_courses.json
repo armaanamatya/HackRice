@@ -1,0 +1,74 @@
+[
+  {
+    "department": "Philosophy",
+    "code": "PHIL 103",
+    "title": "Introduction to Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 113",
+    "title": "Fundamentals of Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 270",
+    "title": "Intermediate Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "PHIL 104 or equivalent"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 246",
+    "title": "Intermediate Seminar",
+    "description": "Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 192 or equivalent"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 311",
+    "title": "Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "PHIL 207 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 326",
+    "title": "Advanced Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 227 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 377",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "PHIL 246 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 403",
+    "title": "Advanced Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "PHIL 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 408",
+    "title": "Advanced Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 343 and senior standing or graduate status"
+  }
+]

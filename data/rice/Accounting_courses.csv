@@ -1,0 +1,9 @@
+department,code,title,description,credit_hours,prerequisites
+Accounting,ACCT 133,Principles of Theory,Advanced exploration of theory covering current research and industry practices.,3,None
+Accounting,ACCT 139,Principles of Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,None
+Accounting,ACCT 287,Applied Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,4,ACCT 150 or equivalent
+Accounting,ACCT 296,Intermediate Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,ACCT 106 or equivalent
+Accounting,ACCT 316,Advanced Seminar,Advanced exploration of seminar covering current research and industry practices.,3,ACCT 280 and junior standing
+Accounting,ACCT 373,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,2,ACCT 259 and junior standing
+Accounting,ACCT 303,Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,ACCT 237 and junior standing
+Accounting,ACCT 434,Advanced Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,ACCT 356 and senior standing or graduate status

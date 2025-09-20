@@ -1,0 +1,16 @@
+department,code,title,description,credit_hours,prerequisites
+Management,MGMT 135,Fundamentals of Methods,Advanced exploration of methods covering current research and industry practices.,3,None
+Management,MGMT 191,Fundamentals of Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,4,None
+Management,MGMT 255,Applied Methods,Advanced exploration of methods covering current research and industry practices.,3,MGMT 141 or equivalent
+Management,MGMT 232,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,MGMT 105 or equivalent
+Management,MGMT 315,Advanced Workshop,Examination of key concepts and methodologies in workshop. Includes hands-on experience and case studies.,4,MGMT 200 and junior standing
+Management,MGMT 379,Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,3,MGMT 254 and junior standing
+Management,MGMT 300,Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,2,MGMT 254 and junior standing
+Management,MGMT 403,Graduate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,3,MGMT 348 and senior standing or graduate status
+Management,MGMT 403,Special Topics in Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,3,MGMT 303 and senior standing or graduate status
+Management,MGMT 493,Graduate Workshop,Advanced exploration of workshop covering current research and industry practices.,3,MGMT 359 and senior standing or graduate status
+Management,MGMT 743,Special Topics in Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,MGMT 304 and senior standing or graduate status
+Management,MGMT 737,Graduate Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,1,MGMT 306 and senior standing or graduate status
+Management,MGMT 515,Advanced Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,MGMT 393 and senior standing or graduate status
+Management,MGMT 690,Graduate Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,MGMT 384 and senior standing or graduate status
+Management,MGMT 694,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,MGMT 342 and senior standing or graduate status

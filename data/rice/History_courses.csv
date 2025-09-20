@@ -1,0 +1,15 @@
+department,code,title,description,credit_hours,prerequisites
+History,HIST 167,Introduction to Military History,Comprehensive study of military history with emphasis on theoretical foundations and practical applications.,4,None
+History,HIST 155,Introduction to Social History,Examination of key concepts and methodologies in social history. Includes hands-on experience and case studies.,3,None
+History,HIST 276,Intermediate Political History,Comprehensive study of political history with emphasis on theoretical foundations and practical applications.,2,HIST 151 or equivalent
+History,HIST 261,Applied Social History,Rigorous treatment of social history theory and applications with emphasis on research methodology.,4,HIST 165 or equivalent
+History,HIST 308,Advanced Social History,In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.,3,HIST 237 and junior standing
+History,HIST 302,Modern History,In-depth analysis of modern history principles. Students will develop critical thinking and problem-solving skills.,4,HIST 241 and junior standing
+History,HIST 342,Advanced Cultural History,Interdisciplinary approach to cultural history combining theoretical knowledge with practical problem-solving.,4,HIST 277 and junior standing
+History,HIST 499,Special Topics in World History,Rigorous treatment of world history theory and applications with emphasis on research methodology.,3,HIST 331 and senior standing or graduate status
+History,HIST 419,Special Topics in Social History,Fundamental concepts and applications of social history. Designed for students pursuing careers in related fields.,3,HIST 376 and senior standing or graduate status
+History,HIST 449,Special Topics in World History,In-depth analysis of world history principles. Students will develop critical thinking and problem-solving skills.,3,HIST 336 and senior standing or graduate status
+History,HIST 690,Graduate Ancient History,Rigorous treatment of ancient history theory and applications with emphasis on research methodology.,3,HIST 383 and senior standing or graduate status
+History,HIST 650,Advanced European History,Interdisciplinary approach to european history combining theoretical knowledge with practical problem-solving.,3,HIST 310 and senior standing or graduate status
+History,HIST 508,Advanced American History,Comprehensive study of american history with emphasis on theoretical foundations and practical applications.,3,HIST 366 and senior standing or graduate status
+History,HIST 704,Special Topics in European History,Rigorous treatment of european history theory and applications with emphasis on research methodology.,3,HIST 391 and senior standing or graduate status
