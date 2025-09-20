@@ -1,0 +1,157 @@
+.sidebar-container {
+  width: 250px;
+  background-color: var(--bg-dark);
+  color: var(--light-text-color);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-medium);
+  z-index: 100;
+}
+
+.sidebar-header {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.sidebar-logo {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar-logo:hover {
+  color: #e0b1cb;
+}
+
+.sidebar-nav {
+  flex-grow: 1;
+  padding: 20px 0;
+}
+
+.sidebar-nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav-links li {
+  margin-bottom: 10px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: var(--light-text-color);
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-left: 5px solid transparent;
+}
+
+.sidebar-nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--accent-color);
+  border-left-color: var(--accent-color);
+}
+
+.sidebar-nav-item.active {
+  background-color: var(--primary-color);
+  border-left-color: var(--accent-color);
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.sidebar-user {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sidebar-logout-button {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+.sidebar-logout-button:hover {
+  background-color: #e04a4a;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 80px;
+    padding: 15px 0;
+  }
+
+  .sidebar-logo {
+    font-size: 1.5em;
+  }
+
+  .sidebar-nav-item {
+    padding: 10px 0;
+    justify-content: center;
+    font-size: 0.9em;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .sidebar-nav-item span { /* Hide text, only show icon if applicable */
+    display: none;
+  }
+
+  .sidebar-nav-item:before {
+    content: attr(data-icon); /* Use data-icon attribute for icons */
+    font-size: 1.5em;
+    margin-right: 0;
+  }
+
+  .sidebar-user {
+    display: none; /* Hide welcome message on small screens */
+  }
+
+  .sidebar-logout-button {
+    padding: 8px 0;
+    font-size: 0.8em;
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-container {
+    width: 60px;
+  }
+
+  .sidebar-logo {
+    font-size: 1.2em;
+  }
+
+  .sidebar-nav-item:before {
+    font-size: 1.2em;
+  }
+
+  .sidebar-logout-button {
+    max-width: 50px;
+    font-size: 0.7em;
+  }
+}

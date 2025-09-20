@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
-import { Routes, Route, useNavigate } from 'react-router-dom' // Import React Router components
+import { Routes, Route, useNavigate, Outlet } from 'react-router-dom' // Import Outlet
 import UserProfileForm from './components/UserProfileForm'
 import DashboardPage from './components/DashboardPage'
 import MatcherPage from './components/MatcherPage'
 import ProfileDetailsPage from './components/ProfileDetailsPage'
+import MainLayout from './components/MainLayout' // Import MainLayout
 import { detectUniversityFromEmail } from './utils/universityUtils'
 import './App.css'
 
@@ -12,12 +13,8 @@ function App() {
   const { isAuthenticated, user, loginWithRedirect, logout } = useAuth0();
   const [userData, setUserData] = useState(null);
   const [userSchedule, setUserSchedule] = useState(null);
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate();
 
-  // Removed showProfileForm state as it's replaced by routing
-  // const [showProfileForm, setShowProfileForm] = useState(false);
-
-  // Refactored to use navigate
   const handleCreateProfileClick = () => {
     navigate('/create-profile');
   };
@@ -27,20 +24,14 @@ function App() {
       ...prevData,
       ...data,
     }));
-    navigate('/dashboard'); // Navigate to dashboard after profile submission
-  };
-
-  const handleNavigateToDashboard = () => {
     navigate('/dashboard');
   };
 
-  const handleNavigateToMatcher = () => {
-    navigate('/dashboard/matcher');
-  };
-
-  const handleNavigateToProfileDetails = () => {
-    navigate('/dashboard/profile');
-  };
+  // These navigation handlers are now directly used by Sidebar/MainLayout
+  // and don't need to be passed down through props anymore for most cases.
+  const handleNavigateToDashboard = () => navigate('/dashboard');
+  const handleNavigateToMatcher = () => navigate('/dashboard/matcher');
+  const handleNavigateToProfileDetails = () => navigate('/dashboard/profile');
 
   const handleUserScheduleUpdate = (schedule) => {
     setUserSchedule(schedule);
@@ -73,38 +64,19 @@ function App() {
           email: user.email,
           university: detectedUniversity,
         });
-        // After initial setup, navigate to dashboard if on landing page
         if (window.location.pathname === '/' || window.location.pathname === '/create-profile') {
           navigate('/dashboard');
         }
       } else if (window.location.pathname === '/' || window.location.pathname === '/create-profile') {
-        // If user is authenticated and userData exists, and they are on landing or profile creation, redirect to dashboard
         navigate('/dashboard');
       }
     }
   }, [isAuthenticated, user, userData, navigate]);
 
-  // Conditional rendering for the landing page or a general layout
+  // Landing Page Content (without header, as it will be handled by MainLayout for authenticated routes)
   const LandingPageContent = () => (
     <div className="app">
-      {/* Header */}
-      <header className="header">
-        <div className="container">
-          <nav className="navbar">
-            <a href="/" className="logo">Scedulr</a>
-            <div className="nav-buttons">
-              {isAuthenticated ? (
-                <button className="nav-button login-button" onClick={handleLogout}>Logout</button>
-              ) : (
-                <>
-                  <button className="nav-button sign-up-button" onClick={handleSignUp}>Sign Up</button>
-                  <button className="nav-button login-button" onClick={handleLogin}>Login</button>
-                </>
-              )}
-            </div>
-          </nav>
-        </div>
-      </header>
+      {/* Header removed from here - it will be global or per-layout */}
 
       {/* Hero Section */}
       <section className="hero" id="hero">
@@ -116,7 +88,6 @@ function App() {
           {isAuthenticated && user ? (
             <div style={{ textAlign: 'center' }}>
               <p style={{ marginBottom: '20px', color: '#fff' }}>Welcome, {user.name || user.email}!</p>
-              {/* Use navigate for profile creation */}
               <button className="cta-button" onClick={() => navigate('/create-profile')}>Create Your Profile</button>
             </div>
           ) : (
@@ -188,35 +159,43 @@ function App() {
     </div>
   );
 
+  // A protected route component that renders children only if authenticated
+  const ProtectedRoute = ({ children }) => {
+    if (!isAuthenticated) {
+      loginWithRedirect();
+      return null; // or a loading spinner
+    }
+    return children;
+  };
+
   return (
     <Routes>
       <Route path="/" element={<LandingPageContent />} />
       <Route path="/create-profile" element={<UserProfileForm onSubmit={handleProfileSubmit} initialData={userData} />} />
-      <Route
-        path="/dashboard"
-        element={
-          <DashboardPage
-            userData={userData}
-            onBackToDashboard={handleNavigateToDashboard}
-            onNavigateToMatcher={handleNavigateToMatcher}
-            onNavigateToProfileDetails={handleNavigateToProfileDetails}
-            onScheduleUpdate={handleUserScheduleUpdate}
-            userSchedule={userSchedule}
-            onLogout={handleLogout}
-          />
-        }
-      />
-      <Route path="/dashboard/matcher" element={<MatcherPage onBackToDashboard={handleNavigateToDashboard} currentUserSchedule={userSchedule} />} />
-      <Route
-        path="/dashboard/profile"
-        element={
-          <ProfileDetailsPage
-            userData={userData}
-            onBackToDashboard={handleNavigateToDashboard}
-          />
-        }
-      />
-      {/* Redirect any unhandled paths to the landing page or a 404 page */}
+
+      {/* Authenticated routes nested under MainLayout */}
+      <Route element={<ProtectedRoute><MainLayout userData={userData} onLogout={handleLogout} /></ProtectedRoute>}>
+        <Route
+          path="/dashboard"
+          element={
+            <DashboardPage
+              userData={userData}
+              onScheduleUpdate={handleUserScheduleUpdate}
+              userSchedule={userSchedule}
+            />
+          }
+        />
+        <Route
+          path="/dashboard/matcher"
+          element={<MatcherPage currentUserSchedule={userSchedule} />}
+        />
+        <Route
+          path="/dashboard/profile"
+          element={<ProfileDetailsPage userData={userData} />}
+        />
+      </Route>
+
+      {/* Catch all for unhandled paths */}
       <Route path="*" element={<LandingPageContent />} />
     </Routes>
   );

@@ -1,0 +1,26 @@
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+}
+
+.main-content-area {
+  flex-grow: 1;
+  margin-left: 250px; /* Adjust this to match sidebar width */
+  padding: 20px;
+}
+
+/* Responsive adjustments for layout */
+@media (max-width: 768px) {
+  .main-content-area {
+    margin-left: 80px; /* Adjust for smaller sidebar width */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content-area {
+    margin-left: 60px; /* Adjust for even smaller sidebar width */
+    padding: 15px;
+  }
+}

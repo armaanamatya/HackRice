@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom'; // Import useNavigate and Link
+// import { useNavigate, Link } from 'react-router-dom'; // Remove useNavigate and Link imports
 import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
 import ScheduleReviewForm from './ScheduleReviewForm';
@@ -13,18 +13,16 @@ import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../uti
 
 const DashboardPage = ({
   userData,
-  onBackToDashboard, // This prop might become redundant with react-router-dom
-  onNavigateToMatcher, // This prop might become redundant with react-router-dom
-  onNavigateToProfileDetails, // This prop might become redundant with react-router-dom
+  // Removed onBackToDashboard, onNavigateToMatcher, onNavigateToProfileDetails, onLogout props
   onScheduleUpdate,
   userSchedule,
-  onLogout,
 }) => {
   const [currentSchedule, setCurrentSchedule] = useState(null); // The final, validated schedule
   const [ocrParsedClasses, setOcrParsedClasses] = useState(null); // Data from OCR for review
   const [viewMode, setViewMode] = useState('uploader'); // 'uploader', 'reviewer', 'display'
 
-  const navigate = useNavigate(); // Initialize useNavigate
+  // Removed useNavigate initialization
+  // const navigate = useNavigate();
 
   // Auth0 Placeholder: Get user ID from Auth0 context
   // const { user, isAuthenticated } = useAuth0();
@@ -100,37 +98,12 @@ const DashboardPage = ({
   };
 
   return (
-    <div className="dashboard-page">
-      <header className="dashboard-header">
-        <div className="container">
-          <nav className="dashboard-navbar">
-            <Link to="/dashboard" className="dashboard-logo">Scedulr</Link> {/* Use Link for logo */}
-            <ul className="dashboard-nav-links">
-              <li><Link to="/dashboard/matcher">Matcher</Link></li> {/* Use Link for Matcher */}
-              <li><Link to="#">Community</Link></li> {/* Placeholder for Community link */}
-              <li><Link to="#">Settings</Link></li> {/* Placeholder for Settings link */}
-            </ul>
-            <div className="dashboard-icons-group">
-              <div className="profile-icon-container" onClick={() => navigate('/dashboard/profile')}> {/* Use navigate for profile */}
-                {/* Auth0 Placeholder: display user.picture or user.initials */}
-                <span className="profile-initial">{userData?.name ? userData.name.charAt(0).toUpperCase() : 'U'}</span>
-              </div>
-              <div className="settings-icon-container">
-                <Link to="#settings" className="settings-gear-icon">⚙️</Link> {/* Use Link for settings */}
-              </div>
-              <button onClick={onLogout} className="dashboard-logout-button">Logout</button>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main className="dashboard-main-content">
-        <div className="container">
-          <h2>Welcome to your Scedulr Dashboard, {userData?.name || 'User'}!</h2>
-          <p>This is your central hub for academic networking.</p>
+    <div className="dashboard-page-content"> {/* Changed class name for clarity */}
+      {/* Header, navigation links, profile icon, and logout button removed */}
+      <h2 className="dashboard-welcome-title">Welcome to your Scedulr Dashboard, {userData?.name || 'User'}!</h2>
+      <p className="dashboard-intro-text">This is your central hub for academic networking.</p>
 
-          {renderContent()}
-        </div>
-      </main>
+      {renderContent()}
     </div>
   );
 };

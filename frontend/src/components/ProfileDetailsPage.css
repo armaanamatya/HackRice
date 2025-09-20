@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 20px;
+  padding: 40px 20px 40px 270px; /* Adjusted left padding for sidebar (250px + 20px default) */
   background: var(--bg-light);
-  min-height: 100vh;
+  /* Removed min-height: 100vh; as it's handled by MainLayout */
   color: var(--text-color);
 }
 
@@ -86,7 +86,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .profile-details-container {
-    padding: 20px 10px;
+    padding: 20px 10px 20px 100px; /* Adjusted left padding for smaller sidebar (80px + 20px default) */
   }
 
   .profile-details-container h2 {
@@ -113,6 +113,9 @@
 }
 
 @media (max-width: 480px) {
+  .profile-details-container {
+    padding: 15px 10px 15px 80px; /* Adjusted left padding for even smaller sidebar (60px + 20px default) */
+  }
   .profile-details-container h2 {
     font-size: 1.8em;
   }

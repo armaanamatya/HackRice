@@ -1,6 +1,6 @@
 .matcher-page-container {
   max-width: 1000px;
-  margin: 4rem auto;
+  margin: 4rem auto 4rem 270px; /* Adjusted left margin for sidebar (250px + 20px default) */
   padding: 3rem;
   background: var(--bg-light);
   border-radius: var(--border-radius-lg);
@@ -174,7 +174,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .matcher-page-container {
-    margin: 2rem auto;
+    margin: 2rem auto 2rem 100px; /* Adjusted left margin for smaller sidebar (80px + 20px default) */
     padding: 2rem;
   }
 
