@@ -387,7 +387,7 @@ function App() {
   // A protected route component that renders children only if authenticated
   const ProtectedRoute = ({ children }) => {
     if (!isAuthenticated) {
-      loginWithRedirect();
+      navigate('/');
       return null; // or a loading spinner
     }
     return children;
@@ -412,34 +412,40 @@ function App() {
       <Route
         path="/dashboard"
         element={
-          <DashboardPage
-            userData={userData}
-            onBackToDashboard={handleNavigateToDashboard}
-            onNavigateToMatcher={handleNavigateToMatcher}
-            onNavigateToProfileDetails={handleNavigateToProfileDetails}
-            onScheduleUpdate={handleUserScheduleUpdate}
-            userSchedule={userSchedule}
-            onLogout={handleLogout}
-          />
+          <ProtectedRoute>
+            <DashboardPage
+              userData={userData}
+              onBackToDashboard={handleNavigateToDashboard}
+              onNavigateToMatcher={handleNavigateToMatcher}
+              onNavigateToProfileDetails={handleNavigateToProfileDetails}
+              onScheduleUpdate={handleUserScheduleUpdate}
+              userSchedule={userSchedule}
+              onLogout={handleLogout}
+            />
+          </ProtectedRoute>
         }
       />
       <Route
         path="/dashboard/matcher"
         element={
-          <MatcherPage
-            onBackToDashboard={handleNavigateToDashboard}
-            currentUserSchedule={userSchedule}
-          />
+          <ProtectedRoute>
+            <MatcherPage
+              onBackToDashboard={handleNavigateToDashboard}
+              currentUserSchedule={userSchedule}
+            />
+          </ProtectedRoute>
         }
       />
       <Route
         path="/dashboard/profile"
         element={
-          <ProfileDetailsPage
-            userData={userData}
-            setUserData={setUserData}
-            onBackToDashboard={handleNavigateToDashboard}
-          />
+          <ProtectedRoute>
+            <ProfileDetailsPage
+              userData={userData}
+              setUserData={setUserData}
+              onBackToDashboard={handleNavigateToDashboard}
+            />
+          </ProtectedRoute>
         }
       />
       {/* Redirect any unhandled paths to the landing page or a 404 page */}
