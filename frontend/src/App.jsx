@@ -1,13 +1,22 @@
-import React, { useState, useEffect } from 'react'
-import { useAuth0 } from '@auth0/auth0-react'
-import { Routes, Route, useNavigate, Outlet } from 'react-router-dom' // Import Outlet
-import UserProfileForm from './components/UserProfileForm'
-import DashboardPage from './components/DashboardPage'
-import MatcherPage from './components/MatcherPage'
-import ProfileDetailsPage from './components/ProfileDetailsPage'
-import MainLayout from './components/MainLayout' // Import MainLayout
-import { detectUniversityFromEmail } from './utils/universityUtils'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import { Routes, Route, useNavigate } from "react-router-dom"; // Import React Router components
+import {
+  IconUsers,
+  IconBook,
+  IconHome,
+  IconChartBar,
+} from "@tabler/icons-react";
+import UserProfileForm from "./components/UserProfileForm";
+import DashboardPage from "./components/DashboardPage";
+import MatcherPage from "./components/MatcherPage";
+import ProfileDetailsPage from "./components/ProfileDetailsPage";
+import { detectUniversityFromEmail } from "./utils/universityUtils";
+// Using actual logos from public folder
+// import utLogo from './assets/university-logos/ut.svg'
+// import tamuLogo from './assets/university-logos/tamu.svg'
+// import untLogo from './assets/university-logos/unt.svg'
+import "./App.css";
 
 function App() {
   const { isAuthenticated, user, loginWithRedirect, logout } = useAuth0();
@@ -16,22 +25,28 @@ function App() {
   const navigate = useNavigate();
 
   const handleCreateProfileClick = () => {
-    navigate('/create-profile');
+    navigate("/create-profile");
   };
 
   const handleProfileSubmit = (data) => {
-    setUserData(prevData => ({
+    setUserData((prevData) => ({
       ...prevData,
       ...data,
     }));
-    navigate('/dashboard');
+    navigate("/dashboard"); // Navigate to dashboard after profile submission
   };
 
-  // These navigation handlers are now directly used by Sidebar/MainLayout
-  // and don't need to be passed down through props anymore for most cases.
-  const handleNavigateToDashboard = () => navigate('/dashboard');
-  const handleNavigateToMatcher = () => navigate('/dashboard/matcher');
-  const handleNavigateToProfileDetails = () => navigate('/dashboard/profile');
+  const handleNavigateToDashboard = () => {
+    navigate("/dashboard");
+  };
+
+  const handleNavigateToMatcher = () => {
+    navigate("/dashboard/matcher");
+  };
+
+  const handleNavigateToProfileDetails = () => {
+    navigate("/dashboard/profile");
+  };
 
   const handleUserScheduleUpdate = (schedule) => {
     setUserSchedule(schedule);
@@ -42,7 +57,7 @@ function App() {
   };
 
   const handleSignUp = () => {
-    loginWithRedirect({ screen_hint: 'signup' });
+    loginWithRedirect({ screen_hint: "signup" });
   };
 
   const handleLogout = () => {
@@ -60,15 +75,23 @@ function App() {
 
       if (!userData) {
         setUserData({
-          name: user.name || user.nickname || 'User',
+          name: user.name || user.nickname || "User",
           email: user.email,
           university: detectedUniversity,
         });
-        if (window.location.pathname === '/' || window.location.pathname === '/create-profile') {
-          navigate('/dashboard');
+        // After initial setup, navigate to dashboard if on landing page
+        if (
+          window.location.pathname === "/" ||
+          window.location.pathname === "/create-profile"
+        ) {
+          navigate("/dashboard");
         }
-      } else if (window.location.pathname === '/' || window.location.pathname === '/create-profile') {
-        navigate('/dashboard');
+      } else if (
+        window.location.pathname === "/" ||
+        window.location.pathname === "/create-profile"
+      ) {
+        // If user is authenticated and userData exists, and they are on landing or profile creation, redirect to dashboard
+        navigate("/dashboard");
       }
     }
   }, [isAuthenticated, user, userData, navigate]);
@@ -76,22 +99,58 @@ function App() {
   // Landing Page Content (without header, as it will be handled by MainLayout for authenticated routes)
   const LandingPageContent = () => (
     <div className="app">
-      {/* Header removed from here - it will be global or per-layout */}
+      {/* Header */}
+      {/* <header className="header">
+        <div className="container">
+          <nav className="navbar">
+            <a href="/" className="logo">Scedulr</a>
+            <div className="nav-buttons">
+              {isAuthenticated ? (
+                <button className="nav-button login-button" onClick={handleLogout}>Logout</button>
+              ) : (
+                <>
+                  <button className="nav-button sign-up-button" onClick={handleSignUp}>Sign Up</button>
+                  <button className="nav-button login-button" onClick={handleLogin}>Login</button>
+                </>
+              )}
+            </div>
+          </nav>
+        </div>
+      </header> */}
 
       {/* Hero Section */}
       <section className="hero" id="hero">
         <div className="container">
-          <h1 className="hero-title">Scedulr</h1>
+          <h1 className="hero-title">
+            scedulr
+            {/* <span className="terminal-cursor">_</span> */}
+          </h1>
           <p className="hero-subtitle">
-            Connect with classmates, build communities, and excel academically
+            connect with classmates, build communities, and excel academically
           </p>
           {isAuthenticated && user ? (
-            <div style={{ textAlign: 'center' }}>
-              <p style={{ marginBottom: '20px', color: '#fff' }}>Welcome, {user.name || user.email}!</p>
-              <button className="cta-button" onClick={() => navigate('/create-profile')}>Create Your Profile</button>
+            <div style={{ textAlign: "center" }}>
+              <p
+                style={{
+                  marginBottom: "20px",
+                  color: "#666",
+                  fontWeight: "500",
+                }}
+              >
+                Welcome, {user.name || user.email}!
+              </p>
+              {/* Use navigate for profile creation */}
+              <button
+                className="cta-button"
+                onClick={() => navigate("/create-profile")}
+              >
+                Create Your Profile
+              </button>
             </div>
           ) : (
-            <button className="cta-button" onClick={handleGetStarted}>Get Started</button>
+            <button className="cta-button" onClick={handleGetStarted}>
+              Get Started
+            </button>
           )}
         </div>
       </section>
@@ -99,30 +158,68 @@ function App() {
       {/* Features Section */}
       <section className="features" id="features">
         <div className="container">
-          <h2 className="section-title">Features</h2>
+          <div className="features-header">
+            <h2 className="section-title">Everything you need to succeed</h2>
+            <p className="section-subtitle">
+              Powerful tools to connect, collaborate, and excel in your academic
+              journey
+            </p>
+          </div>
           <div className="features-grid">
             <div className="feature-card">
-              <div className="feature-icon">👥</div>
-              <h3>Social & Networking</h3>
-              <p>Add friends and connect with classmates through suggested connections based on shared courses and interests.</p>
+              <div className="feature-icon-wrapper">
+                <IconUsers size={28} className="feature-icon" />
+              </div>
+              <div className="feature-content">
+                <h3>Smart Connections</h3>
+                <p>
+                  Discover classmates through intelligent matching based on
+                  shared courses, interests, and academic goals.
+                </p>
+                <div className="feature-badge">Social</div>
+              </div>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">📚</div>
-              <h3>Academic Integration</h3>
-              <p>Upload schedules and transcripts to discover classmates in your courses across multiple universities.</p>
+              <div className="feature-icon-wrapper">
+                <IconBook size={28} className="feature-icon" />
+              </div>
+              <div className="feature-content">
+                <h3>Academic Sync</h3>
+                <p>
+                  Seamlessly upload and sync your schedules across multiple
+                  universities to find study partners.
+                </p>
+                <div className="feature-badge">Integration</div>
+              </div>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">🏘️</div>
-              <h3>Community Building</h3>
-              <p>Auto-generate Discord servers for each class and form study groups with like-minded students.</p>
+              <div className="feature-icon-wrapper">
+                <IconHome size={28} className="feature-icon" />
+              </div>
+              <div className="feature-content">
+                <h3>Community Hubs</h3>
+                <p>
+                  Auto-generated Discord servers and study groups for every
+                  class, fostering collaborative learning.
+                </p>
+                <div className="feature-badge">Community</div>
+              </div>
             </div>
 
             <div className="feature-card">
-              <div className="feature-icon">📊</div>
-              <h3>Insights & Analytics</h3>
-              <p>Access class statistics, grade distributions, and personalized academic recommendations.</p>
+              <div className="feature-icon-wrapper">
+                <IconChartBar size={28} className="feature-icon" />
+              </div>
+              <div className="feature-content">
+                <h3>Smart Insights</h3>
+                <p>
+                  Get personalized academic recommendations and insights based
+                  on class statistics and trends.
+                </p>
+                <div className="feature-badge">Analytics</div>
+              </div>
             </div>
           </div>
         </div>
@@ -131,12 +228,77 @@ function App() {
       {/* University Support */}
       <section className="universities" id="universities">
         <div className="container">
-          <h2 className="section-title">Multi-University Support</h2>
-          <div className="university-logos">
-            <div className="university-item">UT</div>
-            <div className="university-item">UH</div>
-            <div className="university-item">Rice</div>
-            <div className="university-item">+ More</div>
+          <div className="universities-header">
+            <h2 className="section-title">Trusted by students across Texas</h2>
+            <p className="section-subtitle">
+              Connect with classmates from leading universities and expand your
+              academic network
+            </p>
+          </div>
+          <div className="university-grid">
+            {/* <div className="university-card">
+              <div className="university-logo">
+                <img src={utLogo} alt="University of Texas" />
+              </div>
+              <div className="university-info">
+                <h3>University of Texas</h3>
+                <p>Austin</p>
+              </div>
+            </div> */}
+            <div className="university-card">
+              <div className="university-logo">
+                <img
+                  src="/University_of_Houston_Logo.svg"
+                  alt="University of Houston"
+                />
+              </div>
+              <div className="university-info">
+                <h3>University of Houston</h3>
+                <p>Houston</p>
+              </div>
+            </div>
+            <div className="university-card">
+              <div className="university-logo">
+                <img src="/Rice.webp" alt="Rice University" />
+              </div>
+              <div className="university-info">
+                <h3>Rice University</h3>
+                <p>Houston</p>
+              </div>
+            </div>
+            {/* <div className="university-card">
+              <div className="university-logo">
+                <img src={tamuLogo} alt="Texas A&M University" />
+              </div>
+              <div className="university-info">
+                <h3>Texas A&M</h3>
+                <p>College Station</p>
+              </div>
+            </div> */}
+            {/* <div className="university-card">
+              <div className="university-logo">
+                <img src={untLogo} alt="University of North Texas" />
+              </div>
+              <div className="university-info">
+                <h3>University of North Texas</h3>
+                <p>Denton</p>
+              </div>
+            </div> */}
+            <div className="university-card">
+              <div className="university-logo">
+                <img src="/UT_Dallas.png" alt="UT Dallas" />
+              </div>
+              <div className="university-info">
+                <h3>UT Dallas</h3>
+                <p>Richardson</p>
+              </div>
+            </div>
+          </div>
+          <div className="university-cta">
+            <p>
+              Don't see your university?{" "}
+              <a href="mailto:support@scedulr.com">Let us know!</a>
+            </p>
           </div>
         </div>
       </section>
@@ -145,15 +307,24 @@ function App() {
       <section className="cta-section" id="cta-section">
         <div className="container">
           <h2>Ready to transform your academic experience?</h2>
-          <button className="cta-button" onClick={handleGetStarted}>Join Scedulr</button>
+          <button className="cta-button" onClick={handleGetStarted}>
+            Join Scedulr
+          </button>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Scedulr. Built for students, by students.</p>
-          <p><a href="mailto:info@hackrice15.com" style={{ color: '#b0b0b0', textDecoration: 'none' }}>info@hackrice15.com</a></p>
+          <p>&copy; 2025 Scedulr. Built for students, by students.</p>
+          <p>
+            <a
+              href="mailto:info@email.com"
+              style={{ color: "#888", textDecoration: "none" }}
+            >
+              info@email.com
+            </a>
+          </p>
         </div>
       </footer>
     </div>
@@ -171,34 +342,51 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPageContent />} />
-      <Route path="/create-profile" element={<UserProfileForm onSubmit={handleProfileSubmit} initialData={userData} />} />
-
-      {/* Authenticated routes nested under MainLayout */}
-      <Route element={<ProtectedRoute><MainLayout userData={userData} onLogout={handleLogout} /></ProtectedRoute>}>
-        <Route
-          path="/dashboard"
-          element={
-            <DashboardPage
-              userData={userData}
-              onScheduleUpdate={handleUserScheduleUpdate}
-              userSchedule={userSchedule}
-            />
-          }
-        />
-        <Route
-          path="/dashboard/matcher"
-          element={<MatcherPage currentUserSchedule={userSchedule} />}
-        />
-        <Route
-          path="/dashboard/profile"
-          element={<ProfileDetailsPage userData={userData} />}
-        />
-      </Route>
-
-      {/* Catch all for unhandled paths */}
+      <Route
+        path="/create-profile"
+        element={
+          <UserProfileForm
+            onSubmit={handleProfileSubmit}
+            initialData={userData}
+          />
+        }
+      />
+      <Route
+        path="/dashboard"
+        element={
+          <DashboardPage
+            userData={userData}
+            onBackToDashboard={handleNavigateToDashboard}
+            onNavigateToMatcher={handleNavigateToMatcher}
+            onNavigateToProfileDetails={handleNavigateToProfileDetails}
+            onScheduleUpdate={handleUserScheduleUpdate}
+            userSchedule={userSchedule}
+            onLogout={handleLogout}
+          />
+        }
+      />
+      <Route
+        path="/dashboard/matcher"
+        element={
+          <MatcherPage
+            onBackToDashboard={handleNavigateToDashboard}
+            currentUserSchedule={userSchedule}
+          />
+        }
+      />
+      <Route
+        path="/dashboard/profile"
+        element={
+          <ProfileDetailsPage
+            userData={userData}
+            onBackToDashboard={handleNavigateToDashboard}
+          />
+        }
+      />
+      {/* Redirect any unhandled paths to the landing page or a 404 page */}
       <Route path="*" element={<LandingPageContent />} />
     </Routes>
   );
 }
 
-export default App
+export default App;
