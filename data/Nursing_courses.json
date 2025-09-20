@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Nursing",
+    "code": "NURS 1501",
+    "title": "Fundamentals of Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 1247",
+    "title": "Fundamentals of Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 2184",
+    "title": "Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 1051 or equivalent"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 2291",
+    "title": "Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "NURS 1328 or equivalent"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 3596",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 2758 and junior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 3907",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 2426 and junior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 3893",
+    "title": "Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 2997 and junior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 4389",
+    "title": "Special Topics in Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 3049 and senior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 4309",
+    "title": "Special Topics in Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 3773 and senior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 4776",
+    "title": "Senior Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 3860 and senior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 6953",
+    "title": "Advanced Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 3197 and senior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 7057",
+    "title": "Special Topics in Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "NURS 3033 and senior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 7357",
+    "title": "Advanced Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 3122 and senior standing"
+  },
+  {
+    "department": "Nursing",
+    "code": "NURS 7464",
+    "title": "Advanced Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "NURS 3495 and senior standing"
+  }
+]

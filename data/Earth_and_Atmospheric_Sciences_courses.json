@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 1207",
+    "title": "Introduction to Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 1488",
+    "title": "Principles of Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 2796",
+    "title": "Intermediate Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "GEOS 1542 or equivalent"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 2224",
+    "title": "Intermediate Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "GEOS 1369 or equivalent"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 3077",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "GEOS 2913 and junior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 3562",
+    "title": "Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "GEOS 2964 and junior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 3142",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "GEOS 2572 and junior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 4822",
+    "title": "Special Topics in Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "GEOS 3321 and senior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 4073",
+    "title": "Advanced Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "GEOS 3054 and senior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 4046",
+    "title": "Senior Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "GEOS 3559 and senior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 7727",
+    "title": "Special Topics in Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "GEOS 3049 and senior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 6060",
+    "title": "Special Topics in Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "GEOS 3195 and senior standing"
+  },
+  {
+    "department": "Earth and Atmospheric Sciences",
+    "code": "GEOS 7672",
+    "title": "Special Topics in Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "GEOS 3184 and senior standing"
+  }
+]

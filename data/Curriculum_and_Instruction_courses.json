@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 1076",
+    "title": "Fundamentals of Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 1672",
+    "title": "Principles of Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 2112",
+    "title": "Intermediate Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CUIN 1908 or equivalent"
+  },
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 2707",
+    "title": "Intermediate Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CUIN 1825 or equivalent"
+  },
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 3178",
+    "title": "Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CUIN 2850 and junior standing"
+  },
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 3052",
+    "title": "Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CUIN 2701 and junior standing"
+  },
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 3075",
+    "title": "Advanced Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CUIN 2139 and junior standing"
+  },
+  {
+    "department": "Curriculum and Instruction",
+    "code": "CUIN 4159",
+    "title": "Special Topics in Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "CUIN 3832 and senior standing"
+  }
+]

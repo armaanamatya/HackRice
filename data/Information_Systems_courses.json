@@ -1,0 +1,74 @@
+[
+  {
+    "department": "Information Systems",
+    "code": "ISDS 1209",
+    "title": "Introduction to Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 1456",
+    "title": "Principles of Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 2125",
+    "title": "Applied Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ISDS 1985 or equivalent"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 2360",
+    "title": "Applied Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "ISDS 1193 or equivalent"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 3238",
+    "title": "Advanced Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ISDS 2829 and junior standing"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 3257",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ISDS 2461 and junior standing"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 3866",
+    "title": "Advanced Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "ISDS 2321 and junior standing"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 4011",
+    "title": "Special Topics in Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ISDS 3244 and senior standing"
+  },
+  {
+    "department": "Information Systems",
+    "code": "ISDS 4991",
+    "title": "Senior Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ISDS 3241 and senior standing"
+  }
+]

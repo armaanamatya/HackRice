@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Biology",
+    "code": "BIOL 1103",
+    "title": "Fundamentals of Microbiology",
+    "description": "Advanced exploration of microbiology covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 1373",
+    "title": "Principles of Bioinformatics",
+    "description": "Comprehensive study of bioinformatics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 2251",
+    "title": "Molecular Biology",
+    "description": "Comprehensive study of molecular biology with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "BIOL 1321 or equivalent"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 2195",
+    "title": "Applied Physiology",
+    "description": "Advanced exploration of physiology covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "BIOL 1378 or equivalent"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 3072",
+    "title": "Advanced Genetics",
+    "description": "Examination of key concepts and methodologies in genetics. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "BIOL 2031 and junior standing"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 3956",
+    "title": "Advanced Biochemistry",
+    "description": "Advanced exploration of biochemistry covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "BIOL 2675 and junior standing"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 3150",
+    "title": "Advanced Biochemistry",
+    "description": "Examination of key concepts and methodologies in biochemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOL 2842 and junior standing"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 4218",
+    "title": "Advanced Molecular Biology",
+    "description": "In-depth analysis of molecular biology principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "BIOL 3131 and senior standing"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 4555",
+    "title": "Senior Bioinformatics",
+    "description": "In-depth analysis of bioinformatics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOL 3615 and senior standing"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 4218",
+    "title": "Senior Bioinformatics",
+    "description": "Fundamental concepts and applications of bioinformatics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "BIOL 3309 and senior standing"
+  },
+  {
+    "department": "Biology",
+    "code": "BIOL 6857",
+    "title": "Advanced Physiology",
+    "description": "Comprehensive study of physiology with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOL 3359 and senior standing"
+  }
+]

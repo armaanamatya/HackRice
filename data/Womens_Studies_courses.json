@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 1837",
+    "title": "Principles of Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 1930",
+    "title": "Fundamentals of Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 2909",
+    "title": "Intermediate Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 1716 or equivalent"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 2459",
+    "title": "Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 1437 or equivalent"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 3010",
+    "title": "Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 2433 and junior standing"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 3999",
+    "title": "Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "WOMS 2013 and junior standing"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 3718",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 2601 and junior standing"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 4437",
+    "title": "Special Topics in Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 3694 and senior standing"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 4581",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 3064 and senior standing"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 4082",
+    "title": "Advanced Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 3508 and senior standing"
+  },
+  {
+    "department": "Women's Studies",
+    "code": "WOMS 6245",
+    "title": "Special Topics in Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "WOMS 3638 and senior standing"
+  }
+]

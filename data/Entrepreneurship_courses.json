@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 1737",
+    "title": "Principles of Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 1199",
+    "title": "Fundamentals of Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 2112",
+    "title": "Intermediate Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 1631 or equivalent"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 2691",
+    "title": "Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 1489 or equivalent"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 3100",
+    "title": "Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 2243 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 3252",
+    "title": "Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 2325 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 3100",
+    "title": "Advanced Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 2775 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 4179",
+    "title": "Senior Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 3043 and senior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 4599",
+    "title": "Senior Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 3178 and senior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 4986",
+    "title": "Special Topics in Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 3461 and senior standing"
+  }
+]

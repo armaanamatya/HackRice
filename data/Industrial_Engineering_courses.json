@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 1218",
+    "title": "Introduction to Systems",
+    "description": "Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 1704",
+    "title": "Principles of Ethics",
+    "description": "Fundamental concepts and applications of ethics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 2313",
+    "title": "Applied Design",
+    "description": "Comprehensive study of design with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "INDE 1614 or equivalent"
+  },
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 2635",
+    "title": "Intermediate Design",
+    "description": "Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "INDE 1076 or equivalent"
+  },
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 3195",
+    "title": "Advanced Ethics",
+    "description": "Examination of key concepts and methodologies in ethics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "INDE 2461 and junior standing"
+  },
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 3269",
+    "title": "Design",
+    "description": "In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "INDE 2027 and junior standing"
+  },
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 3041",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "INDE 2331 and junior standing"
+  },
+  {
+    "department": "Industrial Engineering",
+    "code": "INDE 4356",
+    "title": "Senior Project Management",
+    "description": "Fundamental concepts and applications of project management. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "INDE 3931 and senior standing"
+  }
+]

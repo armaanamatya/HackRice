@@ -1,0 +1,74 @@
+[
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 1408",
+    "title": "Principles of Thermodynamics",
+    "description": "Comprehensive study of thermodynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 1264",
+    "title": "Principles of Materials",
+    "description": "Comprehensive study of materials with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 2402",
+    "title": "Applied Materials",
+    "description": "Comprehensive study of materials with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 1909 or equivalent"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 2624",
+    "title": "Applied Controls",
+    "description": "Examination of key concepts and methodologies in controls. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 1898 or equivalent"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 3406",
+    "title": "Advanced Systems",
+    "description": "Advanced exploration of systems covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "EECE 2765 and junior standing"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 3166",
+    "title": "Advanced Systems",
+    "description": "In-depth analysis of systems principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 2146 and junior standing"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 3723",
+    "title": "Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 2779 and junior standing"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 4933",
+    "title": "Special Topics in Dynamics",
+    "description": "In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 3300 and senior standing"
+  },
+  {
+    "department": "Electrical Engineering",
+    "code": "EECE 4351",
+    "title": "Senior Ethics",
+    "description": "Advanced exploration of ethics covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "EECE 3884 and senior standing"
+  }
+]

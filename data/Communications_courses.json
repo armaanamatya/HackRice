@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Communications",
+    "code": "COMM 1754",
+    "title": "Fundamentals of Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 1746",
+    "title": "Fundamentals of Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 2376",
+    "title": "Intermediate Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COMM 1491 or equivalent"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 2889",
+    "title": "Applied Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "COMM 1829 or equivalent"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 3243",
+    "title": "Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "COMM 2664 and junior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 3837",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "COMM 2620 and junior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 3399",
+    "title": "Advanced Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "COMM 2716 and junior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 4017",
+    "title": "Senior Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "COMM 3366 and senior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 4690",
+    "title": "Special Topics in Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "COMM 3928 and senior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 4882",
+    "title": "Special Topics in Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "COMM 3417 and senior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 6965",
+    "title": "Advanced Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "COMM 3669 and senior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 7608",
+    "title": "Advanced Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "COMM 3200 and senior standing"
+  },
+  {
+    "department": "Communications",
+    "code": "COMM 6408",
+    "title": "Advanced Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "COMM 3475 and senior standing"
+  }
+]

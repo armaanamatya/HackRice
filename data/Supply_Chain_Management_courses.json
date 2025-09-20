@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 1633",
+    "title": "Introduction to Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 1458",
+    "title": "Fundamentals of Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 2783",
+    "title": "Intermediate Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "SCM 1656 or equivalent"
+  },
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 2144",
+    "title": "Applied Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "SCM 1787 or equivalent"
+  },
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 3414",
+    "title": "Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "SCM 2625 and junior standing"
+  },
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 3695",
+    "title": "Advanced Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SCM 2612 and junior standing"
+  },
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 3153",
+    "title": "Advanced Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SCM 2235 and junior standing"
+  },
+  {
+    "department": "Supply Chain Management",
+    "code": "SCM 4452",
+    "title": "Senior Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "SCM 3491 and senior standing"
+  }
+]

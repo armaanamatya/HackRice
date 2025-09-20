@@ -1,0 +1,18 @@
+[
+  {
+    "department": "Engineering",
+    "code": "ENGR 1100",
+    "title": "Introduction to Engineering",
+    "description": "Introduction to engineering profession, problem solving, design process, and teamwork.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Engineering",
+    "code": "ENGR 1331",
+    "title": "Introduction to Computing",
+    "description": "Introduction to computing for engineers using programming languages and software tools.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  }
+]

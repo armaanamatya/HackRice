@@ -1,0 +1,74 @@
+[
+  {
+    "department": "African American Studies",
+    "code": "AFAS 1238",
+    "title": "Fundamentals of Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 1854",
+    "title": "Principles of Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 2637",
+    "title": "Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "AFAS 1788 or equivalent"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 2748",
+    "title": "Applied Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "AFAS 1546 or equivalent"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 3377",
+    "title": "Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "AFAS 2101 and junior standing"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 3936",
+    "title": "Advanced Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "AFAS 2054 and junior standing"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 3567",
+    "title": "Advanced Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "AFAS 2390 and junior standing"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 4796",
+    "title": "Special Topics in Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "AFAS 3551 and senior standing"
+  },
+  {
+    "department": "African American Studies",
+    "code": "AFAS 4799",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "AFAS 3553 and senior standing"
+  }
+]

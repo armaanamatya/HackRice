@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Music",
+    "code": "MUSI 1943",
+    "title": "Introduction to Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 1715",
+    "title": "Principles of Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 2294",
+    "title": "Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 1212 or equivalent"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 2445",
+    "title": "Applied Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 1099 or equivalent"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 3473",
+    "title": "Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 2825 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 3270",
+    "title": "Advanced Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 2915 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 3296",
+    "title": "Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 2047 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 4343",
+    "title": "Senior Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "MUSI 3533 and senior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 4864",
+    "title": "Advanced Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 3828 and senior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 4285",
+    "title": "Senior Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 3478 and senior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 7652",
+    "title": "Advanced Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "MUSI 3520 and senior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 7385",
+    "title": "Special Topics in Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "MUSI 3180 and senior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 7643",
+    "title": "Senior Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 3247 and senior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 6031",
+    "title": "Senior Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 3869 and senior standing"
+  }
+]

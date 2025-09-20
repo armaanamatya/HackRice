@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Spanish",
+    "code": "SPAN 1136",
+    "title": "Introduction to Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Spanish",
+    "code": "SPAN 1773",
+    "title": "Fundamentals of Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Spanish",
+    "code": "SPAN 2539",
+    "title": "Intermediate Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "SPAN 1621 or equivalent"
+  },
+  {
+    "department": "Spanish",
+    "code": "SPAN 2846",
+    "title": "Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SPAN 1729 or equivalent"
+  },
+  {
+    "department": "Spanish",
+    "code": "SPAN 3613",
+    "title": "Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "SPAN 2903 and junior standing"
+  },
+  {
+    "department": "Spanish",
+    "code": "SPAN 3465",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "SPAN 2455 and junior standing"
+  },
+  {
+    "department": "Spanish",
+    "code": "SPAN 3450",
+    "title": "Advanced Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "SPAN 2893 and junior standing"
+  },
+  {
+    "department": "Spanish",
+    "code": "SPAN 4776",
+    "title": "Special Topics in Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SPAN 3425 and senior standing"
+  }
+]

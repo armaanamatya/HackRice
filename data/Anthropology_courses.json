@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Anthropology",
+    "code": "ANTH 1446",
+    "title": "Introduction to Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 1160",
+    "title": "Principles of Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 2085",
+    "title": "Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 1088 or equivalent"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 2687",
+    "title": "Intermediate Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 1519 or equivalent"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 3103",
+    "title": "Advanced Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "ANTH 2668 and junior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 3872",
+    "title": "Advanced Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 2431 and junior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 3845",
+    "title": "Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 2910 and junior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 4521",
+    "title": "Advanced Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 3097 and senior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 4308",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 3459 and senior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 4204",
+    "title": "Advanced Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 3060 and senior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 6574",
+    "title": "Advanced Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 3470 and senior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 7076",
+    "title": "Senior Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 3273 and senior standing"
+  }
+]

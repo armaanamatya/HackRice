@@ -1,0 +1,641 @@
+department,code,title,description,credit_hours,prerequisites
+Biomedical Engineering,BIOE 1825,Principles of Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,None
+Biomedical Engineering,BIOE 1540,Principles of Ethics,Examination of key concepts and methodologies in ethics. Includes hands-on experience and case studies.,1,None
+Biomedical Engineering,BIOE 2945,Systems,Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.,3,BIOE 1526 or equivalent
+Biomedical Engineering,BIOE 2163,Thermodynamics,Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.,3,BIOE 1643 or equivalent
+Biomedical Engineering,BIOE 3090,Advanced Design,Comprehensive study of design with emphasis on theoretical foundations and practical applications.,4,BIOE 2816 and junior standing
+Biomedical Engineering,BIOE 3363,Controls,Examination of key concepts and methodologies in controls. Includes hands-on experience and case studies.,3,BIOE 2779 and junior standing
+Biomedical Engineering,BIOE 3146,Innovation,Advanced exploration of innovation covering current research and industry practices.,4,BIOE 2505 and junior standing
+Biomedical Engineering,BIOE 4901,Advanced Project Management,In-depth analysis of project management principles. Students will develop critical thinking and problem-solving skills.,4,BIOE 3780 and senior standing
+Biomedical Engineering,BIOE 4882,Advanced Thermodynamics,In-depth analysis of thermodynamics principles. Students will develop critical thinking and problem-solving skills.,2,BIOE 3911 and senior standing
+Biomedical Engineering,BIOE 4687,Advanced Project Management,Comprehensive study of project management with emphasis on theoretical foundations and practical applications.,2,BIOE 3164 and senior standing
+Chemical Engineering,CHEE 1195,Fundamentals of Ethics,Comprehensive study of ethics with emphasis on theoretical foundations and practical applications.,1,None
+Chemical Engineering,CHEE 1585,Introduction to Thermodynamics,Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.,3,None
+Chemical Engineering,CHEE 2735,Applied Systems,Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.,3,CHEE 1595 or equivalent
+Chemical Engineering,CHEE 2863,Design,In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.,3,CHEE 1085 or equivalent
+Chemical Engineering,CHEE 3279,Advanced Dynamics,Advanced exploration of dynamics covering current research and industry practices.,3,CHEE 2749 and junior standing
+Chemical Engineering,CHEE 3008,Advanced Systems,Comprehensive study of systems with emphasis on theoretical foundations and practical applications.,3,CHEE 2414 and junior standing
+Chemical Engineering,CHEE 3737,Thermodynamics,Comprehensive study of thermodynamics with emphasis on theoretical foundations and practical applications.,3,CHEE 2108 and junior standing
+Chemical Engineering,CHEE 4939,Advanced Controls,Advanced exploration of controls covering current research and industry practices.,4,CHEE 3289 and senior standing
+Chemical Engineering,CHEE 4974,Senior Dynamics,Advanced exploration of dynamics covering current research and industry practices.,2,CHEE 3396 and senior standing
+Chemical Engineering,CHEE 4451,Advanced Innovation,Comprehensive study of innovation with emphasis on theoretical foundations and practical applications.,3,CHEE 3891 and senior standing
+Chemical Engineering,CHEE 7581,Advanced Analysis,Advanced exploration of analysis covering current research and industry practices.,3,CHEE 3262 and senior standing
+Chemical Engineering,CHEE 6093,Advanced Materials,In-depth analysis of materials principles. Students will develop critical thinking and problem-solving skills.,3,CHEE 3108 and senior standing
+Chemical Engineering,CHEE 7358,Advanced Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,2,CHEE 3737 and senior standing
+Chemical Engineering,CHEE 6784,Special Topics in Materials,Comprehensive study of materials with emphasis on theoretical foundations and practical applications.,3,CHEE 3987 and senior standing
+Civil Engineering,CIVE 1864,Principles of Thermodynamics,Fundamental concepts and applications of thermodynamics. Designed for students pursuing careers in related fields.,3,None
+Civil Engineering,CIVE 1758,Introduction to Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,None
+Civil Engineering,CIVE 2130,Applied Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,3,CIVE 1802 or equivalent
+Civil Engineering,CIVE 2582,Thermodynamics,Comprehensive study of thermodynamics with emphasis on theoretical foundations and practical applications.,3,CIVE 1047 or equivalent
+Civil Engineering,CIVE 3389,Ethics,Examination of key concepts and methodologies in ethics. Includes hands-on experience and case studies.,3,CIVE 2749 and junior standing
+Civil Engineering,CIVE 3869,Ethics,Advanced exploration of ethics covering current research and industry practices.,3,CIVE 2431 and junior standing
+Civil Engineering,CIVE 3871,Advanced Analysis,Advanced exploration of analysis covering current research and industry practices.,4,CIVE 2081 and junior standing
+Civil Engineering,CIVE 4573,Special Topics in Controls,Comprehensive study of controls with emphasis on theoretical foundations and practical applications.,3,CIVE 3356 and senior standing
+Civil Engineering,CIVE 4275,Special Topics in Project Management,Advanced exploration of project management covering current research and industry practices.,3,CIVE 3014 and senior standing
+Computer Engineering,EECE 1206,Fundamentals of Design,Fundamental concepts and applications of design. Designed for students pursuing careers in related fields.,3,None
+Computer Engineering,EECE 1499,Fundamentals of Dynamics,Examination of key concepts and methodologies in dynamics. Includes hands-on experience and case studies.,4,None
+Computer Engineering,EECE 2794,Systems,In-depth analysis of systems principles. Students will develop critical thinking and problem-solving skills.,2,EECE 1364 or equivalent
+Computer Engineering,EECE 2508,Intermediate Thermodynamics,Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.,4,EECE 1605 or equivalent
+Computer Engineering,EECE 3000,Controls,In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.,3,EECE 2756 and junior standing
+Computer Engineering,EECE 3733,Innovation,Advanced exploration of innovation covering current research and industry practices.,3,EECE 2170 and junior standing
+Computer Engineering,EECE 3644,Design,In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.,3,EECE 2853 and junior standing
+Computer Engineering,EECE 4597,Special Topics in Materials,Comprehensive study of materials with emphasis on theoretical foundations and practical applications.,3,EECE 3726 and senior standing
+Computer Engineering,EECE 4605,Special Topics in Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,EECE 3757 and senior standing
+Computer Engineering,EECE 4254,Advanced Design,In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.,3,EECE 3993 and senior standing
+Electrical Engineering,EECE 1408,Principles of Thermodynamics,Comprehensive study of thermodynamics with emphasis on theoretical foundations and practical applications.,3,None
+Electrical Engineering,EECE 1264,Principles of Materials,Comprehensive study of materials with emphasis on theoretical foundations and practical applications.,4,None
+Electrical Engineering,EECE 2402,Applied Materials,Comprehensive study of materials with emphasis on theoretical foundations and practical applications.,3,EECE 1909 or equivalent
+Electrical Engineering,EECE 2624,Applied Controls,Examination of key concepts and methodologies in controls. Includes hands-on experience and case studies.,3,EECE 1898 or equivalent
+Electrical Engineering,EECE 3406,Advanced Systems,Advanced exploration of systems covering current research and industry practices.,4,EECE 2765 and junior standing
+Electrical Engineering,EECE 3166,Advanced Systems,In-depth analysis of systems principles. Students will develop critical thinking and problem-solving skills.,3,EECE 2146 and junior standing
+Electrical Engineering,EECE 3723,Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,EECE 2779 and junior standing
+Electrical Engineering,EECE 4933,Special Topics in Dynamics,In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.,3,EECE 3300 and senior standing
+Electrical Engineering,EECE 4351,Senior Ethics,Advanced exploration of ethics covering current research and industry practices.,2,EECE 3884 and senior standing
+Industrial Engineering,INDE 1218,Introduction to Systems,Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.,3,None
+Industrial Engineering,INDE 1704,Principles of Ethics,Fundamental concepts and applications of ethics. Designed for students pursuing careers in related fields.,3,None
+Industrial Engineering,INDE 2313,Applied Design,Comprehensive study of design with emphasis on theoretical foundations and practical applications.,3,INDE 1614 or equivalent
+Industrial Engineering,INDE 2635,Intermediate Design,Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.,3,INDE 1076 or equivalent
+Industrial Engineering,INDE 3195,Advanced Ethics,Examination of key concepts and methodologies in ethics. Includes hands-on experience and case studies.,3,INDE 2461 and junior standing
+Industrial Engineering,INDE 3269,Design,In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.,3,INDE 2027 and junior standing
+Industrial Engineering,INDE 3041,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,3,INDE 2331 and junior standing
+Industrial Engineering,INDE 4356,Senior Project Management,Fundamental concepts and applications of project management. Designed for students pursuing careers in related fields.,4,INDE 3931 and senior standing
+Mechanical Engineering,MECE 1695,Fundamentals of Ethics,Comprehensive study of ethics with emphasis on theoretical foundations and practical applications.,1,None
+Mechanical Engineering,MECE 1867,Principles of Systems,Comprehensive study of systems with emphasis on theoretical foundations and practical applications.,2,None
+Mechanical Engineering,MECE 2111,Intermediate Innovation,Examination of key concepts and methodologies in innovation. Includes hands-on experience and case studies.,3,MECE 1552 or equivalent
+Mechanical Engineering,MECE 2214,Intermediate Dynamics,Advanced exploration of dynamics covering current research and industry practices.,2,MECE 1986 or equivalent
+Mechanical Engineering,MECE 3841,Advanced Systems,In-depth analysis of systems principles. Students will develop critical thinking and problem-solving skills.,4,MECE 2801 and junior standing
+Mechanical Engineering,MECE 3560,Innovation,Comprehensive study of innovation with emphasis on theoretical foundations and practical applications.,3,MECE 2683 and junior standing
+Mechanical Engineering,MECE 3625,Materials,In-depth analysis of materials principles. Students will develop critical thinking and problem-solving skills.,3,MECE 2421 and junior standing
+Mechanical Engineering,MECE 4798,Advanced Systems,Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.,3,MECE 3280 and senior standing
+Mechanical Engineering,MECE 4922,Advanced Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,MECE 3888 and senior standing
+Mechanical Engineering,MECE 4173,Senior Materials,Comprehensive study of materials with emphasis on theoretical foundations and practical applications.,4,MECE 3730 and senior standing
+Mechanical Engineering,MECE 6728,Senior Thermodynamics,Advanced exploration of thermodynamics covering current research and industry practices.,3,MECE 3864 and senior standing
+Mechanical Engineering,MECE 6689,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,MECE 3109 and senior standing
+Mechanical Engineering,MECE 7318,Senior Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,MECE 3766 and senior standing
+Petroleum Engineering,PETE 1702,Fundamentals of Materials,Fundamental concepts and applications of materials. Designed for students pursuing careers in related fields.,3,None
+Petroleum Engineering,PETE 1321,Fundamentals of Systems,Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.,3,None
+Petroleum Engineering,PETE 2996,Applied Thermodynamics,Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.,3,PETE 1108 or equivalent
+Petroleum Engineering,PETE 2663,Materials,Advanced exploration of materials covering current research and industry practices.,3,PETE 1418 or equivalent
+Petroleum Engineering,PETE 3825,Materials,Advanced exploration of materials covering current research and industry practices.,3,PETE 2821 and junior standing
+Petroleum Engineering,PETE 3123,Innovation,Fundamental concepts and applications of innovation. Designed for students pursuing careers in related fields.,3,PETE 2863 and junior standing
+Petroleum Engineering,PETE 3176,Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,PETE 2605 and junior standing
+Petroleum Engineering,PETE 4166,Advanced Thermodynamics,Fundamental concepts and applications of thermodynamics. Designed for students pursuing careers in related fields.,3,PETE 3919 and senior standing
+Biology,BIOL 1103,Fundamentals of Microbiology,Advanced exploration of microbiology covering current research and industry practices.,3,None
+Biology,BIOL 1373,Principles of Bioinformatics,Comprehensive study of bioinformatics with emphasis on theoretical foundations and practical applications.,4,None
+Biology,BIOL 2251,Molecular Biology,Comprehensive study of molecular biology with emphasis on theoretical foundations and practical applications.,3,BIOL 1321 or equivalent
+Biology,BIOL 2195,Applied Physiology,Advanced exploration of physiology covering current research and industry practices.,4,BIOL 1378 or equivalent
+Biology,BIOL 3072,Advanced Genetics,Examination of key concepts and methodologies in genetics. Includes hands-on experience and case studies.,2,BIOL 2031 and junior standing
+Biology,BIOL 3956,Advanced Biochemistry,Advanced exploration of biochemistry covering current research and industry practices.,2,BIOL 2675 and junior standing
+Biology,BIOL 3150,Advanced Biochemistry,Examination of key concepts and methodologies in biochemistry. Includes hands-on experience and case studies.,3,BIOL 2842 and junior standing
+Biology,BIOL 4218,Advanced Molecular Biology,In-depth analysis of molecular biology principles. Students will develop critical thinking and problem-solving skills.,3,BIOL 3131 and senior standing
+Biology,BIOL 4555,Senior Bioinformatics,In-depth analysis of bioinformatics principles. Students will develop critical thinking and problem-solving skills.,4,BIOL 3615 and senior standing
+Biology,BIOL 4218,Senior Bioinformatics,Fundamental concepts and applications of bioinformatics. Designed for students pursuing careers in related fields.,3,BIOL 3309 and senior standing
+Biology,BIOL 6857,Advanced Physiology,Comprehensive study of physiology with emphasis on theoretical foundations and practical applications.,4,BIOL 3359 and senior standing
+Biochemistry,BIOC 1769,Principles of Physical Chemistry,In-depth analysis of physical chemistry principles. Students will develop critical thinking and problem-solving skills.,3,None
+Biochemistry,BIOC 1917,Introduction to Physical Chemistry,Examination of key concepts and methodologies in physical chemistry. Includes hands-on experience and case studies.,3,None
+Biochemistry,BIOC 2341,Applied Analytical Chemistry,Examination of key concepts and methodologies in analytical chemistry. Includes hands-on experience and case studies.,2,BIOC 1426 or equivalent
+Biochemistry,BIOC 2431,Applied Organic Chemistry,Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.,4,BIOC 1065 or equivalent
+Biochemistry,BIOC 3497,Environmental Chemistry,Comprehensive study of environmental chemistry with emphasis on theoretical foundations and practical applications.,3,BIOC 2877 and junior standing
+Biochemistry,BIOC 3132,Environmental Chemistry,In-depth analysis of environmental chemistry principles. Students will develop critical thinking and problem-solving skills.,3,BIOC 2623 and junior standing
+Biochemistry,BIOC 3411,Advanced Medicinal Chemistry,Comprehensive study of medicinal chemistry with emphasis on theoretical foundations and practical applications.,3,BIOC 2673 and junior standing
+Biochemistry,BIOC 4096,Special Topics in Physical Chemistry,Fundamental concepts and applications of physical chemistry. Designed for students pursuing careers in related fields.,3,BIOC 3356 and senior standing
+Biochemistry,BIOC 4823,Special Topics in Inorganic Chemistry,Fundamental concepts and applications of inorganic chemistry. Designed for students pursuing careers in related fields.,3,BIOC 3464 and senior standing
+Biochemistry,BIOC 4402,Special Topics in Physical Chemistry,In-depth analysis of physical chemistry principles. Students will develop critical thinking and problem-solving skills.,3,BIOC 3543 and senior standing
+Biochemistry,BIOC 7715,Advanced Inorganic Chemistry,Examination of key concepts and methodologies in inorganic chemistry. Includes hands-on experience and case studies.,1,BIOC 3242 and senior standing
+Biochemistry,BIOC 6332,Advanced Physical Chemistry,Examination of key concepts and methodologies in physical chemistry. Includes hands-on experience and case studies.,3,BIOC 3724 and senior standing
+Biochemistry,BIOC 7985,Senior Biochemistry,Advanced exploration of biochemistry covering current research and industry practices.,3,BIOC 3529 and senior standing
+Biochemistry,BIOC 6034,Senior Environmental Chemistry,Examination of key concepts and methodologies in environmental chemistry. Includes hands-on experience and case studies.,3,BIOC 3052 and senior standing
+Biochemistry,BIOC 7256,Senior Biochemistry,Comprehensive study of biochemistry with emphasis on theoretical foundations and practical applications.,4,BIOC 3110 and senior standing
+Chemistry,CHEM 1930,Fundamentals of Biochemistry,Examination of key concepts and methodologies in biochemistry. Includes hands-on experience and case studies.,3,None
+Chemistry,CHEM 1763,Introduction to Biochemistry,In-depth analysis of biochemistry principles. Students will develop critical thinking and problem-solving skills.,1,None
+Chemistry,CHEM 2334,Applied Organic Chemistry,Advanced exploration of organic chemistry covering current research and industry practices.,3,CHEM 1560 or equivalent
+Chemistry,CHEM 2471,Intermediate Environmental Chemistry,Examination of key concepts and methodologies in environmental chemistry. Includes hands-on experience and case studies.,3,CHEM 1728 or equivalent
+Chemistry,CHEM 3557,Medicinal Chemistry,Advanced exploration of medicinal chemistry covering current research and industry practices.,3,CHEM 2660 and junior standing
+Chemistry,CHEM 3053,Biochemistry,Fundamental concepts and applications of biochemistry. Designed for students pursuing careers in related fields.,3,CHEM 2068 and junior standing
+Chemistry,CHEM 3530,Organic Chemistry,Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.,3,CHEM 2466 and junior standing
+Chemistry,CHEM 4364,Senior Analytical Chemistry,In-depth analysis of analytical chemistry principles. Students will develop critical thinking and problem-solving skills.,3,CHEM 3938 and senior standing
+Computer Science,COSC 1802,Principles of Web Development,Comprehensive study of web development with emphasis on theoretical foundations and practical applications.,2,None
+Computer Science,COSC 1218,Principles of Machine Learning,Advanced exploration of machine learning covering current research and industry practices.,3,None
+Computer Science,COSC 2158,Intermediate Database Systems,Comprehensive study of database systems with emphasis on theoretical foundations and practical applications.,3,COSC 1867 or equivalent
+Computer Science,COSC 2788,Web Development,Examination of key concepts and methodologies in web development. Includes hands-on experience and case studies.,2,COSC 1434 or equivalent
+Computer Science,COSC 3312,Advanced Algorithms,Examination of key concepts and methodologies in algorithms. Includes hands-on experience and case studies.,3,COSC 2433 and junior standing
+Computer Science,COSC 3186,Advanced Programming,In-depth analysis of programming principles. Students will develop critical thinking and problem-solving skills.,2,COSC 2036 and junior standing
+Computer Science,COSC 3249,Machine Learning,Examination of key concepts and methodologies in machine learning. Includes hands-on experience and case studies.,1,COSC 2458 and junior standing
+Computer Science,COSC 4159,Senior Web Development,Examination of key concepts and methodologies in web development. Includes hands-on experience and case studies.,3,COSC 3800 and senior standing
+Computer Science,COSC 4157,Special Topics in Artificial Intelligence,Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.,3,COSC 3332 and senior standing
+Computer Science,COSC 4928,Advanced Algorithms,Comprehensive study of algorithms with emphasis on theoretical foundations and practical applications.,3,COSC 3377 and senior standing
+Computer Science,COSC 6176,Advanced Cybersecurity,Fundamental concepts and applications of cybersecurity. Designed for students pursuing careers in related fields.,3,COSC 3822 and senior standing
+Computer Science,COSC 7195,Special Topics in Data Structures,Comprehensive study of data structures with emphasis on theoretical foundations and practical applications.,4,COSC 3567 and senior standing
+Computer Science,COSC 6178,Senior Computer Networks,Comprehensive study of computer networks with emphasis on theoretical foundations and practical applications.,4,COSC 3206 and senior standing
+Computer Science,COSC 7456,Special Topics in Artificial Intelligence,Comprehensive study of artificial intelligence with emphasis on theoretical foundations and practical applications.,3,COSC 3684 and senior standing
+Computer Science,COSC 6048,Special Topics in Web Development,Advanced exploration of web development covering current research and industry practices.,3,COSC 3423 and senior standing
+Earth and Atmospheric Sciences,GEOS 1207,Introduction to Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,2,None
+Earth and Atmospheric Sciences,GEOS 1488,Principles of Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,None
+Earth and Atmospheric Sciences,GEOS 2796,Intermediate Practice,Advanced exploration of practice covering current research and industry practices.,3,GEOS 1542 or equivalent
+Earth and Atmospheric Sciences,GEOS 2224,Intermediate Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,GEOS 1369 or equivalent
+Earth and Atmospheric Sciences,GEOS 3077,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,GEOS 2913 and junior standing
+Earth and Atmospheric Sciences,GEOS 3562,Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,GEOS 2964 and junior standing
+Earth and Atmospheric Sciences,GEOS 3142,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,1,GEOS 2572 and junior standing
+Earth and Atmospheric Sciences,GEOS 4822,Special Topics in Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,GEOS 3321 and senior standing
+Earth and Atmospheric Sciences,GEOS 4073,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,GEOS 3054 and senior standing
+Earth and Atmospheric Sciences,GEOS 4046,Senior Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,4,GEOS 3559 and senior standing
+Earth and Atmospheric Sciences,GEOS 7727,Special Topics in Theory,Advanced exploration of theory covering current research and industry practices.,2,GEOS 3049 and senior standing
+Earth and Atmospheric Sciences,GEOS 6060,Special Topics in Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,GEOS 3195 and senior standing
+Earth and Atmospheric Sciences,GEOS 7672,Special Topics in Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,GEOS 3184 and senior standing
+Mathematics,MATH 1036,Introduction to Real Analysis,Comprehensive study of real analysis with emphasis on theoretical foundations and practical applications.,3,None
+Mathematics,MATH 1547,Introduction to Differential Equations,Comprehensive study of differential equations with emphasis on theoretical foundations and practical applications.,4,None
+Mathematics,MATH 2322,Applied Calculus,Comprehensive study of calculus with emphasis on theoretical foundations and practical applications.,3,MATH 1626 or equivalent
+Mathematics,MATH 2760,Intermediate Linear Algebra,Examination of key concepts and methodologies in linear algebra. Includes hands-on experience and case studies.,3,MATH 1276 or equivalent
+Mathematics,MATH 3872,Advanced Abstract Algebra,Comprehensive study of abstract algebra with emphasis on theoretical foundations and practical applications.,3,MATH 2213 and junior standing
+Mathematics,MATH 3310,Discrete Mathematics,Examination of key concepts and methodologies in discrete mathematics. Includes hands-on experience and case studies.,3,MATH 2174 and junior standing
+Mathematics,MATH 3128,Advanced Calculus,Fundamental concepts and applications of calculus. Designed for students pursuing careers in related fields.,2,MATH 2111 and junior standing
+Mathematics,MATH 4131,Advanced Differential Equations,In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.,3,MATH 3718 and senior standing
+Mathematics,MATH 4448,Advanced Abstract Algebra,Fundamental concepts and applications of abstract algebra. Designed for students pursuing careers in related fields.,3,MATH 3456 and senior standing
+Mathematics,MATH 4858,Special Topics in Differential Equations,Advanced exploration of differential equations covering current research and industry practices.,3,MATH 3215 and senior standing
+Mathematics,MATH 6745,Advanced Differential Equations,In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.,4,MATH 3640 and senior standing
+Mathematics,MATH 6832,Senior Discrete Mathematics,In-depth analysis of discrete mathematics principles. Students will develop critical thinking and problem-solving skills.,3,MATH 3683 and senior standing
+Mathematics,MATH 7378,Special Topics in Geometry,Fundamental concepts and applications of geometry. Designed for students pursuing careers in related fields.,3,MATH 3024 and senior standing
+Mathematics,MATH 6778,Advanced Real Analysis,Comprehensive study of real analysis with emphasis on theoretical foundations and practical applications.,3,MATH 3149 and senior standing
+Physics,PHYS 1252,Introduction to Theory,Advanced exploration of theory covering current research and industry practices.,3,None
+Physics,PHYS 1886,Fundamentals of Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,None
+Physics,PHYS 2885,Applied Applications,Advanced exploration of applications covering current research and industry practices.,2,PHYS 1738 or equivalent
+Physics,PHYS 2271,Intermediate Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,4,PHYS 1268 or equivalent
+Physics,PHYS 3561,Methods,Advanced exploration of methods covering current research and industry practices.,3,PHYS 2788 and junior standing
+Physics,PHYS 3088,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,PHYS 2255 and junior standing
+Physics,PHYS 3237,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,2,PHYS 2334 and junior standing
+Physics,PHYS 4550,Special Topics in Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,PHYS 3312 and senior standing
+Physics,PHYS 4511,Advanced Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,2,PHYS 3054 and senior standing
+Physics,PHYS 4242,Special Topics in Theory,Advanced exploration of theory covering current research and industry practices.,3,PHYS 3900 and senior standing
+Statistics,STAT 1411,Fundamentals of Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,None
+Statistics,STAT 1207,Fundamentals of Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,None
+Statistics,STAT 2834,Applied Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,STAT 1780 or equivalent
+Statistics,STAT 2559,Applied Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,STAT 1663 or equivalent
+Statistics,STAT 3056,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,2,STAT 2370 and junior standing
+Statistics,STAT 3303,Advanced Theory,Advanced exploration of theory covering current research and industry practices.,3,STAT 2152 and junior standing
+Statistics,STAT 3872,Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,STAT 2566 and junior standing
+Statistics,STAT 4873,Special Topics in Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,STAT 3193 and senior standing
+Statistics,STAT 4818,Special Topics in Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,STAT 3236 and senior standing
+Statistics,STAT 4610,Senior Practice,Advanced exploration of practice covering current research and industry practices.,2,STAT 3627 and senior standing
+Statistics,STAT 6802,Senior Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,4,STAT 3588 and senior standing
+Accounting,ACCT 1895,Introduction to Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,2,None
+Accounting,ACCT 1335,Fundamentals of Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,4,None
+Accounting,ACCT 2329,Applied Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,ACCT 1697 or equivalent
+Accounting,ACCT 2712,Applied Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,1,ACCT 1484 or equivalent
+Accounting,ACCT 3983,Advanced Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,ACCT 2708 and junior standing
+Accounting,ACCT 3101,Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,ACCT 2841 and junior standing
+Accounting,ACCT 3446,Advanced Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,4,ACCT 2171 and junior standing
+Accounting,ACCT 4810,Special Topics in Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,ACCT 3297 and senior standing
+Accounting,ACCT 4030,Special Topics in Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,2,ACCT 3034 and senior standing
+Business Administration,BUSA 1882,Principles of Marketing,In-depth analysis of marketing principles. Students will develop critical thinking and problem-solving skills.,2,None
+Business Administration,BUSA 1814,Principles of Marketing,Advanced exploration of marketing covering current research and industry practices.,4,None
+Business Administration,BUSA 2770,Intermediate Entrepreneurship,In-depth analysis of entrepreneurship principles. Students will develop critical thinking and problem-solving skills.,3,BUSA 1078 or equivalent
+Business Administration,BUSA 2439,Applied Strategy,Examination of key concepts and methodologies in strategy. Includes hands-on experience and case studies.,3,BUSA 1686 or equivalent
+Business Administration,BUSA 3268,Strategy,Fundamental concepts and applications of strategy. Designed for students pursuing careers in related fields.,3,BUSA 2994 and junior standing
+Business Administration,BUSA 3360,Advanced Leadership,Advanced exploration of leadership covering current research and industry practices.,4,BUSA 2238 and junior standing
+Business Administration,BUSA 3038,Advanced Operations,In-depth analysis of operations principles. Students will develop critical thinking and problem-solving skills.,3,BUSA 2013 and junior standing
+Business Administration,BUSA 4878,Senior Economics,Examination of key concepts and methodologies in economics. Includes hands-on experience and case studies.,3,BUSA 3414 and senior standing
+Business Administration,BUSA 4623,Advanced Management,Advanced exploration of management covering current research and industry practices.,3,BUSA 3213 and senior standing
+Business Administration,BUSA 4441,Senior Finance,Fundamental concepts and applications of finance. Designed for students pursuing careers in related fields.,3,BUSA 3364 and senior standing
+Business Administration,BUSA 6356,Special Topics in Leadership,Comprehensive study of leadership with emphasis on theoretical foundations and practical applications.,4,BUSA 3169 and senior standing
+Entrepreneurship,ENTR 1737,Principles of Research,Advanced exploration of research covering current research and industry practices.,3,None
+Entrepreneurship,ENTR 1199,Fundamentals of Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,None
+Entrepreneurship,ENTR 2112,Intermediate Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,ENTR 1631 or equivalent
+Entrepreneurship,ENTR 2691,Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,ENTR 1489 or equivalent
+Entrepreneurship,ENTR 3100,Applications,Advanced exploration of applications covering current research and industry practices.,3,ENTR 2243 and junior standing
+Entrepreneurship,ENTR 3252,Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,ENTR 2325 and junior standing
+Entrepreneurship,ENTR 3100,Advanced Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,ENTR 2775 and junior standing
+Entrepreneurship,ENTR 4179,Senior Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,ENTR 3043 and senior standing
+Entrepreneurship,ENTR 4599,Senior Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,ENTR 3178 and senior standing
+Entrepreneurship,ENTR 4986,Special Topics in Methods,Advanced exploration of methods covering current research and industry practices.,3,ENTR 3461 and senior standing
+Finance,FINA 1971,Fundamentals of Theory,Advanced exploration of theory covering current research and industry practices.,3,None
+Finance,FINA 1487,Fundamentals of Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,None
+Finance,FINA 2664,Applied Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,FINA 1258 or equivalent
+Finance,FINA 2197,Intermediate Applications,Advanced exploration of applications covering current research and industry practices.,3,FINA 1530 or equivalent
+Finance,FINA 3829,Advanced Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,FINA 2989 and junior standing
+Finance,FINA 3997,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,FINA 2467 and junior standing
+Finance,FINA 3637,Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,FINA 2789 and junior standing
+Finance,FINA 4696,Special Topics in Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,4,FINA 3459 and senior standing
+Finance,FINA 4212,Special Topics in Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,FINA 3565 and senior standing
+Finance,FINA 4391,Special Topics in Methods,Advanced exploration of methods covering current research and industry practices.,3,FINA 3659 and senior standing
+Finance,FINA 6342,Senior Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,FINA 3166 and senior standing
+Finance,FINA 6179,Senior Analysis,Advanced exploration of analysis covering current research and industry practices.,3,FINA 3636 and senior standing
+Finance,FINA 7076,Advanced Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,FINA 3411 and senior standing
+Finance,FINA 7147,Advanced Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,FINA 3084 and senior standing
+Information Systems,ISDS 1209,Introduction to Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,None
+Information Systems,ISDS 1456,Principles of Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,4,None
+Information Systems,ISDS 2125,Applied Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,ISDS 1985 or equivalent
+Information Systems,ISDS 2360,Applied Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,2,ISDS 1193 or equivalent
+Information Systems,ISDS 3238,Advanced Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,ISDS 2829 and junior standing
+Information Systems,ISDS 3257,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,ISDS 2461 and junior standing
+Information Systems,ISDS 3866,Advanced Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,1,ISDS 2321 and junior standing
+Information Systems,ISDS 4011,Special Topics in Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,ISDS 3244 and senior standing
+Information Systems,ISDS 4991,Senior Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,ISDS 3241 and senior standing
+Management,MGMT 1490,Introduction to Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,None
+Management,MGMT 1813,Principles of Methods,Advanced exploration of methods covering current research and industry practices.,3,None
+Management,MGMT 2107,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,MGMT 1897 or equivalent
+Management,MGMT 2630,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,2,MGMT 1371 or equivalent
+Management,MGMT 3801,Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,MGMT 2378 and junior standing
+Management,MGMT 3560,Research,Advanced exploration of research covering current research and industry practices.,3,MGMT 2740 and junior standing
+Management,MGMT 3124,Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,MGMT 2368 and junior standing
+Management,MGMT 4210,Senior Applications,Advanced exploration of applications covering current research and industry practices.,4,MGMT 3540 and senior standing
+Management,MGMT 4159,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,MGMT 3965 and senior standing
+Management,MGMT 4614,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,MGMT 3376 and senior standing
+Management,MGMT 7216,Special Topics in Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,MGMT 3074 and senior standing
+Management,MGMT 6270,Senior Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,MGMT 3626 and senior standing
+Management,MGMT 6408,Senior Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,MGMT 3728 and senior standing
+Management,MGMT 6979,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,MGMT 3981 and senior standing
+Marketing,MARK 1822,Principles of Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,None
+Marketing,MARK 1942,Fundamentals of Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,None
+Marketing,MARK 2514,Applied Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,MARK 1513 or equivalent
+Marketing,MARK 2543,Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,MARK 1577 or equivalent
+Marketing,MARK 3116,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,MARK 2170 and junior standing
+Marketing,MARK 3570,Methods,Advanced exploration of methods covering current research and industry practices.,2,MARK 2545 and junior standing
+Marketing,MARK 3803,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,MARK 2764 and junior standing
+Marketing,MARK 4795,Senior Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,1,MARK 3823 and senior standing
+Marketing,MARK 4699,Senior Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,MARK 3145 and senior standing
+Marketing,MARK 4990,Senior Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,MARK 3717 and senior standing
+Marketing,MARK 6710,Special Topics in Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,MARK 3419 and senior standing
+Supply Chain Management,SCM 1633,Introduction to Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,None
+Supply Chain Management,SCM 1458,Fundamentals of Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,None
+Supply Chain Management,SCM 2783,Intermediate Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,SCM 1656 or equivalent
+Supply Chain Management,SCM 2144,Applied Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,SCM 1787 or equivalent
+Supply Chain Management,SCM 3414,Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,2,SCM 2625 and junior standing
+Supply Chain Management,SCM 3695,Advanced Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,4,SCM 2612 and junior standing
+Supply Chain Management,SCM 3153,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,SCM 2235 and junior standing
+Supply Chain Management,SCM 4452,Senior Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,SCM 3491 and senior standing
+Anthropology,ANTH 1446,Introduction to Practice,Advanced exploration of practice covering current research and industry practices.,3,None
+Anthropology,ANTH 1160,Principles of Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,None
+Anthropology,ANTH 2085,Analysis,Advanced exploration of analysis covering current research and industry practices.,3,ANTH 1088 or equivalent
+Anthropology,ANTH 2687,Intermediate Research,Advanced exploration of research covering current research and industry practices.,4,ANTH 1519 or equivalent
+Anthropology,ANTH 3103,Advanced Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,2,ANTH 2668 and junior standing
+Anthropology,ANTH 3872,Advanced Analysis,Advanced exploration of analysis covering current research and industry practices.,4,ANTH 2431 and junior standing
+Anthropology,ANTH 3845,Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,ANTH 2910 and junior standing
+Anthropology,ANTH 4521,Advanced Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,ANTH 3097 and senior standing
+Anthropology,ANTH 4308,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,ANTH 3459 and senior standing
+Anthropology,ANTH 4204,Advanced Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,ANTH 3060 and senior standing
+Anthropology,ANTH 6574,Advanced Analysis,Advanced exploration of analysis covering current research and industry practices.,3,ANTH 3470 and senior standing
+Anthropology,ANTH 7076,Senior Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,ANTH 3273 and senior standing
+Art,ART 1623,Principles of Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,None
+Art,ART 1585,Principles of Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,None
+Art,ART 2089,Intermediate Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,ART 1781 or equivalent
+Art,ART 2883,Intermediate Methods,Advanced exploration of methods covering current research and industry practices.,3,ART 1082 or equivalent
+Art,ART 3538,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,ART 2442 and junior standing
+Art,ART 3584,Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,ART 2499 and junior standing
+Art,ART 3150,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,ART 2344 and junior standing
+Art,ART 4219,Special Topics in Practice,Advanced exploration of practice covering current research and industry practices.,3,ART 3727 and senior standing
+Art,ART 4701,Special Topics in Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,4,ART 3896 and senior standing
+Art,ART 4232,Advanced Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,ART 3855 and senior standing
+Art,ART 6297,Senior Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,ART 3076 and senior standing
+Communications,COMM 1754,Fundamentals of Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,None
+Communications,COMM 1746,Fundamentals of Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,None
+Communications,COMM 2376,Intermediate Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,4,COMM 1491 or equivalent
+Communications,COMM 2889,Applied Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,COMM 1829 or equivalent
+Communications,COMM 3243,Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,COMM 2664 and junior standing
+Communications,COMM 3837,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,COMM 2620 and junior standing
+Communications,COMM 3399,Advanced Theory,Advanced exploration of theory covering current research and industry practices.,3,COMM 2716 and junior standing
+Communications,COMM 4017,Senior Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,2,COMM 3366 and senior standing
+Communications,COMM 4690,Special Topics in Research,Advanced exploration of research covering current research and industry practices.,3,COMM 3928 and senior standing
+Communications,COMM 4882,Special Topics in Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,COMM 3417 and senior standing
+Communications,COMM 6965,Advanced Research,Advanced exploration of research covering current research and industry practices.,4,COMM 3669 and senior standing
+Communications,COMM 7608,Advanced Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,COMM 3200 and senior standing
+Communications,COMM 6408,Advanced Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,4,COMM 3475 and senior standing
+Economics,ECON 1770,Introduction to Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,None
+Economics,ECON 1554,Introduction to Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,None
+Economics,ECON 2483,Intermediate Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,ECON 1877 or equivalent
+Economics,ECON 2903,Applied Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,ECON 1274 or equivalent
+Economics,ECON 3335,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,1,ECON 2676 and junior standing
+Economics,ECON 3964,Methods,Advanced exploration of methods covering current research and industry practices.,3,ECON 2086 and junior standing
+Economics,ECON 3986,Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,ECON 2971 and junior standing
+Economics,ECON 4777,Senior Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,ECON 3490 and senior standing
+Economics,ECON 4964,Advanced Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,2,ECON 3691 and senior standing
+Economics,ECON 4138,Advanced Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,4,ECON 3906 and senior standing
+Economics,ECON 6878,Advanced Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,ECON 3702 and senior standing
+English,ENGL 1860,Principles of Writing,In-depth analysis of writing principles. Students will develop critical thinking and problem-solving skills.,3,None
+English,ENGL 1965,Principles of Creative Writing,Comprehensive study of creative writing with emphasis on theoretical foundations and practical applications.,4,None
+English,ENGL 2742,American Literature,Fundamental concepts and applications of american literature. Designed for students pursuing careers in related fields.,3,ENGL 1163 or equivalent
+English,ENGL 2967,Intermediate Technical Writing,In-depth analysis of technical writing principles. Students will develop critical thinking and problem-solving skills.,3,ENGL 1946 or equivalent
+English,ENGL 3320,Advanced American Literature,Examination of key concepts and methodologies in american literature. Includes hands-on experience and case studies.,3,ENGL 2761 and junior standing
+English,ENGL 3509,American Literature,Advanced exploration of american literature covering current research and industry practices.,3,ENGL 2459 and junior standing
+English,ENGL 3789,Advanced Writing,Advanced exploration of writing covering current research and industry practices.,3,ENGL 2324 and junior standing
+English,ENGL 4909,Advanced Technical Writing,Fundamental concepts and applications of technical writing. Designed for students pursuing careers in related fields.,2,ENGL 3273 and senior standing
+English,ENGL 4143,Advanced Composition,Examination of key concepts and methodologies in composition. Includes hands-on experience and case studies.,3,ENGL 3482 and senior standing
+English,ENGL 4476,Special Topics in World Literature,In-depth analysis of world literature principles. Students will develop critical thinking and problem-solving skills.,3,ENGL 3967 and senior standing
+History,HIST 1782,Principles of Social History,In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.,4,None
+History,HIST 1396,Principles of Social History,Comprehensive study of social history with emphasis on theoretical foundations and practical applications.,3,None
+History,HIST 2099,Applied Cultural History,Fundamental concepts and applications of cultural history. Designed for students pursuing careers in related fields.,3,HIST 1597 or equivalent
+History,HIST 2492,Applied Ancient History,Fundamental concepts and applications of ancient history. Designed for students pursuing careers in related fields.,3,HIST 1028 or equivalent
+History,HIST 3293,Political History,Advanced exploration of political history covering current research and industry practices.,3,HIST 2170 and junior standing
+History,HIST 3036,Modern History,Fundamental concepts and applications of modern history. Designed for students pursuing careers in related fields.,3,HIST 2806 and junior standing
+History,HIST 3169,World History,In-depth analysis of world history principles. Students will develop critical thinking and problem-solving skills.,3,HIST 2216 and junior standing
+History,HIST 4076,Special Topics in Cultural History,In-depth analysis of cultural history principles. Students will develop critical thinking and problem-solving skills.,3,HIST 3405 and senior standing
+History,HIST 4424,Senior European History,In-depth analysis of european history principles. Students will develop critical thinking and problem-solving skills.,3,HIST 3798 and senior standing
+History,HIST 4242,Senior Political History,Advanced exploration of political history covering current research and industry practices.,3,HIST 3252 and senior standing
+History,HIST 7721,Special Topics in Cultural History,Comprehensive study of cultural history with emphasis on theoretical foundations and practical applications.,3,HIST 3999 and senior standing
+History,HIST 7404,Senior Political History,Fundamental concepts and applications of political history. Designed for students pursuing careers in related fields.,3,HIST 3908 and senior standing
+History,HIST 6520,Special Topics in Ancient History,Fundamental concepts and applications of ancient history. Designed for students pursuing careers in related fields.,1,HIST 3992 and senior standing
+Philosophy,PHIL 1014,Fundamentals of Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,2,None
+Philosophy,PHIL 1544,Fundamentals of Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,None
+Philosophy,PHIL 2724,Intermediate Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,PHIL 1336 or equivalent
+Philosophy,PHIL 2605,Intermediate Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,2,PHIL 1897 or equivalent
+Philosophy,PHIL 3425,Practice,Advanced exploration of practice covering current research and industry practices.,3,PHIL 2515 and junior standing
+Philosophy,PHIL 3417,Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,1,PHIL 2917 and junior standing
+Philosophy,PHIL 3216,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,PHIL 2244 and junior standing
+Philosophy,PHIL 4259,Special Topics in Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,PHIL 3623 and senior standing
+Philosophy,PHIL 4055,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,PHIL 3145 and senior standing
+Philosophy,PHIL 4342,Special Topics in Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,PHIL 3584 and senior standing
+Philosophy,PHIL 6617,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,2,PHIL 3394 and senior standing
+Philosophy,PHIL 7247,Senior Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,4,PHIL 3730 and senior standing
+Political Science,POLS 1897,Principles of Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,None
+Political Science,POLS 1075,Principles of Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,2,None
+Political Science,POLS 2426,Intermediate Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,2,POLS 1883 or equivalent
+Political Science,POLS 2063,Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,POLS 1266 or equivalent
+Political Science,POLS 3862,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,POLS 2190 and junior standing
+Political Science,POLS 3560,Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,POLS 2532 and junior standing
+Political Science,POLS 3872,Advanced Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,POLS 2956 and junior standing
+Political Science,POLS 4822,Advanced Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,POLS 3488 and senior standing
+Political Science,POLS 4678,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,POLS 3665 and senior standing
+Political Science,POLS 4420,Special Topics in Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,POLS 3406 and senior standing
+Political Science,POLS 7904,Senior Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,POLS 3279 and senior standing
+Psychology,PSYC 1598,Fundamentals of Research Methods,Examination of key concepts and methodologies in research methods. Includes hands-on experience and case studies.,3,None
+Psychology,PSYC 1420,Principles of Personality,Comprehensive study of personality with emphasis on theoretical foundations and practical applications.,4,None
+Psychology,PSYC 2525,Intermediate Abnormal Psychology,Examination of key concepts and methodologies in abnormal psychology. Includes hands-on experience and case studies.,2,PSYC 1940 or equivalent
+Psychology,PSYC 2861,Intermediate Abnormal Psychology,Examination of key concepts and methodologies in abnormal psychology. Includes hands-on experience and case studies.,3,PSYC 1234 or equivalent
+Psychology,PSYC 3644,Advanced Cognitive Psychology,Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.,1,PSYC 2127 and junior standing
+Psychology,PSYC 3229,Advanced Learning,Examination of key concepts and methodologies in learning. Includes hands-on experience and case studies.,3,PSYC 2856 and junior standing
+Psychology,PSYC 3901,Cognitive Psychology,Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.,1,PSYC 2492 and junior standing
+Psychology,PSYC 4816,Special Topics in Cognitive Psychology,Fundamental concepts and applications of cognitive psychology. Designed for students pursuing careers in related fields.,2,PSYC 3956 and senior standing
+Psychology,PSYC 4691,Special Topics in Statistics,Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.,3,PSYC 3030 and senior standing
+Psychology,PSYC 4910,Advanced Personality,Advanced exploration of personality covering current research and industry practices.,4,PSYC 3556 and senior standing
+Psychology,PSYC 7824,Senior Cognitive Psychology,Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.,3,PSYC 3983 and senior standing
+Psychology,PSYC 6048,Senior Personality,Comprehensive study of personality with emphasis on theoretical foundations and practical applications.,3,PSYC 3662 and senior standing
+Sociology,SOCI 1936,Introduction to Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,None
+Sociology,SOCI 1036,Principles of Research,Advanced exploration of research covering current research and industry practices.,3,None
+Sociology,SOCI 2321,Practice,Advanced exploration of practice covering current research and industry practices.,3,SOCI 1816 or equivalent
+Sociology,SOCI 2813,Intermediate Practice,Advanced exploration of practice covering current research and industry practices.,2,SOCI 1735 or equivalent
+Sociology,SOCI 3905,Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,SOCI 2764 and junior standing
+Sociology,SOCI 3232,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,SOCI 2722 and junior standing
+Sociology,SOCI 3766,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,SOCI 2011 and junior standing
+Sociology,SOCI 4890,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,SOCI 3102 and senior standing
+Sociology,SOCI 4218,Advanced Applications,Advanced exploration of applications covering current research and industry practices.,3,SOCI 3055 and senior standing
+Sociology,SOCI 4677,Advanced Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,2,SOCI 3504 and senior standing
+Sociology,SOCI 6825,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,SOCI 3031 and senior standing
+Sociology,SOCI 7976,Senior Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,SOCI 3305 and senior standing
+Sociology,SOCI 6048,Senior Methods,Advanced exploration of methods covering current research and industry practices.,2,SOCI 3931 and senior standing
+Spanish,SPAN 1136,Introduction to Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,None
+Spanish,SPAN 1773,Fundamentals of Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,2,None
+Spanish,SPAN 2539,Intermediate Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,2,SPAN 1621 or equivalent
+Spanish,SPAN 2846,Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,SPAN 1729 or equivalent
+Spanish,SPAN 3613,Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,SPAN 2903 and junior standing
+Spanish,SPAN 3465,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,2,SPAN 2455 and junior standing
+Spanish,SPAN 3450,Advanced Practice,Advanced exploration of practice covering current research and industry practices.,3,SPAN 2893 and junior standing
+Spanish,SPAN 4776,Special Topics in Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,SPAN 3425 and senior standing
+Music,MUSI 1943,Introduction to Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,4,None
+Music,MUSI 1715,Principles of Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,1,None
+Music,MUSI 2294,Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,MUSI 1212 or equivalent
+Music,MUSI 2445,Applied Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,MUSI 1099 or equivalent
+Music,MUSI 3473,Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,MUSI 2825 and junior standing
+Music,MUSI 3270,Advanced Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,MUSI 2915 and junior standing
+Music,MUSI 3296,Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,MUSI 2047 and junior standing
+Music,MUSI 4343,Senior Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,2,MUSI 3533 and senior standing
+Music,MUSI 4864,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,MUSI 3828 and senior standing
+Music,MUSI 4285,Senior Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,MUSI 3478 and senior standing
+Music,MUSI 7652,Advanced Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,4,MUSI 3520 and senior standing
+Music,MUSI 7385,Special Topics in Applications,Advanced exploration of applications covering current research and industry practices.,4,MUSI 3180 and senior standing
+Music,MUSI 7643,Senior Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,MUSI 3247 and senior standing
+Music,MUSI 6031,Senior Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,MUSI 3869 and senior standing
+Theatre,THEA 1160,Principles of Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,None
+Theatre,THEA 1503,Introduction to Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,None
+Theatre,THEA 2830,Intermediate Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,THEA 1306 or equivalent
+Theatre,THEA 2177,Research,Advanced exploration of research covering current research and industry practices.,3,THEA 1814 or equivalent
+Theatre,THEA 3256,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,THEA 2279 and junior standing
+Theatre,THEA 3410,Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,THEA 2769 and junior standing
+Theatre,THEA 3498,Advanced Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,THEA 2543 and junior standing
+Theatre,THEA 4786,Senior Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,4,THEA 3223 and senior standing
+Theatre,THEA 4875,Senior Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,THEA 3596 and senior standing
+Theatre,THEA 4849,Special Topics in Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,THEA 3942 and senior standing
+Theatre,THEA 6653,Special Topics in Analysis,Advanced exploration of analysis covering current research and industry practices.,3,THEA 3563 and senior standing
+Theatre,THEA 7669,Advanced Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,THEA 3042 and senior standing
+Theatre,THEA 6428,Senior Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,THEA 3278 and senior standing
+Curriculum and Instruction,CUIN 1076,Fundamentals of Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,None
+Curriculum and Instruction,CUIN 1672,Principles of Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,None
+Curriculum and Instruction,CUIN 2112,Intermediate Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,CUIN 1908 or equivalent
+Curriculum and Instruction,CUIN 2707,Intermediate Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,CUIN 1825 or equivalent
+Curriculum and Instruction,CUIN 3178,Practice,Advanced exploration of practice covering current research and industry practices.,3,CUIN 2850 and junior standing
+Curriculum and Instruction,CUIN 3052,Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,CUIN 2701 and junior standing
+Curriculum and Instruction,CUIN 3075,Advanced Research,Advanced exploration of research covering current research and industry practices.,4,CUIN 2139 and junior standing
+Curriculum and Instruction,CUIN 4159,Special Topics in Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,CUIN 3832 and senior standing
+Educational Psychology,EPSY 1289,Principles of Research Methods,In-depth analysis of research methods principles. Students will develop critical thinking and problem-solving skills.,3,None
+Educational Psychology,EPSY 1047,Introduction to Social Psychology,Fundamental concepts and applications of social psychology. Designed for students pursuing careers in related fields.,3,None
+Educational Psychology,EPSY 2077,Statistics,Advanced exploration of statistics covering current research and industry practices.,4,EPSY 1651 or equivalent
+Educational Psychology,EPSY 2130,Research Methods,Comprehensive study of research methods with emphasis on theoretical foundations and practical applications.,3,EPSY 1526 or equivalent
+Educational Psychology,EPSY 3147,Advanced Social Psychology,Comprehensive study of social psychology with emphasis on theoretical foundations and practical applications.,4,EPSY 2993 and junior standing
+Educational Psychology,EPSY 3977,Social Psychology,Advanced exploration of social psychology covering current research and industry practices.,3,EPSY 2519 and junior standing
+Educational Psychology,EPSY 3822,Learning,Examination of key concepts and methodologies in learning. Includes hands-on experience and case studies.,3,EPSY 2342 and junior standing
+Educational Psychology,EPSY 4643,Special Topics in Social Psychology,In-depth analysis of social psychology principles. Students will develop critical thinking and problem-solving skills.,3,EPSY 3807 and senior standing
+Educational Psychology,EPSY 4426,Special Topics in Abnormal Psychology,Examination of key concepts and methodologies in abnormal psychology. Includes hands-on experience and case studies.,3,EPSY 3957 and senior standing
+Health and Human Performance,HHPA 1781,Principles of Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,None
+Health and Human Performance,HHPA 1531,Introduction to Research,Advanced exploration of research covering current research and industry practices.,3,None
+Health and Human Performance,HHPA 2934,Applied Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,4,HHPA 1873 or equivalent
+Health and Human Performance,HHPA 2932,Methods,Advanced exploration of methods covering current research and industry practices.,3,HHPA 1300 or equivalent
+Health and Human Performance,HHPA 3265,Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,HHPA 2364 and junior standing
+Health and Human Performance,HHPA 3629,Theory,Advanced exploration of theory covering current research and industry practices.,3,HHPA 2370 and junior standing
+Health and Human Performance,HHPA 3100,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,2,HHPA 2033 and junior standing
+Health and Human Performance,HHPA 4015,Advanced Applications,Advanced exploration of applications covering current research and industry practices.,3,HHPA 3713 and senior standing
+Health and Human Performance,HHPA 4571,Special Topics in Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,HHPA 3025 and senior standing
+Health and Human Performance,HHPA 4129,Special Topics in Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,HHPA 3990 and senior standing
+Health and Human Performance,HHPA 6172,Senior Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,HHPA 3979 and senior standing
+Health and Human Performance,HHPA 6521,Advanced Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,HHPA 3787 and senior standing
+Health and Human Performance,HHPA 7987,Special Topics in Research,Advanced exploration of research covering current research and industry practices.,3,HHPA 3885 and senior standing
+Health and Human Performance,HHPA 6888,Special Topics in Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,HHPA 3203 and senior standing
+Architecture,ARCH 1826,Fundamentals of Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,None
+Architecture,ARCH 1584,Fundamentals of Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,None
+Architecture,ARCH 2161,Intermediate Applications,Advanced exploration of applications covering current research and industry practices.,3,ARCH 1909 or equivalent
+Architecture,ARCH 2907,Applied Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,ARCH 1080 or equivalent
+Architecture,ARCH 3770,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,ARCH 2872 and junior standing
+Architecture,ARCH 3611,Advanced Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,ARCH 2858 and junior standing
+Architecture,ARCH 3885,Advanced Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,2,ARCH 2643 and junior standing
+Architecture,ARCH 4076,Senior Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,ARCH 3518 and senior standing
+Architecture,ARCH 4066,Advanced Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,2,ARCH 3970 and senior standing
+Architecture,ARCH 4876,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,ARCH 3718 and senior standing
+Architecture,ARCH 7719,Senior Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,ARCH 3341 and senior standing
+Architecture,ARCH 7672,Special Topics in Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,2,ARCH 3471 and senior standing
+Industrial Design,IDES 1713,Principles of Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,None
+Industrial Design,IDES 1950,Introduction to Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,None
+Industrial Design,IDES 2342,Applied Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,IDES 1529 or equivalent
+Industrial Design,IDES 2847,Intermediate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,IDES 1013 or equivalent
+Industrial Design,IDES 3345,Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,IDES 2384 and junior standing
+Industrial Design,IDES 3698,Theory,Advanced exploration of theory covering current research and industry practices.,1,IDES 2524 and junior standing
+Industrial Design,IDES 3603,Advanced Practice,Advanced exploration of practice covering current research and industry practices.,3,IDES 2446 and junior standing
+Industrial Design,IDES 4451,Special Topics in Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,IDES 3955 and senior standing
+Industrial Design,IDES 4743,Senior Research,Advanced exploration of research covering current research and industry practices.,1,IDES 3810 and senior standing
+Industrial Design,IDES 4827,Advanced Practice,Advanced exploration of practice covering current research and industry practices.,3,IDES 3615 and senior standing
+Industrial Design,IDES 6549,Senior Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,IDES 3649 and senior standing
+Industrial Design,IDES 7772,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,IDES 3807 and senior standing
+Industrial Design,IDES 7356,Senior Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,IDES 3957 and senior standing
+Pharmaceutical Sciences,PHAR 1022,Fundamentals of Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,None
+Pharmaceutical Sciences,PHAR 1310,Fundamentals of Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,None
+Pharmaceutical Sciences,PHAR 2578,Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,PHAR 1112 or equivalent
+Pharmaceutical Sciences,PHAR 2320,Applied Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,PHAR 1936 or equivalent
+Pharmaceutical Sciences,PHAR 3712,Advanced Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,PHAR 2874 and junior standing
+Pharmaceutical Sciences,PHAR 3747,Advanced Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,PHAR 2782 and junior standing
+Pharmaceutical Sciences,PHAR 3023,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,PHAR 2766 and junior standing
+Pharmaceutical Sciences,PHAR 4519,Special Topics in Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,PHAR 3444 and senior standing
+Pharmaceutical Sciences,PHAR 4582,Advanced Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,PHAR 3848 and senior standing
+Pharmaceutical Sciences,PHAR 4523,Senior Methods,Advanced exploration of methods covering current research and industry practices.,2,PHAR 3810 and senior standing
+Pharmaceutical Sciences,PHAR 7590,Senior Applications,Advanced exploration of applications covering current research and industry practices.,3,PHAR 3342 and senior standing
+Pharmaceutical Sciences,PHAR 7798,Senior Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,1,PHAR 3942 and senior standing
+Pharmaceutical Sciences,PHAR 6409,Senior Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,PHAR 3374 and senior standing
+Pharmaceutical Sciences,PHAR 6058,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,PHAR 3157 and senior standing
+Pharmaceutical Sciences,PHAR 6433,Special Topics in Practice,Advanced exploration of practice covering current research and industry practices.,3,PHAR 3077 and senior standing
+Pharmacology,PHAR 1330,Principles of Theory,Advanced exploration of theory covering current research and industry practices.,4,None
+Pharmacology,PHAR 1663,Fundamentals of Methods,Advanced exploration of methods covering current research and industry practices.,3,None
+Pharmacology,PHAR 2513,Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,PHAR 1945 or equivalent
+Pharmacology,PHAR 2244,Applied Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,2,PHAR 1331 or equivalent
+Pharmacology,PHAR 3525,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,PHAR 2348 and junior standing
+Pharmacology,PHAR 3261,Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,PHAR 2258 and junior standing
+Pharmacology,PHAR 3370,Advanced Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,PHAR 2204 and junior standing
+Pharmacology,PHAR 4096,Special Topics in Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,2,PHAR 3795 and senior standing
+Pharmacology,PHAR 4787,Special Topics in Practice,Advanced exploration of practice covering current research and industry practices.,3,PHAR 3981 and senior standing
+Pharmacology,PHAR 4800,Special Topics in Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,2,PHAR 3128 and senior standing
+Pharmacology,PHAR 6767,Special Topics in Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,PHAR 3399 and senior standing
+Pharmacology,PHAR 6664,Advanced Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,PHAR 3125 and senior standing
+Pharmacology,PHAR 7814,Senior Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,PHAR 3842 and senior standing
+Pharmacology,PHAR 7450,Senior Analysis,Advanced exploration of analysis covering current research and industry practices.,3,PHAR 3803 and senior standing
+Optometry,OPTO 1667,Fundamentals of Applications,Advanced exploration of applications covering current research and industry practices.,3,None
+Optometry,OPTO 1035,Fundamentals of Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,None
+Optometry,OPTO 2728,Theory,Advanced exploration of theory covering current research and industry practices.,3,OPTO 1053 or equivalent
+Optometry,OPTO 2748,Applied Methods,Advanced exploration of methods covering current research and industry practices.,4,OPTO 1564 or equivalent
+Optometry,OPTO 3069,Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,OPTO 2106 and junior standing
+Optometry,OPTO 3306,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,4,OPTO 2111 and junior standing
+Optometry,OPTO 3103,Advanced Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,OPTO 2788 and junior standing
+Optometry,OPTO 4668,Special Topics in Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,OPTO 3951 and senior standing
+Optometry,OPTO 4386,Senior Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,OPTO 3877 and senior standing
+Optometry,OPTO 4257,Special Topics in Analysis,Advanced exploration of analysis covering current research and industry practices.,1,OPTO 3466 and senior standing
+Social Work,SOCW 1796,Fundamentals of Practice,Advanced exploration of practice covering current research and industry practices.,3,None
+Social Work,SOCW 1170,Fundamentals of Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,None
+Social Work,SOCW 2034,Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,SOCW 1173 or equivalent
+Social Work,SOCW 2413,Applied Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,SOCW 1760 or equivalent
+Social Work,SOCW 3274,Research,Advanced exploration of research covering current research and industry practices.,3,SOCW 2295 and junior standing
+Social Work,SOCW 3489,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,SOCW 2515 and junior standing
+Social Work,SOCW 3115,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,SOCW 2167 and junior standing
+Social Work,SOCW 4328,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,SOCW 3898 and senior standing
+Social Work,SOCW 4012,Advanced Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,4,SOCW 3831 and senior standing
+Social Work,SOCW 4456,Special Topics in Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,SOCW 3260 and senior standing
+Social Work,SOCW 6520,Special Topics in Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,SOCW 3264 and senior standing
+Social Work,SOCW 6402,Senior Practice,Advanced exploration of practice covering current research and industry practices.,3,SOCW 3660 and senior standing
+Social Work,SOCW 6589,Senior Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,SOCW 3380 and senior standing
+Hotel and Restaurant Management,HRMA 1854,Principles of Applications,Advanced exploration of applications covering current research and industry practices.,3,None
+Hotel and Restaurant Management,HRMA 1762,Introduction to Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,4,None
+Hotel and Restaurant Management,HRMA 2417,Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,HRMA 1039 or equivalent
+Hotel and Restaurant Management,HRMA 2112,Intermediate Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,HRMA 1298 or equivalent
+Hotel and Restaurant Management,HRMA 3111,Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,HRMA 2679 and junior standing
+Hotel and Restaurant Management,HRMA 3790,Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,HRMA 2589 and junior standing
+Hotel and Restaurant Management,HRMA 3848,Methods,Advanced exploration of methods covering current research and industry practices.,4,HRMA 2515 and junior standing
+Hotel and Restaurant Management,HRMA 4522,Senior Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,1,HRMA 3607 and senior standing
+Hotel and Restaurant Management,HRMA 4625,Special Topics in Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,4,HRMA 3069 and senior standing
+Hotel and Restaurant Management,HRMA 4137,Advanced Analysis,Advanced exploration of analysis covering current research and industry practices.,3,HRMA 3095 and senior standing
+Hotel and Restaurant Management,HRMA 7812,Special Topics in Practice,Advanced exploration of practice covering current research and industry practices.,3,HRMA 3474 and senior standing
+Hotel and Restaurant Management,HRMA 6131,Special Topics in Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,HRMA 3070 and senior standing
+Hotel and Restaurant Management,HRMA 7624,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,4,HRMA 3013 and senior standing
+Hotel and Restaurant Management,HRMA 7019,Special Topics in Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,HRMA 3027 and senior standing
+Hotel and Restaurant Management,HRMA 6086,Senior Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,HRMA 3032 and senior standing
+Nursing,NURS 1501,Fundamentals of Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,None
+Nursing,NURS 1247,Fundamentals of Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,None
+Nursing,NURS 2184,Methods,Advanced exploration of methods covering current research and industry practices.,3,NURS 1051 or equivalent
+Nursing,NURS 2291,Analysis,Advanced exploration of analysis covering current research and industry practices.,2,NURS 1328 or equivalent
+Nursing,NURS 3596,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,NURS 2758 and junior standing
+Nursing,NURS 3907,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,NURS 2426 and junior standing
+Nursing,NURS 3893,Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,NURS 2997 and junior standing
+Nursing,NURS 4389,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,NURS 3049 and senior standing
+Nursing,NURS 4309,Special Topics in Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,NURS 3773 and senior standing
+Nursing,NURS 4776,Senior Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,NURS 3860 and senior standing
+Nursing,NURS 6953,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,NURS 3197 and senior standing
+Nursing,NURS 7057,Special Topics in Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,4,NURS 3033 and senior standing
+Nursing,NURS 7357,Advanced Research,Advanced exploration of research covering current research and industry practices.,3,NURS 3122 and senior standing
+Nursing,NURS 7464,Advanced Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,NURS 3495 and senior standing
+Medical Sciences,MEDS 1615,Introduction to Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,None
+Medical Sciences,MEDS 1796,Principles of Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,2,None
+Medical Sciences,MEDS 2809,Applied Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,2,MEDS 1845 or equivalent
+Medical Sciences,MEDS 2202,Intermediate Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,MEDS 1672 or equivalent
+Medical Sciences,MEDS 3742,Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,MEDS 2816 and junior standing
+Medical Sciences,MEDS 3361,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,MEDS 2426 and junior standing
+Medical Sciences,MEDS 3762,Practice,Advanced exploration of practice covering current research and industry practices.,3,MEDS 2915 and junior standing
+Medical Sciences,MEDS 4887,Special Topics in Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,MEDS 3222 and senior standing
+Public Affairs,PUAD 1014,Fundamentals of Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,None
+Public Affairs,PUAD 1665,Principles of Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,None
+Public Affairs,PUAD 2803,Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,PUAD 1421 or equivalent
+Public Affairs,PUAD 2692,Intermediate Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,PUAD 1079 or equivalent
+Public Affairs,PUAD 3818,Advanced Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,PUAD 2821 and junior standing
+Public Affairs,PUAD 3110,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,PUAD 2256 and junior standing
+Public Affairs,PUAD 3336,Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,PUAD 2108 and junior standing
+Public Affairs,PUAD 4931,Special Topics in Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,PUAD 3752 and senior standing
+Public Affairs,PUAD 4642,Special Topics in Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,PUAD 3149 and senior standing
+Public Affairs,PUAD 4289,Senior Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,PUAD 3808 and senior standing
+Public Affairs,PUAD 7048,Advanced Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,3,PUAD 3658 and senior standing
+Public Affairs,PUAD 7675,Special Topics in Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,PUAD 3943 and senior standing
+Public Affairs,PUAD 7636,Advanced Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,PUAD 3683 and senior standing
+Public Affairs,PUAD 6030,Special Topics in Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,1,PUAD 3635 and senior standing
+Public Affairs,PUAD 7997,Advanced Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,PUAD 3067 and senior standing
+Women's Studies,WOMS 1837,Principles of Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,None
+Women's Studies,WOMS 1930,Fundamentals of Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,None
+Women's Studies,WOMS 2909,Intermediate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,WOMS 1716 or equivalent
+Women's Studies,WOMS 2459,Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,WOMS 1437 or equivalent
+Women's Studies,WOMS 3010,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,WOMS 2433 and junior standing
+Women's Studies,WOMS 3999,Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,2,WOMS 2013 and junior standing
+Women's Studies,WOMS 3718,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,WOMS 2601 and junior standing
+Women's Studies,WOMS 4437,Special Topics in Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,WOMS 3694 and senior standing
+Women's Studies,WOMS 4581,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,WOMS 3064 and senior standing
+Women's Studies,WOMS 4082,Advanced Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,WOMS 3508 and senior standing
+Women's Studies,WOMS 6245,Special Topics in Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,WOMS 3638 and senior standing
+African American Studies,AFAS 1238,Fundamentals of Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,None
+African American Studies,AFAS 1854,Principles of Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,None
+African American Studies,AFAS 2637,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,AFAS 1788 or equivalent
+African American Studies,AFAS 2748,Applied Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,4,AFAS 1546 or equivalent
+African American Studies,AFAS 3377,Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,AFAS 2101 and junior standing
+African American Studies,AFAS 3936,Advanced Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,AFAS 2054 and junior standing
+African American Studies,AFAS 3567,Advanced Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,AFAS 2390 and junior standing
+African American Studies,AFAS 4796,Special Topics in Research,Advanced exploration of research covering current research and industry practices.,3,AFAS 3551 and senior standing
+African American Studies,AFAS 4799,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,AFAS 3553 and senior standing
+Mexican American Studies,MAST 1214,Introduction to Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,None
+Mexican American Studies,MAST 1111,Introduction to Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,None
+Mexican American Studies,MAST 2620,Intermediate Analysis,Advanced exploration of analysis covering current research and industry practices.,3,MAST 1498 or equivalent
+Mexican American Studies,MAST 2195,Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,1,MAST 1287 or equivalent
+Mexican American Studies,MAST 3386,Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,1,MAST 2490 and junior standing
+Mexican American Studies,MAST 3471,Advanced Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,2,MAST 2819 and junior standing
+Mexican American Studies,MAST 3316,Advanced Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,MAST 2383 and junior standing
+Mexican American Studies,MAST 4023,Special Topics in Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,MAST 3392 and senior standing
+Mexican American Studies,MAST 4524,Special Topics in Applications,Advanced exploration of applications covering current research and industry practices.,3,MAST 3430 and senior standing
+Mexican American Studies,MAST 4060,Senior Analysis,Advanced exploration of analysis covering current research and industry practices.,4,MAST 3050 and senior standing
+Mexican American Studies,MAST 7951,Senior Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,MAST 3859 and senior standing
+Mexican American Studies,MAST 6772,Special Topics in Research,Advanced exploration of research covering current research and industry practices.,3,MAST 3080 and senior standing
+Religious Studies,RELS 1151,Principles of Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,None
+Religious Studies,RELS 1294,Introduction to Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,None
+Religious Studies,RELS 2053,Applied Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,RELS 1097 or equivalent
+Religious Studies,RELS 2702,Applied Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,RELS 1403 or equivalent
+Religious Studies,RELS 3742,Advanced Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,RELS 2762 and junior standing
+Religious Studies,RELS 3291,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,3,RELS 2846 and junior standing
+Religious Studies,RELS 3276,Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,RELS 2913 and junior standing
+Religious Studies,RELS 4295,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,RELS 3418 and senior standing
+Religious Studies,RELS 4031,Special Topics in Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,RELS 3800 and senior standing
+Religious Studies,RELS 4445,Senior Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,RELS 3827 and senior standing
+Environmental Science,ENVS 1101,Fundamentals of Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,None
+Environmental Science,ENVS 1660,Introduction to Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,3,None
+Environmental Science,ENVS 2344,Theory,Advanced exploration of theory covering current research and industry practices.,3,ENVS 1584 or equivalent
+Environmental Science,ENVS 2413,Applied Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,ENVS 1112 or equivalent
+Environmental Science,ENVS 3561,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,ENVS 2515 and junior standing
+Environmental Science,ENVS 3894,Advanced Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,ENVS 2489 and junior standing
+Environmental Science,ENVS 3874,Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,ENVS 2215 and junior standing
+Environmental Science,ENVS 4498,Senior Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,ENVS 3373 and senior standing
+Environmental Science,ENVS 4341,Senior Theory,Advanced exploration of theory covering current research and industry practices.,3,ENVS 3172 and senior standing
+Environmental Science,ENVS 4699,Special Topics in Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,ENVS 3051 and senior standing
+Environmental Science,ENVS 7999,Advanced Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,ENVS 3568 and senior standing
+Environmental Science,ENVS 6689,Special Topics in Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,ENVS 3416 and senior standing
+Interdisciplinary Studies,INST 1042,Principles of Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,2,None
+Interdisciplinary Studies,INST 1412,Introduction to Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,None
+Interdisciplinary Studies,INST 2968,Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,INST 1514 or equivalent
+Interdisciplinary Studies,INST 2631,Applied Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,INST 1266 or equivalent
+Interdisciplinary Studies,INST 3340,Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,INST 2341 and junior standing
+Interdisciplinary Studies,INST 3687,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,INST 2359 and junior standing
+Interdisciplinary Studies,INST 3080,Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,INST 2233 and junior standing
+Interdisciplinary Studies,INST 4153,Advanced Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,INST 3929 and senior standing
+Interdisciplinary Studies,INST 4078,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,INST 3923 and senior standing

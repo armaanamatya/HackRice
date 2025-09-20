@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 1195",
+    "title": "Fundamentals of Ethics",
+    "description": "Comprehensive study of ethics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 1585",
+    "title": "Introduction to Thermodynamics",
+    "description": "Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 2735",
+    "title": "Applied Systems",
+    "description": "Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 1595 or equivalent"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 2863",
+    "title": "Design",
+    "description": "In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 1085 or equivalent"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 3279",
+    "title": "Advanced Dynamics",
+    "description": "Advanced exploration of dynamics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 2749 and junior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 3008",
+    "title": "Advanced Systems",
+    "description": "Comprehensive study of systems with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 2414 and junior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 3737",
+    "title": "Thermodynamics",
+    "description": "Comprehensive study of thermodynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 2108 and junior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 4939",
+    "title": "Advanced Controls",
+    "description": "Advanced exploration of controls covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CHEE 3289 and senior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 4974",
+    "title": "Senior Dynamics",
+    "description": "Advanced exploration of dynamics covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "CHEE 3396 and senior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 4451",
+    "title": "Advanced Innovation",
+    "description": "Comprehensive study of innovation with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 3891 and senior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 7581",
+    "title": "Advanced Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 3262 and senior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 6093",
+    "title": "Advanced Materials",
+    "description": "In-depth analysis of materials principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 3108 and senior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 7358",
+    "title": "Advanced Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "CHEE 3737 and senior standing"
+  },
+  {
+    "department": "Chemical Engineering",
+    "code": "CHEE 6784",
+    "title": "Special Topics in Materials",
+    "description": "Comprehensive study of materials with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEE 3987 and senior standing"
+  }
+]

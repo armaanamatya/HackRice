@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 1781",
+    "title": "Principles of Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 1531",
+    "title": "Introduction to Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 2934",
+    "title": "Applied Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "HHPA 1873 or equivalent"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 2932",
+    "title": "Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 1300 or equivalent"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 3265",
+    "title": "Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 2364 and junior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 3629",
+    "title": "Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 2370 and junior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 3100",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "HHPA 2033 and junior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 4015",
+    "title": "Advanced Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 3713 and senior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 4571",
+    "title": "Special Topics in Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 3025 and senior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 4129",
+    "title": "Special Topics in Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 3990 and senior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 6172",
+    "title": "Senior Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "HHPA 3979 and senior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 6521",
+    "title": "Advanced Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "HHPA 3787 and senior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 7987",
+    "title": "Special Topics in Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 3885 and senior standing"
+  },
+  {
+    "department": "Health and Human Performance",
+    "code": "HHPA 6888",
+    "title": "Special Topics in Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "HHPA 3203 and senior standing"
+  }
+]

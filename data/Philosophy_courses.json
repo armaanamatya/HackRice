@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Philosophy",
+    "code": "PHIL 1014",
+    "title": "Fundamentals of Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 1544",
+    "title": "Fundamentals of Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 2724",
+    "title": "Intermediate Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 1336 or equivalent"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 2605",
+    "title": "Intermediate Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "PHIL 1897 or equivalent"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 3425",
+    "title": "Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 2515 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 3417",
+    "title": "Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "PHIL 2917 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 3216",
+    "title": "Advanced Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "PHIL 2244 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 4259",
+    "title": "Special Topics in Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 3623 and senior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 4055",
+    "title": "Advanced Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 3145 and senior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 4342",
+    "title": "Special Topics in Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 3584 and senior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 6617",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "PHIL 3394 and senior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 7247",
+    "title": "Senior Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "PHIL 3730 and senior standing"
+  }
+]

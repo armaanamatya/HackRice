@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Religious Studies",
+    "code": "RELS 1151",
+    "title": "Principles of Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 1294",
+    "title": "Introduction to Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 2053",
+    "title": "Applied Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 1097 or equivalent"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 2702",
+    "title": "Applied Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 1403 or equivalent"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 3742",
+    "title": "Advanced Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 2762 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 3291",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 2846 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 3276",
+    "title": "Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 2913 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 4295",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 3418 and senior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 4031",
+    "title": "Special Topics in Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 3800 and senior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELS 4445",
+    "title": "Senior Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "RELS 3827 and senior standing"
+  }
+]
