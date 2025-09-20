@@ -47,7 +47,7 @@ const ScheduleReviewForm = ({ initialClasses, onScheduleValidated, onBackToUploa
       ...prevClasses,
       {
         id: String(Date.now() + Math.random()),
-        course: '',
+        courseCode: '',
         days: [],
         startTime: '',
         endTime: '',
@@ -59,7 +59,7 @@ const ScheduleReviewForm = ({ initialClasses, onScheduleValidated, onBackToUploa
   const handleSubmit = (e) => {
     e.preventDefault();
     // Filter out any classes that are completely empty or invalid before submitting
-    const validatedClasses = classes.filter(cls => cls.course && cls.days.length > 0 && cls.startTime && cls.endTime);
+    const validatedClasses = classes.filter(cls => cls.courseCode && cls.days.length > 0 && cls.startTime && cls.endTime);
     onScheduleValidated(validatedClasses);
   };
 
@@ -81,7 +81,7 @@ const ScheduleReviewForm = ({ initialClasses, onScheduleValidated, onBackToUploa
                 type="text"
                 id={`course-${cls.id}`}
                 value={cls.courseCode}
-                onChange={(e) => handleClassChange(cls.id, 'course', e.target.value)}
+                onChange={(e) => handleClassChange(cls.id, 'courseCode', e.target.value)}
                 required
               />
             </div>

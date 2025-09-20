@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { 
   IconHome, 
-  IconCalendar, 
   IconUsers, 
   IconUser, 
   IconLogout,
@@ -58,10 +57,38 @@ const DashboardPage = ({
     setViewMode('reviewer');
   };
 
-  const handleScheduleValidated = (validatedClasses) => {
-    setCurrentSchedule(validatedClasses);
-    setOcrParsedClasses(null); // Clear review data
-    setViewMode('display');
+  const handleScheduleValidated = async (validatedClasses) => {
+    try {
+      // Save courses to database
+      const response = await fetch('/api/courses', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: userData?._id,
+          courses: validatedClasses,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to save courses');
+      }
+
+      console.log('Courses saved successfully to database');
+      
+      setCurrentSchedule(validatedClasses);
+      setOcrParsedClasses(null); // Clear review data
+      setViewMode('display');
+      
+      // Call the parent callback if it exists
+      if (onScheduleUpdate) {
+        onScheduleUpdate(validatedClasses);
+      }
+    } catch (error) {
+      console.error('Error saving courses:', error);
+      alert(`Failed to save courses: ${error.message}`);
+    }
   };
 
   const handleBackToUpload = () => {
@@ -107,7 +134,6 @@ const DashboardPage = ({
 
   const navigationItems = [
     { id: 'dashboard', label: 'Dashboard', icon: IconHome },
-    { id: 'schedule', label: 'Schedule', icon: IconCalendar },
     { id: 'connections', label: 'Connections', icon: IconUsers },
     { id: 'profile', label: 'Profile', icon: IconUser },
   ];

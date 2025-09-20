@@ -67,7 +67,7 @@ const parseScheduleWithGemini = async (file) => {
 
     if (useVisionModel) {
       // Use vision model for images
-      model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
+      model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
       
       // Read image file
       const imageBuffer = await fs.readFile(file.path);
