@@ -1,5 +1,18 @@
-import React from 'react';
-import './ProfileDetailsPage.css';
+import React, { useState, useEffect } from "react";
+import { 
+  IconUser, 
+  IconMail, 
+  IconSchool, 
+  IconCalendar, 
+  IconBook2, 
+  IconFileText, 
+  IconEdit, 
+  IconArrowLeft,
+  IconMapPin,
+  IconUserCircle
+} from '@tabler/icons-react';
+import ProfileEditForm from "./ProfileEditForm";
+import "./ProfileDetailsPage.css";
 
 /**
  * @typedef {Object} UserProfileData
@@ -19,34 +32,151 @@ import './ProfileDetailsPage.css';
  * @param {function} props.onBackToDashboard - Function to navigate back to the dashboard.
  */
 const ProfileDetailsPage = ({ userData, onBackToDashboard }) => {
+  const [isEditing, setIsEditing] = useState(false);
+
   if (!userData) {
     return (
-      <div className="profile-details-container">
-        <h2>Profile Details</h2>
-        <p>No profile data available.</p>
-        <button onClick={onBackToDashboard} className="back-button">Back to Dashboard</button>
+      <div className="profile-page">
+        <div className="profile-header">
+          <button onClick={onBackToDashboard} className="back-button">
+            <IconArrowLeft size={20} />
+            <span>Back to Dashboard</span>
+          </button>
+          <h1 className="page-title">Profile</h1>
+        </div>
+        <div className="profile-content">
+          <div className="empty-state">
+            <IconUserCircle size={64} className="empty-icon" />
+            <h3>No Profile Data</h3>
+            <p>No profile information is available at the moment.</p>
+          </div>
+        </div>
       </div>
     );
   }
 
+  const profileFields = [
+    {
+      icon: IconMail,
+      label: "Email",
+      value: userData.email || "Not provided",
+      type: "email"
+    },
+    {
+      icon: IconSchool,
+      label: "University",
+      value: userData.university || "Not specified",
+      type: "text"
+    },
+    {
+      icon: IconCalendar,
+      label: "Age",
+      value: userData.age ? `${userData.age} years old` : "Not specified",
+      type: "number"
+    },
+    {
+      icon: IconMapPin,
+      label: "Academic Year",
+      value: userData.year || "Not specified",
+      type: "text"
+    },
+    {
+      icon: IconBook2,
+      label: "Major",
+      value: userData.major || "Not specified",
+      type: "text"
+    }
+  ];
+
   return (
-    <div className="profile-details-container">
-      <h2>My Profile</h2>
-      <div className="profile-card">
-        <div className="profile-header">
-          <div className="profile-initial-large">{userData.name?.charAt(0).toUpperCase() || 'U'}</div>
-          <h3>{userData.name}</h3>
-        </div>
-        <div className="profile-info">
-          <p><strong>Email:</strong> {userData.email || 'N/A'}</p>
-          {userData.university && <p><strong>University:</strong> {userData.university}</p>}
-          <p><strong>Age:</strong> {userData.age || 'N/A'}</p>
-          <p><strong>Year:</strong> {userData.year || 'N/A'}</p>
-          <p><strong>Major:</strong> {userData.major || 'N/A'}</p>
-          <p><strong>Bio:</strong> {userData.bio || 'N/A'}</p>
-        </div>
+    <div className="profile-page">
+      {/* Header */}
+      <div className="profile-header">
+        <button onClick={onBackToDashboard} className="back-button">
+          <IconArrowLeft size={20} />
+          <span>Back to Dashboard</span>
+        </button>
+        <h1 className="page-title">My Profile</h1>
+        <button 
+          className="edit-button"
+          onClick={() => setIsEditing(!isEditing)}
+        >
+          <IconEdit size={20} />
+          <span>{isEditing ? 'Cancel' : 'Edit Profile'}</span>
+        </button>
       </div>
-      <button onClick={onBackToDashboard} className="back-button">Back to Dashboard</button>
+
+      <div className="profile-content">
+        {isEditing ? (
+          <ProfileEditForm 
+            initialData={userData}
+            onSave={(updatedData) => {
+              // Handle save logic here
+              setIsEditing(false);
+            }}
+            onCancel={() => setIsEditing(false)}
+          />
+        ) : (
+          <>
+            {/* Profile Overview Card */}
+            <div className="profile-overview-card">
+              <div className="profile-avatar-section">
+                <div className="profile-avatar">
+                  {userData.name?.charAt(0).toUpperCase() || "U"}
+                </div>
+                <div className="profile-basic-info">
+                  <h2 className="profile-name">{userData.name || "Unknown User"}</h2>
+                  <p className="profile-title">
+                    {userData.year && userData.major 
+                      ? `${userData.year} • ${userData.major}`
+                      : userData.year || userData.major || "Student"
+                    }
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Profile Details Grid */}
+            <div className="profile-details-grid">
+              <div className="profile-section">
+                <div className="section-header">
+                  <IconUser size={20} className="section-icon" />
+                  <h3 className="section-title">Personal Information</h3>
+                </div>
+                <div className="profile-fields">
+                  {profileFields.map((field, index) => {
+                    const IconComponent = field.icon;
+                    return (
+                      <div key={index} className="profile-field">
+                        <div className="field-icon">
+                          <IconComponent size={18} />
+                        </div>
+                        <div className="field-content">
+                          <label className="field-label">{field.label}</label>
+                          <span className="field-value">{field.value}</span>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Bio Section */}
+              {userData.bio && (
+                <div className="profile-section">
+                  <div className="section-header">
+                    <IconFileText size={20} className="section-icon" />
+                    <h3 className="section-title">About Me</h3>
+                  </div>
+                  <div className="bio-content">
+                    <p>{userData.bio}</p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from 'react';
-// import { useNavigate, Link } from 'react-router-dom'; // Remove useNavigate and Link imports
+import { 
+  IconHome, 
+  IconCalendar, 
+  IconUsers, 
+  IconUser, 
+  IconLogout,
+  IconMenu2,
+  IconBell,
+  IconSettings,
+  IconSearch,
+  IconChevronLeft
+} from '@tabler/icons-react';
 import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
 import ScheduleReviewForm from './ScheduleReviewForm';
 import InteractiveScheduleDisplay from './InteractiveScheduleDisplay';
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../utils/localStorageUtils';
-// import { useAuth0 } from '@auth0/auth0-react'; // Placeholder for Auth0 import
 
 /**
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
@@ -13,21 +23,19 @@ import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../uti
 
 const DashboardPage = ({
   userData,
-  // Removed onBackToDashboard, onNavigateToMatcher, onNavigateToProfileDetails, onLogout props
+  onNavigateToMatcher,
+  onNavigateToProfileDetails,
+  onLogout,
   onScheduleUpdate,
   userSchedule,
 }) => {
-  const [currentSchedule, setCurrentSchedule] = useState(null); // The final, validated schedule
-  const [ocrParsedClasses, setOcrParsedClasses] = useState(null); // Data from OCR for review
-  const [viewMode, setViewMode] = useState('uploader'); // 'uploader', 'reviewer', 'display'
+  const [currentSchedule, setCurrentSchedule] = useState(null);
+  const [ocrParsedClasses, setOcrParsedClasses] = useState(null);
+  const [viewMode, setViewMode] = useState('uploader');
+  const [activeNavItem, setActiveNavItem] = useState('dashboard');
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
-  // Removed useNavigate initialization
-  // const navigate = useNavigate();
-
-  // Auth0 Placeholder: Get user ID from Auth0 context
-  // const { user, isAuthenticated } = useAuth0();
-  // const userId = isAuthenticated ? user.sub : 'guest';
-  const userId = userData?.id || 'guest'; // Using passed userData for now
+  const userId = userData?.id || 'guest';
 
   useEffect(() => {
     // Load schedule from localStorage on component mount
@@ -97,13 +105,141 @@ const DashboardPage = ({
     }
   };
 
-  return (
-    <div className="dashboard-page-content"> {/* Changed class name for clarity */}
-      {/* Header, navigation links, profile icon, and logout button removed */}
-      <h2 className="dashboard-welcome-title">Welcome to your Scedulr Dashboard, {userData?.name || 'User'}!</h2>
-      <p className="dashboard-intro-text">This is your central hub for academic networking.</p>
+  const navigationItems = [
+    { id: 'dashboard', label: 'Dashboard', icon: IconHome },
+    { id: 'schedule', label: 'Schedule', icon: IconCalendar },
+    { id: 'connections', label: 'Connections', icon: IconUsers },
+    { id: 'profile', label: 'Profile', icon: IconUser },
+  ];
 
-      {renderContent()}
+  const handleNavigation = (itemId) => {
+    setActiveNavItem(itemId);
+    
+    switch (itemId) {
+      case 'connections':
+        if (onNavigateToMatcher) onNavigateToMatcher();
+        break;
+      case 'profile':
+        if (onNavigateToProfileDetails) onNavigateToProfileDetails();
+        break;
+      default:
+        // Handle other navigation items
+        break;
+    }
+  };
+
+  const handleLogoutClick = () => {
+    if (onLogout) onLogout();
+  };
+
+  const toggleSidebar = () => {
+    setSidebarCollapsed(!sidebarCollapsed);
+  };
+
+  return (
+    <div className="dashboard-layout">
+      {/* Sidebar */}
+      <aside className={`dashboard-sidebar ${sidebarCollapsed ? 'collapsed' : ''}`}>
+        <div className="sidebar-header">
+          <div className="sidebar-logo">
+            <h2>Scedulr</h2>
+          </div>
+          <button 
+            className="sidebar-toggle"
+            onClick={toggleSidebar}
+            aria-label="Toggle sidebar"
+          >
+            <IconChevronLeft size={20} />
+          </button>
+        </div>
+        
+        <nav className="sidebar-nav">
+          <ul className="nav-list">
+            {navigationItems.map((item) => {
+              const IconComponent = item.icon;
+              return (
+                <li key={item.id} className="nav-item">
+                  <button
+                    className={`nav-link ${activeNavItem === item.id ? 'active' : ''}`}
+                    onClick={() => handleNavigation(item.id)}
+                  >
+                    <IconComponent size={20} className="nav-icon" />
+                    <span className="nav-label">{item.label}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+        
+        <div className="sidebar-footer">
+          <button className="logout-button" onClick={handleLogoutClick}>
+            <IconLogout size={20} className="nav-icon" />
+            <span className="nav-label">Logout</span>
+          </button>
+        </div>
+      </aside>
+
+      {/* Main Content Area */}
+      <div className="dashboard-main">
+        {/* App Bar */}
+        <header className="dashboard-app-bar">
+          <div className="app-bar-left">
+            <button 
+              className="mobile-menu-toggle"
+              onClick={toggleSidebar}
+              aria-label="Toggle menu"
+            >
+              <IconMenu2 size={24} />
+            </button>
+            
+            <div className="search-container">
+              <IconSearch size={20} className="search-icon" />
+              <input 
+                type="text" 
+                placeholder="Search..."
+                className="search-input"
+              />
+            </div>
+          </div>
+          
+          <div className="app-bar-right">
+            <button className="notification-button" aria-label="Notifications">
+              <IconBell size={20} />
+            </button>
+            
+            <button className="settings-button" aria-label="Settings">
+              <IconSettings size={20} />
+            </button>
+            
+            <div className="user-profile">
+              <div className="user-avatar">
+                {userData?.name ? userData.name.charAt(0).toUpperCase() : 'U'}
+              </div>
+              <div className="user-info">
+                <span className="user-name">{userData?.name || 'User'}</span>
+                <span className="user-email">{userData?.email}</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        {/* Content Area */}
+        <main className="dashboard-content">
+          <div className="content-header">
+            <h1 className="page-title">
+              Welcome back, {userData?.name || 'User'}!
+            </h1>
+            <p className="page-subtitle">
+              Manage your academic schedule and connect with classmates
+            </p>
+          </div>
+          
+          <div className="content-body">
+            {renderContent()}
+          </div>
+        </main>
+      </div>
     </div>
   );
 };
