@@ -114,6 +114,7 @@ function App() {
             setUserData(data.user); // Set the full user data from backend
             console.log("User data from backend:", data.user);
             console.log("User ID from backend:", data.user?._id);
+            console.log("Profile completed status from backend:", data.user?.profileCompleted);
 
             // Conditional redirection based on profileCompleted status
             const currentPath = window.location.pathname;
@@ -399,7 +400,7 @@ function App() {
       <Route
         path="/create-profile"
         element={
-          userData && userData._id ? (
+          userData && userData._id && !userData.profileCompleted ? (
             <UserProfileForm
               onSubmit={handleProfileSubmit}
               initialData={userData}
