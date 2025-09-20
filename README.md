@@ -1,0 +1,2 @@
+# HackRice
+Hack Rice MVP
