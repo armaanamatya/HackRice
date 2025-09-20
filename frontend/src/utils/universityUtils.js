@@ -16,6 +16,7 @@ const universityDomainMap = [
   { domain: "berkeley.edu", name: "University of California, Berkeley" },
   { domain: "utexas.edu", name: "University of Texas at Austin" },
   { domain: "uh.edu", name: "University of Houston" },
+  { domain: "cougarnet.uh.edu", name: "University of Houston" },
   { domain: "ucla.edu", name: "University of California, Los Angeles" },
   { domain: "umich.edu", name: "University of Michigan" },
   { domain: "upenn.edu", name: "University of Pennsylvania" },

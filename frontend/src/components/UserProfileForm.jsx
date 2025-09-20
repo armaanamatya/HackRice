@@ -16,7 +16,7 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
 
   const [emailError, setEmailError] = useState("");
 
-  const allowedDomains = ["rice.edu", "utd.edu", "uh.edu", "cougarnet.uh.edu"];
+  const allowedDomains = ["rice.edu", "utd.edu", "uh.edu", "cougarnet.uh.edu", "utdallas.edu"];
 
   const isValidEmailDomain = (email) => {
     if (!email) return false;
@@ -95,13 +95,6 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            onBlur={() => {
-              if (!isValidEmailDomain(formData.email)) {
-                setEmailError("Invalid email domain. Only Rice, UTD, or UH emails are allowed.");
-              } else {
-                setEmailError("");
-              }
-            }}
             required
           />
           {emailError && <p className="error-message">{emailError}</p>}

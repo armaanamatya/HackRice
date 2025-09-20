@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProfileEditForm.css";
+import { detectUniversityFromEmail } from "../utils/universityUtils";
 
 /**
  * ProfileEditForm component for editing user profile information.
@@ -17,6 +18,7 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
     major: "",
     bio: "",
     email: "", // Add email to formData state
+    university: "", // Add university to formData state
   });
 
   useEffect(() => {
@@ -28,16 +30,26 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
         major: initialData.major || "",
         bio: initialData.bio || "",
         email: initialData.email || "", // Add email to formData state
+        university: initialData.university || "", // Add university to formData state
       });
     }
   }, [initialData]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    
+    setFormData((prevData) => {
+      const newData = {
+        ...prevData,
+        [name]: value,
+      };
+      
+      if (name === "email") {
+        newData.university = detectUniversityFromEmail(value) || "";
+      }
+      
+      return newData;
+    });
   };
 
   const handleSubmit = async (e) => {
@@ -85,6 +97,17 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
           />
         </div>
         <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
           <label htmlFor="age">Age</label>
           <input
             type="number"
@@ -120,6 +143,17 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
             value={formData.major}
             onChange={handleChange}
             required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="university">University</label>
+          <input
+            type="text"
+            id="university"
+            name="university"
+            value={formData.university}
+            onChange={handleChange}
+            readOnly
           />
         </div>
         <div className="form-group">
