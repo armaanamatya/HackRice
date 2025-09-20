@@ -96,6 +96,20 @@
   border-radius: var(--border-radius-sm);
 }
 
+.error-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #ffe6e6;
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid #e74c3c;
+}
+
+.error-message p {
+  margin: 0;
+  color: #c0392b;
+  font-weight: 500;
+}
+
 .extracted-text-preview {
   margin-top: 3rem;
   background: #f8f9fa;

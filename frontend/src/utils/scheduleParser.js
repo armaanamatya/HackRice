@@ -16,9 +16,13 @@
  * @returns {ParsedClassData[]} An array of parsed class objects.
  */
 export const parseScheduleText = (text) => {
+  console.log('=== SCHEDULE PARSER DEBUG ===');
+  console.log('Input text for parsing:', text);
+  
   const classes = [];
   // Split text into lines to process each potential class entry
   const lines = text.split('\n').filter(line => line.trim() !== '');
+  console.log('Non-empty lines to process:', lines);
 
   const dayMap = {
     'M': 'Mon', 'Mo': 'Mon', 'Mon': 'Mon',
@@ -36,10 +40,14 @@ export const parseScheduleText = (text) => {
   // This regex is highly simplified and will likely need extensive refinement.
   const classRegex = /(\b[A-Z]{2,4}\s*\d{2,4}[A-Z]?\b)\s*([MTWThFSu]+)\s*(\d{1,2}:\d{2}(?:AM|PM)?\s*[-–]\s*\d{1,2}:\d{2}(?:AM|PM)?)(?:\s+(.*?))?$/i;
 
-  lines.forEach(line => {
+  lines.forEach((line, index) => {
+    console.log(`Processing line ${index + 1}: "${line}"`);
     const match = line.match(classRegex);
+    console.log(`Regex match result:`, match);
+    
     if (match) {
       const [, course, daysAbbr, timeRange, location] = match;
+      console.log(`✅ Found match - Course: ${course}, Days: ${daysAbbr}, Time: ${timeRange}, Location: ${location || 'N/A'}`);
 
       // Parse days
       const rawDays = daysAbbr.match(/[A-Z][a-z]*/g) || [];
@@ -66,18 +74,28 @@ export const parseScheduleText = (text) => {
       const startTime = convertTo24Hour(startTimeStr);
       const endTime = convertTo24Hour(endTimeStr);
 
+      console.log(`Parsed days: ${parsedDays}, Start time: ${startTime}, End time: ${endTime}`);
+      
       if (parsedDays.length > 0) {
-        classes.push({
+        const classObject = {
           id: String(Date.now() + Math.random()), // Unique ID
           course: course.trim(),
           days: parsedDays,
           startTime,
           endTime,
           location: location ? location.trim() : '',
-        });
+        };
+        console.log(`✅ Adding class:`, classObject);
+        classes.push(classObject);
+      } else {
+        console.log(`❌ Skipping line - no valid days parsed`);
       }
+    } else {
+      console.log(`❌ No regex match for line: "${line}"`);
     }
   });
 
+  console.log(`=== PARSING COMPLETE ===`);
+  console.log(`Total classes found: ${classes.length}`);
   return classes;
 };

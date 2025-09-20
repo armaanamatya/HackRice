@@ -53,20 +53,42 @@ function App() {
   };
 
   const handleLogin = () => {
-    loginWithRedirect();
+    // Store login intent to differentiate from signup
+    sessionStorage.setItem('auth_intent', 'login');
+    loginWithRedirect({
+      authorizationParams: {
+        redirect_uri: `http://localhost:5173/dashboard`,
+        prompt: 'login'
+      }
+    });
   };
 
   const handleSignUp = () => {
-    loginWithRedirect({ screen_hint: "signup" });
+    // Store signup intent to differentiate from login
+    sessionStorage.setItem('auth_intent', 'signup');
+    loginWithRedirect({ 
+      screen_hint: "signup",
+      authorizationParams: {
+        redirect_uri: `http://localhost:5173/dashboard`,
+        prompt: 'login'
+      }
+    });
   };
 
   const handleLogout = () => {
-    logout({ returnTo: window.location.origin });
+    logout({ returnTo: "http://localhost:5173"});
   };
 
-  const handleGetStarted = () => {
-    loginWithRedirect();
-  };
+  // const handleGetStarted = () => {
+  //   // Store signup intent for new users
+  //   sessionStorage.setItem('auth_intent', 'signup');
+  //   loginWithRedirect({
+  //     authorizationParams: {
+  //       redirect_uri: `http://localhost:5173/dashboard`,
+  //       prompt: 'login'
+  //     }
+  //   });
+  // };
 
   useEffect(() => {
     if (isAuthenticated && user) {
@@ -89,18 +111,28 @@ function App() {
           if (response.ok) {
             setUserData(data.user); // Set the full user data from backend
 
-            // Conditional redirection based on profileCompleted status
+            // Conditional redirection based on profileCompleted status and auth intent
+            const currentPath = window.location.pathname;
+            const authIntent = sessionStorage.getItem('auth_intent');
+            
             if (data.user && !data.user.profileCompleted) {
               // If profile is not completed, redirect to profile creation
-              if (window.location.pathname !== "/create-profile") {
+              if (currentPath !== "/create-profile") {
                 navigate("/create-profile");
               }
             } else if (data.user && data.user.profileCompleted) {
-              // If profile is completed, redirect to dashboard
-              if (window.location.pathname !== "/dashboard") {
+              // If profile is completed, check auth intent for new users
+              if (authIntent === 'signup' && currentPath === "/dashboard") {
+                // New user with completed profile, redirect to create-profile to update info
+                navigate("/create-profile");
+              } else if (currentPath === "/create-profile" || currentPath === "/") {
+                // Existing user or completed signup, go to dashboard
                 navigate("/dashboard");
               }
             }
+            
+            // Clear auth intent after processing
+            sessionStorage.removeItem('auth_intent');
           } else {
             console.error("Backend sync failed:", data.message);
             // Optionally handle error, e.g., redirect to an error page or show a message
@@ -170,7 +202,7 @@ function App() {
               </button>
             </div>
           ) : (
-            <button className="cta-button" onClick={handleGetStarted}>
+            <button className="cta-button" onClick={handleSignUp}>
               Get Started
             </button>
           )}
@@ -329,7 +361,7 @@ function App() {
       <section className="cta-section" id="cta-section">
         <div className="container">
           <h2>Ready to transform your academic experience?</h2>
-          <button className="cta-button" onClick={handleGetStarted}>
+          <button className="cta-button" onClick={handleSignUp}>
             Join Scedulr
           </button>
         </div>
