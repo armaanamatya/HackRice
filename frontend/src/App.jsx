@@ -1,25 +1,35 @@
 import React, { useState } from 'react'
 import UserProfileForm from './components/UserProfileForm'
+import DashboardPage from './components/DashboardPage'
 import './App.css'
 
 function App() {
-  const [showProfileForm, setShowProfileForm] = useState(false);
+  const [currentPage, setCurrentPage] = useState('landing'); // 'landing', 'profileForm', 'dashboard'
+  const [userData, setUserData] = useState(null);
 
   const handleCreateProfileClick = () => {
-    setShowProfileForm(true);
+    setCurrentPage('profileForm');
   };
 
-  const handleProfileSubmit = () => {
-    setShowProfileForm(false);
-    // Potentially show a success message or redirect to a dashboard
+  const handleProfileSubmit = (data) => {
+    setUserData(data);
+    setCurrentPage('dashboard');
   };
 
-  return (
-    <div className="app">
-      {showProfileForm ? (
-        <UserProfileForm onSubmit={handleProfileSubmit} />
-      ) : (
-        <>
+  const handleNavigateToDashboard = () => {
+    setCurrentPage('dashboard');
+  };
+
+  // Render different pages based on currentPage state
+  switch (currentPage) {
+    case 'profileForm':
+      return <UserProfileForm onSubmit={handleProfileSubmit} />;
+    case 'dashboard':
+      return <DashboardPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />;
+    case 'landing':
+    default:
+      return (
+        <div className="app">
           {/* Header */}
           <header className="header">
             <div className="container">
@@ -104,10 +114,9 @@ function App() {
               <p><a href="mailto:info@hackrice15.com" style={{ color: '#b0b0b0', textDecoration: 'none' }}>info@hackrice15.com</a></p>
             </div>
           </footer>
-        </>
-      )}
-    </div>
-  )
+        </div>
+      );
+  }
 }
 
 export default App
