@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './UserProfileForm.css';
 
 const UserProfileForm = ({ onSubmit, initialData }) => {
-  const navigate = useNavigate(); // Initialize useNavigate
-
   const [formData, setFormData] = useState({
     name: initialData?.name || '',
     age: initialData?.age || '',
@@ -21,33 +18,12 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-
-    try {
-      const response = await fetch(`/api/users/complete-profile/${initialData._id}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        alert('Profile Created Successfully!');
-        if (onSubmit) {
-          // Pass the updated user data (including profileCompleted: true) back to App.jsx
-          onSubmit(data.user);
-        }
-      } else {
-        console.error('Profile update failed:', data.message);
-        alert(`Error: ${data.message}`);
-      }
-    } catch (error) {
-      console.error('Error submitting profile:', error);
-      alert('An error occurred while creating your profile.');
+    console.log('User Profile Data:', formData);
+    alert('Profile Created Successfully!');
+    if (onSubmit) {
+      onSubmit(formData);
     }
   };
 
