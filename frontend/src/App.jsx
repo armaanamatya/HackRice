@@ -70,9 +70,46 @@ function App() {
 
   useEffect(() => {
     if (isAuthenticated && user) {
-      const userEmail = user.email;
-      const detectedUniversity = detectUniversityFromEmail(userEmail);
+      // Fetch or sync user data from your backend
+      const syncUserWithBackend = async () => {
+        try {
+          const response = await fetch('/api/users/auth0-sync', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name: user.name, email: user.email, university: detectUniversityFromEmail(user.email) }),
+          });
+          const data = await response.json();
 
+          if (response.ok) {
+            setUserData(data.user); // Set the full user data from backend
+            
+            // Conditional redirection based on profileCompleted status
+            if (data.user && !data.user.profileCompleted) {
+              // If profile is not completed, redirect to profile creation
+              if (window.location.pathname !== '/create-profile') {
+                navigate('/create-profile');
+              }
+            } else if (data.user && data.user.profileCompleted) {
+              // If profile is completed, redirect to dashboard
+              if (window.location.pathname !== '/dashboard') {
+                navigate('/dashboard');
+              }
+            }
+          } else {
+            console.error('Backend sync failed:', data.message);
+            // Optionally handle error, e.g., redirect to an error page or show a message
+          }
+        } catch (error) {
+          console.error('Error syncing user with backend:', error);
+          // Handle network or other errors
+        }
+      };
+
+      // Only sync if userData is not yet loaded or if user changes (e.g., after logout/login)
+      if (!userData || userData.email !== user.email) {
+        syncUserWithBackend();
       if (!userData) {
         setUserData({
           name: user.name || user.nickname || "User",
@@ -94,7 +131,7 @@ function App() {
         navigate("/dashboard");
       }
     }
-  }, [isAuthenticated, user, userData, navigate]);
+  }, [isAuthenticated, user, navigate, userData]); // Added userData to dependency array
 
   // Landing Page Content (without header, as it will be handled by MainLayout for authenticated routes)
   const LandingPageContent = () => (
@@ -384,6 +421,31 @@ function App() {
         }
       />
       {/* Redirect any unhandled paths to the landing page or a 404 page */}
+      <Route path="/create-profile" element={<UserProfileForm onSubmit={handleProfileSubmit} initialData={userData} />} />
+
+      {/* Authenticated routes nested under MainLayout */}
+      <Route element={<ProtectedRoute><MainLayout userData={userData} onLogout={handleLogout} /></ProtectedRoute>}>
+        <Route
+          path="/dashboard"
+          element={
+            <DashboardPage
+              userData={userData}
+              onScheduleUpdate={handleUserScheduleUpdate}
+              userSchedule={userSchedule}
+            />
+          }
+        />
+        <Route
+          path="/dashboard/matcher"
+          element={<MatcherPage currentUserSchedule={userSchedule} />}
+        />
+        <Route
+          path="/dashboard/profile"
+          element={<ProfileDetailsPage userData={userData} setUserData={setUserData} onBackToDashboard={handleNavigateToDashboard} />}
+        />
+      </Route>
+
+      {/* Catch all for unhandled paths */}
       <Route path="*" element={<LandingPageContent />} />
     </Routes>
   );

@@ -14,7 +14,7 @@ const MainLayout = ({ userData, onLogout }) => {
     <div className="main-layout">
       <Sidebar userName={userData?.name || 'User'} onLogout={onLogout} />
       <div className="main-content-area">
-        <Outlet /> {/* This is where nested routes will render */}
+        <Outlet context={{ onLogout }} /> {/* Pass onLogout via context */}
       </div>
     </div>
   );

@@ -18,6 +18,22 @@ const userSchema = new mongoose.Schema({
     type: Number,
     required: false,
   },
+  profileCompleted: {
+    type: Boolean,
+    default: false,
+  },
+  year: {
+    type: String,
+    required: false,
+  },
+  major: {
+    type: String,
+    required: false,
+  },
+  bio: {
+    type: String,
+    required: false,
+  },
   createdAt: {
     type: Date,
     default: Date.now
