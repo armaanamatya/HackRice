@@ -241,6 +241,15 @@
   margin: 0;
 }
 
+/* Schedule Display Wrapper */
+.schedule-display-wrapper {
+  max-height: 500px; /* Adjust as needed */
+  overflow-y: auto;
+  padding: 1.5rem;
+  background-color: var(--bg-super-light);
+  border-top: 1px solid var(--border-color);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .profile-page {

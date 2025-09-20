@@ -8,7 +8,9 @@ import {
   IconBell,
   IconSettings,
   IconSearch,
-  IconChevronLeft
+  IconChevronLeft,
+  IconBook2,// Added IconBook2
+  IconCalendar
 } from '@tabler/icons-react';
 import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
@@ -17,8 +19,10 @@ import InteractiveScheduleDisplay from './InteractiveScheduleDisplay';
 import ScheduleCalendar from './ScheduleCalendar';
 import ToastContainer, { showSuccessToast, showErrorToast } from './ToastContainer';
 import SettingsDropdown from './SettingsDropdown'; // Import SettingsDropdown
+import SearchResultsDropdown from './SearchResultsDropdown'; // Import SearchResultsDropdown
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../utils/localStorageUtils';
 import '../utils/clearStorage'; // Import storage debugging utilities
+import ClassesPage from './ClassesPage'; // Added ClassesPage import
 
 /**
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
@@ -31,6 +35,7 @@ const DashboardPage = ({
   onLogout,
   onScheduleUpdate,
   userSchedule,
+  onNavigateToClasses, // Add new prop here
   // onNavigateToSettings, // Add new prop here
 }) => {
   const [currentSchedule, setCurrentSchedule] = useState(null);
@@ -41,6 +46,10 @@ const DashboardPage = ({
   const [showSettingsDropdown, setShowSettingsDropdown] = useState(false); // New state for dropdown
   const [savedCourses, setSavedCourses] = useState(null);
   const [isLoadingCourses, setIsLoadingCourses] = useState(true);
+  const [searchQuery, setSearchQuery] = useState(''); // New state for search query
+  const [searchResults, setSearchResults] = useState([]); // New state for search results
+  const [isSearching, setIsSearching] = useState(false); // New state for search loading
+  const [searchError, setSearchError] = useState(null); // New state for search errors
 
   const userId = userData?.id || 'guest';
 
@@ -253,6 +262,8 @@ const DashboardPage = ({
             onImportSchedule={handleImportSchedule}
           />
         );
+      case 'classes': // New case for ClassesPage
+        return <ClassesPage userSchedule={userSchedule} />;
       default:
         return (
           <ScheduleUploader 
@@ -267,6 +278,8 @@ const DashboardPage = ({
 
   const navigationItems = [
     { id: 'dashboard', label: 'Dashboard', icon: IconHome },
+    { id: 'schedule', label: 'Schedule', icon: IconCalendar },
+    { id: 'classes', label: 'Classes', icon: IconBook2 }, // New Classes item
     { id: 'connections', label: 'Connections', icon: IconUsers },
     { id: 'profile', label: 'Profile', icon: IconUser },
   ];
@@ -281,9 +294,9 @@ const DashboardPage = ({
       case 'profile':
         if (onNavigateToProfileDetails) onNavigateToProfileDetails();
         break;
-      // case 'settings': // Add new case for settings
-      //   if (onNavigateToSettings) onNavigateToSettings();
-      //   break;
+      case 'classes': // Handle navigation to classes page
+        if (onNavigateToClasses) onNavigateToClasses();
+        break;
       default:
         // Handle other navigation items
         break;
@@ -301,6 +314,50 @@ const DashboardPage = ({
   const toggleSettingsDropdown = () => {
     setShowSettingsDropdown(prev => !prev);
   };
+
+  const handleSearchInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const closeSearchResults = () => {
+    setSearchQuery('');
+    setSearchResults([]);
+  };
+
+  useEffect(() => {
+    if (searchQuery.trim() === '') {
+      setSearchResults([]);
+      setIsSearching(false);
+      setSearchError(null);
+      return;
+    }
+
+    setIsSearching(true);
+    setSearchError(null);
+
+    const handler = setTimeout(async () => {
+      try {
+        const response = await fetch(
+          `/api/users/search?name=${searchQuery}&university=${userData?.university}`
+        );
+        if (!response.ok) {
+          throw new Error('Failed to fetch search results');
+        }
+        const data = await response.json();
+        setSearchResults(data);
+      } catch (error) {
+        console.error("Search error:", error);
+        setSearchError(error.message);
+        setSearchResults([]);
+      } finally {
+        setIsSearching(false);
+      }
+    }, 500); // 500ms debounce time
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [searchQuery, userData?.university]);
 
   // Helper function to check if a string is an email
   const isEmail = (text) => /^[\w-.]+@[\w-.]+\.[\w-.]+$/.test(text);
@@ -378,7 +435,18 @@ const DashboardPage = ({
                 type="text" 
                 placeholder="Search..."
                 className="search-input"
+                value={searchQuery}
+                onChange={handleSearchInputChange}
               />
+              {(searchQuery.length > 0 || isSearching || searchError) && (
+                <SearchResultsDropdown
+                  results={searchResults}
+                  isLoading={isSearching}
+                  error={searchError}
+                  onClose={closeSearchResults}
+                  onUserClick={onNavigateToProfileDetails} // Pass the navigation prop
+                />
+              )}
             </div>
           </div>
           

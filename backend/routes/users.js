@@ -186,4 +186,25 @@ router.patch("/complete-profile/:id", async (req, res) => {
   }
 });
 
+// Search users by name and optionally by university
+router.get("/search", async (req, res) => {
+  try {
+    const { name, university } = req.query;
+    const query = {};
+
+    if (name) {
+      query.name = { $regex: name, $options: "i" }; // Case-insensitive search
+    }
+
+    if (university && university !== 'Other') {
+      query.university = university;
+    }
+
+    const users = await User.find(query).select('-password'); // Exclude password from results
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 module.exports = router;
