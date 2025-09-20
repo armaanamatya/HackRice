@@ -1,0 +1,14 @@
+department,code,title,description,credit_hours,prerequisites
+French Studies,FREN 150,Introduction to Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,None
+French Studies,FREN 134,Introduction to Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,2,None
+French Studies,FREN 226,Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,FREN 173 or equivalent
+French Studies,FREN 208,Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,FREN 126 or equivalent
+French Studies,FREN 344,Advanced Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,3,FREN 245 and junior standing
+French Studies,FREN 303,Advanced Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,3,FREN 204 and junior standing
+French Studies,FREN 369,Advanced Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,2,FREN 283 and junior standing
+French Studies,FREN 401,Special Topics in Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,2,FREN 338 and senior standing or graduate status
+French Studies,FREN 466,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,FREN 307 and senior standing or graduate status
+French Studies,FREN 424,Advanced Seminar,Advanced exploration of seminar covering current research and industry practices.,3,FREN 345 and senior standing or graduate status
+French Studies,FREN 521,Graduate Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,4,FREN 374 and senior standing or graduate status
+French Studies,FREN 563,Graduate Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,FREN 385 and senior standing or graduate status
+French Studies,FREN 628,Advanced Seminar,Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.,4,FREN 392 and senior standing or graduate status

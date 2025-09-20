@@ -1,0 +1,11 @@
+department,code,title,description,credit_hours,prerequisites
+Education,EDUC 198,Fundamentals of Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,None
+Education,EDUC 149,Fundamentals of Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,None
+Education,EDUC 295,Intermediate Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,EDUC 108 or equivalent
+Education,EDUC 204,Applied Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,EDUC 163 or equivalent
+Education,EDUC 312,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,2,EDUC 201 and junior standing
+Education,EDUC 316,Advanced Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,4,EDUC 247 and junior standing
+Education,EDUC 308,Applications,Advanced exploration of applications covering current research and industry practices.,3,EDUC 249 and junior standing
+Education,EDUC 412,Advanced Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,3,EDUC 368 and senior standing or graduate status
+Education,EDUC 429,Graduate Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,4,EDUC 346 and senior standing or graduate status
+Education,EDUC 430,Special Topics in Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,EDUC 382 and senior standing or graduate status

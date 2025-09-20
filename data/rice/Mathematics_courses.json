@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Mathematics",
+    "code": "MATH 165",
+    "title": "Fundamentals of Calculus",
+    "description": "Examination of key concepts and methodologies in calculus. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 103",
+    "title": "Fundamentals of Linear Algebra",
+    "description": "Rigorous treatment of linear algebra theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 249",
+    "title": "Abstract Algebra",
+    "description": "Rigorous treatment of abstract algebra theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 168 or equivalent"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 235",
+    "title": "Applied Calculus",
+    "description": "Rigorous treatment of calculus theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 143 or equivalent"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 332",
+    "title": "Linear Algebra",
+    "description": "Fundamental concepts and applications of linear algebra. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 294 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 348",
+    "title": "Advanced Differential Equations",
+    "description": "In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 293 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 304",
+    "title": "Advanced Calculus",
+    "description": "Interdisciplinary approach to calculus combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 293 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 415",
+    "title": "Graduate Differential Equations",
+    "description": "Fundamental concepts and applications of differential equations. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 365 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 467",
+    "title": "Graduate Linear Algebra",
+    "description": "Examination of key concepts and methodologies in linear algebra. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 332 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 419",
+    "title": "Advanced Statistics",
+    "description": "Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 686",
+    "title": "Advanced Probability",
+    "description": "Advanced exploration of probability covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 359 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 626",
+    "title": "Graduate Statistics",
+    "description": "Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 356 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 692",
+    "title": "Special Topics in Differential Equations",
+    "description": "Examination of key concepts and methodologies in differential equations. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 339 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 673",
+    "title": "Graduate Statistics",
+    "description": "Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 314 and senior standing or graduate status"
+  }
+]

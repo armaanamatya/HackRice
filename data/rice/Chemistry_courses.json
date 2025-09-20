@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Chemistry",
+    "code": "CHEM 111",
+    "title": "Fundamentals of Organic Chemistry",
+    "description": "Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 145",
+    "title": "Introduction to Materials Chemistry",
+    "description": "Examination of key concepts and methodologies in materials chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 203",
+    "title": "Intermediate Materials Chemistry",
+    "description": "Comprehensive study of materials chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 123 or equivalent"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 298",
+    "title": "Organic Chemistry",
+    "description": "Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 124 or equivalent"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 381",
+    "title": "Advanced Physical Chemistry",
+    "description": "Fundamental concepts and applications of physical chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 262 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 392",
+    "title": "Advanced Analytical Chemistry",
+    "description": "Fundamental concepts and applications of analytical chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 269 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 324",
+    "title": "Advanced Materials Chemistry",
+    "description": "Fundamental concepts and applications of materials chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 218 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 495",
+    "title": "Graduate Organic Chemistry",
+    "description": "Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 334 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 451",
+    "title": "Advanced Environmental Chemistry",
+    "description": "Comprehensive study of environmental chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 330 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 438",
+    "title": "Special Topics in Biochemistry",
+    "description": "Rigorous treatment of biochemistry theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 373 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 637",
+    "title": "Special Topics in Medicinal Chemistry",
+    "description": "Examination of key concepts and methodologies in medicinal chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "CHEM 353 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 596",
+    "title": "Graduate Analytical Chemistry",
+    "description": "Rigorous treatment of analytical chemistry theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 304 and senior standing or graduate status"
+  }
+]

@@ -1,0 +1,14 @@
+department,code,title,description,credit_hours,prerequisites
+Economics,ECON 154,Fundamentals of Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,2,None
+Economics,ECON 156,Principles of Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,4,None
+Economics,ECON 201,Applied Workshop,Examination of key concepts and methodologies in workshop. Includes hands-on experience and case studies.,1,ECON 123 or equivalent
+Economics,ECON 261,Applied Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,ECON 198 or equivalent
+Economics,ECON 394,Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,ECON 283 and junior standing
+Economics,ECON 319,Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,ECON 253 and junior standing
+Economics,ECON 335,Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,ECON 228 and junior standing
+Economics,ECON 409,Graduate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,ECON 322 and senior standing or graduate status
+Economics,ECON 466,Special Topics in Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,2,ECON 308 and senior standing or graduate status
+Economics,ECON 448,Special Topics in Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,2,ECON 317 and senior standing or graduate status
+Economics,ECON 554,Graduate Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,2,ECON 392 and senior standing or graduate status
+Economics,ECON 707,Advanced Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,ECON 376 and senior standing or graduate status
+Economics,ECON 563,Advanced Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,2,ECON 303 and senior standing or graduate status

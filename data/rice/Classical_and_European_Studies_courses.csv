@@ -1,0 +1,16 @@
+department,code,title,description,credit_hours,prerequisites
+Classical and European Studies,CLAS 180,Fundamentals of Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,None
+Classical and European Studies,CLAS 143,Principles of Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,None
+Classical and European Studies,CLAS 272,Applied Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,CLAS 188 or equivalent
+Classical and European Studies,CLAS 259,Applied Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,2,CLAS 197 or equivalent
+Classical and European Studies,CLAS 389,Advanced Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,CLAS 226 and junior standing
+Classical and European Studies,CLAS 300,Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,4,CLAS 213 and junior standing
+Classical and European Studies,CLAS 382,Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,4,CLAS 260 and junior standing
+Classical and European Studies,CLAS 498,Advanced Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,3,CLAS 340 and senior standing or graduate status
+Classical and European Studies,CLAS 455,Special Topics in Methods,Advanced exploration of methods covering current research and industry practices.,4,CLAS 354 and senior standing or graduate status
+Classical and European Studies,CLAS 465,Special Topics in Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,4,CLAS 313 and senior standing or graduate status
+Classical and European Studies,CLAS 574,Advanced Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,CLAS 309 and senior standing or graduate status
+Classical and European Studies,CLAS 522,Graduate Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,CLAS 383 and senior standing or graduate status
+Classical and European Studies,CLAS 542,Graduate Analysis,Advanced exploration of analysis covering current research and industry practices.,4,CLAS 365 and senior standing or graduate status
+Classical and European Studies,CLAS 757,Graduate Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,CLAS 369 and senior standing or graduate status
+Classical and European Studies,CLAS 618,Special Topics in Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,3,CLAS 393 and senior standing or graduate status

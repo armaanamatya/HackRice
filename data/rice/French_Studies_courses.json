@@ -1,0 +1,106 @@
+[
+  {
+    "department": "French Studies",
+    "code": "FREN 150",
+    "title": "Introduction to Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 134",
+    "title": "Introduction to Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 226",
+    "title": "Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "FREN 173 or equivalent"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 208",
+    "title": "Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 126 or equivalent"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 344",
+    "title": "Advanced Applications",
+    "description": "Rigorous treatment of applications theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 245 and junior standing"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 303",
+    "title": "Advanced Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 204 and junior standing"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 369",
+    "title": "Advanced Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "FREN 283 and junior standing"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 401",
+    "title": "Special Topics in Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "FREN 338 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 466",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 307 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 424",
+    "title": "Advanced Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 345 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 521",
+    "title": "Graduate Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "FREN 374 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 563",
+    "title": "Graduate Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 385 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 628",
+    "title": "Advanced Seminar",
+    "description": "Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "FREN 392 and senior standing or graduate status"
+  }
+]

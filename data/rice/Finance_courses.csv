@@ -1,0 +1,11 @@
+department,code,title,description,credit_hours,prerequisites
+Finance,FINA 150,Principles of Practice,Advanced exploration of practice covering current research and industry practices.,1,None
+Finance,FINA 100,Introduction to Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,3,None
+Finance,FINA 217,Intermediate Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,4,FINA 109 or equivalent
+Finance,FINA 273,Intermediate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,4,FINA 167 or equivalent
+Finance,FINA 383,Advanced Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,FINA 201 and junior standing
+Finance,FINA 302,Seminar,In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.,3,FINA 232 and junior standing
+Finance,FINA 389,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,1,FINA 235 and junior standing
+Finance,FINA 415,Graduate Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,2,FINA 343 and senior standing or graduate status
+Finance,FINA 437,Advanced Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,FINA 378 and senior standing or graduate status
+Finance,FINA 423,Graduate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,FINA 361 and senior standing or graduate status

@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Sociology",
+    "code": "SOCI 135",
+    "title": "Introduction to Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 179",
+    "title": "Introduction to Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 219",
+    "title": "Intermediate Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "SOCI 110 or equivalent"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 209",
+    "title": "Intermediate Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SOCI 148 or equivalent"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 373",
+    "title": "Advanced Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "SOCI 287 and junior standing"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 383",
+    "title": "Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "SOCI 265 and junior standing"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 344",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "SOCI 214 and junior standing"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 408",
+    "title": "Special Topics in Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "SOCI 389 and senior standing or graduate status"
+  }
+]

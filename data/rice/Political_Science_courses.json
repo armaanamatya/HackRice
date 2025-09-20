@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Political Science",
+    "code": "POLI 121",
+    "title": "Fundamentals of Programming",
+    "description": "Fundamental concepts and applications of programming. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 149",
+    "title": "Principles of Web Development",
+    "description": "Comprehensive study of web development with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 236",
+    "title": "Intermediate Machine Learning",
+    "description": "Fundamental concepts and applications of machine learning. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "POLI 162 or equivalent"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 217",
+    "title": "Applied Algorithms",
+    "description": "Comprehensive study of algorithms with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 180 or equivalent"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 337",
+    "title": "Software Engineering",
+    "description": "Rigorous treatment of software engineering theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "POLI 214 and junior standing"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 321",
+    "title": "Advanced Computer Graphics",
+    "description": "Advanced exploration of computer graphics covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "POLI 283 and junior standing"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 336",
+    "title": "Advanced Data Structures",
+    "description": "Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 215 and junior standing"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 416",
+    "title": "Special Topics in Web Development",
+    "description": "Interdisciplinary approach to web development combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 415",
+    "title": "Advanced Artificial Intelligence",
+    "description": "Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "POLI 382 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 478",
+    "title": "Special Topics in Computer Graphics",
+    "description": "Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 361 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 676",
+    "title": "Special Topics in Software Engineering",
+    "description": "Advanced exploration of software engineering covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 346 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 536",
+    "title": "Graduate Data Structures",
+    "description": "Interdisciplinary approach to data structures combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "POLI 316 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 643",
+    "title": "Graduate Algorithms",
+    "description": "Rigorous treatment of algorithms theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 306 and senior standing or graduate status"
+  }
+]

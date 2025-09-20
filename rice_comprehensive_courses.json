@@ -1,0 +1,4362 @@
+[
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 150",
+    "title": "Principles of Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 139",
+    "title": "Introduction to Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 246",
+    "title": "Applied Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 197 or equivalent"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 217",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 197 or equivalent"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 377",
+    "title": "Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 282 and junior standing"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 372",
+    "title": "Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 275 and junior standing"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 389",
+    "title": "Seminar",
+    "description": "In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 250 and junior standing"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 491",
+    "title": "Advanced Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "BIOE 339 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 435",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 361 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 428",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 303 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 672",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 335 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 730",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 386 and senior standing or graduate status"
+  },
+  {
+    "department": "Bioengineering",
+    "code": "BIOE 765",
+    "title": "Advanced Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 373 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 109",
+    "title": "Introduction to Innovation",
+    "description": "Advanced exploration of innovation covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 127",
+    "title": "Fundamentals of Design",
+    "description": "Rigorous treatment of design theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 210",
+    "title": "Applied Optimization",
+    "description": "Interdisciplinary approach to optimization combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 180 or equivalent"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 280",
+    "title": "Applied Controls",
+    "description": "In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 159 or equivalent"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 373",
+    "title": "Design",
+    "description": "Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 289 and junior standing"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 385",
+    "title": "Advanced Design",
+    "description": "In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 219 and junior standing"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 344",
+    "title": "Design",
+    "description": "Advanced exploration of design covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 203 and junior standing"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 429",
+    "title": "Special Topics in Controls",
+    "description": "Fundamental concepts and applications of controls. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CHBE 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 451",
+    "title": "Special Topics in Project Management",
+    "description": "Interdisciplinary approach to project management combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "CHBE 375 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 466",
+    "title": "Advanced Innovation",
+    "description": "Fundamental concepts and applications of innovation. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHBE 332 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 512",
+    "title": "Advanced Controls",
+    "description": "Advanced exploration of controls covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CHBE 358 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 666",
+    "title": "Special Topics in Thermodynamics",
+    "description": "Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.",
+    "credit_hours": "1",
+    "prerequisites": "CHBE 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 741",
+    "title": "Graduate Optimization",
+    "description": "In-depth analysis of optimization principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CHBE 318 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemical and Biomolecular Engineering",
+    "code": "CHBE 738",
+    "title": "Advanced Dynamics",
+    "description": "Interdisciplinary approach to dynamics combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "CHBE 318 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 168",
+    "title": "Fundamentals of Design",
+    "description": "Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 185",
+    "title": "Fundamentals of Thermodynamics",
+    "description": "Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 263",
+    "title": "Intermediate Controls",
+    "description": "In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CEVE 111 or equivalent"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 274",
+    "title": "Systems",
+    "description": "Rigorous treatment of systems theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 130 or equivalent"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 326",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 224 and junior standing"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 341",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 289 and junior standing"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 343",
+    "title": "Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 237 and junior standing"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 438",
+    "title": "Special Topics in Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CEVE 323 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 402",
+    "title": "Advanced Dynamics",
+    "description": "In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 469",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "CEVE 378 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 769",
+    "title": "Special Topics in Optimization",
+    "description": "Examination of key concepts and methodologies in optimization. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 326 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 592",
+    "title": "Graduate Ethics",
+    "description": "Interdisciplinary approach to ethics combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 175",
+    "title": "Fundamentals of Programming",
+    "description": "Interdisciplinary approach to programming combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 132",
+    "title": "Fundamentals of Artificial Intelligence",
+    "description": "Rigorous treatment of artificial intelligence theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 295",
+    "title": "Intermediate Cybersecurity",
+    "description": "Advanced exploration of cybersecurity covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 103 or equivalent"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 280",
+    "title": "Applied Web Development",
+    "description": "Fundamental concepts and applications of web development. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 112 or equivalent"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 346",
+    "title": "Advanced Software Engineering",
+    "description": "Examination of key concepts and methodologies in software engineering. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 211 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 331",
+    "title": "Advanced Human-Computer Interaction",
+    "description": "Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 214 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 317",
+    "title": "Software Engineering",
+    "description": "In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 295 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 412",
+    "title": "Advanced Data Structures",
+    "description": "Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 399 and senior standing or graduate status"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 463",
+    "title": "Special Topics in Database Systems",
+    "description": "Fundamental concepts and applications of database systems. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "COMP 346 and senior standing or graduate status"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COMP 446",
+    "title": "Special Topics in Human-Computer Interaction",
+    "description": "Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COMP 399 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 120",
+    "title": "Fundamentals of Data Structures",
+    "description": "Comprehensive study of data structures with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 144",
+    "title": "Fundamentals of Algorithms",
+    "description": "Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 230",
+    "title": "Applied Computer Networks",
+    "description": "Rigorous treatment of computer networks theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 122 or equivalent"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 293",
+    "title": "Intermediate Data Structures",
+    "description": "Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 166 or equivalent"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 354",
+    "title": "Advanced Computer Graphics",
+    "description": "In-depth analysis of computer graphics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 247 and junior standing"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 378",
+    "title": "Artificial Intelligence",
+    "description": "Advanced exploration of artificial intelligence covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 202 and junior standing"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 314",
+    "title": "Advanced Computer Graphics",
+    "description": "Advanced exploration of computer graphics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 290 and junior standing"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 422",
+    "title": "Graduate Programming",
+    "description": "In-depth analysis of programming principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 302 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 465",
+    "title": "Advanced Machine Learning",
+    "description": "In-depth analysis of machine learning principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 301 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 483",
+    "title": "Graduate Computer Graphics",
+    "description": "Fundamental concepts and applications of computer graphics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 333 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 701",
+    "title": "Advanced Computer Graphics",
+    "description": "Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ELEC 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Electrical and Computer Engineering",
+    "code": "ELEC 654",
+    "title": "Graduate Computer Networks",
+    "description": "In-depth analysis of computer networks principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ELEC 369 and senior standing or graduate status"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 186",
+    "title": "Introduction to Computer Graphics",
+    "description": "Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 119",
+    "title": "Principles of Database Systems",
+    "description": "Comprehensive study of database systems with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 257",
+    "title": "Algorithms",
+    "description": "In-depth analysis of algorithms principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 177 or equivalent"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 289",
+    "title": "Applied Algorithms",
+    "description": "Fundamental concepts and applications of algorithms. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 101 or equivalent"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 354",
+    "title": "Advanced Web Development",
+    "description": "Advanced exploration of web development covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 296 and junior standing"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 371",
+    "title": "Advanced Programming",
+    "description": "Rigorous treatment of programming theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MSNE 228 and junior standing"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 339",
+    "title": "Computer Networks",
+    "description": "Fundamental concepts and applications of computer networks. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 252 and junior standing"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 463",
+    "title": "Graduate Computer Networks",
+    "description": "Examination of key concepts and methodologies in computer networks. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 348 and senior standing or graduate status"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 434",
+    "title": "Graduate Data Structures",
+    "description": "Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MSNE 372 and senior standing or graduate status"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 410",
+    "title": "Advanced Computer Graphics",
+    "description": "Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MSNE 388 and senior standing or graduate status"
+  },
+  {
+    "department": "Materials Science and NanoEngineering",
+    "code": "MSNE 727",
+    "title": "Special Topics in Programming",
+    "description": "Comprehensive study of programming with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MSNE 305 and senior standing or graduate status"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 150",
+    "title": "Principles of Dynamics",
+    "description": "In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 163",
+    "title": "Principles of Design",
+    "description": "Interdisciplinary approach to design combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 278",
+    "title": "Ethics",
+    "description": "In-depth analysis of ethics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MECH 134 or equivalent"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 279",
+    "title": "Design",
+    "description": "Interdisciplinary approach to design combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "MECH 146 or equivalent"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 396",
+    "title": "Advanced Dynamics",
+    "description": "Fundamental concepts and applications of dynamics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "MECH 276 and junior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 300",
+    "title": "Dynamics",
+    "description": "In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MECH 245 and junior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 392",
+    "title": "Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MECH 246 and junior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 494",
+    "title": "Advanced Materials",
+    "description": "Examination of key concepts and methodologies in materials. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MECH 355 and senior standing or graduate status"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 469",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "MECH 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 450",
+    "title": "Advanced Optimization",
+    "description": "Rigorous treatment of optimization theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "MECH 369 and senior standing or graduate status"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECH 580",
+    "title": "Graduate Controls",
+    "description": "Fundamental concepts and applications of controls. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "MECH 302 and senior standing or graduate status"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 111",
+    "title": "Principles of Biochemistry",
+    "description": "Fundamental concepts and applications of biochemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 124",
+    "title": "Fundamentals of Physiology",
+    "description": "Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 221",
+    "title": "Evolution",
+    "description": "Comprehensive study of evolution with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 198 or equivalent"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 234",
+    "title": "Applied Bioinformatics",
+    "description": "Interdisciplinary approach to bioinformatics combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 172 or equivalent"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 349",
+    "title": "Evolution",
+    "description": "Examination of key concepts and methodologies in evolution. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 291 and junior standing"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 351",
+    "title": "Advanced Microbiology",
+    "description": "Interdisciplinary approach to microbiology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "BIOC 200 and junior standing"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 313",
+    "title": "Advanced Physiology",
+    "description": "Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 287 and junior standing"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 406",
+    "title": "Graduate Biotechnology",
+    "description": "Rigorous treatment of biotechnology theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 300 and senior standing or graduate status"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 465",
+    "title": "Advanced Microbiology",
+    "description": "Examination of key concepts and methodologies in microbiology. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 323 and senior standing or graduate status"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 414",
+    "title": "Advanced Genetics",
+    "description": "Examination of key concepts and methodologies in genetics. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 340 and senior standing or graduate status"
+  },
+  {
+    "department": "Biosciences",
+    "code": "BIOC 717",
+    "title": "Special Topics in Molecular Biology",
+    "description": "In-depth analysis of molecular biology principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 387 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 111",
+    "title": "Fundamentals of Organic Chemistry",
+    "description": "Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 145",
+    "title": "Introduction to Materials Chemistry",
+    "description": "Examination of key concepts and methodologies in materials chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 203",
+    "title": "Intermediate Materials Chemistry",
+    "description": "Comprehensive study of materials chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 123 or equivalent"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 298",
+    "title": "Organic Chemistry",
+    "description": "Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 124 or equivalent"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 381",
+    "title": "Advanced Physical Chemistry",
+    "description": "Fundamental concepts and applications of physical chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 262 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 392",
+    "title": "Advanced Analytical Chemistry",
+    "description": "Fundamental concepts and applications of analytical chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 269 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 324",
+    "title": "Advanced Materials Chemistry",
+    "description": "Fundamental concepts and applications of materials chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 218 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 495",
+    "title": "Graduate Organic Chemistry",
+    "description": "Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 334 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 451",
+    "title": "Advanced Environmental Chemistry",
+    "description": "Comprehensive study of environmental chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 330 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 438",
+    "title": "Special Topics in Biochemistry",
+    "description": "Rigorous treatment of biochemistry theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 373 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 637",
+    "title": "Special Topics in Medicinal Chemistry",
+    "description": "Examination of key concepts and methodologies in medicinal chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "CHEM 353 and senior standing or graduate status"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 596",
+    "title": "Graduate Analytical Chemistry",
+    "description": "Rigorous treatment of analytical chemistry theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "CHEM 304 and senior standing or graduate status"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 115",
+    "title": "Introduction to Artificial Intelligence",
+    "description": "Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 120",
+    "title": "Principles of Artificial Intelligence",
+    "description": "Advanced exploration of artificial intelligence covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 210",
+    "title": "Intermediate Programming",
+    "description": "Fundamental concepts and applications of programming. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 120 or equivalent"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 270",
+    "title": "Applied Software Engineering",
+    "description": "In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 195 or equivalent"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 378",
+    "title": "Advanced Human-Computer Interaction",
+    "description": "Rigorous treatment of human-computer interaction theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 254 and junior standing"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 312",
+    "title": "Cybersecurity",
+    "description": "Interdisciplinary approach to cybersecurity combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "EEPS 251 and junior standing"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 310",
+    "title": "Machine Learning",
+    "description": "Rigorous treatment of machine learning theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "EEPS 284 and junior standing"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 464",
+    "title": "Advanced Human-Computer Interaction",
+    "description": "Fundamental concepts and applications of human-computer interaction. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "EEPS 325 and senior standing or graduate status"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 443",
+    "title": "Graduate Human-Computer Interaction",
+    "description": "In-depth analysis of human-computer interaction principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 448",
+    "title": "Graduate Database Systems",
+    "description": "Advanced exploration of database systems covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 392 and senior standing or graduate status"
+  },
+  {
+    "department": "Earth, Environmental and Planetary Sciences",
+    "code": "EEPS 641",
+    "title": "Advanced Computer Graphics",
+    "description": "In-depth analysis of computer graphics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EEPS 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 165",
+    "title": "Fundamentals of Calculus",
+    "description": "Examination of key concepts and methodologies in calculus. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 103",
+    "title": "Fundamentals of Linear Algebra",
+    "description": "Rigorous treatment of linear algebra theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 249",
+    "title": "Abstract Algebra",
+    "description": "Rigorous treatment of abstract algebra theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 168 or equivalent"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 235",
+    "title": "Applied Calculus",
+    "description": "Rigorous treatment of calculus theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 143 or equivalent"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 332",
+    "title": "Linear Algebra",
+    "description": "Fundamental concepts and applications of linear algebra. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 294 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 348",
+    "title": "Advanced Differential Equations",
+    "description": "In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 293 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 304",
+    "title": "Advanced Calculus",
+    "description": "Interdisciplinary approach to calculus combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 293 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 415",
+    "title": "Graduate Differential Equations",
+    "description": "Fundamental concepts and applications of differential equations. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 365 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 467",
+    "title": "Graduate Linear Algebra",
+    "description": "Examination of key concepts and methodologies in linear algebra. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 332 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 419",
+    "title": "Advanced Statistics",
+    "description": "Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 686",
+    "title": "Advanced Probability",
+    "description": "Advanced exploration of probability covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 359 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 626",
+    "title": "Graduate Statistics",
+    "description": "Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 356 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 692",
+    "title": "Special Topics in Differential Equations",
+    "description": "Examination of key concepts and methodologies in differential equations. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 339 and senior standing or graduate status"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 673",
+    "title": "Graduate Statistics",
+    "description": "Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 314 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 155",
+    "title": "Principles of Thermodynamics",
+    "description": "In-depth analysis of thermodynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 138",
+    "title": "Fundamentals of Classical Mechanics",
+    "description": "Advanced exploration of classical mechanics covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 260",
+    "title": "Intermediate Astrophysics",
+    "description": "Advanced exploration of astrophysics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 112 or equivalent"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 205",
+    "title": "Applied Particle Physics",
+    "description": "Advanced exploration of particle physics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 130 or equivalent"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 335",
+    "title": "Quantum Mechanics",
+    "description": "Examination of key concepts and methodologies in quantum mechanics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 295 and junior standing"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 383",
+    "title": "Advanced Condensed Matter",
+    "description": "Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 291 and junior standing"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 350",
+    "title": "Condensed Matter",
+    "description": "Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ASTR 202 and junior standing"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 428",
+    "title": "Special Topics in Quantum Mechanics",
+    "description": "Comprehensive study of quantum mechanics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 347 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 481",
+    "title": "Advanced Astrophysics",
+    "description": "In-depth analysis of astrophysics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 314 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 410",
+    "title": "Special Topics in Astrophysics",
+    "description": "Advanced exploration of astrophysics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 543",
+    "title": "Graduate Condensed Matter",
+    "description": "In-depth analysis of condensed matter principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 352 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 524",
+    "title": "Advanced Quantum Mechanics",
+    "description": "Fundamental concepts and applications of quantum mechanics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 360 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 558",
+    "title": "Graduate Classical Mechanics",
+    "description": "Advanced exploration of classical mechanics covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "ASTR 336 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 131",
+    "title": "Principles of Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 131",
+    "title": "Introduction to Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 280",
+    "title": "Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 131 or equivalent"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 275",
+    "title": "Applied Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "STAT 134 or equivalent"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 301",
+    "title": "Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 295 and junior standing"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 322",
+    "title": "Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "STAT 269 and junior standing"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 370",
+    "title": "Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 214 and junior standing"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 419",
+    "title": "Special Topics in Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 350 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 429",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 322 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 464",
+    "title": "Graduate Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 555",
+    "title": "Graduate Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 386 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 705",
+    "title": "Advanced Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 303 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 575",
+    "title": "Graduate Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "STAT 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Statistics",
+    "code": "STAT 659",
+    "title": "Graduate Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "STAT 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 103",
+    "title": "Principles of Web Development",
+    "description": "In-depth analysis of web development principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 152",
+    "title": "Principles of Algorithms",
+    "description": "Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 257",
+    "title": "Applied Computer Graphics",
+    "description": "Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "COGS 108 or equivalent"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 254",
+    "title": "Applied Human-Computer Interaction",
+    "description": "Rigorous treatment of human-computer interaction theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 187 or equivalent"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 372",
+    "title": "Advanced Cybersecurity",
+    "description": "Comprehensive study of cybersecurity with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "COGS 225 and junior standing"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 346",
+    "title": "Advanced Computer Networks",
+    "description": "Interdisciplinary approach to computer networks combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 269 and junior standing"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 312",
+    "title": "Data Structures",
+    "description": "Rigorous treatment of data structures theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 253 and junior standing"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 421",
+    "title": "Advanced Artificial Intelligence",
+    "description": "Comprehensive study of artificial intelligence with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "COGS 305 and senior standing or graduate status"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 400",
+    "title": "Advanced Programming",
+    "description": "Comprehensive study of programming with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 394 and senior standing or graduate status"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 401",
+    "title": "Special Topics in Software Engineering",
+    "description": "In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 389 and senior standing or graduate status"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 192",
+    "title": "Fundamentals of Leadership",
+    "description": "Interdisciplinary approach to leadership combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 170",
+    "title": "Introduction to Economics",
+    "description": "Fundamental concepts and applications of economics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 275",
+    "title": "Intermediate Finance",
+    "description": "Fundamental concepts and applications of finance. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "BUSI 131 or equivalent"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 214",
+    "title": "Intermediate Management",
+    "description": "Rigorous treatment of management theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "BUSI 192 or equivalent"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 388",
+    "title": "Operations",
+    "description": "Advanced exploration of operations covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "BUSI 263 and junior standing"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 343",
+    "title": "Leadership",
+    "description": "Fundamental concepts and applications of leadership. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "BUSI 262 and junior standing"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 312",
+    "title": "Advanced Marketing",
+    "description": "Advanced exploration of marketing covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "BUSI 297 and junior standing"
+  },
+  {
+    "department": "Business",
+    "code": "BUSI 451",
+    "title": "Graduate Leadership",
+    "description": "Comprehensive study of leadership with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "BUSI 327 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 155",
+    "title": "Principles of Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 159",
+    "title": "Introduction to Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 201",
+    "title": "Intermediate Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 169 or equivalent"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 246",
+    "title": "Applied Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 163 or equivalent"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 334",
+    "title": "Advanced Seminar",
+    "description": "Fundamental concepts and applications of seminar. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 281 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 326",
+    "title": "Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 226 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 338",
+    "title": "Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 247 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 489",
+    "title": "Advanced Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 387 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 404",
+    "title": "Special Topics in Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 343 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 464",
+    "title": "Advanced Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 381 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 666",
+    "title": "Graduate Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 359 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 599",
+    "title": "Advanced Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 613",
+    "title": "Advanced Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 344 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 678",
+    "title": "Special Topics in Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 364 and senior standing or graduate status"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 133",
+    "title": "Principles of Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 139",
+    "title": "Principles of Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 287",
+    "title": "Applied Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "ACCT 150 or equivalent"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 296",
+    "title": "Intermediate Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ACCT 106 or equivalent"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 316",
+    "title": "Advanced Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ACCT 280 and junior standing"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 373",
+    "title": "Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "ACCT 259 and junior standing"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 303",
+    "title": "Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ACCT 237 and junior standing"
+  },
+  {
+    "department": "Accounting",
+    "code": "ACCT 434",
+    "title": "Advanced Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ACCT 356 and senior standing or graduate status"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 150",
+    "title": "Principles of Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 100",
+    "title": "Introduction to Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 217",
+    "title": "Intermediate Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 109 or equivalent"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 273",
+    "title": "Intermediate Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 167 or equivalent"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 383",
+    "title": "Advanced Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 201 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 302",
+    "title": "Seminar",
+    "description": "In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 232 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 389",
+    "title": "Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "FINA 235 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 415",
+    "title": "Graduate Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "FINA 343 and senior standing or graduate status"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 437",
+    "title": "Advanced Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 378 and senior standing or graduate status"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 423",
+    "title": "Graduate Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 361 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 135",
+    "title": "Fundamentals of Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 191",
+    "title": "Fundamentals of Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 255",
+    "title": "Applied Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 141 or equivalent"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 232",
+    "title": "Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "MGMT 105 or equivalent"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 315",
+    "title": "Advanced Workshop",
+    "description": "Examination of key concepts and methodologies in workshop. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "MGMT 200 and junior standing"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 379",
+    "title": "Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 254 and junior standing"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 300",
+    "title": "Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "MGMT 254 and junior standing"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 403",
+    "title": "Graduate Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 348 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 403",
+    "title": "Special Topics in Applications",
+    "description": "Rigorous treatment of applications theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 303 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 493",
+    "title": "Graduate Workshop",
+    "description": "Advanced exploration of workshop covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 359 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 743",
+    "title": "Special Topics in Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 304 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 737",
+    "title": "Graduate Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "MGMT 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 515",
+    "title": "Advanced Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 393 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 690",
+    "title": "Graduate Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "MGMT 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Management",
+    "code": "MGMT 694",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MGMT 342 and senior standing or graduate status"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 156",
+    "title": "Fundamentals of Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 101",
+    "title": "Fundamentals of Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 200",
+    "title": "Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "MKTG 118 or equivalent"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 260",
+    "title": "Intermediate Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MKTG 186 or equivalent"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 357",
+    "title": "Advanced Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MKTG 246 and junior standing"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 366",
+    "title": "Advanced Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "MKTG 235 and junior standing"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 320",
+    "title": "Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MKTG 245 and junior standing"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 422",
+    "title": "Advanced Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MKTG 398 and senior standing or graduate status"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 420",
+    "title": "Advanced Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "MKTG 341 and senior standing or graduate status"
+  },
+  {
+    "department": "Marketing",
+    "code": "MKTG 474",
+    "title": "Graduate Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "MKTG 329 and senior standing or graduate status"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 191",
+    "title": "Introduction to American History",
+    "description": "In-depth analysis of american history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 123",
+    "title": "Principles of Cultural History",
+    "description": "In-depth analysis of cultural history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 240",
+    "title": "Intermediate Military History",
+    "description": "Comprehensive study of military history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "ARTH 113 or equivalent"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 297",
+    "title": "Cultural History",
+    "description": "Comprehensive study of cultural history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ARTH 118 or equivalent"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 387",
+    "title": "Political History",
+    "description": "In-depth analysis of political history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "ARTH 286 and junior standing"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 342",
+    "title": "Social History",
+    "description": "In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "ARTH 274 and junior standing"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 329",
+    "title": "Advanced World History",
+    "description": "Rigorous treatment of world history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 270 and junior standing"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 466",
+    "title": "Graduate American History",
+    "description": "Interdisciplinary approach to american history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 399 and senior standing or graduate status"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 456",
+    "title": "Special Topics in Modern History",
+    "description": "Rigorous treatment of modern history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 435",
+    "title": "Advanced Cultural History",
+    "description": "Rigorous treatment of cultural history theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "ARTH 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 716",
+    "title": "Special Topics in Ancient History",
+    "description": "Rigorous treatment of ancient history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 180",
+    "title": "Fundamentals of Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 143",
+    "title": "Principles of Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 272",
+    "title": "Applied Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 188 or equivalent"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 259",
+    "title": "Applied Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "CLAS 197 or equivalent"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 389",
+    "title": "Advanced Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 226 and junior standing"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 300",
+    "title": "Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 213 and junior standing"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 382",
+    "title": "Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 260 and junior standing"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 498",
+    "title": "Advanced Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CLAS 340 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 455",
+    "title": "Special Topics in Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 354 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 465",
+    "title": "Special Topics in Applications",
+    "description": "Rigorous treatment of applications theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 313 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 574",
+    "title": "Advanced Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 309 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 522",
+    "title": "Graduate Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 383 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 542",
+    "title": "Graduate Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 365 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 757",
+    "title": "Graduate Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CLAS 369 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 618",
+    "title": "Special Topics in Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "CLAS 393 and senior standing or graduate status"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 136",
+    "title": "Introduction to British Literature",
+    "description": "Examination of key concepts and methodologies in british literature. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 162",
+    "title": "Fundamentals of Technical Writing",
+    "description": "Examination of key concepts and methodologies in technical writing. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 282",
+    "title": "World Literature",
+    "description": "Comprehensive study of world literature with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ENGL 107 or equivalent"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 299",
+    "title": "Poetry",
+    "description": "Interdisciplinary approach to poetry combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 114 or equivalent"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 334",
+    "title": "Writing",
+    "description": "Comprehensive study of writing with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 242 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 384",
+    "title": "Advanced World Literature",
+    "description": "In-depth analysis of world literature principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "ENGL 283 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 334",
+    "title": "Advanced Writing",
+    "description": "Rigorous treatment of writing theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 203 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 474",
+    "title": "Special Topics in World Literature",
+    "description": "Fundamental concepts and applications of world literature. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 388 and senior standing or graduate status"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 476",
+    "title": "Graduate Rhetoric",
+    "description": "Rigorous treatment of rhetoric theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 341 and senior standing or graduate status"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 498",
+    "title": "Graduate Literature",
+    "description": "Advanced exploration of literature covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 335 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 150",
+    "title": "Introduction to Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 134",
+    "title": "Introduction to Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 226",
+    "title": "Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "FREN 173 or equivalent"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 208",
+    "title": "Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 126 or equivalent"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 344",
+    "title": "Advanced Applications",
+    "description": "Rigorous treatment of applications theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 245 and junior standing"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 303",
+    "title": "Advanced Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 204 and junior standing"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 369",
+    "title": "Advanced Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "FREN 283 and junior standing"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 401",
+    "title": "Special Topics in Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "FREN 338 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 466",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 307 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 424",
+    "title": "Advanced Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 345 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 521",
+    "title": "Graduate Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "FREN 374 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 563",
+    "title": "Graduate Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FREN 385 and senior standing or graduate status"
+  },
+  {
+    "department": "French Studies",
+    "code": "FREN 628",
+    "title": "Advanced Seminar",
+    "description": "Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "FREN 392 and senior standing or graduate status"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 163",
+    "title": "Principles of Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 131",
+    "title": "Introduction to Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 203",
+    "title": "Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "GERM 176 or equivalent"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 236",
+    "title": "Applied Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 150 or equivalent"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 323",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 242 and junior standing"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 394",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 233 and junior standing"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 326",
+    "title": "Advanced Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 298 and junior standing"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 443",
+    "title": "Advanced Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 337 and senior standing or graduate status"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 458",
+    "title": "Advanced Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 325 and senior standing or graduate status"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 497",
+    "title": "Advanced Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GERM 367 and senior standing or graduate status"
+  },
+  {
+    "department": "German and Slavic Studies",
+    "code": "GERM 670",
+    "title": "Special Topics in Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "GERM 334 and senior standing or graduate status"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 168",
+    "title": "Principles of Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 117",
+    "title": "Fundamentals of Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 216",
+    "title": "Intermediate Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "HISP 183 or equivalent"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 263",
+    "title": "Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "HISP 125 or equivalent"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 373",
+    "title": "Advanced Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "HISP 239 and junior standing"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 355",
+    "title": "Advanced Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "HISP 217 and junior standing"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 327",
+    "title": "Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "HISP 234 and junior standing"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 401",
+    "title": "Graduate Workshop",
+    "description": "Advanced exploration of workshop covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HISP 344 and senior standing or graduate status"
+  },
+  {
+    "department": "Hispanic Studies",
+    "code": "HISP 496",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "HISP 351 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 167",
+    "title": "Introduction to Military History",
+    "description": "Comprehensive study of military history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "History",
+    "code": "HIST 155",
+    "title": "Introduction to Social History",
+    "description": "Examination of key concepts and methodologies in social history. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "History",
+    "code": "HIST 276",
+    "title": "Intermediate Political History",
+    "description": "Comprehensive study of political history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "HIST 151 or equivalent"
+  },
+  {
+    "department": "History",
+    "code": "HIST 261",
+    "title": "Applied Social History",
+    "description": "Rigorous treatment of social history theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "HIST 165 or equivalent"
+  },
+  {
+    "department": "History",
+    "code": "HIST 308",
+    "title": "Advanced Social History",
+    "description": "In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 237 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 302",
+    "title": "Modern History",
+    "description": "In-depth analysis of modern history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "HIST 241 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 342",
+    "title": "Advanced Cultural History",
+    "description": "Interdisciplinary approach to cultural history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "HIST 277 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 499",
+    "title": "Special Topics in World History",
+    "description": "Rigorous treatment of world history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 331 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 419",
+    "title": "Special Topics in Social History",
+    "description": "Fundamental concepts and applications of social history. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 376 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 449",
+    "title": "Special Topics in World History",
+    "description": "In-depth analysis of world history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 336 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 690",
+    "title": "Graduate Ancient History",
+    "description": "Rigorous treatment of ancient history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 383 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 650",
+    "title": "Advanced European History",
+    "description": "Interdisciplinary approach to european history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 310 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 508",
+    "title": "Advanced American History",
+    "description": "Comprehensive study of american history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 366 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 704",
+    "title": "Special Topics in European History",
+    "description": "Rigorous treatment of european history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 183",
+    "title": "Introduction to Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 187",
+    "title": "Principles of Seminar",
+    "description": "In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 204",
+    "title": "Applied Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LING 158 or equivalent"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 290",
+    "title": "Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "LING 185 or equivalent"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 339",
+    "title": "Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "LING 251 and junior standing"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 353",
+    "title": "Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "LING 268 and junior standing"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 369",
+    "title": "Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LING 277 and junior standing"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 465",
+    "title": "Advanced Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "LING 319 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 424",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "LING 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 491",
+    "title": "Special Topics in Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "LING 394 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 526",
+    "title": "Special Topics in Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "LING 358 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 758",
+    "title": "Graduate Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "LING 302 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 566",
+    "title": "Advanced Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "LING 321 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 682",
+    "title": "Advanced Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "LING 340 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 735",
+    "title": "Advanced Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LING 380 and senior standing or graduate status"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 103",
+    "title": "Introduction to Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 113",
+    "title": "Fundamentals of Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 270",
+    "title": "Intermediate Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "PHIL 104 or equivalent"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 246",
+    "title": "Intermediate Seminar",
+    "description": "Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 192 or equivalent"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 311",
+    "title": "Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "PHIL 207 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 326",
+    "title": "Advanced Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 227 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 377",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "PHIL 246 and junior standing"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 403",
+    "title": "Advanced Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "1",
+    "prerequisites": "PHIL 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Philosophy",
+    "code": "PHIL 408",
+    "title": "Advanced Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHIL 343 and senior standing or graduate status"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 172",
+    "title": "Principles of Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 190",
+    "title": "Fundamentals of Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 218",
+    "title": "Applied Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 159 or equivalent"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 299",
+    "title": "Applied Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "RELI 118 or equivalent"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 352",
+    "title": "Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 241 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 399",
+    "title": "Advanced Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 200 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 346",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "RELI 265 and junior standing"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 438",
+    "title": "Special Topics in Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 318 and senior standing or graduate status"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 452",
+    "title": "Graduate Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "RELI 394 and senior standing or graduate status"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 483",
+    "title": "Graduate Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "RELI 321 and senior standing or graduate status"
+  },
+  {
+    "department": "Religious Studies",
+    "code": "RELI 501",
+    "title": "Graduate Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "RELI 363 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 138",
+    "title": "Principles of Seminar",
+    "description": "Fundamental concepts and applications of seminar. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 182",
+    "title": "Introduction to Workshop",
+    "description": "Advanced exploration of workshop covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 298",
+    "title": "Intermediate Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "ANTH 155 or equivalent"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 217",
+    "title": "Applied Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 143 or equivalent"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 339",
+    "title": "Advanced Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "ANTH 207 and junior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 369",
+    "title": "Workshop",
+    "description": "Advanced exploration of workshop covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 237 and junior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 357",
+    "title": "Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 253 and junior standing"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 425",
+    "title": "Graduate Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 325 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 428",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 311 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 489",
+    "title": "Graduate Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 324 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 534",
+    "title": "Advanced Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "ANTH 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 602",
+    "title": "Advanced Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 378 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 585",
+    "title": "Graduate Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 307 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 711",
+    "title": "Graduate Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ANTH 323 and senior standing or graduate status"
+  },
+  {
+    "department": "Anthropology",
+    "code": "ANTH 555",
+    "title": "Special Topics in Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "1",
+    "prerequisites": "ANTH 375 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 154",
+    "title": "Fundamentals of Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 156",
+    "title": "Principles of Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 201",
+    "title": "Applied Workshop",
+    "description": "Examination of key concepts and methodologies in workshop. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "ECON 123 or equivalent"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 261",
+    "title": "Applied Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 198 or equivalent"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 394",
+    "title": "Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 283 and junior standing"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 319",
+    "title": "Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 253 and junior standing"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 335",
+    "title": "Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 228 and junior standing"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 409",
+    "title": "Graduate Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 322 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 466",
+    "title": "Special Topics in Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 308 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 448",
+    "title": "Special Topics in Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 554",
+    "title": "Graduate Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 392 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 707",
+    "title": "Advanced Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ECON 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Economics",
+    "code": "ECON 563",
+    "title": "Advanced Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "ECON 303 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 121",
+    "title": "Fundamentals of Programming",
+    "description": "Fundamental concepts and applications of programming. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 149",
+    "title": "Principles of Web Development",
+    "description": "Comprehensive study of web development with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 236",
+    "title": "Intermediate Machine Learning",
+    "description": "Fundamental concepts and applications of machine learning. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "POLI 162 or equivalent"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 217",
+    "title": "Applied Algorithms",
+    "description": "Comprehensive study of algorithms with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 180 or equivalent"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 337",
+    "title": "Software Engineering",
+    "description": "Rigorous treatment of software engineering theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "POLI 214 and junior standing"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 321",
+    "title": "Advanced Computer Graphics",
+    "description": "Advanced exploration of computer graphics covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "POLI 283 and junior standing"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 336",
+    "title": "Advanced Data Structures",
+    "description": "Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 215 and junior standing"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 416",
+    "title": "Special Topics in Web Development",
+    "description": "Interdisciplinary approach to web development combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 415",
+    "title": "Advanced Artificial Intelligence",
+    "description": "Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "POLI 382 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 478",
+    "title": "Special Topics in Computer Graphics",
+    "description": "Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 361 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 676",
+    "title": "Special Topics in Software Engineering",
+    "description": "Advanced exploration of software engineering covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 346 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 536",
+    "title": "Graduate Data Structures",
+    "description": "Interdisciplinary approach to data structures combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "POLI 316 and senior standing or graduate status"
+  },
+  {
+    "department": "Political Science",
+    "code": "POLI 643",
+    "title": "Graduate Algorithms",
+    "description": "Rigorous treatment of algorithms theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "POLI 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 129",
+    "title": "Introduction to Personality",
+    "description": "Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 156",
+    "title": "Introduction to Personality",
+    "description": "In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 242",
+    "title": "Applied Abnormal Psychology",
+    "description": "Comprehensive study of abnormal psychology with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 127 or equivalent"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 224",
+    "title": "Applied Personality",
+    "description": "In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 192 or equivalent"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 351",
+    "title": "Advanced Abnormal Psychology",
+    "description": "Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 226 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 361",
+    "title": "Research Methods",
+    "description": "Rigorous treatment of research methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 241 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 330",
+    "title": "Research Methods",
+    "description": "Fundamental concepts and applications of research methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 289 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 486",
+    "title": "Advanced Social Psychology",
+    "description": "Fundamental concepts and applications of social psychology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "PSYC 329 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 494",
+    "title": "Graduate Social Psychology",
+    "description": "Comprehensive study of social psychology with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "PSYC 358 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 485",
+    "title": "Special Topics in Abnormal Psychology",
+    "description": "Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "PSYC 384 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 513",
+    "title": "Advanced Personality",
+    "description": "Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 542",
+    "title": "Special Topics in Cognitive Psychology",
+    "description": "Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "PSYC 383 and senior standing or graduate status"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 515",
+    "title": "Special Topics in Cognitive Psychology",
+    "description": "In-depth analysis of cognitive psychology principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 135",
+    "title": "Introduction to Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 179",
+    "title": "Introduction to Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 219",
+    "title": "Intermediate Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "SOCI 110 or equivalent"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 209",
+    "title": "Intermediate Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SOCI 148 or equivalent"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 373",
+    "title": "Advanced Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "SOCI 287 and junior standing"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 383",
+    "title": "Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "SOCI 265 and junior standing"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 344",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "SOCI 214 and junior standing"
+  },
+  {
+    "department": "Sociology",
+    "code": "SOCI 408",
+    "title": "Special Topics in Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "SOCI 389 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 158",
+    "title": "Fundamentals of Urban Planning",
+    "description": "Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 139",
+    "title": "Introduction to Urban Planning",
+    "description": "In-depth analysis of urban planning principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 275",
+    "title": "Applied Urban Planning",
+    "description": "Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ARCH 118 or equivalent"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 232",
+    "title": "Architectural History",
+    "description": "Rigorous treatment of architectural history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 164 or equivalent"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 303",
+    "title": "Design Studio",
+    "description": "Rigorous treatment of design studio theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 257 and junior standing"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 376",
+    "title": "Advanced Sustainability",
+    "description": "In-depth analysis of sustainability principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "ARCH 251 and junior standing"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 358",
+    "title": "Building Technology",
+    "description": "Rigorous treatment of building technology theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "ARCH 274 and junior standing"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 466",
+    "title": "Graduate Digital Design",
+    "description": "In-depth analysis of digital design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 433",
+    "title": "Graduate Digital Design",
+    "description": "Fundamental concepts and applications of digital design. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 495",
+    "title": "Advanced Architectural History",
+    "description": "Advanced exploration of architectural history covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 359 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 740",
+    "title": "Special Topics in Architectural History",
+    "description": "Rigorous treatment of architectural history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 300 and senior standing or graduate status"
+  },
+  {
+    "department": "Architecture",
+    "code": "ARCH 522",
+    "title": "Graduate Design Studio",
+    "description": "Fundamental concepts and applications of design studio. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ARCH 300 and senior standing or graduate status"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 149",
+    "title": "Principles of Music Theory",
+    "description": "In-depth analysis of music theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 176",
+    "title": "Principles of Musicology",
+    "description": "Fundamental concepts and applications of musicology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 220",
+    "title": "Intermediate Music History",
+    "description": "Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 101 or equivalent"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 283",
+    "title": "Applied Performance",
+    "description": "Comprehensive study of performance with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "MUSI 177 or equivalent"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 340",
+    "title": "Performance",
+    "description": "Examination of key concepts and methodologies in performance. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 257 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 377",
+    "title": "Advanced Music Technology",
+    "description": "Interdisciplinary approach to music technology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 221 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 325",
+    "title": "Conducting",
+    "description": "Rigorous treatment of conducting theory and applications with emphasis on research methodology.",
+    "credit_hours": "1",
+    "prerequisites": "MUSI 276 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 441",
+    "title": "Special Topics in Music History",
+    "description": "Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "MUSI 324 and senior standing or graduate status"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 451",
+    "title": "Advanced Music Technology",
+    "description": "Fundamental concepts and applications of music technology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 323 and senior standing or graduate status"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 437",
+    "title": "Graduate Music History",
+    "description": "Comprehensive study of music history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 331 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 106",
+    "title": "Principles of Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 151",
+    "title": "Principles of Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 209",
+    "title": "Intermediate Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 109 or equivalent"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 216",
+    "title": "Intermediate Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 193 or equivalent"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 317",
+    "title": "Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 234 and junior standing"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 367",
+    "title": "Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 221 and junior standing"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 386",
+    "title": "Advanced Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "LIBS 224 and junior standing"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 488",
+    "title": "Graduate Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 363 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 470",
+    "title": "Advanced Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "LIBS 383 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 461",
+    "title": "Graduate Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LIBS 329 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 601",
+    "title": "Special Topics in Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "LIBS 301 and senior standing or graduate status"
+  },
+  {
+    "department": "Liberal Studies",
+    "code": "LIBS 657",
+    "title": "Graduate Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "LIBS 398 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 131",
+    "title": "Principles of Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 132",
+    "title": "Principles of Analysis",
+    "description": "Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 276",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 197 or equivalent"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 204",
+    "title": "Applications",
+    "description": "Rigorous treatment of applications theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 170 or equivalent"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 388",
+    "title": "Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 288 and junior standing"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 338",
+    "title": "Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 272 and junior standing"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 372",
+    "title": "Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 227 and junior standing"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 400",
+    "title": "Graduate Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 338 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 477",
+    "title": "Special Topics in Analysis",
+    "description": "Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 390 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 467",
+    "title": "Graduate Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 364 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 762",
+    "title": "Graduate Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 301 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 713",
+    "title": "Special Topics in Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 330 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 176",
+    "title": "Introduction to Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 160",
+    "title": "Introduction to Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 218",
+    "title": "Intermediate Workshop",
+    "description": "Advanced exploration of workshop covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 128 or equivalent"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 210",
+    "title": "Applied Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "POLS 137 or equivalent"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 394",
+    "title": "Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 210 and junior standing"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 333",
+    "title": "Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 291 and junior standing"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 304",
+    "title": "Advanced Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 246 and junior standing"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 453",
+    "title": "Advanced Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 326 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 493",
+    "title": "Special Topics in Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 437",
+    "title": "Graduate Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "POLS 337 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 794",
+    "title": "Graduate Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "POLS 389 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 535",
+    "title": "Advanced Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 305 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 515",
+    "title": "Graduate Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "POLS 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 588",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 796",
+    "title": "Graduate Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 303 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 132",
+    "title": "Introduction to Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 157",
+    "title": "Fundamentals of Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 224",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 185 or equivalent"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 234",
+    "title": "Applied Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 167 or equivalent"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 364",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "GLHT 251 and junior standing"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 363",
+    "title": "Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "GLHT 261 and junior standing"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 376",
+    "title": "Advanced Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 223 and junior standing"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 415",
+    "title": "Graduate Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 328 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 402",
+    "title": "Special Topics in Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 329 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 448",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "GLHT 362 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 571",
+    "title": "Graduate Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 749",
+    "title": "Graduate Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "GLHT 316 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 601",
+    "title": "Graduate Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 334 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 107",
+    "title": "Principles of Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 180",
+    "title": "Introduction to Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 232",
+    "title": "Applied Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 196 or equivalent"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 259",
+    "title": "Intermediate Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 132 or equivalent"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 361",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 237 and junior standing"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 365",
+    "title": "Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 276 and junior standing"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 325",
+    "title": "Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 205 and junior standing"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 435",
+    "title": "Graduate Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 352 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 490",
+    "title": "Special Topics in Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 437",
+    "title": "Graduate Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "SMGT 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 718",
+    "title": "Graduate Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 328 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 539",
+    "title": "Advanced Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 581",
+    "title": "Special Topics in Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 319 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 668",
+    "title": "Special Topics in Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 362 and senior standing or graduate status"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 180",
+    "title": "Fundamentals of Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 127",
+    "title": "Fundamentals of Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 203",
+    "title": "Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "VADA 136 or equivalent"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 201",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "VADA 182 or equivalent"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 304",
+    "title": "Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "VADA 258 and junior standing"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 366",
+    "title": "Advanced Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "VADA 227 and junior standing"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 385",
+    "title": "Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "VADA 276 and junior standing"
+  },
+  {
+    "department": "Visual and Dramatic Arts",
+    "code": "VADA 416",
+    "title": "Special Topics in Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "VADA 300 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 145",
+    "title": "Introduction to Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 192",
+    "title": "Introduction to Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 226",
+    "title": "Intermediate Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 189 or equivalent"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 218",
+    "title": "Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 130 or equivalent"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 395",
+    "title": "Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "KINE 278 and junior standing"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 321",
+    "title": "Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 286 and junior standing"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 384",
+    "title": "Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "KINE 214 and junior standing"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 483",
+    "title": "Special Topics in Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 334 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 478",
+    "title": "Graduate Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 385 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 444",
+    "title": "Graduate Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 326 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 752",
+    "title": "Special Topics in Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 388 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 760",
+    "title": "Graduate Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 350 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 592",
+    "title": "Graduate Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "KINE 327 and senior standing or graduate status"
+  },
+  {
+    "department": "Kinesiology",
+    "code": "KINE 657",
+    "title": "Special Topics in Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "KINE 326 and senior standing or graduate status"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 198",
+    "title": "Fundamentals of Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 149",
+    "title": "Fundamentals of Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 295",
+    "title": "Intermediate Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 108 or equivalent"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 204",
+    "title": "Applied Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 163 or equivalent"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 312",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "EDUC 201 and junior standing"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 316",
+    "title": "Advanced Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EDUC 247 and junior standing"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 308",
+    "title": "Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 249 and junior standing"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 412",
+    "title": "Advanced Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 368 and senior standing or graduate status"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 429",
+    "title": "Graduate Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "EDUC 346 and senior standing or graduate status"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 430",
+    "title": "Special Topics in Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 382 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 175",
+    "title": "Introduction to Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 157",
+    "title": "Introduction to Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 249",
+    "title": "Applied Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 114 or equivalent"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 247",
+    "title": "Applied Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 133 or equivalent"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 383",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 295 and junior standing"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 380",
+    "title": "Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 214 and junior standing"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 349",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 290 and junior standing"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 469",
+    "title": "Special Topics in Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 367 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 434",
+    "title": "Graduate Seminar",
+    "description": "Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 449",
+    "title": "Special Topics in Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "PBHL 338 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 763",
+    "title": "Graduate Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 377 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 630",
+    "title": "Graduate Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 306 and senior standing or graduate status"
+  }
+]

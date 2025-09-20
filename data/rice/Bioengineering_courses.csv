@@ -1,0 +1,14 @@
+department,code,title,description,credit_hours,prerequisites
+Bioengineering,BIOE 150,Principles of Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,2,None
+Bioengineering,BIOE 139,Introduction to Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,2,None
+Bioengineering,BIOE 246,Applied Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,4,BIOE 197 or equivalent
+Bioengineering,BIOE 217,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,3,BIOE 197 or equivalent
+Bioengineering,BIOE 377,Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,4,BIOE 282 and junior standing
+Bioengineering,BIOE 372,Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,4,BIOE 275 and junior standing
+Bioengineering,BIOE 389,Seminar,In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.,4,BIOE 250 and junior standing
+Bioengineering,BIOE 491,Advanced Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,2,BIOE 339 and senior standing or graduate status
+Bioengineering,BIOE 435,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,BIOE 361 and senior standing or graduate status
+Bioengineering,BIOE 428,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,BIOE 303 and senior standing or graduate status
+Bioengineering,BIOE 672,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,BIOE 335 and senior standing or graduate status
+Bioengineering,BIOE 730,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,BIOE 386 and senior standing or graduate status
+Bioengineering,BIOE 765,Advanced Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,3,BIOE 373 and senior standing or graduate status

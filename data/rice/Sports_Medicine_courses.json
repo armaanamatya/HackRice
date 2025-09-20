@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 107",
+    "title": "Principles of Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 180",
+    "title": "Introduction to Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 232",
+    "title": "Applied Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 196 or equivalent"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 259",
+    "title": "Intermediate Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 132 or equivalent"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 361",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 237 and junior standing"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 365",
+    "title": "Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 276 and junior standing"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 325",
+    "title": "Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 205 and junior standing"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 435",
+    "title": "Graduate Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 352 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 490",
+    "title": "Special Topics in Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 391 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 437",
+    "title": "Graduate Seminar",
+    "description": "Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "SMGT 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 718",
+    "title": "Graduate Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "SMGT 328 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 539",
+    "title": "Advanced Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 581",
+    "title": "Special Topics in Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 319 and senior standing or graduate status"
+  },
+  {
+    "department": "Sports Medicine",
+    "code": "SMGT 668",
+    "title": "Special Topics in Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "SMGT 362 and senior standing or graduate status"
+  }
+]

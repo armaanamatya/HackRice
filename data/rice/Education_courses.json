@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Education",
+    "code": "EDUC 198",
+    "title": "Fundamentals of Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 149",
+    "title": "Fundamentals of Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 295",
+    "title": "Intermediate Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 108 or equivalent"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 204",
+    "title": "Applied Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 163 or equivalent"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 312",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "EDUC 201 and junior standing"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 316",
+    "title": "Advanced Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "EDUC 247 and junior standing"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 308",
+    "title": "Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 249 and junior standing"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 412",
+    "title": "Advanced Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 368 and senior standing or graduate status"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 429",
+    "title": "Graduate Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "EDUC 346 and senior standing or graduate status"
+  },
+  {
+    "department": "Education",
+    "code": "EDUC 430",
+    "title": "Special Topics in Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "EDUC 382 and senior standing or graduate status"
+  }
+]

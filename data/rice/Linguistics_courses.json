@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Linguistics",
+    "code": "LING 183",
+    "title": "Introduction to Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 187",
+    "title": "Principles of Seminar",
+    "description": "In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 204",
+    "title": "Applied Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LING 158 or equivalent"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 290",
+    "title": "Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "LING 185 or equivalent"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 339",
+    "title": "Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "LING 251 and junior standing"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 353",
+    "title": "Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "LING 268 and junior standing"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 369",
+    "title": "Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LING 277 and junior standing"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 465",
+    "title": "Advanced Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "LING 319 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 424",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "LING 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 491",
+    "title": "Special Topics in Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "LING 394 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 526",
+    "title": "Special Topics in Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "LING 358 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 758",
+    "title": "Graduate Seminar",
+    "description": "Advanced exploration of seminar covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "LING 302 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 566",
+    "title": "Advanced Seminar",
+    "description": "Rigorous treatment of seminar theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "LING 321 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 682",
+    "title": "Advanced Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "LING 340 and senior standing or graduate status"
+  },
+  {
+    "department": "Linguistics",
+    "code": "LING 735",
+    "title": "Advanced Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "LING 380 and senior standing or graduate status"
+  }
+]

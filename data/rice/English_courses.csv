@@ -1,0 +1,11 @@
+department,code,title,description,credit_hours,prerequisites
+English,ENGL 136,Introduction to British Literature,Examination of key concepts and methodologies in british literature. Includes hands-on experience and case studies.,4,None
+English,ENGL 162,Fundamentals of Technical Writing,Examination of key concepts and methodologies in technical writing. Includes hands-on experience and case studies.,4,None
+English,ENGL 282,World Literature,Comprehensive study of world literature with emphasis on theoretical foundations and practical applications.,4,ENGL 107 or equivalent
+English,ENGL 299,Poetry,Interdisciplinary approach to poetry combining theoretical knowledge with practical problem-solving.,3,ENGL 114 or equivalent
+English,ENGL 334,Writing,Comprehensive study of writing with emphasis on theoretical foundations and practical applications.,3,ENGL 242 and junior standing
+English,ENGL 384,Advanced World Literature,In-depth analysis of world literature principles. Students will develop critical thinking and problem-solving skills.,4,ENGL 283 and junior standing
+English,ENGL 334,Advanced Writing,Rigorous treatment of writing theory and applications with emphasis on research methodology.,3,ENGL 203 and junior standing
+English,ENGL 474,Special Topics in World Literature,Fundamental concepts and applications of world literature. Designed for students pursuing careers in related fields.,3,ENGL 388 and senior standing or graduate status
+English,ENGL 476,Graduate Rhetoric,Rigorous treatment of rhetoric theory and applications with emphasis on research methodology.,3,ENGL 341 and senior standing or graduate status
+English,ENGL 498,Graduate Literature,Advanced exploration of literature covering current research and industry practices.,3,ENGL 335 and senior standing or graduate status

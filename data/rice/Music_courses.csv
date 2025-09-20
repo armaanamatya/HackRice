@@ -1,0 +1,11 @@
+department,code,title,description,credit_hours,prerequisites
+Music,MUSI 149,Principles of Music Theory,In-depth analysis of music theory principles. Students will develop critical thinking and problem-solving skills.,1,None
+Music,MUSI 176,Principles of Musicology,Fundamental concepts and applications of musicology. Designed for students pursuing careers in related fields.,4,None
+Music,MUSI 220,Intermediate Music History,Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.,3,MUSI 101 or equivalent
+Music,MUSI 283,Applied Performance,Comprehensive study of performance with emphasis on theoretical foundations and practical applications.,4,MUSI 177 or equivalent
+Music,MUSI 340,Performance,Examination of key concepts and methodologies in performance. Includes hands-on experience and case studies.,3,MUSI 257 and junior standing
+Music,MUSI 377,Advanced Music Technology,Interdisciplinary approach to music technology combining theoretical knowledge with practical problem-solving.,3,MUSI 221 and junior standing
+Music,MUSI 325,Conducting,Rigorous treatment of conducting theory and applications with emphasis on research methodology.,1,MUSI 276 and junior standing
+Music,MUSI 441,Special Topics in Music History,Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.,4,MUSI 324 and senior standing or graduate status
+Music,MUSI 451,Advanced Music Technology,Fundamental concepts and applications of music technology. Designed for students pursuing careers in related fields.,3,MUSI 323 and senior standing or graduate status
+Music,MUSI 437,Graduate Music History,Comprehensive study of music history with emphasis on theoretical foundations and practical applications.,3,MUSI 331 and senior standing or graduate status

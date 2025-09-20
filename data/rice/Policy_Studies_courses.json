@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Policy Studies",
+    "code": "POLS 176",
+    "title": "Introduction to Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 160",
+    "title": "Introduction to Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 218",
+    "title": "Intermediate Workshop",
+    "description": "Advanced exploration of workshop covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 128 or equivalent"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 210",
+    "title": "Applied Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "POLS 137 or equivalent"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 394",
+    "title": "Methods",
+    "description": "Rigorous treatment of methods theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 210 and junior standing"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 333",
+    "title": "Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 291 and junior standing"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 304",
+    "title": "Advanced Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 246 and junior standing"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 453",
+    "title": "Advanced Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 326 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 493",
+    "title": "Special Topics in Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "POLS 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 437",
+    "title": "Graduate Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "POLS 337 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 794",
+    "title": "Graduate Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "POLS 389 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 535",
+    "title": "Advanced Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 305 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 515",
+    "title": "Graduate Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "POLS 317 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 588",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 306 and senior standing or graduate status"
+  },
+  {
+    "department": "Policy Studies",
+    "code": "POLS 796",
+    "title": "Graduate Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "POLS 303 and senior standing or graduate status"
+  }
+]

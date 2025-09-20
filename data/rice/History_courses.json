@@ -1,0 +1,114 @@
+[
+  {
+    "department": "History",
+    "code": "HIST 167",
+    "title": "Introduction to Military History",
+    "description": "Comprehensive study of military history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "History",
+    "code": "HIST 155",
+    "title": "Introduction to Social History",
+    "description": "Examination of key concepts and methodologies in social history. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "History",
+    "code": "HIST 276",
+    "title": "Intermediate Political History",
+    "description": "Comprehensive study of political history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "HIST 151 or equivalent"
+  },
+  {
+    "department": "History",
+    "code": "HIST 261",
+    "title": "Applied Social History",
+    "description": "Rigorous treatment of social history theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "HIST 165 or equivalent"
+  },
+  {
+    "department": "History",
+    "code": "HIST 308",
+    "title": "Advanced Social History",
+    "description": "In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 237 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 302",
+    "title": "Modern History",
+    "description": "In-depth analysis of modern history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "HIST 241 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 342",
+    "title": "Advanced Cultural History",
+    "description": "Interdisciplinary approach to cultural history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "HIST 277 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 499",
+    "title": "Special Topics in World History",
+    "description": "Rigorous treatment of world history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 331 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 419",
+    "title": "Special Topics in Social History",
+    "description": "Fundamental concepts and applications of social history. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 376 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 449",
+    "title": "Special Topics in World History",
+    "description": "In-depth analysis of world history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 336 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 690",
+    "title": "Graduate Ancient History",
+    "description": "Rigorous treatment of ancient history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 383 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 650",
+    "title": "Advanced European History",
+    "description": "Interdisciplinary approach to european history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 310 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 508",
+    "title": "Advanced American History",
+    "description": "Comprehensive study of american history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 366 and senior standing or graduate status"
+  },
+  {
+    "department": "History",
+    "code": "HIST 704",
+    "title": "Special Topics in European History",
+    "description": "Rigorous treatment of european history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 391 and senior standing or graduate status"
+  }
+]

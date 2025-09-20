@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 131",
+    "title": "Principles of Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 132",
+    "title": "Principles of Analysis",
+    "description": "Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 276",
+    "title": "Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 197 or equivalent"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 204",
+    "title": "Applications",
+    "description": "Rigorous treatment of applications theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 170 or equivalent"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 388",
+    "title": "Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 288 and junior standing"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 338",
+    "title": "Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 272 and junior standing"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 372",
+    "title": "Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 227 and junior standing"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 400",
+    "title": "Graduate Theory",
+    "description": "Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 338 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 477",
+    "title": "Special Topics in Analysis",
+    "description": "Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 390 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 467",
+    "title": "Graduate Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ENVS 364 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 762",
+    "title": "Graduate Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 301 and senior standing or graduate status"
+  },
+  {
+    "department": "Environmental Studies",
+    "code": "ENVS 713",
+    "title": "Special Topics in Workshop",
+    "description": "Rigorous treatment of workshop theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 330 and senior standing or graduate status"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 168",
+    "title": "Fundamentals of Design",
+    "description": "Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 185",
+    "title": "Fundamentals of Thermodynamics",
+    "description": "Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 263",
+    "title": "Intermediate Controls",
+    "description": "In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CEVE 111 or equivalent"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 274",
+    "title": "Systems",
+    "description": "Rigorous treatment of systems theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 130 or equivalent"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 326",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 224 and junior standing"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 341",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 289 and junior standing"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 343",
+    "title": "Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 237 and junior standing"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 438",
+    "title": "Special Topics in Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "CEVE 323 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 402",
+    "title": "Advanced Dynamics",
+    "description": "In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 379 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 469",
+    "title": "Advanced Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "CEVE 378 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 769",
+    "title": "Special Topics in Optimization",
+    "description": "Examination of key concepts and methodologies in optimization. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 326 and senior standing or graduate status"
+  },
+  {
+    "department": "Civil and Environmental Engineering",
+    "code": "CEVE 592",
+    "title": "Graduate Ethics",
+    "description": "Interdisciplinary approach to ethics combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "CEVE 315 and senior standing or graduate status"
+  }
+]

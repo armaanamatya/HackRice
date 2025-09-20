@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 132",
+    "title": "Introduction to Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 157",
+    "title": "Fundamentals of Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 224",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 185 or equivalent"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 234",
+    "title": "Applied Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 167 or equivalent"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 364",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "GLHT 251 and junior standing"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 363",
+    "title": "Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "2",
+    "prerequisites": "GLHT 261 and junior standing"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 376",
+    "title": "Advanced Practice",
+    "description": "Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 223 and junior standing"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 415",
+    "title": "Graduate Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 328 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 402",
+    "title": "Special Topics in Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 329 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 448",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "GLHT 362 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 571",
+    "title": "Graduate Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 749",
+    "title": "Graduate Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "GLHT 316 and senior standing or graduate status"
+  },
+  {
+    "department": "Global Health Technologies",
+    "code": "GLHT 601",
+    "title": "Graduate Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "GLHT 334 and senior standing or graduate status"
+  }
+]

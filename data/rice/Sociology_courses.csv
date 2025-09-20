@@ -1,0 +1,9 @@
+department,code,title,description,credit_hours,prerequisites
+Sociology,SOCI 135,Introduction to Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,2,None
+Sociology,SOCI 179,Introduction to Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,None
+Sociology,SOCI 219,Intermediate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,2,SOCI 110 or equivalent
+Sociology,SOCI 209,Intermediate Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,SOCI 148 or equivalent
+Sociology,SOCI 373,Advanced Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,SOCI 287 and junior standing
+Sociology,SOCI 383,Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,SOCI 265 and junior standing
+Sociology,SOCI 344,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,SOCI 214 and junior standing
+Sociology,SOCI 408,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,SOCI 389 and senior standing or graduate status

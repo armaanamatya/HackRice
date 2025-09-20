@@ -1,0 +1,546 @@
+department,code,title,description,credit_hours,prerequisites
+Bioengineering,BIOE 150,Principles of Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,2,None
+Bioengineering,BIOE 139,Introduction to Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,2,None
+Bioengineering,BIOE 246,Applied Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,4,BIOE 197 or equivalent
+Bioengineering,BIOE 217,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,3,BIOE 197 or equivalent
+Bioengineering,BIOE 377,Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,4,BIOE 282 and junior standing
+Bioengineering,BIOE 372,Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,4,BIOE 275 and junior standing
+Bioengineering,BIOE 389,Seminar,In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.,4,BIOE 250 and junior standing
+Bioengineering,BIOE 491,Advanced Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,2,BIOE 339 and senior standing or graduate status
+Bioengineering,BIOE 435,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,BIOE 361 and senior standing or graduate status
+Bioengineering,BIOE 428,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,BIOE 303 and senior standing or graduate status
+Bioengineering,BIOE 672,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,BIOE 335 and senior standing or graduate status
+Bioengineering,BIOE 730,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,BIOE 386 and senior standing or graduate status
+Bioengineering,BIOE 765,Advanced Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,3,BIOE 373 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 109,Introduction to Innovation,Advanced exploration of innovation covering current research and industry practices.,3,None
+Chemical and Biomolecular Engineering,CHBE 127,Fundamentals of Design,Rigorous treatment of design theory and applications with emphasis on research methodology.,4,None
+Chemical and Biomolecular Engineering,CHBE 210,Applied Optimization,Interdisciplinary approach to optimization combining theoretical knowledge with practical problem-solving.,3,CHBE 180 or equivalent
+Chemical and Biomolecular Engineering,CHBE 280,Applied Controls,In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.,3,CHBE 159 or equivalent
+Chemical and Biomolecular Engineering,CHBE 373,Design,Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.,3,CHBE 289 and junior standing
+Chemical and Biomolecular Engineering,CHBE 385,Advanced Design,In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.,3,CHBE 219 and junior standing
+Chemical and Biomolecular Engineering,CHBE 344,Design,Advanced exploration of design covering current research and industry practices.,3,CHBE 203 and junior standing
+Chemical and Biomolecular Engineering,CHBE 429,Special Topics in Controls,Fundamental concepts and applications of controls. Designed for students pursuing careers in related fields.,4,CHBE 384 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 451,Special Topics in Project Management,Interdisciplinary approach to project management combining theoretical knowledge with practical problem-solving.,1,CHBE 375 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 466,Advanced Innovation,Fundamental concepts and applications of innovation. Designed for students pursuing careers in related fields.,3,CHBE 332 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 512,Advanced Controls,Advanced exploration of controls covering current research and industry practices.,4,CHBE 358 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 666,Special Topics in Thermodynamics,Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.,1,CHBE 379 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 741,Graduate Optimization,In-depth analysis of optimization principles. Students will develop critical thinking and problem-solving skills.,4,CHBE 318 and senior standing or graduate status
+Chemical and Biomolecular Engineering,CHBE 738,Advanced Dynamics,Interdisciplinary approach to dynamics combining theoretical knowledge with practical problem-solving.,1,CHBE 318 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 168,Fundamentals of Design,Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.,3,None
+Civil and Environmental Engineering,CEVE 185,Fundamentals of Thermodynamics,Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.,3,None
+Civil and Environmental Engineering,CEVE 263,Intermediate Controls,In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.,4,CEVE 111 or equivalent
+Civil and Environmental Engineering,CEVE 274,Systems,Rigorous treatment of systems theory and applications with emphasis on research methodology.,3,CEVE 130 or equivalent
+Civil and Environmental Engineering,CEVE 326,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,3,CEVE 224 and junior standing
+Civil and Environmental Engineering,CEVE 341,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,3,CEVE 289 and junior standing
+Civil and Environmental Engineering,CEVE 343,Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,CEVE 237 and junior standing
+Civil and Environmental Engineering,CEVE 438,Special Topics in Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,CEVE 323 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 402,Advanced Dynamics,In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.,3,CEVE 379 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 469,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,4,CEVE 378 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 769,Special Topics in Optimization,Examination of key concepts and methodologies in optimization. Includes hands-on experience and case studies.,3,CEVE 326 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 592,Graduate Ethics,Interdisciplinary approach to ethics combining theoretical knowledge with practical problem-solving.,3,CEVE 315 and senior standing or graduate status
+Computer Science,COMP 175,Fundamentals of Programming,Interdisciplinary approach to programming combining theoretical knowledge with practical problem-solving.,2,None
+Computer Science,COMP 132,Fundamentals of Artificial Intelligence,Rigorous treatment of artificial intelligence theory and applications with emphasis on research methodology.,4,None
+Computer Science,COMP 295,Intermediate Cybersecurity,Advanced exploration of cybersecurity covering current research and industry practices.,3,COMP 103 or equivalent
+Computer Science,COMP 280,Applied Web Development,Fundamental concepts and applications of web development. Designed for students pursuing careers in related fields.,4,COMP 112 or equivalent
+Computer Science,COMP 346,Advanced Software Engineering,Examination of key concepts and methodologies in software engineering. Includes hands-on experience and case studies.,3,COMP 211 and junior standing
+Computer Science,COMP 331,Advanced Human-Computer Interaction,Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.,4,COMP 214 and junior standing
+Computer Science,COMP 317,Software Engineering,In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.,3,COMP 295 and junior standing
+Computer Science,COMP 412,Advanced Data Structures,Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.,4,COMP 399 and senior standing or graduate status
+Computer Science,COMP 463,Special Topics in Database Systems,Fundamental concepts and applications of database systems. Designed for students pursuing careers in related fields.,3,COMP 346 and senior standing or graduate status
+Computer Science,COMP 446,Special Topics in Human-Computer Interaction,Comprehensive study of human-computer interaction with emphasis on theoretical foundations and practical applications.,4,COMP 399 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 120,Fundamentals of Data Structures,Comprehensive study of data structures with emphasis on theoretical foundations and practical applications.,1,None
+Electrical and Computer Engineering,ELEC 144,Fundamentals of Algorithms,Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.,3,None
+Electrical and Computer Engineering,ELEC 230,Applied Computer Networks,Rigorous treatment of computer networks theory and applications with emphasis on research methodology.,3,ELEC 122 or equivalent
+Electrical and Computer Engineering,ELEC 293,Intermediate Data Structures,Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.,3,ELEC 166 or equivalent
+Electrical and Computer Engineering,ELEC 354,Advanced Computer Graphics,In-depth analysis of computer graphics principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 247 and junior standing
+Electrical and Computer Engineering,ELEC 378,Artificial Intelligence,Advanced exploration of artificial intelligence covering current research and industry practices.,3,ELEC 202 and junior standing
+Electrical and Computer Engineering,ELEC 314,Advanced Computer Graphics,Advanced exploration of computer graphics covering current research and industry practices.,3,ELEC 290 and junior standing
+Electrical and Computer Engineering,ELEC 422,Graduate Programming,In-depth analysis of programming principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 302 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 465,Advanced Machine Learning,In-depth analysis of machine learning principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 301 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 483,Graduate Computer Graphics,Fundamental concepts and applications of computer graphics. Designed for students pursuing careers in related fields.,3,ELEC 333 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 701,Advanced Computer Graphics,Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.,4,ELEC 306 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 654,Graduate Computer Networks,In-depth analysis of computer networks principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 369 and senior standing or graduate status
+Materials Science and NanoEngineering,MSNE 186,Introduction to Computer Graphics,Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.,1,None
+Materials Science and NanoEngineering,MSNE 119,Principles of Database Systems,Comprehensive study of database systems with emphasis on theoretical foundations and practical applications.,4,None
+Materials Science and NanoEngineering,MSNE 257,Algorithms,In-depth analysis of algorithms principles. Students will develop critical thinking and problem-solving skills.,4,MSNE 177 or equivalent
+Materials Science and NanoEngineering,MSNE 289,Applied Algorithms,Fundamental concepts and applications of algorithms. Designed for students pursuing careers in related fields.,4,MSNE 101 or equivalent
+Materials Science and NanoEngineering,MSNE 354,Advanced Web Development,Advanced exploration of web development covering current research and industry practices.,4,MSNE 296 and junior standing
+Materials Science and NanoEngineering,MSNE 371,Advanced Programming,Rigorous treatment of programming theory and applications with emphasis on research methodology.,3,MSNE 228 and junior standing
+Materials Science and NanoEngineering,MSNE 339,Computer Networks,Fundamental concepts and applications of computer networks. Designed for students pursuing careers in related fields.,4,MSNE 252 and junior standing
+Materials Science and NanoEngineering,MSNE 463,Graduate Computer Networks,Examination of key concepts and methodologies in computer networks. Includes hands-on experience and case studies.,4,MSNE 348 and senior standing or graduate status
+Materials Science and NanoEngineering,MSNE 434,Graduate Data Structures,Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.,4,MSNE 372 and senior standing or graduate status
+Materials Science and NanoEngineering,MSNE 410,Advanced Computer Graphics,Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.,3,MSNE 388 and senior standing or graduate status
+Materials Science and NanoEngineering,MSNE 727,Special Topics in Programming,Comprehensive study of programming with emphasis on theoretical foundations and practical applications.,3,MSNE 305 and senior standing or graduate status
+Mechanical Engineering,MECH 150,Principles of Dynamics,In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.,2,None
+Mechanical Engineering,MECH 163,Principles of Design,Interdisciplinary approach to design combining theoretical knowledge with practical problem-solving.,3,None
+Mechanical Engineering,MECH 278,Ethics,In-depth analysis of ethics principles. Students will develop critical thinking and problem-solving skills.,3,MECH 134 or equivalent
+Mechanical Engineering,MECH 279,Design,Interdisciplinary approach to design combining theoretical knowledge with practical problem-solving.,4,MECH 146 or equivalent
+Mechanical Engineering,MECH 396,Advanced Dynamics,Fundamental concepts and applications of dynamics. Designed for students pursuing careers in related fields.,1,MECH 276 and junior standing
+Mechanical Engineering,MECH 300,Dynamics,In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.,3,MECH 245 and junior standing
+Mechanical Engineering,MECH 392,Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,MECH 246 and junior standing
+Mechanical Engineering,MECH 494,Advanced Materials,Examination of key concepts and methodologies in materials. Includes hands-on experience and case studies.,3,MECH 355 and senior standing or graduate status
+Mechanical Engineering,MECH 469,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,4,MECH 384 and senior standing or graduate status
+Mechanical Engineering,MECH 450,Advanced Optimization,Rigorous treatment of optimization theory and applications with emphasis on research methodology.,4,MECH 369 and senior standing or graduate status
+Mechanical Engineering,MECH 580,Graduate Controls,Fundamental concepts and applications of controls. Designed for students pursuing careers in related fields.,1,MECH 302 and senior standing or graduate status
+Biosciences,BIOC 111,Principles of Biochemistry,Fundamental concepts and applications of biochemistry. Designed for students pursuing careers in related fields.,3,None
+Biosciences,BIOC 124,Fundamentals of Physiology,Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.,4,None
+Biosciences,BIOC 221,Evolution,Comprehensive study of evolution with emphasis on theoretical foundations and practical applications.,4,BIOC 198 or equivalent
+Biosciences,BIOC 234,Applied Bioinformatics,Interdisciplinary approach to bioinformatics combining theoretical knowledge with practical problem-solving.,3,BIOC 172 or equivalent
+Biosciences,BIOC 349,Evolution,Examination of key concepts and methodologies in evolution. Includes hands-on experience and case studies.,4,BIOC 291 and junior standing
+Biosciences,BIOC 351,Advanced Microbiology,Interdisciplinary approach to microbiology combining theoretical knowledge with practical problem-solving.,1,BIOC 200 and junior standing
+Biosciences,BIOC 313,Advanced Physiology,Examination of key concepts and methodologies in physiology. Includes hands-on experience and case studies.,3,BIOC 287 and junior standing
+Biosciences,BIOC 406,Graduate Biotechnology,Rigorous treatment of biotechnology theory and applications with emphasis on research methodology.,4,BIOC 300 and senior standing or graduate status
+Biosciences,BIOC 465,Advanced Microbiology,Examination of key concepts and methodologies in microbiology. Includes hands-on experience and case studies.,3,BIOC 323 and senior standing or graduate status
+Biosciences,BIOC 414,Advanced Genetics,Examination of key concepts and methodologies in genetics. Includes hands-on experience and case studies.,4,BIOC 340 and senior standing or graduate status
+Biosciences,BIOC 717,Special Topics in Molecular Biology,In-depth analysis of molecular biology principles. Students will develop critical thinking and problem-solving skills.,3,BIOC 387 and senior standing or graduate status
+Chemistry,CHEM 111,Fundamentals of Organic Chemistry,Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.,3,None
+Chemistry,CHEM 145,Introduction to Materials Chemistry,Examination of key concepts and methodologies in materials chemistry. Includes hands-on experience and case studies.,3,None
+Chemistry,CHEM 203,Intermediate Materials Chemistry,Comprehensive study of materials chemistry with emphasis on theoretical foundations and practical applications.,3,CHEM 123 or equivalent
+Chemistry,CHEM 298,Organic Chemistry,Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.,3,CHEM 124 or equivalent
+Chemistry,CHEM 381,Advanced Physical Chemistry,Fundamental concepts and applications of physical chemistry. Designed for students pursuing careers in related fields.,4,CHEM 262 and junior standing
+Chemistry,CHEM 392,Advanced Analytical Chemistry,Fundamental concepts and applications of analytical chemistry. Designed for students pursuing careers in related fields.,3,CHEM 269 and junior standing
+Chemistry,CHEM 324,Advanced Materials Chemistry,Fundamental concepts and applications of materials chemistry. Designed for students pursuing careers in related fields.,3,CHEM 218 and junior standing
+Chemistry,CHEM 495,Graduate Organic Chemistry,Fundamental concepts and applications of organic chemistry. Designed for students pursuing careers in related fields.,4,CHEM 334 and senior standing or graduate status
+Chemistry,CHEM 451,Advanced Environmental Chemistry,Comprehensive study of environmental chemistry with emphasis on theoretical foundations and practical applications.,4,CHEM 330 and senior standing or graduate status
+Chemistry,CHEM 438,Special Topics in Biochemistry,Rigorous treatment of biochemistry theory and applications with emphasis on research methodology.,3,CHEM 373 and senior standing or graduate status
+Chemistry,CHEM 637,Special Topics in Medicinal Chemistry,Examination of key concepts and methodologies in medicinal chemistry. Includes hands-on experience and case studies.,2,CHEM 353 and senior standing or graduate status
+Chemistry,CHEM 596,Graduate Analytical Chemistry,Rigorous treatment of analytical chemistry theory and applications with emphasis on research methodology.,4,CHEM 304 and senior standing or graduate status
+"Earth, Environmental and Planetary Sciences",EEPS 115,Introduction to Artificial Intelligence,Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.,4,None
+"Earth, Environmental and Planetary Sciences",EEPS 120,Principles of Artificial Intelligence,Advanced exploration of artificial intelligence covering current research and industry practices.,3,None
+"Earth, Environmental and Planetary Sciences",EEPS 210,Intermediate Programming,Fundamental concepts and applications of programming. Designed for students pursuing careers in related fields.,4,EEPS 120 or equivalent
+"Earth, Environmental and Planetary Sciences",EEPS 270,Applied Software Engineering,In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.,4,EEPS 195 or equivalent
+"Earth, Environmental and Planetary Sciences",EEPS 378,Advanced Human-Computer Interaction,Rigorous treatment of human-computer interaction theory and applications with emphasis on research methodology.,4,EEPS 254 and junior standing
+"Earth, Environmental and Planetary Sciences",EEPS 312,Cybersecurity,Interdisciplinary approach to cybersecurity combining theoretical knowledge with practical problem-solving.,3,EEPS 251 and junior standing
+"Earth, Environmental and Planetary Sciences",EEPS 310,Machine Learning,Rigorous treatment of machine learning theory and applications with emphasis on research methodology.,3,EEPS 284 and junior standing
+"Earth, Environmental and Planetary Sciences",EEPS 464,Advanced Human-Computer Interaction,Fundamental concepts and applications of human-computer interaction. Designed for students pursuing careers in related fields.,1,EEPS 325 and senior standing or graduate status
+"Earth, Environmental and Planetary Sciences",EEPS 443,Graduate Human-Computer Interaction,In-depth analysis of human-computer interaction principles. Students will develop critical thinking and problem-solving skills.,4,EEPS 306 and senior standing or graduate status
+"Earth, Environmental and Planetary Sciences",EEPS 448,Graduate Database Systems,Advanced exploration of database systems covering current research and industry practices.,4,EEPS 392 and senior standing or graduate status
+"Earth, Environmental and Planetary Sciences",EEPS 641,Advanced Computer Graphics,In-depth analysis of computer graphics principles. Students will develop critical thinking and problem-solving skills.,4,EEPS 391 and senior standing or graduate status
+Mathematics,MATH 165,Fundamentals of Calculus,Examination of key concepts and methodologies in calculus. Includes hands-on experience and case studies.,3,None
+Mathematics,MATH 103,Fundamentals of Linear Algebra,Rigorous treatment of linear algebra theory and applications with emphasis on research methodology.,3,None
+Mathematics,MATH 249,Abstract Algebra,Rigorous treatment of abstract algebra theory and applications with emphasis on research methodology.,3,MATH 168 or equivalent
+Mathematics,MATH 235,Applied Calculus,Rigorous treatment of calculus theory and applications with emphasis on research methodology.,3,MATH 143 or equivalent
+Mathematics,MATH 332,Linear Algebra,Fundamental concepts and applications of linear algebra. Designed for students pursuing careers in related fields.,4,MATH 294 and junior standing
+Mathematics,MATH 348,Advanced Differential Equations,In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.,3,MATH 293 and junior standing
+Mathematics,MATH 304,Advanced Calculus,Interdisciplinary approach to calculus combining theoretical knowledge with practical problem-solving.,3,MATH 293 and junior standing
+Mathematics,MATH 415,Graduate Differential Equations,Fundamental concepts and applications of differential equations. Designed for students pursuing careers in related fields.,3,MATH 365 and senior standing or graduate status
+Mathematics,MATH 467,Graduate Linear Algebra,Examination of key concepts and methodologies in linear algebra. Includes hands-on experience and case studies.,4,MATH 332 and senior standing or graduate status
+Mathematics,MATH 419,Advanced Statistics,Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.,3,MATH 315 and senior standing or graduate status
+Mathematics,MATH 686,Advanced Probability,Advanced exploration of probability covering current research and industry practices.,4,MATH 359 and senior standing or graduate status
+Mathematics,MATH 626,Graduate Statistics,Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.,4,MATH 356 and senior standing or graduate status
+Mathematics,MATH 692,Special Topics in Differential Equations,Examination of key concepts and methodologies in differential equations. Includes hands-on experience and case studies.,4,MATH 339 and senior standing or graduate status
+Mathematics,MATH 673,Graduate Statistics,Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.,3,MATH 314 and senior standing or graduate status
+Physics and Astronomy,ASTR 155,Principles of Thermodynamics,In-depth analysis of thermodynamics principles. Students will develop critical thinking and problem-solving skills.,4,None
+Physics and Astronomy,ASTR 138,Fundamentals of Classical Mechanics,Advanced exploration of classical mechanics covering current research and industry practices.,4,None
+Physics and Astronomy,ASTR 260,Intermediate Astrophysics,Advanced exploration of astrophysics covering current research and industry practices.,3,ASTR 112 or equivalent
+Physics and Astronomy,PHYS 205,Applied Particle Physics,Advanced exploration of particle physics covering current research and industry practices.,3,PHYS 130 or equivalent
+Physics and Astronomy,ASTR 335,Quantum Mechanics,Examination of key concepts and methodologies in quantum mechanics. Includes hands-on experience and case studies.,3,ASTR 295 and junior standing
+Physics and Astronomy,PHYS 383,Advanced Condensed Matter,Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.,3,PHYS 291 and junior standing
+Physics and Astronomy,ASTR 350,Condensed Matter,Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.,4,ASTR 202 and junior standing
+Physics and Astronomy,ASTR 428,Special Topics in Quantum Mechanics,Comprehensive study of quantum mechanics with emphasis on theoretical foundations and practical applications.,3,ASTR 347 and senior standing or graduate status
+Physics and Astronomy,PHYS 481,Advanced Astrophysics,In-depth analysis of astrophysics principles. Students will develop critical thinking and problem-solving skills.,3,PHYS 314 and senior standing or graduate status
+Physics and Astronomy,PHYS 410,Special Topics in Astrophysics,Advanced exploration of astrophysics covering current research and industry practices.,3,PHYS 320 and senior standing or graduate status
+Physics and Astronomy,ASTR 543,Graduate Condensed Matter,In-depth analysis of condensed matter principles. Students will develop critical thinking and problem-solving skills.,3,ASTR 352 and senior standing or graduate status
+Physics and Astronomy,ASTR 524,Advanced Quantum Mechanics,Fundamental concepts and applications of quantum mechanics. Designed for students pursuing careers in related fields.,3,ASTR 360 and senior standing or graduate status
+Physics and Astronomy,ASTR 558,Graduate Classical Mechanics,Advanced exploration of classical mechanics covering current research and industry practices.,4,ASTR 336 and senior standing or graduate status
+Statistics,STAT 131,Principles of Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,None
+Statistics,STAT 131,Introduction to Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,None
+Statistics,STAT 280,Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,4,STAT 131 or equivalent
+Statistics,STAT 275,Applied Analysis,Advanced exploration of analysis covering current research and industry practices.,2,STAT 134 or equivalent
+Statistics,STAT 301,Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,STAT 295 and junior standing
+Statistics,STAT 322,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,1,STAT 269 and junior standing
+Statistics,STAT 370,Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,STAT 214 and junior standing
+Statistics,STAT 419,Special Topics in Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,4,STAT 350 and senior standing or graduate status
+Statistics,STAT 429,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,STAT 322 and senior standing or graduate status
+Statistics,STAT 464,Graduate Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,STAT 379 and senior standing or graduate status
+Statistics,STAT 555,Graduate Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,4,STAT 386 and senior standing or graduate status
+Statistics,STAT 705,Advanced Applications,Advanced exploration of applications covering current research and industry practices.,4,STAT 303 and senior standing or graduate status
+Statistics,STAT 575,Graduate Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,STAT 376 and senior standing or graduate status
+Statistics,STAT 659,Graduate Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,STAT 384 and senior standing or graduate status
+Cognitive Sciences,COGS 103,Principles of Web Development,In-depth analysis of web development principles. Students will develop critical thinking and problem-solving skills.,3,None
+Cognitive Sciences,COGS 152,Principles of Algorithms,Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.,3,None
+Cognitive Sciences,COGS 257,Applied Computer Graphics,Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.,2,COGS 108 or equivalent
+Cognitive Sciences,COGS 254,Applied Human-Computer Interaction,Rigorous treatment of human-computer interaction theory and applications with emphasis on research methodology.,4,COGS 187 or equivalent
+Cognitive Sciences,COGS 372,Advanced Cybersecurity,Comprehensive study of cybersecurity with emphasis on theoretical foundations and practical applications.,3,COGS 225 and junior standing
+Cognitive Sciences,COGS 346,Advanced Computer Networks,Interdisciplinary approach to computer networks combining theoretical knowledge with practical problem-solving.,4,COGS 269 and junior standing
+Cognitive Sciences,COGS 312,Data Structures,Rigorous treatment of data structures theory and applications with emphasis on research methodology.,4,COGS 253 and junior standing
+Cognitive Sciences,COGS 421,Advanced Artificial Intelligence,Comprehensive study of artificial intelligence with emphasis on theoretical foundations and practical applications.,3,COGS 305 and senior standing or graduate status
+Cognitive Sciences,COGS 400,Advanced Programming,Comprehensive study of programming with emphasis on theoretical foundations and practical applications.,4,COGS 394 and senior standing or graduate status
+Cognitive Sciences,COGS 401,Special Topics in Software Engineering,In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.,4,COGS 389 and senior standing or graduate status
+Business,BUSI 192,Fundamentals of Leadership,Interdisciplinary approach to leadership combining theoretical knowledge with practical problem-solving.,3,None
+Business,BUSI 170,Introduction to Economics,Fundamental concepts and applications of economics. Designed for students pursuing careers in related fields.,3,None
+Business,BUSI 275,Intermediate Finance,Fundamental concepts and applications of finance. Designed for students pursuing careers in related fields.,3,BUSI 131 or equivalent
+Business,BUSI 214,Intermediate Management,Rigorous treatment of management theory and applications with emphasis on research methodology.,3,BUSI 192 or equivalent
+Business,BUSI 388,Operations,Advanced exploration of operations covering current research and industry practices.,4,BUSI 263 and junior standing
+Business,BUSI 343,Leadership,Fundamental concepts and applications of leadership. Designed for students pursuing careers in related fields.,4,BUSI 262 and junior standing
+Business,BUSI 312,Advanced Marketing,Advanced exploration of marketing covering current research and industry practices.,2,BUSI 297 and junior standing
+Business,BUSI 451,Graduate Leadership,Comprehensive study of leadership with emphasis on theoretical foundations and practical applications.,3,BUSI 327 and senior standing or graduate status
+Entrepreneurship,ENTR 155,Principles of Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,None
+Entrepreneurship,ENTR 159,Introduction to Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,None
+Entrepreneurship,ENTR 201,Intermediate Methods,Advanced exploration of methods covering current research and industry practices.,4,ENTR 169 or equivalent
+Entrepreneurship,ENTR 246,Applied Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,4,ENTR 163 or equivalent
+Entrepreneurship,ENTR 334,Advanced Seminar,Fundamental concepts and applications of seminar. Designed for students pursuing careers in related fields.,3,ENTR 281 and junior standing
+Entrepreneurship,ENTR 326,Research,Advanced exploration of research covering current research and industry practices.,3,ENTR 226 and junior standing
+Entrepreneurship,ENTR 338,Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,ENTR 247 and junior standing
+Entrepreneurship,ENTR 489,Advanced Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,ENTR 387 and senior standing or graduate status
+Entrepreneurship,ENTR 404,Special Topics in Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,ENTR 343 and senior standing or graduate status
+Entrepreneurship,ENTR 464,Advanced Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,4,ENTR 381 and senior standing or graduate status
+Entrepreneurship,ENTR 666,Graduate Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,ENTR 359 and senior standing or graduate status
+Entrepreneurship,ENTR 599,Advanced Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,ENTR 315 and senior standing or graduate status
+Entrepreneurship,ENTR 613,Advanced Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,4,ENTR 344 and senior standing or graduate status
+Entrepreneurship,ENTR 678,Special Topics in Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,4,ENTR 364 and senior standing or graduate status
+Accounting,ACCT 133,Principles of Theory,Advanced exploration of theory covering current research and industry practices.,3,None
+Accounting,ACCT 139,Principles of Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,None
+Accounting,ACCT 287,Applied Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,4,ACCT 150 or equivalent
+Accounting,ACCT 296,Intermediate Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,ACCT 106 or equivalent
+Accounting,ACCT 316,Advanced Seminar,Advanced exploration of seminar covering current research and industry practices.,3,ACCT 280 and junior standing
+Accounting,ACCT 373,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,2,ACCT 259 and junior standing
+Accounting,ACCT 303,Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,ACCT 237 and junior standing
+Accounting,ACCT 434,Advanced Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,ACCT 356 and senior standing or graduate status
+Finance,FINA 150,Principles of Practice,Advanced exploration of practice covering current research and industry practices.,1,None
+Finance,FINA 100,Introduction to Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,3,None
+Finance,FINA 217,Intermediate Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,4,FINA 109 or equivalent
+Finance,FINA 273,Intermediate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,4,FINA 167 or equivalent
+Finance,FINA 383,Advanced Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,FINA 201 and junior standing
+Finance,FINA 302,Seminar,In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.,3,FINA 232 and junior standing
+Finance,FINA 389,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,1,FINA 235 and junior standing
+Finance,FINA 415,Graduate Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,2,FINA 343 and senior standing or graduate status
+Finance,FINA 437,Advanced Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,FINA 378 and senior standing or graduate status
+Finance,FINA 423,Graduate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,FINA 361 and senior standing or graduate status
+Management,MGMT 135,Fundamentals of Methods,Advanced exploration of methods covering current research and industry practices.,3,None
+Management,MGMT 191,Fundamentals of Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,4,None
+Management,MGMT 255,Applied Methods,Advanced exploration of methods covering current research and industry practices.,3,MGMT 141 or equivalent
+Management,MGMT 232,Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,MGMT 105 or equivalent
+Management,MGMT 315,Advanced Workshop,Examination of key concepts and methodologies in workshop. Includes hands-on experience and case studies.,4,MGMT 200 and junior standing
+Management,MGMT 379,Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,3,MGMT 254 and junior standing
+Management,MGMT 300,Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,2,MGMT 254 and junior standing
+Management,MGMT 403,Graduate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,3,MGMT 348 and senior standing or graduate status
+Management,MGMT 403,Special Topics in Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,3,MGMT 303 and senior standing or graduate status
+Management,MGMT 493,Graduate Workshop,Advanced exploration of workshop covering current research and industry practices.,3,MGMT 359 and senior standing or graduate status
+Management,MGMT 743,Special Topics in Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,MGMT 304 and senior standing or graduate status
+Management,MGMT 737,Graduate Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,1,MGMT 306 and senior standing or graduate status
+Management,MGMT 515,Advanced Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,MGMT 393 and senior standing or graduate status
+Management,MGMT 690,Graduate Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,MGMT 384 and senior standing or graduate status
+Management,MGMT 694,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,MGMT 342 and senior standing or graduate status
+Marketing,MKTG 156,Fundamentals of Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,None
+Marketing,MKTG 101,Fundamentals of Analysis,Advanced exploration of analysis covering current research and industry practices.,3,None
+Marketing,MKTG 200,Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,4,MKTG 118 or equivalent
+Marketing,MKTG 260,Intermediate Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,MKTG 186 or equivalent
+Marketing,MKTG 357,Advanced Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,MKTG 246 and junior standing
+Marketing,MKTG 366,Advanced Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,MKTG 235 and junior standing
+Marketing,MKTG 320,Methods,Advanced exploration of methods covering current research and industry practices.,3,MKTG 245 and junior standing
+Marketing,MKTG 422,Advanced Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,3,MKTG 398 and senior standing or graduate status
+Marketing,MKTG 420,Advanced Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,2,MKTG 341 and senior standing or graduate status
+Marketing,MKTG 474,Graduate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,1,MKTG 329 and senior standing or graduate status
+Art History,ARTH 191,Introduction to American History,In-depth analysis of american history principles. Students will develop critical thinking and problem-solving skills.,2,None
+Art History,ARTH 123,Principles of Cultural History,In-depth analysis of cultural history principles. Students will develop critical thinking and problem-solving skills.,4,None
+Art History,ARTH 240,Intermediate Military History,Comprehensive study of military history with emphasis on theoretical foundations and practical applications.,1,ARTH 113 or equivalent
+Art History,ARTH 297,Cultural History,Comprehensive study of cultural history with emphasis on theoretical foundations and practical applications.,4,ARTH 118 or equivalent
+Art History,ARTH 387,Political History,In-depth analysis of political history principles. Students will develop critical thinking and problem-solving skills.,2,ARTH 286 and junior standing
+Art History,ARTH 342,Social History,In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.,4,ARTH 274 and junior standing
+Art History,ARTH 329,Advanced World History,Rigorous treatment of world history theory and applications with emphasis on research methodology.,3,ARTH 270 and junior standing
+Art History,ARTH 466,Graduate American History,Interdisciplinary approach to american history combining theoretical knowledge with practical problem-solving.,3,ARTH 399 and senior standing or graduate status
+Art History,ARTH 456,Special Topics in Modern History,Rigorous treatment of modern history theory and applications with emphasis on research methodology.,3,ARTH 315 and senior standing or graduate status
+Art History,ARTH 435,Advanced Cultural History,Rigorous treatment of cultural history theory and applications with emphasis on research methodology.,4,ARTH 320 and senior standing or graduate status
+Art History,ARTH 716,Special Topics in Ancient History,Rigorous treatment of ancient history theory and applications with emphasis on research methodology.,3,ARTH 384 and senior standing or graduate status
+Classical and European Studies,CLAS 180,Fundamentals of Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,None
+Classical and European Studies,CLAS 143,Principles of Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,None
+Classical and European Studies,CLAS 272,Applied Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,CLAS 188 or equivalent
+Classical and European Studies,CLAS 259,Applied Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,2,CLAS 197 or equivalent
+Classical and European Studies,CLAS 389,Advanced Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,CLAS 226 and junior standing
+Classical and European Studies,CLAS 300,Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,4,CLAS 213 and junior standing
+Classical and European Studies,CLAS 382,Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,4,CLAS 260 and junior standing
+Classical and European Studies,CLAS 498,Advanced Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,3,CLAS 340 and senior standing or graduate status
+Classical and European Studies,CLAS 455,Special Topics in Methods,Advanced exploration of methods covering current research and industry practices.,4,CLAS 354 and senior standing or graduate status
+Classical and European Studies,CLAS 465,Special Topics in Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,4,CLAS 313 and senior standing or graduate status
+Classical and European Studies,CLAS 574,Advanced Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,CLAS 309 and senior standing or graduate status
+Classical and European Studies,CLAS 522,Graduate Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,CLAS 383 and senior standing or graduate status
+Classical and European Studies,CLAS 542,Graduate Analysis,Advanced exploration of analysis covering current research and industry practices.,4,CLAS 365 and senior standing or graduate status
+Classical and European Studies,CLAS 757,Graduate Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,CLAS 369 and senior standing or graduate status
+Classical and European Studies,CLAS 618,Special Topics in Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,3,CLAS 393 and senior standing or graduate status
+English,ENGL 136,Introduction to British Literature,Examination of key concepts and methodologies in british literature. Includes hands-on experience and case studies.,4,None
+English,ENGL 162,Fundamentals of Technical Writing,Examination of key concepts and methodologies in technical writing. Includes hands-on experience and case studies.,4,None
+English,ENGL 282,World Literature,Comprehensive study of world literature with emphasis on theoretical foundations and practical applications.,4,ENGL 107 or equivalent
+English,ENGL 299,Poetry,Interdisciplinary approach to poetry combining theoretical knowledge with practical problem-solving.,3,ENGL 114 or equivalent
+English,ENGL 334,Writing,Comprehensive study of writing with emphasis on theoretical foundations and practical applications.,3,ENGL 242 and junior standing
+English,ENGL 384,Advanced World Literature,In-depth analysis of world literature principles. Students will develop critical thinking and problem-solving skills.,4,ENGL 283 and junior standing
+English,ENGL 334,Advanced Writing,Rigorous treatment of writing theory and applications with emphasis on research methodology.,3,ENGL 203 and junior standing
+English,ENGL 474,Special Topics in World Literature,Fundamental concepts and applications of world literature. Designed for students pursuing careers in related fields.,3,ENGL 388 and senior standing or graduate status
+English,ENGL 476,Graduate Rhetoric,Rigorous treatment of rhetoric theory and applications with emphasis on research methodology.,3,ENGL 341 and senior standing or graduate status
+English,ENGL 498,Graduate Literature,Advanced exploration of literature covering current research and industry practices.,3,ENGL 335 and senior standing or graduate status
+French Studies,FREN 150,Introduction to Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,None
+French Studies,FREN 134,Introduction to Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,2,None
+French Studies,FREN 226,Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,FREN 173 or equivalent
+French Studies,FREN 208,Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,FREN 126 or equivalent
+French Studies,FREN 344,Advanced Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,3,FREN 245 and junior standing
+French Studies,FREN 303,Advanced Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,3,FREN 204 and junior standing
+French Studies,FREN 369,Advanced Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,2,FREN 283 and junior standing
+French Studies,FREN 401,Special Topics in Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,2,FREN 338 and senior standing or graduate status
+French Studies,FREN 466,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,FREN 307 and senior standing or graduate status
+French Studies,FREN 424,Advanced Seminar,Advanced exploration of seminar covering current research and industry practices.,3,FREN 345 and senior standing or graduate status
+French Studies,FREN 521,Graduate Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,4,FREN 374 and senior standing or graduate status
+French Studies,FREN 563,Graduate Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,FREN 385 and senior standing or graduate status
+French Studies,FREN 628,Advanced Seminar,Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.,4,FREN 392 and senior standing or graduate status
+German and Slavic Studies,GERM 163,Principles of Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,None
+German and Slavic Studies,GERM 131,Introduction to Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,2,None
+German and Slavic Studies,GERM 203,Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,4,GERM 176 or equivalent
+German and Slavic Studies,GERM 236,Applied Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,GERM 150 or equivalent
+German and Slavic Studies,GERM 323,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,GERM 242 and junior standing
+German and Slavic Studies,GERM 394,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,GERM 233 and junior standing
+German and Slavic Studies,GERM 326,Advanced Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,GERM 298 and junior standing
+German and Slavic Studies,GERM 443,Advanced Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,GERM 337 and senior standing or graduate status
+German and Slavic Studies,GERM 458,Advanced Applications,Advanced exploration of applications covering current research and industry practices.,3,GERM 325 and senior standing or graduate status
+German and Slavic Studies,GERM 497,Advanced Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,GERM 367 and senior standing or graduate status
+German and Slavic Studies,GERM 670,Special Topics in Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,2,GERM 334 and senior standing or graduate status
+Hispanic Studies,HISP 168,Principles of Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,None
+Hispanic Studies,HISP 117,Fundamentals of Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,2,None
+Hispanic Studies,HISP 216,Intermediate Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,2,HISP 183 or equivalent
+Hispanic Studies,HISP 263,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,HISP 125 or equivalent
+Hispanic Studies,HISP 373,Advanced Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,HISP 239 and junior standing
+Hispanic Studies,HISP 355,Advanced Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,4,HISP 217 and junior standing
+Hispanic Studies,HISP 327,Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,2,HISP 234 and junior standing
+Hispanic Studies,HISP 401,Graduate Workshop,Advanced exploration of workshop covering current research and industry practices.,3,HISP 344 and senior standing or graduate status
+Hispanic Studies,HISP 496,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,4,HISP 351 and senior standing or graduate status
+History,HIST 167,Introduction to Military History,Comprehensive study of military history with emphasis on theoretical foundations and practical applications.,4,None
+History,HIST 155,Introduction to Social History,Examination of key concepts and methodologies in social history. Includes hands-on experience and case studies.,3,None
+History,HIST 276,Intermediate Political History,Comprehensive study of political history with emphasis on theoretical foundations and practical applications.,2,HIST 151 or equivalent
+History,HIST 261,Applied Social History,Rigorous treatment of social history theory and applications with emphasis on research methodology.,4,HIST 165 or equivalent
+History,HIST 308,Advanced Social History,In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.,3,HIST 237 and junior standing
+History,HIST 302,Modern History,In-depth analysis of modern history principles. Students will develop critical thinking and problem-solving skills.,4,HIST 241 and junior standing
+History,HIST 342,Advanced Cultural History,Interdisciplinary approach to cultural history combining theoretical knowledge with practical problem-solving.,4,HIST 277 and junior standing
+History,HIST 499,Special Topics in World History,Rigorous treatment of world history theory and applications with emphasis on research methodology.,3,HIST 331 and senior standing or graduate status
+History,HIST 419,Special Topics in Social History,Fundamental concepts and applications of social history. Designed for students pursuing careers in related fields.,3,HIST 376 and senior standing or graduate status
+History,HIST 449,Special Topics in World History,In-depth analysis of world history principles. Students will develop critical thinking and problem-solving skills.,3,HIST 336 and senior standing or graduate status
+History,HIST 690,Graduate Ancient History,Rigorous treatment of ancient history theory and applications with emphasis on research methodology.,3,HIST 383 and senior standing or graduate status
+History,HIST 650,Advanced European History,Interdisciplinary approach to european history combining theoretical knowledge with practical problem-solving.,3,HIST 310 and senior standing or graduate status
+History,HIST 508,Advanced American History,Comprehensive study of american history with emphasis on theoretical foundations and practical applications.,3,HIST 366 and senior standing or graduate status
+History,HIST 704,Special Topics in European History,Rigorous treatment of european history theory and applications with emphasis on research methodology.,3,HIST 391 and senior standing or graduate status
+Linguistics,LING 183,Introduction to Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,3,None
+Linguistics,LING 187,Principles of Seminar,In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.,4,None
+Linguistics,LING 204,Applied Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,4,LING 158 or equivalent
+Linguistics,LING 290,Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,3,LING 185 or equivalent
+Linguistics,LING 339,Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,LING 251 and junior standing
+Linguistics,LING 353,Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,3,LING 268 and junior standing
+Linguistics,LING 369,Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,4,LING 277 and junior standing
+Linguistics,LING 465,Advanced Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,3,LING 319 and senior standing or graduate status
+Linguistics,LING 424,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,LING 317 and senior standing or graduate status
+Linguistics,LING 491,Special Topics in Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,2,LING 394 and senior standing or graduate status
+Linguistics,LING 526,Special Topics in Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,4,LING 358 and senior standing or graduate status
+Linguistics,LING 758,Graduate Seminar,Advanced exploration of seminar covering current research and industry practices.,3,LING 302 and senior standing or graduate status
+Linguistics,LING 566,Advanced Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,3,LING 321 and senior standing or graduate status
+Linguistics,LING 682,Advanced Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,3,LING 340 and senior standing or graduate status
+Linguistics,LING 735,Advanced Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,4,LING 380 and senior standing or graduate status
+Philosophy,PHIL 103,Introduction to Research,Advanced exploration of research covering current research and industry practices.,3,None
+Philosophy,PHIL 113,Fundamentals of Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,2,None
+Philosophy,PHIL 270,Intermediate Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,1,PHIL 104 or equivalent
+Philosophy,PHIL 246,Intermediate Seminar,Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.,3,PHIL 192 or equivalent
+Philosophy,PHIL 311,Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,PHIL 207 and junior standing
+Philosophy,PHIL 326,Advanced Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,3,PHIL 227 and junior standing
+Philosophy,PHIL 377,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,1,PHIL 246 and junior standing
+Philosophy,PHIL 403,Advanced Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,1,PHIL 391 and senior standing or graduate status
+Philosophy,PHIL 408,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,PHIL 343 and senior standing or graduate status
+Religious Studies,RELI 172,Principles of Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,3,None
+Religious Studies,RELI 190,Fundamentals of Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,None
+Religious Studies,RELI 218,Applied Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,RELI 159 or equivalent
+Religious Studies,RELI 299,Applied Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,RELI 118 or equivalent
+Religious Studies,RELI 352,Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,3,RELI 241 and junior standing
+Religious Studies,RELI 399,Advanced Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,RELI 200 and junior standing
+Religious Studies,RELI 346,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,2,RELI 265 and junior standing
+Religious Studies,RELI 438,Special Topics in Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,RELI 318 and senior standing or graduate status
+Religious Studies,RELI 452,Graduate Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,4,RELI 394 and senior standing or graduate status
+Religious Studies,RELI 483,Graduate Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,RELI 321 and senior standing or graduate status
+Religious Studies,RELI 501,Graduate Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,2,RELI 363 and senior standing or graduate status
+Anthropology,ANTH 138,Principles of Seminar,Fundamental concepts and applications of seminar. Designed for students pursuing careers in related fields.,3,None
+Anthropology,ANTH 182,Introduction to Workshop,Advanced exploration of workshop covering current research and industry practices.,3,None
+Anthropology,ANTH 298,Intermediate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,2,ANTH 155 or equivalent
+Anthropology,ANTH 217,Applied Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,4,ANTH 143 or equivalent
+Anthropology,ANTH 339,Advanced Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,1,ANTH 207 and junior standing
+Anthropology,ANTH 369,Workshop,Advanced exploration of workshop covering current research and industry practices.,4,ANTH 237 and junior standing
+Anthropology,ANTH 357,Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,4,ANTH 253 and junior standing
+Anthropology,ANTH 425,Graduate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,ANTH 325 and senior standing or graduate status
+Anthropology,ANTH 428,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,4,ANTH 311 and senior standing or graduate status
+Anthropology,ANTH 489,Graduate Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,ANTH 324 and senior standing or graduate status
+Anthropology,ANTH 534,Advanced Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,4,ANTH 391 and senior standing or graduate status
+Anthropology,ANTH 602,Advanced Seminar,Advanced exploration of seminar covering current research and industry practices.,3,ANTH 378 and senior standing or graduate status
+Anthropology,ANTH 585,Graduate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,ANTH 307 and senior standing or graduate status
+Anthropology,ANTH 711,Graduate Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,ANTH 323 and senior standing or graduate status
+Anthropology,ANTH 555,Special Topics in Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,1,ANTH 375 and senior standing or graduate status
+Economics,ECON 154,Fundamentals of Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,2,None
+Economics,ECON 156,Principles of Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,4,None
+Economics,ECON 201,Applied Workshop,Examination of key concepts and methodologies in workshop. Includes hands-on experience and case studies.,1,ECON 123 or equivalent
+Economics,ECON 261,Applied Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,ECON 198 or equivalent
+Economics,ECON 394,Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,ECON 283 and junior standing
+Economics,ECON 319,Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,ECON 253 and junior standing
+Economics,ECON 335,Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,ECON 228 and junior standing
+Economics,ECON 409,Graduate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,ECON 322 and senior standing or graduate status
+Economics,ECON 466,Special Topics in Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,2,ECON 308 and senior standing or graduate status
+Economics,ECON 448,Special Topics in Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,2,ECON 317 and senior standing or graduate status
+Economics,ECON 554,Graduate Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,2,ECON 392 and senior standing or graduate status
+Economics,ECON 707,Advanced Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,ECON 376 and senior standing or graduate status
+Economics,ECON 563,Advanced Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,2,ECON 303 and senior standing or graduate status
+Political Science,POLI 121,Fundamentals of Programming,Fundamental concepts and applications of programming. Designed for students pursuing careers in related fields.,4,None
+Political Science,POLI 149,Principles of Web Development,Comprehensive study of web development with emphasis on theoretical foundations and practical applications.,3,None
+Political Science,POLI 236,Intermediate Machine Learning,Fundamental concepts and applications of machine learning. Designed for students pursuing careers in related fields.,1,POLI 162 or equivalent
+Political Science,POLI 217,Applied Algorithms,Comprehensive study of algorithms with emphasis on theoretical foundations and practical applications.,3,POLI 180 or equivalent
+Political Science,POLI 337,Software Engineering,Rigorous treatment of software engineering theory and applications with emphasis on research methodology.,2,POLI 214 and junior standing
+Political Science,POLI 321,Advanced Computer Graphics,Advanced exploration of computer graphics covering current research and industry practices.,4,POLI 283 and junior standing
+Political Science,POLI 336,Advanced Data Structures,Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.,3,POLI 215 and junior standing
+Political Science,POLI 416,Special Topics in Web Development,Interdisciplinary approach to web development combining theoretical knowledge with practical problem-solving.,3,POLI 317 and senior standing or graduate status
+Political Science,POLI 415,Advanced Artificial Intelligence,Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.,4,POLI 382 and senior standing or graduate status
+Political Science,POLI 478,Special Topics in Computer Graphics,Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.,3,POLI 361 and senior standing or graduate status
+Political Science,POLI 676,Special Topics in Software Engineering,Advanced exploration of software engineering covering current research and industry practices.,3,POLI 346 and senior standing or graduate status
+Political Science,POLI 536,Graduate Data Structures,Interdisciplinary approach to data structures combining theoretical knowledge with practical problem-solving.,2,POLI 316 and senior standing or graduate status
+Political Science,POLI 643,Graduate Algorithms,Rigorous treatment of algorithms theory and applications with emphasis on research methodology.,3,POLI 306 and senior standing or graduate status
+Psychology,PSYC 129,Introduction to Personality,Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.,3,None
+Psychology,PSYC 156,Introduction to Personality,In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.,2,None
+Psychology,PSYC 242,Applied Abnormal Psychology,Comprehensive study of abnormal psychology with emphasis on theoretical foundations and practical applications.,3,PSYC 127 or equivalent
+Psychology,PSYC 224,Applied Personality,In-depth analysis of personality principles. Students will develop critical thinking and problem-solving skills.,3,PSYC 192 or equivalent
+Psychology,PSYC 351,Advanced Abnormal Psychology,Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.,3,PSYC 226 and junior standing
+Psychology,PSYC 361,Research Methods,Rigorous treatment of research methods theory and applications with emphasis on research methodology.,3,PSYC 241 and junior standing
+Psychology,PSYC 330,Research Methods,Fundamental concepts and applications of research methods. Designed for students pursuing careers in related fields.,3,PSYC 289 and junior standing
+Psychology,PSYC 486,Advanced Social Psychology,Fundamental concepts and applications of social psychology. Designed for students pursuing careers in related fields.,1,PSYC 329 and senior standing or graduate status
+Psychology,PSYC 494,Graduate Social Psychology,Comprehensive study of social psychology with emphasis on theoretical foundations and practical applications.,2,PSYC 358 and senior standing or graduate status
+Psychology,PSYC 485,Special Topics in Abnormal Psychology,Interdisciplinary approach to abnormal psychology combining theoretical knowledge with practical problem-solving.,4,PSYC 384 and senior standing or graduate status
+Psychology,PSYC 513,Advanced Personality,Fundamental concepts and applications of personality. Designed for students pursuing careers in related fields.,3,PSYC 320 and senior standing or graduate status
+Psychology,PSYC 542,Special Topics in Cognitive Psychology,Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.,4,PSYC 383 and senior standing or graduate status
+Psychology,PSYC 515,Special Topics in Cognitive Psychology,In-depth analysis of cognitive psychology principles. Students will develop critical thinking and problem-solving skills.,3,PSYC 320 and senior standing or graduate status
+Sociology,SOCI 135,Introduction to Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,2,None
+Sociology,SOCI 179,Introduction to Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,None
+Sociology,SOCI 219,Intermediate Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,2,SOCI 110 or equivalent
+Sociology,SOCI 209,Intermediate Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,SOCI 148 or equivalent
+Sociology,SOCI 373,Advanced Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,SOCI 287 and junior standing
+Sociology,SOCI 383,Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,SOCI 265 and junior standing
+Sociology,SOCI 344,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,SOCI 214 and junior standing
+Sociology,SOCI 408,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,SOCI 389 and senior standing or graduate status
+Architecture,ARCH 158,Fundamentals of Urban Planning,Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.,3,None
+Architecture,ARCH 139,Introduction to Urban Planning,In-depth analysis of urban planning principles. Students will develop critical thinking and problem-solving skills.,2,None
+Architecture,ARCH 275,Applied Urban Planning,Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.,4,ARCH 118 or equivalent
+Architecture,ARCH 232,Architectural History,Rigorous treatment of architectural history theory and applications with emphasis on research methodology.,3,ARCH 164 or equivalent
+Architecture,ARCH 303,Design Studio,Rigorous treatment of design studio theory and applications with emphasis on research methodology.,3,ARCH 257 and junior standing
+Architecture,ARCH 376,Advanced Sustainability,In-depth analysis of sustainability principles. Students will develop critical thinking and problem-solving skills.,1,ARCH 251 and junior standing
+Architecture,ARCH 358,Building Technology,Rigorous treatment of building technology theory and applications with emphasis on research methodology.,2,ARCH 274 and junior standing
+Architecture,ARCH 466,Graduate Digital Design,In-depth analysis of digital design principles. Students will develop critical thinking and problem-solving skills.,3,ARCH 391 and senior standing or graduate status
+Architecture,ARCH 433,Graduate Digital Design,Fundamental concepts and applications of digital design. Designed for students pursuing careers in related fields.,3,ARCH 315 and senior standing or graduate status
+Architecture,ARCH 495,Advanced Architectural History,Advanced exploration of architectural history covering current research and industry practices.,3,ARCH 359 and senior standing or graduate status
+Architecture,ARCH 740,Special Topics in Architectural History,Rigorous treatment of architectural history theory and applications with emphasis on research methodology.,3,ARCH 300 and senior standing or graduate status
+Architecture,ARCH 522,Graduate Design Studio,Fundamental concepts and applications of design studio. Designed for students pursuing careers in related fields.,3,ARCH 300 and senior standing or graduate status
+Music,MUSI 149,Principles of Music Theory,In-depth analysis of music theory principles. Students will develop critical thinking and problem-solving skills.,1,None
+Music,MUSI 176,Principles of Musicology,Fundamental concepts and applications of musicology. Designed for students pursuing careers in related fields.,4,None
+Music,MUSI 220,Intermediate Music History,Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.,3,MUSI 101 or equivalent
+Music,MUSI 283,Applied Performance,Comprehensive study of performance with emphasis on theoretical foundations and practical applications.,4,MUSI 177 or equivalent
+Music,MUSI 340,Performance,Examination of key concepts and methodologies in performance. Includes hands-on experience and case studies.,3,MUSI 257 and junior standing
+Music,MUSI 377,Advanced Music Technology,Interdisciplinary approach to music technology combining theoretical knowledge with practical problem-solving.,3,MUSI 221 and junior standing
+Music,MUSI 325,Conducting,Rigorous treatment of conducting theory and applications with emphasis on research methodology.,1,MUSI 276 and junior standing
+Music,MUSI 441,Special Topics in Music History,Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.,4,MUSI 324 and senior standing or graduate status
+Music,MUSI 451,Advanced Music Technology,Fundamental concepts and applications of music technology. Designed for students pursuing careers in related fields.,3,MUSI 323 and senior standing or graduate status
+Music,MUSI 437,Graduate Music History,Comprehensive study of music history with emphasis on theoretical foundations and practical applications.,3,MUSI 331 and senior standing or graduate status
+Liberal Studies,LIBS 106,Principles of Theory,Advanced exploration of theory covering current research and industry practices.,4,None
+Liberal Studies,LIBS 151,Principles of Seminar,Advanced exploration of seminar covering current research and industry practices.,4,None
+Liberal Studies,LIBS 209,Intermediate Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,LIBS 109 or equivalent
+Liberal Studies,LIBS 216,Intermediate Theory,Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.,3,LIBS 193 or equivalent
+Liberal Studies,LIBS 317,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,LIBS 234 and junior standing
+Liberal Studies,LIBS 367,Research,In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.,3,LIBS 221 and junior standing
+Liberal Studies,LIBS 386,Advanced Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,4,LIBS 224 and junior standing
+Liberal Studies,LIBS 488,Graduate Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,3,LIBS 363 and senior standing or graduate status
+Liberal Studies,LIBS 470,Advanced Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,1,LIBS 383 and senior standing or graduate status
+Liberal Studies,LIBS 461,Graduate Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,4,LIBS 329 and senior standing or graduate status
+Liberal Studies,LIBS 601,Special Topics in Applications,Advanced exploration of applications covering current research and industry practices.,3,LIBS 301 and senior standing or graduate status
+Liberal Studies,LIBS 657,Graduate Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,LIBS 398 and senior standing or graduate status
+Environmental Studies,ENVS 131,Principles of Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,4,None
+Environmental Studies,ENVS 132,Principles of Analysis,Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.,4,None
+Environmental Studies,ENVS 276,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,ENVS 197 or equivalent
+Environmental Studies,ENVS 204,Applications,Rigorous treatment of applications theory and applications with emphasis on research methodology.,4,ENVS 170 or equivalent
+Environmental Studies,ENVS 388,Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,4,ENVS 288 and junior standing
+Environmental Studies,ENVS 338,Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,ENVS 272 and junior standing
+Environmental Studies,ENVS 372,Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,3,ENVS 227 and junior standing
+Environmental Studies,ENVS 400,Graduate Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,ENVS 338 and senior standing or graduate status
+Environmental Studies,ENVS 477,Special Topics in Analysis,Interdisciplinary approach to analysis combining theoretical knowledge with practical problem-solving.,4,ENVS 390 and senior standing or graduate status
+Environmental Studies,ENVS 467,Graduate Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,4,ENVS 364 and senior standing or graduate status
+Environmental Studies,ENVS 762,Graduate Practice,Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.,3,ENVS 301 and senior standing or graduate status
+Environmental Studies,ENVS 713,Special Topics in Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,ENVS 330 and senior standing or graduate status
+Policy Studies,POLS 176,Introduction to Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,None
+Policy Studies,POLS 160,Introduction to Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,4,None
+Policy Studies,POLS 218,Intermediate Workshop,Advanced exploration of workshop covering current research and industry practices.,3,POLS 128 or equivalent
+Policy Studies,POLS 210,Applied Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,1,POLS 137 or equivalent
+Policy Studies,POLS 394,Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,4,POLS 210 and junior standing
+Policy Studies,POLS 333,Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,POLS 291 and junior standing
+Policy Studies,POLS 304,Advanced Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,POLS 246 and junior standing
+Policy Studies,POLS 453,Advanced Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,4,POLS 326 and senior standing or graduate status
+Policy Studies,POLS 493,Special Topics in Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,4,POLS 315 and senior standing or graduate status
+Policy Studies,POLS 437,Graduate Analysis,Advanced exploration of analysis covering current research and industry practices.,2,POLS 337 and senior standing or graduate status
+Policy Studies,POLS 794,Graduate Practice,Advanced exploration of practice covering current research and industry practices.,1,POLS 389 and senior standing or graduate status
+Policy Studies,POLS 535,Advanced Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,POLS 305 and senior standing or graduate status
+Policy Studies,POLS 515,Graduate Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,1,POLS 317 and senior standing or graduate status
+Policy Studies,POLS 588,Advanced Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,POLS 306 and senior standing or graduate status
+Policy Studies,POLS 796,Graduate Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,POLS 303 and senior standing or graduate status
+Global Health Technologies,GLHT 132,Introduction to Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,2,None
+Global Health Technologies,GLHT 157,Fundamentals of Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,4,None
+Global Health Technologies,GLHT 224,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,3,GLHT 185 or equivalent
+Global Health Technologies,GLHT 234,Applied Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,3,GLHT 167 or equivalent
+Global Health Technologies,GLHT 364,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,4,GLHT 251 and junior standing
+Global Health Technologies,GLHT 363,Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,2,GLHT 261 and junior standing
+Global Health Technologies,GLHT 376,Advanced Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,3,GLHT 223 and junior standing
+Global Health Technologies,GLHT 415,Graduate Methods,Advanced exploration of methods covering current research and industry practices.,3,GLHT 328 and senior standing or graduate status
+Global Health Technologies,GLHT 402,Special Topics in Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,3,GLHT 329 and senior standing or graduate status
+Global Health Technologies,GLHT 448,Advanced Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,4,GLHT 362 and senior standing or graduate status
+Global Health Technologies,GLHT 571,Graduate Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,GLHT 376 and senior standing or graduate status
+Global Health Technologies,GLHT 749,Graduate Analysis,Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.,1,GLHT 316 and senior standing or graduate status
+Global Health Technologies,GLHT 601,Graduate Methods,Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.,3,GLHT 334 and senior standing or graduate status
+Sports Medicine,SMGT 107,Principles of Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,4,None
+Sports Medicine,SMGT 180,Introduction to Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,None
+Sports Medicine,SMGT 232,Applied Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,SMGT 196 or equivalent
+Sports Medicine,SMGT 259,Intermediate Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,4,SMGT 132 or equivalent
+Sports Medicine,SMGT 361,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,SMGT 237 and junior standing
+Sports Medicine,SMGT 365,Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,SMGT 276 and junior standing
+Sports Medicine,SMGT 325,Analysis,Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.,4,SMGT 205 and junior standing
+Sports Medicine,SMGT 435,Graduate Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,4,SMGT 352 and senior standing or graduate status
+Sports Medicine,SMGT 490,Special Topics in Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,3,SMGT 391 and senior standing or graduate status
+Sports Medicine,SMGT 437,Graduate Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,2,SMGT 320 and senior standing or graduate status
+Sports Medicine,SMGT 718,Graduate Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,SMGT 328 and senior standing or graduate status
+Sports Medicine,SMGT 539,Advanced Methods,Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.,4,SMGT 379 and senior standing or graduate status
+Sports Medicine,SMGT 581,Special Topics in Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,4,SMGT 319 and senior standing or graduate status
+Sports Medicine,SMGT 668,Special Topics in Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,SMGT 362 and senior standing or graduate status
+Visual and Dramatic Arts,VADA 180,Fundamentals of Methods,Rigorous treatment of methods theory and applications with emphasis on research methodology.,2,None
+Visual and Dramatic Arts,VADA 127,Fundamentals of Analysis,Advanced exploration of analysis covering current research and industry practices.,4,None
+Visual and Dramatic Arts,VADA 203,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,VADA 136 or equivalent
+Visual and Dramatic Arts,VADA 201,Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,3,VADA 182 or equivalent
+Visual and Dramatic Arts,VADA 304,Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,VADA 258 and junior standing
+Visual and Dramatic Arts,VADA 366,Advanced Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,4,VADA 227 and junior standing
+Visual and Dramatic Arts,VADA 385,Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,2,VADA 276 and junior standing
+Visual and Dramatic Arts,VADA 416,Special Topics in Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,4,VADA 300 and senior standing or graduate status
+Kinesiology,KINE 145,Introduction to Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,None
+Kinesiology,KINE 192,Introduction to Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,None
+Kinesiology,KINE 226,Intermediate Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,KINE 189 or equivalent
+Kinesiology,KINE 218,Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,4,KINE 130 or equivalent
+Kinesiology,KINE 395,Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,2,KINE 278 and junior standing
+Kinesiology,KINE 321,Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,KINE 286 and junior standing
+Kinesiology,KINE 384,Methods,Advanced exploration of methods covering current research and industry practices.,2,KINE 214 and junior standing
+Kinesiology,KINE 483,Special Topics in Methods,Advanced exploration of methods covering current research and industry practices.,4,KINE 334 and senior standing or graduate status
+Kinesiology,KINE 478,Graduate Applications,Advanced exploration of applications covering current research and industry practices.,3,KINE 385 and senior standing or graduate status
+Kinesiology,KINE 444,Graduate Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,KINE 326 and senior standing or graduate status
+Kinesiology,KINE 752,Special Topics in Seminar,Rigorous treatment of seminar theory and applications with emphasis on research methodology.,3,KINE 388 and senior standing or graduate status
+Kinesiology,KINE 760,Graduate Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,KINE 350 and senior standing or graduate status
+Kinesiology,KINE 592,Graduate Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,KINE 327 and senior standing or graduate status
+Kinesiology,KINE 657,Special Topics in Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,KINE 326 and senior standing or graduate status
+Education,EDUC 198,Fundamentals of Theory,Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.,4,None
+Education,EDUC 149,Fundamentals of Applications,Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.,3,None
+Education,EDUC 295,Intermediate Methods,Comprehensive study of methods with emphasis on theoretical foundations and practical applications.,3,EDUC 108 or equivalent
+Education,EDUC 204,Applied Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,EDUC 163 or equivalent
+Education,EDUC 312,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,2,EDUC 201 and junior standing
+Education,EDUC 316,Advanced Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,4,EDUC 247 and junior standing
+Education,EDUC 308,Applications,Advanced exploration of applications covering current research and industry practices.,3,EDUC 249 and junior standing
+Education,EDUC 412,Advanced Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,3,EDUC 368 and senior standing or graduate status
+Education,EDUC 429,Graduate Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,4,EDUC 346 and senior standing or graduate status
+Education,EDUC 430,Special Topics in Theory,Interdisciplinary approach to theory combining theoretical knowledge with practical problem-solving.,3,EDUC 382 and senior standing or graduate status
+Public Health,PBHL 175,Introduction to Practice,In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.,3,None
+Public Health,PBHL 157,Introduction to Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,None
+Public Health,PBHL 249,Applied Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,3,PBHL 114 or equivalent
+Public Health,PBHL 247,Applied Research,Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.,3,PBHL 133 or equivalent
+Public Health,PBHL 383,Advanced Methods,Advanced exploration of methods covering current research and industry practices.,3,PBHL 295 and junior standing
+Public Health,PBHL 380,Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,PBHL 214 and junior standing
+Public Health,PBHL 349,Research,Rigorous treatment of research theory and applications with emphasis on research methodology.,4,PBHL 290 and junior standing
+Public Health,PBHL 469,Special Topics in Methods,Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.,4,PBHL 367 and senior standing or graduate status
+Public Health,PBHL 434,Graduate Seminar,Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.,3,PBHL 376 and senior standing or graduate status
+Public Health,PBHL 449,Special Topics in Applications,Advanced exploration of applications covering current research and industry practices.,2,PBHL 338 and senior standing or graduate status
+Public Health,PBHL 763,Graduate Methods,In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.,4,PBHL 377 and senior standing or graduate status
+Public Health,PBHL 630,Graduate Seminar,Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.,4,PBHL 306 and senior standing or graduate status

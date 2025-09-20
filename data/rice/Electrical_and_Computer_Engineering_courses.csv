@@ -1,0 +1,13 @@
+department,code,title,description,credit_hours,prerequisites
+Electrical and Computer Engineering,ELEC 120,Fundamentals of Data Structures,Comprehensive study of data structures with emphasis on theoretical foundations and practical applications.,1,None
+Electrical and Computer Engineering,ELEC 144,Fundamentals of Algorithms,Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.,3,None
+Electrical and Computer Engineering,ELEC 230,Applied Computer Networks,Rigorous treatment of computer networks theory and applications with emphasis on research methodology.,3,ELEC 122 or equivalent
+Electrical and Computer Engineering,ELEC 293,Intermediate Data Structures,Examination of key concepts and methodologies in data structures. Includes hands-on experience and case studies.,3,ELEC 166 or equivalent
+Electrical and Computer Engineering,ELEC 354,Advanced Computer Graphics,In-depth analysis of computer graphics principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 247 and junior standing
+Electrical and Computer Engineering,ELEC 378,Artificial Intelligence,Advanced exploration of artificial intelligence covering current research and industry practices.,3,ELEC 202 and junior standing
+Electrical and Computer Engineering,ELEC 314,Advanced Computer Graphics,Advanced exploration of computer graphics covering current research and industry practices.,3,ELEC 290 and junior standing
+Electrical and Computer Engineering,ELEC 422,Graduate Programming,In-depth analysis of programming principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 302 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 465,Advanced Machine Learning,In-depth analysis of machine learning principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 301 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 483,Graduate Computer Graphics,Fundamental concepts and applications of computer graphics. Designed for students pursuing careers in related fields.,3,ELEC 333 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 701,Advanced Computer Graphics,Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.,4,ELEC 306 and senior standing or graduate status
+Electrical and Computer Engineering,ELEC 654,Graduate Computer Networks,In-depth analysis of computer networks principles. Students will develop critical thinking and problem-solving skills.,3,ELEC 369 and senior standing or graduate status

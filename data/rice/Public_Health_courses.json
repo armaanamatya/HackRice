@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Public Health",
+    "code": "PBHL 175",
+    "title": "Introduction to Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 157",
+    "title": "Introduction to Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 249",
+    "title": "Applied Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 114 or equivalent"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 247",
+    "title": "Applied Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 133 or equivalent"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 383",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 295 and junior standing"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 380",
+    "title": "Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 214 and junior standing"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 349",
+    "title": "Research",
+    "description": "Rigorous treatment of research theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 290 and junior standing"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 469",
+    "title": "Special Topics in Methods",
+    "description": "Interdisciplinary approach to methods combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 367 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 434",
+    "title": "Graduate Seminar",
+    "description": "Examination of key concepts and methodologies in seminar. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PBHL 376 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 449",
+    "title": "Special Topics in Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "PBHL 338 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 763",
+    "title": "Graduate Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 377 and senior standing or graduate status"
+  },
+  {
+    "department": "Public Health",
+    "code": "PBHL 630",
+    "title": "Graduate Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "PBHL 306 and senior standing or graduate status"
+  }
+]

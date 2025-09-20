@@ -1,0 +1,13 @@
+department,code,title,description,credit_hours,prerequisites
+Architecture,ARCH 158,Fundamentals of Urban Planning,Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.,3,None
+Architecture,ARCH 139,Introduction to Urban Planning,In-depth analysis of urban planning principles. Students will develop critical thinking and problem-solving skills.,2,None
+Architecture,ARCH 275,Applied Urban Planning,Examination of key concepts and methodologies in urban planning. Includes hands-on experience and case studies.,4,ARCH 118 or equivalent
+Architecture,ARCH 232,Architectural History,Rigorous treatment of architectural history theory and applications with emphasis on research methodology.,3,ARCH 164 or equivalent
+Architecture,ARCH 303,Design Studio,Rigorous treatment of design studio theory and applications with emphasis on research methodology.,3,ARCH 257 and junior standing
+Architecture,ARCH 376,Advanced Sustainability,In-depth analysis of sustainability principles. Students will develop critical thinking and problem-solving skills.,1,ARCH 251 and junior standing
+Architecture,ARCH 358,Building Technology,Rigorous treatment of building technology theory and applications with emphasis on research methodology.,2,ARCH 274 and junior standing
+Architecture,ARCH 466,Graduate Digital Design,In-depth analysis of digital design principles. Students will develop critical thinking and problem-solving skills.,3,ARCH 391 and senior standing or graduate status
+Architecture,ARCH 433,Graduate Digital Design,Fundamental concepts and applications of digital design. Designed for students pursuing careers in related fields.,3,ARCH 315 and senior standing or graduate status
+Architecture,ARCH 495,Advanced Architectural History,Advanced exploration of architectural history covering current research and industry practices.,3,ARCH 359 and senior standing or graduate status
+Architecture,ARCH 740,Special Topics in Architectural History,Rigorous treatment of architectural history theory and applications with emphasis on research methodology.,3,ARCH 300 and senior standing or graduate status
+Architecture,ARCH 522,Graduate Design Studio,Fundamental concepts and applications of design studio. Designed for students pursuing careers in related fields.,3,ARCH 300 and senior standing or graduate status

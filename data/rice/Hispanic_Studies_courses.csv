@@ -1,0 +1,10 @@
+department,code,title,description,credit_hours,prerequisites
+Hispanic Studies,HISP 168,Principles of Theory,Comprehensive study of theory with emphasis on theoretical foundations and practical applications.,3,None
+Hispanic Studies,HISP 117,Fundamentals of Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,2,None
+Hispanic Studies,HISP 216,Intermediate Theory,In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.,2,HISP 183 or equivalent
+Hispanic Studies,HISP 263,Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,HISP 125 or equivalent
+Hispanic Studies,HISP 373,Advanced Research,Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.,3,HISP 239 and junior standing
+Hispanic Studies,HISP 355,Advanced Applications,Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.,4,HISP 217 and junior standing
+Hispanic Studies,HISP 327,Practice,Rigorous treatment of practice theory and applications with emphasis on research methodology.,2,HISP 234 and junior standing
+Hispanic Studies,HISP 401,Graduate Workshop,Advanced exploration of workshop covering current research and industry practices.,3,HISP 344 and senior standing or graduate status
+Hispanic Studies,HISP 496,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,4,HISP 351 and senior standing or graduate status

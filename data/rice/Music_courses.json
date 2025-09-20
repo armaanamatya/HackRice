@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Music",
+    "code": "MUSI 149",
+    "title": "Principles of Music Theory",
+    "description": "In-depth analysis of music theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 176",
+    "title": "Principles of Musicology",
+    "description": "Fundamental concepts and applications of musicology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 220",
+    "title": "Intermediate Music History",
+    "description": "Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 101 or equivalent"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 283",
+    "title": "Applied Performance",
+    "description": "Comprehensive study of performance with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "MUSI 177 or equivalent"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 340",
+    "title": "Performance",
+    "description": "Examination of key concepts and methodologies in performance. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 257 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 377",
+    "title": "Advanced Music Technology",
+    "description": "Interdisciplinary approach to music technology combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 221 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 325",
+    "title": "Conducting",
+    "description": "Rigorous treatment of conducting theory and applications with emphasis on research methodology.",
+    "credit_hours": "1",
+    "prerequisites": "MUSI 276 and junior standing"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 441",
+    "title": "Special Topics in Music History",
+    "description": "Interdisciplinary approach to music history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "MUSI 324 and senior standing or graduate status"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 451",
+    "title": "Advanced Music Technology",
+    "description": "Fundamental concepts and applications of music technology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 323 and senior standing or graduate status"
+  },
+  {
+    "department": "Music",
+    "code": "MUSI 437",
+    "title": "Graduate Music History",
+    "description": "Comprehensive study of music history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MUSI 331 and senior standing or graduate status"
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 155",
+    "title": "Principles of Analysis",
+    "description": "Rigorous treatment of analysis theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 159",
+    "title": "Introduction to Workshop",
+    "description": "In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 201",
+    "title": "Intermediate Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 169 or equivalent"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 246",
+    "title": "Applied Seminar",
+    "description": "Comprehensive study of seminar with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 163 or equivalent"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 334",
+    "title": "Advanced Seminar",
+    "description": "Fundamental concepts and applications of seminar. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 281 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 326",
+    "title": "Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 226 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 338",
+    "title": "Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 247 and junior standing"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 489",
+    "title": "Advanced Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 387 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 404",
+    "title": "Special Topics in Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 343 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 464",
+    "title": "Advanced Practice",
+    "description": "Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 381 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 666",
+    "title": "Graduate Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENTR 359 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 599",
+    "title": "Advanced Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 613",
+    "title": "Advanced Workshop",
+    "description": "Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 344 and senior standing or graduate status"
+  },
+  {
+    "department": "Entrepreneurship",
+    "code": "ENTR 678",
+    "title": "Special Topics in Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "ENTR 364 and senior standing or graduate status"
+  }
+]

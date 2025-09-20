@@ -1,0 +1,12 @@
+department,code,title,description,credit_hours,prerequisites
+German and Slavic Studies,GERM 163,Principles of Workshop,Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.,4,None
+German and Slavic Studies,GERM 131,Introduction to Practice,Comprehensive study of practice with emphasis on theoretical foundations and practical applications.,2,None
+German and Slavic Studies,GERM 203,Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,4,GERM 176 or equivalent
+German and Slavic Studies,GERM 236,Applied Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,GERM 150 or equivalent
+German and Slavic Studies,GERM 323,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,GERM 242 and junior standing
+German and Slavic Studies,GERM 394,Advanced Applications,Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.,3,GERM 233 and junior standing
+German and Slavic Studies,GERM 326,Advanced Theory,Rigorous treatment of theory theory and applications with emphasis on research methodology.,3,GERM 298 and junior standing
+German and Slavic Studies,GERM 443,Advanced Applications,In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.,3,GERM 337 and senior standing or graduate status
+German and Slavic Studies,GERM 458,Advanced Applications,Advanced exploration of applications covering current research and industry practices.,3,GERM 325 and senior standing or graduate status
+German and Slavic Studies,GERM 497,Advanced Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,GERM 367 and senior standing or graduate status
+German and Slavic Studies,GERM 670,Special Topics in Analysis,In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.,2,GERM 334 and senior standing or graduate status

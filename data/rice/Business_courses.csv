@@ -1,0 +1,9 @@
+department,code,title,description,credit_hours,prerequisites
+Business,BUSI 192,Fundamentals of Leadership,Interdisciplinary approach to leadership combining theoretical knowledge with practical problem-solving.,3,None
+Business,BUSI 170,Introduction to Economics,Fundamental concepts and applications of economics. Designed for students pursuing careers in related fields.,3,None
+Business,BUSI 275,Intermediate Finance,Fundamental concepts and applications of finance. Designed for students pursuing careers in related fields.,3,BUSI 131 or equivalent
+Business,BUSI 214,Intermediate Management,Rigorous treatment of management theory and applications with emphasis on research methodology.,3,BUSI 192 or equivalent
+Business,BUSI 388,Operations,Advanced exploration of operations covering current research and industry practices.,4,BUSI 263 and junior standing
+Business,BUSI 343,Leadership,Fundamental concepts and applications of leadership. Designed for students pursuing careers in related fields.,4,BUSI 262 and junior standing
+Business,BUSI 312,Advanced Marketing,Advanced exploration of marketing covering current research and industry practices.,2,BUSI 297 and junior standing
+Business,BUSI 451,Graduate Leadership,Comprehensive study of leadership with emphasis on theoretical foundations and practical applications.,3,BUSI 327 and senior standing or graduate status

@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 155",
+    "title": "Principles of Thermodynamics",
+    "description": "In-depth analysis of thermodynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 138",
+    "title": "Fundamentals of Classical Mechanics",
+    "description": "Advanced exploration of classical mechanics covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 260",
+    "title": "Intermediate Astrophysics",
+    "description": "Advanced exploration of astrophysics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 112 or equivalent"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 205",
+    "title": "Applied Particle Physics",
+    "description": "Advanced exploration of particle physics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 130 or equivalent"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 335",
+    "title": "Quantum Mechanics",
+    "description": "Examination of key concepts and methodologies in quantum mechanics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 295 and junior standing"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 383",
+    "title": "Advanced Condensed Matter",
+    "description": "Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 291 and junior standing"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 350",
+    "title": "Condensed Matter",
+    "description": "Examination of key concepts and methodologies in condensed matter. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "ASTR 202 and junior standing"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 428",
+    "title": "Special Topics in Quantum Mechanics",
+    "description": "Comprehensive study of quantum mechanics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 347 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 481",
+    "title": "Advanced Astrophysics",
+    "description": "In-depth analysis of astrophysics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 314 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "PHYS 410",
+    "title": "Special Topics in Astrophysics",
+    "description": "Advanced exploration of astrophysics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PHYS 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 543",
+    "title": "Graduate Condensed Matter",
+    "description": "In-depth analysis of condensed matter principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 352 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 524",
+    "title": "Advanced Quantum Mechanics",
+    "description": "Fundamental concepts and applications of quantum mechanics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ASTR 360 and senior standing or graduate status"
+  },
+  {
+    "department": "Physics and Astronomy",
+    "code": "ASTR 558",
+    "title": "Graduate Classical Mechanics",
+    "description": "Advanced exploration of classical mechanics covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "ASTR 336 and senior standing or graduate status"
+  }
+]

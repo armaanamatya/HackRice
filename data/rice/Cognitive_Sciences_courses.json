@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 103",
+    "title": "Principles of Web Development",
+    "description": "In-depth analysis of web development principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 152",
+    "title": "Principles of Algorithms",
+    "description": "Interdisciplinary approach to algorithms combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 257",
+    "title": "Applied Computer Graphics",
+    "description": "Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "COGS 108 or equivalent"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 254",
+    "title": "Applied Human-Computer Interaction",
+    "description": "Rigorous treatment of human-computer interaction theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 187 or equivalent"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 372",
+    "title": "Advanced Cybersecurity",
+    "description": "Comprehensive study of cybersecurity with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "COGS 225 and junior standing"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 346",
+    "title": "Advanced Computer Networks",
+    "description": "Interdisciplinary approach to computer networks combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 269 and junior standing"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 312",
+    "title": "Data Structures",
+    "description": "Rigorous treatment of data structures theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 253 and junior standing"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 421",
+    "title": "Advanced Artificial Intelligence",
+    "description": "Comprehensive study of artificial intelligence with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "COGS 305 and senior standing or graduate status"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 400",
+    "title": "Advanced Programming",
+    "description": "Comprehensive study of programming with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 394 and senior standing or graduate status"
+  },
+  {
+    "department": "Cognitive Sciences",
+    "code": "COGS 401",
+    "title": "Special Topics in Software Engineering",
+    "description": "In-depth analysis of software engineering principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "COGS 389 and senior standing or graduate status"
+  }
+]

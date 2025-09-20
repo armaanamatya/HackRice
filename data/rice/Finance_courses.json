@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Finance",
+    "code": "FINA 150",
+    "title": "Principles of Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 100",
+    "title": "Introduction to Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 217",
+    "title": "Intermediate Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 109 or equivalent"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 273",
+    "title": "Intermediate Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 167 or equivalent"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 383",
+    "title": "Advanced Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 201 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 302",
+    "title": "Seminar",
+    "description": "In-depth analysis of seminar principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 232 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 389",
+    "title": "Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "FINA 235 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 415",
+    "title": "Graduate Applications",
+    "description": "Interdisciplinary approach to applications combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "2",
+    "prerequisites": "FINA 343 and senior standing or graduate status"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 437",
+    "title": "Advanced Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 378 and senior standing or graduate status"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 423",
+    "title": "Graduate Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 361 and senior standing or graduate status"
+  }
+]

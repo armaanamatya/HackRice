@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 180",
+    "title": "Fundamentals of Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 143",
+    "title": "Principles of Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 272",
+    "title": "Applied Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 188 or equivalent"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 259",
+    "title": "Applied Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "CLAS 197 or equivalent"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 389",
+    "title": "Advanced Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 226 and junior standing"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 300",
+    "title": "Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 213 and junior standing"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 382",
+    "title": "Theory",
+    "description": "Rigorous treatment of theory theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 260 and junior standing"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 498",
+    "title": "Advanced Practice",
+    "description": "Rigorous treatment of practice theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "CLAS 340 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 455",
+    "title": "Special Topics in Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 354 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 465",
+    "title": "Special Topics in Applications",
+    "description": "Rigorous treatment of applications theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 313 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 574",
+    "title": "Advanced Workshop",
+    "description": "Interdisciplinary approach to workshop combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 309 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 522",
+    "title": "Graduate Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 383 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 542",
+    "title": "Graduate Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CLAS 365 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 757",
+    "title": "Graduate Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CLAS 369 and senior standing or graduate status"
+  },
+  {
+    "department": "Classical and European Studies",
+    "code": "CLAS 618",
+    "title": "Special Topics in Research",
+    "description": "Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "CLAS 393 and senior standing or graduate status"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "department": "English",
+    "code": "ENGL 136",
+    "title": "Introduction to British Literature",
+    "description": "Examination of key concepts and methodologies in british literature. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 162",
+    "title": "Fundamentals of Technical Writing",
+    "description": "Examination of key concepts and methodologies in technical writing. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 282",
+    "title": "World Literature",
+    "description": "Comprehensive study of world literature with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ENGL 107 or equivalent"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 299",
+    "title": "Poetry",
+    "description": "Interdisciplinary approach to poetry combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 114 or equivalent"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 334",
+    "title": "Writing",
+    "description": "Comprehensive study of writing with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 242 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 384",
+    "title": "Advanced World Literature",
+    "description": "In-depth analysis of world literature principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "ENGL 283 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 334",
+    "title": "Advanced Writing",
+    "description": "Rigorous treatment of writing theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 203 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 474",
+    "title": "Special Topics in World Literature",
+    "description": "Fundamental concepts and applications of world literature. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 388 and senior standing or graduate status"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 476",
+    "title": "Graduate Rhetoric",
+    "description": "Rigorous treatment of rhetoric theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 341 and senior standing or graduate status"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 498",
+    "title": "Graduate Literature",
+    "description": "Advanced exploration of literature covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 335 and senior standing or graduate status"
+  }
+]

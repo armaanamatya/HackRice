@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Art History",
+    "code": "ARTH 191",
+    "title": "Introduction to American History",
+    "description": "In-depth analysis of american history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 123",
+    "title": "Principles of Cultural History",
+    "description": "In-depth analysis of cultural history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 240",
+    "title": "Intermediate Military History",
+    "description": "Comprehensive study of military history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "ARTH 113 or equivalent"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 297",
+    "title": "Cultural History",
+    "description": "Comprehensive study of cultural history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ARTH 118 or equivalent"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 387",
+    "title": "Political History",
+    "description": "In-depth analysis of political history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "ARTH 286 and junior standing"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 342",
+    "title": "Social History",
+    "description": "In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "ARTH 274 and junior standing"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 329",
+    "title": "Advanced World History",
+    "description": "Rigorous treatment of world history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 270 and junior standing"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 466",
+    "title": "Graduate American History",
+    "description": "Interdisciplinary approach to american history combining theoretical knowledge with practical problem-solving.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 399 and senior standing or graduate status"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 456",
+    "title": "Special Topics in Modern History",
+    "description": "Rigorous treatment of modern history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 315 and senior standing or graduate status"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 435",
+    "title": "Advanced Cultural History",
+    "description": "Rigorous treatment of cultural history theory and applications with emphasis on research methodology.",
+    "credit_hours": "4",
+    "prerequisites": "ARTH 320 and senior standing or graduate status"
+  },
+  {
+    "department": "Art History",
+    "code": "ARTH 716",
+    "title": "Special Topics in Ancient History",
+    "description": "Rigorous treatment of ancient history theory and applications with emphasis on research methodology.",
+    "credit_hours": "3",
+    "prerequisites": "ARTH 384 and senior standing or graduate status"
+  }
+]

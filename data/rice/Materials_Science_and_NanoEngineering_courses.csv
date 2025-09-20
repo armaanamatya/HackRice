@@ -1,0 +1,12 @@
+department,code,title,description,credit_hours,prerequisites
+Materials Science and NanoEngineering,MSNE 186,Introduction to Computer Graphics,Comprehensive study of computer graphics with emphasis on theoretical foundations and practical applications.,1,None
+Materials Science and NanoEngineering,MSNE 119,Principles of Database Systems,Comprehensive study of database systems with emphasis on theoretical foundations and practical applications.,4,None
+Materials Science and NanoEngineering,MSNE 257,Algorithms,In-depth analysis of algorithms principles. Students will develop critical thinking and problem-solving skills.,4,MSNE 177 or equivalent
+Materials Science and NanoEngineering,MSNE 289,Applied Algorithms,Fundamental concepts and applications of algorithms. Designed for students pursuing careers in related fields.,4,MSNE 101 or equivalent
+Materials Science and NanoEngineering,MSNE 354,Advanced Web Development,Advanced exploration of web development covering current research and industry practices.,4,MSNE 296 and junior standing
+Materials Science and NanoEngineering,MSNE 371,Advanced Programming,Rigorous treatment of programming theory and applications with emphasis on research methodology.,3,MSNE 228 and junior standing
+Materials Science and NanoEngineering,MSNE 339,Computer Networks,Fundamental concepts and applications of computer networks. Designed for students pursuing careers in related fields.,4,MSNE 252 and junior standing
+Materials Science and NanoEngineering,MSNE 463,Graduate Computer Networks,Examination of key concepts and methodologies in computer networks. Includes hands-on experience and case studies.,4,MSNE 348 and senior standing or graduate status
+Materials Science and NanoEngineering,MSNE 434,Graduate Data Structures,Fundamental concepts and applications of data structures. Designed for students pursuing careers in related fields.,4,MSNE 372 and senior standing or graduate status
+Materials Science and NanoEngineering,MSNE 410,Advanced Computer Graphics,Rigorous treatment of computer graphics theory and applications with emphasis on research methodology.,3,MSNE 388 and senior standing or graduate status
+Materials Science and NanoEngineering,MSNE 727,Special Topics in Programming,Comprehensive study of programming with emphasis on theoretical foundations and practical applications.,3,MSNE 305 and senior standing or graduate status

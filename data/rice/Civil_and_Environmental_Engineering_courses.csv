@@ -1,0 +1,13 @@
+department,code,title,description,credit_hours,prerequisites
+Civil and Environmental Engineering,CEVE 168,Fundamentals of Design,Examination of key concepts and methodologies in design. Includes hands-on experience and case studies.,3,None
+Civil and Environmental Engineering,CEVE 185,Fundamentals of Thermodynamics,Rigorous treatment of thermodynamics theory and applications with emphasis on research methodology.,3,None
+Civil and Environmental Engineering,CEVE 263,Intermediate Controls,In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.,4,CEVE 111 or equivalent
+Civil and Environmental Engineering,CEVE 274,Systems,Rigorous treatment of systems theory and applications with emphasis on research methodology.,3,CEVE 130 or equivalent
+Civil and Environmental Engineering,CEVE 326,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,3,CEVE 224 and junior standing
+Civil and Environmental Engineering,CEVE 341,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,3,CEVE 289 and junior standing
+Civil and Environmental Engineering,CEVE 343,Analysis,Rigorous treatment of analysis theory and applications with emphasis on research methodology.,3,CEVE 237 and junior standing
+Civil and Environmental Engineering,CEVE 438,Special Topics in Analysis,Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.,4,CEVE 323 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 402,Advanced Dynamics,In-depth analysis of dynamics principles. Students will develop critical thinking and problem-solving skills.,3,CEVE 379 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 469,Advanced Dynamics,Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.,4,CEVE 378 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 769,Special Topics in Optimization,Examination of key concepts and methodologies in optimization. Includes hands-on experience and case studies.,3,CEVE 326 and senior standing or graduate status
+Civil and Environmental Engineering,CEVE 592,Graduate Ethics,Interdisciplinary approach to ethics combining theoretical knowledge with practical problem-solving.,3,CEVE 315 and senior standing or graduate status

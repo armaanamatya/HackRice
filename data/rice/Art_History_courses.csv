@@ -1,0 +1,12 @@
+department,code,title,description,credit_hours,prerequisites
+Art History,ARTH 191,Introduction to American History,In-depth analysis of american history principles. Students will develop critical thinking and problem-solving skills.,2,None
+Art History,ARTH 123,Principles of Cultural History,In-depth analysis of cultural history principles. Students will develop critical thinking and problem-solving skills.,4,None
+Art History,ARTH 240,Intermediate Military History,Comprehensive study of military history with emphasis on theoretical foundations and practical applications.,1,ARTH 113 or equivalent
+Art History,ARTH 297,Cultural History,Comprehensive study of cultural history with emphasis on theoretical foundations and practical applications.,4,ARTH 118 or equivalent
+Art History,ARTH 387,Political History,In-depth analysis of political history principles. Students will develop critical thinking and problem-solving skills.,2,ARTH 286 and junior standing
+Art History,ARTH 342,Social History,In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.,4,ARTH 274 and junior standing
+Art History,ARTH 329,Advanced World History,Rigorous treatment of world history theory and applications with emphasis on research methodology.,3,ARTH 270 and junior standing
+Art History,ARTH 466,Graduate American History,Interdisciplinary approach to american history combining theoretical knowledge with practical problem-solving.,3,ARTH 399 and senior standing or graduate status
+Art History,ARTH 456,Special Topics in Modern History,Rigorous treatment of modern history theory and applications with emphasis on research methodology.,3,ARTH 315 and senior standing or graduate status
+Art History,ARTH 435,Advanced Cultural History,Rigorous treatment of cultural history theory and applications with emphasis on research methodology.,4,ARTH 320 and senior standing or graduate status
+Art History,ARTH 716,Special Topics in Ancient History,Rigorous treatment of ancient history theory and applications with emphasis on research methodology.,3,ARTH 384 and senior standing or graduate status

@@ -1,0 +1,12 @@
+department,code,title,description,credit_hours,prerequisites
+Religious Studies,RELI 172,Principles of Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,3,None
+Religious Studies,RELI 190,Fundamentals of Workshop,Comprehensive study of workshop with emphasis on theoretical foundations and practical applications.,3,None
+Religious Studies,RELI 218,Applied Practice,Examination of key concepts and methodologies in practice. Includes hands-on experience and case studies.,3,RELI 159 or equivalent
+Religious Studies,RELI 299,Applied Seminar,Interdisciplinary approach to seminar combining theoretical knowledge with practical problem-solving.,4,RELI 118 or equivalent
+Religious Studies,RELI 352,Practice,Interdisciplinary approach to practice combining theoretical knowledge with practical problem-solving.,3,RELI 241 and junior standing
+Religious Studies,RELI 399,Advanced Research,Comprehensive study of research with emphasis on theoretical foundations and practical applications.,3,RELI 200 and junior standing
+Religious Studies,RELI 346,Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,2,RELI 265 and junior standing
+Religious Studies,RELI 438,Special Topics in Workshop,Rigorous treatment of workshop theory and applications with emphasis on research methodology.,3,RELI 318 and senior standing or graduate status
+Religious Studies,RELI 452,Graduate Applications,Comprehensive study of applications with emphasis on theoretical foundations and practical applications.,4,RELI 394 and senior standing or graduate status
+Religious Studies,RELI 483,Graduate Workshop,In-depth analysis of workshop principles. Students will develop critical thinking and problem-solving skills.,3,RELI 321 and senior standing or graduate status
+Religious Studies,RELI 501,Graduate Research,Interdisciplinary approach to research combining theoretical knowledge with practical problem-solving.,2,RELI 363 and senior standing or graduate status
