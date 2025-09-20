@@ -15,6 +15,7 @@ import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
 import ScheduleReviewForm from './ScheduleReviewForm';
 import InteractiveScheduleDisplay from './InteractiveScheduleDisplay';
+import SettingsDropdown from './SettingsDropdown'; // Import SettingsDropdown
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../utils/localStorageUtils';
 
 /**
@@ -28,12 +29,14 @@ const DashboardPage = ({
   onLogout,
   onScheduleUpdate,
   userSchedule,
+  // onNavigateToSettings, // Add new prop here
 }) => {
   const [currentSchedule, setCurrentSchedule] = useState(null);
   const [ocrParsedClasses, setOcrParsedClasses] = useState(null);
   const [viewMode, setViewMode] = useState('uploader');
   const [activeNavItem, setActiveNavItem] = useState('dashboard');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [showSettingsDropdown, setShowSettingsDropdown] = useState(false); // New state for dropdown
 
   const userId = userData?.id || 'guest';
 
@@ -122,6 +125,9 @@ const DashboardPage = ({
       case 'profile':
         if (onNavigateToProfileDetails) onNavigateToProfileDetails();
         break;
+      // case 'settings': // Add new case for settings
+      //   if (onNavigateToSettings) onNavigateToSettings();
+      //   break;
       default:
         // Handle other navigation items
         break;
@@ -134,6 +140,10 @@ const DashboardPage = ({
 
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
+  };
+
+  const toggleSettingsDropdown = () => {
+    setShowSettingsDropdown(prev => !prev);
   };
 
   // Helper function to check if a string is an email
@@ -186,6 +196,10 @@ const DashboardPage = ({
             <IconLogout size={20} className="nav-icon" />
             <span className="nav-label">Logout</span>
           </button>
+          {/* <button className="settings-button" aria-label="Settings" onClick={() => handleNavigation('settings')}>
+            <IconSettings size={20} className="nav-icon" />
+            <span className="nav-label">Settings</span>
+          </button> */}
         </div>
       </aside>
 
@@ -217,9 +231,16 @@ const DashboardPage = ({
               <IconBell size={20} />
             </button>
             
-            <button className="settings-button" aria-label="Settings">
-              <IconSettings size={20} />
-            </button>
+            <div className="settings-dropdown-wrapper">
+              <button 
+                className="settings-button" 
+                aria-label="Settings" 
+                onClick={toggleSettingsDropdown}
+              >
+                <IconSettings size={20} />
+              </button>
+              <SettingsDropdown isOpen={showSettingsDropdown} onClose={toggleSettingsDropdown} />
+            </div>
             
             <div className="user-profile">
               <div className="user-avatar">

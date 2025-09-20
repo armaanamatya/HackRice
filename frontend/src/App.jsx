@@ -11,6 +11,7 @@ import UserProfileForm from "./components/UserProfileForm";
 import DashboardPage from "./components/DashboardPage";
 import MatcherPage from "./components/MatcherPage";
 import ProfileDetailsPage from "./components/ProfileDetailsPage";
+// import SettingsPage from "./components/SettingsPage"; // Import the new SettingsPage
 import { detectUniversityFromEmail } from "./utils/universityUtils";
 // Using actual logos from public folder
 // import utLogo from './assets/university-logos/ut.svg'
@@ -47,6 +48,10 @@ function App() {
   const handleNavigateToProfileDetails = () => {
     navigate("/dashboard/profile");
   };
+
+  // const handleNavigateToSettings = () => {
+  //   navigate("/dashboard/settings");
+  // };
 
   const handleUserScheduleUpdate = (schedule) => {
     setUserSchedule(schedule);
@@ -91,6 +96,10 @@ function App() {
   };
 
   useEffect(() => {
+    const isMounted = {
+      current: true
+    };
+
     console.log("Auth status changed. isAuthenticated:", isAuthenticated, "user:", user);
     if (isAuthenticated && user) {
       // Fetch or sync user data from your backend
@@ -110,7 +119,7 @@ function App() {
           });
           const data = await response.json();
 
-          if (response.ok) {
+          if (isMounted.current && response.ok) {
             setUserData(data.user); // Set the full user data from backend
             console.log("User data from backend:", data.user);
             console.log("User ID from backend:", data.user?._id);
@@ -134,13 +143,15 @@ function App() {
             
             // Clear auth intent after processing
             sessionStorage.removeItem('auth_intent');
-          } else {
+          } else if (isMounted.current) {
             console.error("Backend sync failed:", data.message);
             // Optionally handle error, e.g., redirect to an error page or show a message
           }
         } catch (error) {
-          console.error("Error syncing user with backend:", error);
-          // Handle network or other errors
+          if (isMounted.current) {
+            console.error("Error syncing user with backend:", error);
+            // Handle network or other errors
+          }
         }
       };
 
@@ -149,6 +160,10 @@ function App() {
         syncUserWithBackend();
       }
     }
+
+    return () => {
+      isMounted.current = false;
+    };
   }, [isAuthenticated, user, navigate, userData]);
 
   // Landing Page Content (without header, as it will be handled by MainLayout for authenticated routes)
@@ -422,6 +437,7 @@ function App() {
               onScheduleUpdate={handleUserScheduleUpdate}
               userSchedule={userSchedule}
               onLogout={handleLogout}
+              // onNavigateToSettings={handleNavigateToSettings} // Pass the new prop here
             />
           </ProtectedRoute>
         }
@@ -449,6 +465,14 @@ function App() {
           </ProtectedRoute>
         }
       />
+      {/* <Route
+        path="/dashboard/settings"
+        element={
+          <ProtectedRoute>
+            <SettingsPage />
+          </ProtectedRoute>
+        }
+      /> */}
       {/* Redirect any unhandled paths to the landing page or a 404 page */}
       <Route path="*" element={<LandingPageContent />} />
     </Routes>
