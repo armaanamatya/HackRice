@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Mathematics",
+    "code": "MATH 1036",
+    "title": "Introduction to Real Analysis",
+    "description": "Comprehensive study of real analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 1547",
+    "title": "Introduction to Differential Equations",
+    "description": "Comprehensive study of differential equations with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 2322",
+    "title": "Applied Calculus",
+    "description": "Comprehensive study of calculus with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 1626 or equivalent"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 2760",
+    "title": "Intermediate Linear Algebra",
+    "description": "Examination of key concepts and methodologies in linear algebra. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 1276 or equivalent"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 3872",
+    "title": "Advanced Abstract Algebra",
+    "description": "Comprehensive study of abstract algebra with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 2213 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 3310",
+    "title": "Discrete Mathematics",
+    "description": "Examination of key concepts and methodologies in discrete mathematics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 2174 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 3128",
+    "title": "Advanced Calculus",
+    "description": "Fundamental concepts and applications of calculus. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "MATH 2111 and junior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 4131",
+    "title": "Advanced Differential Equations",
+    "description": "In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 3718 and senior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 4448",
+    "title": "Advanced Abstract Algebra",
+    "description": "Fundamental concepts and applications of abstract algebra. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 3456 and senior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 4858",
+    "title": "Special Topics in Differential Equations",
+    "description": "Advanced exploration of differential equations covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 3215 and senior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 6745",
+    "title": "Advanced Differential Equations",
+    "description": "In-depth analysis of differential equations principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "MATH 3640 and senior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 6832",
+    "title": "Senior Discrete Mathematics",
+    "description": "In-depth analysis of discrete mathematics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 3683 and senior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 7378",
+    "title": "Special Topics in Geometry",
+    "description": "Fundamental concepts and applications of geometry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 3024 and senior standing"
+  },
+  {
+    "department": "Mathematics",
+    "code": "MATH 6778",
+    "title": "Advanced Real Analysis",
+    "description": "Comprehensive study of real analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MATH 3149 and senior standing"
+  }
+]

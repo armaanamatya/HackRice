@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Optometry",
+    "code": "OPTO 1667",
+    "title": "Fundamentals of Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 1035",
+    "title": "Fundamentals of Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 2728",
+    "title": "Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "OPTO 1053 or equivalent"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 2748",
+    "title": "Applied Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "OPTO 1564 or equivalent"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 3069",
+    "title": "Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "OPTO 2106 and junior standing"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 3306",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "OPTO 2111 and junior standing"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 3103",
+    "title": "Advanced Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "OPTO 2788 and junior standing"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 4668",
+    "title": "Special Topics in Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "OPTO 3951 and senior standing"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 4386",
+    "title": "Senior Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "OPTO 3877 and senior standing"
+  },
+  {
+    "department": "Optometry",
+    "code": "OPTO 4257",
+    "title": "Special Topics in Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "OPTO 3466 and senior standing"
+  }
+]

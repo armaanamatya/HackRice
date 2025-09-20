@@ -1,0 +1,106 @@
+[
+  {
+    "department": "History",
+    "code": "HIST 1782",
+    "title": "Principles of Social History",
+    "description": "In-depth analysis of social history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "History",
+    "code": "HIST 1396",
+    "title": "Principles of Social History",
+    "description": "Comprehensive study of social history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "History",
+    "code": "HIST 2099",
+    "title": "Applied Cultural History",
+    "description": "Fundamental concepts and applications of cultural history. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 1597 or equivalent"
+  },
+  {
+    "department": "History",
+    "code": "HIST 2492",
+    "title": "Applied Ancient History",
+    "description": "Fundamental concepts and applications of ancient history. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 1028 or equivalent"
+  },
+  {
+    "department": "History",
+    "code": "HIST 3293",
+    "title": "Political History",
+    "description": "Advanced exploration of political history covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 2170 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 3036",
+    "title": "Modern History",
+    "description": "Fundamental concepts and applications of modern history. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 2806 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 3169",
+    "title": "World History",
+    "description": "In-depth analysis of world history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 2216 and junior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 4076",
+    "title": "Special Topics in Cultural History",
+    "description": "In-depth analysis of cultural history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 3405 and senior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 4424",
+    "title": "Senior European History",
+    "description": "In-depth analysis of european history principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 3798 and senior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 4242",
+    "title": "Senior Political History",
+    "description": "Advanced exploration of political history covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 3252 and senior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 7721",
+    "title": "Special Topics in Cultural History",
+    "description": "Comprehensive study of cultural history with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 3999 and senior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 7404",
+    "title": "Senior Political History",
+    "description": "Fundamental concepts and applications of political history. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HIST 3908 and senior standing"
+  },
+  {
+    "department": "History",
+    "code": "HIST 6520",
+    "title": "Special Topics in Ancient History",
+    "description": "Fundamental concepts and applications of ancient history. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "HIST 3992 and senior standing"
+  }
+]

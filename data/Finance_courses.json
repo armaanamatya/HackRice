@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Finance",
+    "code": "FINA 1971",
+    "title": "Fundamentals of Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 1487",
+    "title": "Fundamentals of Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 2664",
+    "title": "Applied Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 1258 or equivalent"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 2197",
+    "title": "Intermediate Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 1530 or equivalent"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 3829",
+    "title": "Advanced Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 2989 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 3997",
+    "title": "Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 2467 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 3637",
+    "title": "Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 2789 and junior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 4696",
+    "title": "Special Topics in Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "FINA 3459 and senior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 4212",
+    "title": "Special Topics in Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 3565 and senior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 4391",
+    "title": "Special Topics in Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 3659 and senior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 6342",
+    "title": "Senior Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 3166 and senior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 6179",
+    "title": "Senior Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 3636 and senior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 7076",
+    "title": "Advanced Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 3411 and senior standing"
+  },
+  {
+    "department": "Finance",
+    "code": "FINA 7147",
+    "title": "Advanced Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "FINA 3084 and senior standing"
+  }
+]

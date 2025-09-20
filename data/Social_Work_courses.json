@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Social Work",
+    "code": "SOCW 1796",
+    "title": "Fundamentals of Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 1170",
+    "title": "Fundamentals of Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 2034",
+    "title": "Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "SOCW 1173 or equivalent"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 2413",
+    "title": "Applied Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 1760 or equivalent"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 3274",
+    "title": "Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 2295 and junior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 3489",
+    "title": "Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 2515 and junior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 3115",
+    "title": "Advanced Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 2167 and junior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 4328",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 3898 and senior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 4012",
+    "title": "Advanced Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "SOCW 3831 and senior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 4456",
+    "title": "Special Topics in Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "SOCW 3260 and senior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 6520",
+    "title": "Special Topics in Practice",
+    "description": "Fundamental concepts and applications of practice. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 3264 and senior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 6402",
+    "title": "Senior Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 3660 and senior standing"
+  },
+  {
+    "department": "Social Work",
+    "code": "SOCW 6589",
+    "title": "Senior Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "SOCW 3380 and senior standing"
+  }
+]

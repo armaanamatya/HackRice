@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Computer Science",
+    "code": "COSC 1802",
+    "title": "Principles of Web Development",
+    "description": "Comprehensive study of web development with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 1218",
+    "title": "Principles of Machine Learning",
+    "description": "Advanced exploration of machine learning covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 2158",
+    "title": "Intermediate Database Systems",
+    "description": "Comprehensive study of database systems with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 1867 or equivalent"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 2788",
+    "title": "Web Development",
+    "description": "Examination of key concepts and methodologies in web development. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "COSC 1434 or equivalent"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 3312",
+    "title": "Advanced Algorithms",
+    "description": "Examination of key concepts and methodologies in algorithms. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 2433 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 3186",
+    "title": "Advanced Programming",
+    "description": "In-depth analysis of programming principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "COSC 2036 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 3249",
+    "title": "Machine Learning",
+    "description": "Examination of key concepts and methodologies in machine learning. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "COSC 2458 and junior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 4159",
+    "title": "Senior Web Development",
+    "description": "Examination of key concepts and methodologies in web development. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 3800 and senior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 4157",
+    "title": "Special Topics in Artificial Intelligence",
+    "description": "Examination of key concepts and methodologies in artificial intelligence. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 3332 and senior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 4928",
+    "title": "Advanced Algorithms",
+    "description": "Comprehensive study of algorithms with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 3377 and senior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 6176",
+    "title": "Advanced Cybersecurity",
+    "description": "Fundamental concepts and applications of cybersecurity. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 3822 and senior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 7195",
+    "title": "Special Topics in Data Structures",
+    "description": "Comprehensive study of data structures with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COSC 3567 and senior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 6178",
+    "title": "Senior Computer Networks",
+    "description": "Comprehensive study of computer networks with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "COSC 3206 and senior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 7456",
+    "title": "Special Topics in Artificial Intelligence",
+    "description": "Comprehensive study of artificial intelligence with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 3684 and senior standing"
+  },
+  {
+    "department": "Computer Science",
+    "code": "COSC 6048",
+    "title": "Special Topics in Web Development",
+    "description": "Advanced exploration of web development covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "COSC 3423 and senior standing"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 1769",
+    "title": "Principles of Physical Chemistry",
+    "description": "In-depth analysis of physical chemistry principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 1917",
+    "title": "Introduction to Physical Chemistry",
+    "description": "Examination of key concepts and methodologies in physical chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 2341",
+    "title": "Applied Analytical Chemistry",
+    "description": "Examination of key concepts and methodologies in analytical chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "BIOC 1426 or equivalent"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 2431",
+    "title": "Applied Organic Chemistry",
+    "description": "Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 1065 or equivalent"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 3497",
+    "title": "Environmental Chemistry",
+    "description": "Comprehensive study of environmental chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 2877 and junior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 3132",
+    "title": "Environmental Chemistry",
+    "description": "In-depth analysis of environmental chemistry principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 2623 and junior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 3411",
+    "title": "Advanced Medicinal Chemistry",
+    "description": "Comprehensive study of medicinal chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 2673 and junior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 4096",
+    "title": "Special Topics in Physical Chemistry",
+    "description": "Fundamental concepts and applications of physical chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 3356 and senior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 4823",
+    "title": "Special Topics in Inorganic Chemistry",
+    "description": "Fundamental concepts and applications of inorganic chemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 3464 and senior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 4402",
+    "title": "Special Topics in Physical Chemistry",
+    "description": "In-depth analysis of physical chemistry principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 3543 and senior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 7715",
+    "title": "Advanced Inorganic Chemistry",
+    "description": "Examination of key concepts and methodologies in inorganic chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "BIOC 3242 and senior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 6332",
+    "title": "Advanced Physical Chemistry",
+    "description": "Examination of key concepts and methodologies in physical chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 3724 and senior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 7985",
+    "title": "Senior Biochemistry",
+    "description": "Advanced exploration of biochemistry covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 3529 and senior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 6034",
+    "title": "Senior Environmental Chemistry",
+    "description": "Examination of key concepts and methodologies in environmental chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOC 3052 and senior standing"
+  },
+  {
+    "department": "Biochemistry",
+    "code": "BIOC 7256",
+    "title": "Senior Biochemistry",
+    "description": "Comprehensive study of biochemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOC 3110 and senior standing"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 1214",
+    "title": "Introduction to Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 1111",
+    "title": "Introduction to Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 2620",
+    "title": "Intermediate Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MAST 1498 or equivalent"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 2195",
+    "title": "Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "MAST 1287 or equivalent"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 3386",
+    "title": "Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "MAST 2490 and junior standing"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 3471",
+    "title": "Advanced Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "MAST 2819 and junior standing"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 3316",
+    "title": "Advanced Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MAST 2383 and junior standing"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 4023",
+    "title": "Special Topics in Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "MAST 3392 and senior standing"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 4524",
+    "title": "Special Topics in Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MAST 3430 and senior standing"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 4060",
+    "title": "Senior Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "MAST 3050 and senior standing"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 7951",
+    "title": "Senior Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MAST 3859 and senior standing"
+  },
+  {
+    "department": "Mexican American Studies",
+    "code": "MAST 6772",
+    "title": "Special Topics in Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MAST 3080 and senior standing"
+  }
+]

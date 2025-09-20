@@ -1,0 +1,74 @@
+[
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 1864",
+    "title": "Principles of Thermodynamics",
+    "description": "Fundamental concepts and applications of thermodynamics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 1758",
+    "title": "Introduction to Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 2130",
+    "title": "Applied Dynamics",
+    "description": "Comprehensive study of dynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CIVE 1802 or equivalent"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 2582",
+    "title": "Thermodynamics",
+    "description": "Comprehensive study of thermodynamics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CIVE 1047 or equivalent"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 3389",
+    "title": "Ethics",
+    "description": "Examination of key concepts and methodologies in ethics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "CIVE 2749 and junior standing"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 3869",
+    "title": "Ethics",
+    "description": "Advanced exploration of ethics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CIVE 2431 and junior standing"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 3871",
+    "title": "Advanced Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "CIVE 2081 and junior standing"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 4573",
+    "title": "Special Topics in Controls",
+    "description": "Comprehensive study of controls with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CIVE 3356 and senior standing"
+  },
+  {
+    "department": "Civil Engineering",
+    "code": "CIVE 4275",
+    "title": "Special Topics in Project Management",
+    "description": "Advanced exploration of project management covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CIVE 3014 and senior standing"
+  }
+]

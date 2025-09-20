@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 1014",
+    "title": "Fundamentals of Applications",
+    "description": "Examination of key concepts and methodologies in applications. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 1665",
+    "title": "Principles of Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 2803",
+    "title": "Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 1421 or equivalent"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 2692",
+    "title": "Intermediate Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 1079 or equivalent"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 3818",
+    "title": "Advanced Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 2821 and junior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 3110",
+    "title": "Advanced Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 2256 and junior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 3336",
+    "title": "Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 2108 and junior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 4931",
+    "title": "Special Topics in Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 3752 and senior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 4642",
+    "title": "Special Topics in Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 3149 and senior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 4289",
+    "title": "Senior Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 3808 and senior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 7048",
+    "title": "Advanced Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 3658 and senior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 7675",
+    "title": "Special Topics in Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 3943 and senior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 7636",
+    "title": "Advanced Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 3683 and senior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 6030",
+    "title": "Special Topics in Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "PUAD 3635 and senior standing"
+  },
+  {
+    "department": "Public Affairs",
+    "code": "PUAD 7997",
+    "title": "Advanced Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PUAD 3067 and senior standing"
+  }
+]

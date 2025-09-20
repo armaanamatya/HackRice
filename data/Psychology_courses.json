@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Psychology",
+    "code": "PSYC 1598",
+    "title": "Fundamentals of Research Methods",
+    "description": "Examination of key concepts and methodologies in research methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 1420",
+    "title": "Principles of Personality",
+    "description": "Comprehensive study of personality with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 2525",
+    "title": "Intermediate Abnormal Psychology",
+    "description": "Examination of key concepts and methodologies in abnormal psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "2",
+    "prerequisites": "PSYC 1940 or equivalent"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 2861",
+    "title": "Intermediate Abnormal Psychology",
+    "description": "Examination of key concepts and methodologies in abnormal psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 1234 or equivalent"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 3644",
+    "title": "Advanced Cognitive Psychology",
+    "description": "Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "PSYC 2127 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 3229",
+    "title": "Advanced Learning",
+    "description": "Examination of key concepts and methodologies in learning. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 2856 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 3901",
+    "title": "Cognitive Psychology",
+    "description": "Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "PSYC 2492 and junior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 4816",
+    "title": "Special Topics in Cognitive Psychology",
+    "description": "Fundamental concepts and applications of cognitive psychology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "PSYC 3956 and senior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 4691",
+    "title": "Special Topics in Statistics",
+    "description": "Examination of key concepts and methodologies in statistics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 3030 and senior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 4910",
+    "title": "Advanced Personality",
+    "description": "Advanced exploration of personality covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "PSYC 3556 and senior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 7824",
+    "title": "Senior Cognitive Psychology",
+    "description": "Examination of key concepts and methodologies in cognitive psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 3983 and senior standing"
+  },
+  {
+    "department": "Psychology",
+    "code": "PSYC 6048",
+    "title": "Senior Personality",
+    "description": "Comprehensive study of personality with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "PSYC 3662 and senior standing"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Theatre",
+    "code": "THEA 1160",
+    "title": "Principles of Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 1503",
+    "title": "Introduction to Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 2830",
+    "title": "Intermediate Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 1306 or equivalent"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 2177",
+    "title": "Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 1814 or equivalent"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 3256",
+    "title": "Advanced Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 2279 and junior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 3410",
+    "title": "Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 2769 and junior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 3498",
+    "title": "Advanced Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 2543 and junior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 4786",
+    "title": "Senior Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "THEA 3223 and senior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 4875",
+    "title": "Senior Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 3596 and senior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 4849",
+    "title": "Special Topics in Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "THEA 3942 and senior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 6653",
+    "title": "Special Topics in Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 3563 and senior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 7669",
+    "title": "Advanced Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "THEA 3042 and senior standing"
+  },
+  {
+    "department": "Theatre",
+    "code": "THEA 6428",
+    "title": "Senior Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "THEA 3278 and senior standing"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Business Administration",
+    "code": "BUSA 1882",
+    "title": "Principles of Marketing",
+    "description": "In-depth analysis of marketing principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 1814",
+    "title": "Principles of Marketing",
+    "description": "Advanced exploration of marketing covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 2770",
+    "title": "Intermediate Entrepreneurship",
+    "description": "In-depth analysis of entrepreneurship principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "BUSA 1078 or equivalent"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 2439",
+    "title": "Applied Strategy",
+    "description": "Examination of key concepts and methodologies in strategy. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BUSA 1686 or equivalent"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 3268",
+    "title": "Strategy",
+    "description": "Fundamental concepts and applications of strategy. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "BUSA 2994 and junior standing"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 3360",
+    "title": "Advanced Leadership",
+    "description": "Advanced exploration of leadership covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "BUSA 2238 and junior standing"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 3038",
+    "title": "Advanced Operations",
+    "description": "In-depth analysis of operations principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "BUSA 2013 and junior standing"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 4878",
+    "title": "Senior Economics",
+    "description": "Examination of key concepts and methodologies in economics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BUSA 3414 and senior standing"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 4623",
+    "title": "Advanced Management",
+    "description": "Advanced exploration of management covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "BUSA 3213 and senior standing"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 4441",
+    "title": "Senior Finance",
+    "description": "Fundamental concepts and applications of finance. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "BUSA 3364 and senior standing"
+  },
+  {
+    "department": "Business Administration",
+    "code": "BUSA 6356",
+    "title": "Special Topics in Leadership",
+    "description": "Comprehensive study of leadership with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BUSA 3169 and senior standing"
+  }
+]

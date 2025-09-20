@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Industrial Design",
+    "code": "IDES 1713",
+    "title": "Principles of Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 1950",
+    "title": "Introduction to Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 2342",
+    "title": "Applied Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 1529 or equivalent"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 2847",
+    "title": "Intermediate Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 1013 or equivalent"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 3345",
+    "title": "Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "IDES 2384 and junior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 3698",
+    "title": "Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "IDES 2524 and junior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 3603",
+    "title": "Advanced Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 2446 and junior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 4451",
+    "title": "Special Topics in Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 3955 and senior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 4743",
+    "title": "Senior Research",
+    "description": "Advanced exploration of research covering current research and industry practices.",
+    "credit_hours": "1",
+    "prerequisites": "IDES 3810 and senior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 4827",
+    "title": "Advanced Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 3615 and senior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 6549",
+    "title": "Senior Research",
+    "description": "In-depth analysis of research principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 3649 and senior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 7772",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 3807 and senior standing"
+  },
+  {
+    "department": "Industrial Design",
+    "code": "IDES 7356",
+    "title": "Senior Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "IDES 3957 and senior standing"
+  }
+]

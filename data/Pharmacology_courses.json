@@ -1,0 +1,114 @@
+[
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 1330",
+    "title": "Principles of Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 1663",
+    "title": "Fundamentals of Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 2513",
+    "title": "Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 1945 or equivalent"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 2244",
+    "title": "Applied Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "PHAR 1331 or equivalent"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 3525",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 2348 and junior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 3261",
+    "title": "Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 2258 and junior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 3370",
+    "title": "Advanced Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 2204 and junior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 4096",
+    "title": "Special Topics in Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "PHAR 3795 and senior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 4787",
+    "title": "Special Topics in Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 3981 and senior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 4800",
+    "title": "Special Topics in Methods",
+    "description": "Fundamental concepts and applications of methods. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "PHAR 3128 and senior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 6767",
+    "title": "Special Topics in Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 3399 and senior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 6664",
+    "title": "Advanced Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 3125 and senior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 7814",
+    "title": "Senior Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 3842 and senior standing"
+  },
+  {
+    "department": "Pharmacology",
+    "code": "PHAR 7450",
+    "title": "Senior Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PHAR 3803 and senior standing"
+  }
+]

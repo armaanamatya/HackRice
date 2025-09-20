@@ -1,0 +1,90 @@
+[
+  {
+    "department": "Art",
+    "code": "ART 1623",
+    "title": "Principles of Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Art",
+    "code": "ART 1585",
+    "title": "Principles of Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Art",
+    "code": "ART 2089",
+    "title": "Intermediate Research",
+    "description": "Fundamental concepts and applications of research. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ART 1781 or equivalent"
+  },
+  {
+    "department": "Art",
+    "code": "ART 2883",
+    "title": "Intermediate Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ART 1082 or equivalent"
+  },
+  {
+    "department": "Art",
+    "code": "ART 3538",
+    "title": "Advanced Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ART 2442 and junior standing"
+  },
+  {
+    "department": "Art",
+    "code": "ART 3584",
+    "title": "Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ART 2499 and junior standing"
+  },
+  {
+    "department": "Art",
+    "code": "ART 3150",
+    "title": "Advanced Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ART 2344 and junior standing"
+  },
+  {
+    "department": "Art",
+    "code": "ART 4219",
+    "title": "Special Topics in Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ART 3727 and senior standing"
+  },
+  {
+    "department": "Art",
+    "code": "ART 4701",
+    "title": "Special Topics in Methods",
+    "description": "Comprehensive study of methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ART 3896 and senior standing"
+  },
+  {
+    "department": "Art",
+    "code": "ART 4232",
+    "title": "Advanced Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ART 3855 and senior standing"
+  },
+  {
+    "department": "Art",
+    "code": "ART 6297",
+    "title": "Senior Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "ART 3076 and senior standing"
+  }
+]

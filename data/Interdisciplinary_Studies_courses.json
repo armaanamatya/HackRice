@@ -1,0 +1,74 @@
+[
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 1042",
+    "title": "Principles of Practice",
+    "description": "Comprehensive study of practice with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 1412",
+    "title": "Introduction to Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 2968",
+    "title": "Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "INST 1514 or equivalent"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 2631",
+    "title": "Applied Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "INST 1266 or equivalent"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 3340",
+    "title": "Practice",
+    "description": "In-depth analysis of practice principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "INST 2341 and junior standing"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 3687",
+    "title": "Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "INST 2359 and junior standing"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 3080",
+    "title": "Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "INST 2233 and junior standing"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 4153",
+    "title": "Advanced Research",
+    "description": "Examination of key concepts and methodologies in research. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "INST 3929 and senior standing"
+  },
+  {
+    "department": "Interdisciplinary Studies",
+    "code": "INST 4078",
+    "title": "Advanced Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "INST 3923 and senior standing"
+  }
+]

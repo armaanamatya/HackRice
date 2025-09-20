@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 1702",
+    "title": "Fundamentals of Materials",
+    "description": "Fundamental concepts and applications of materials. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 1321",
+    "title": "Fundamentals of Systems",
+    "description": "Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 2996",
+    "title": "Applied Thermodynamics",
+    "description": "Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "PETE 1108 or equivalent"
+  },
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 2663",
+    "title": "Materials",
+    "description": "Advanced exploration of materials covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PETE 1418 or equivalent"
+  },
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 3825",
+    "title": "Materials",
+    "description": "Advanced exploration of materials covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "PETE 2821 and junior standing"
+  },
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 3123",
+    "title": "Innovation",
+    "description": "Fundamental concepts and applications of innovation. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PETE 2863 and junior standing"
+  },
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 3176",
+    "title": "Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PETE 2605 and junior standing"
+  },
+  {
+    "department": "Petroleum Engineering",
+    "code": "PETE 4166",
+    "title": "Advanced Thermodynamics",
+    "description": "Fundamental concepts and applications of thermodynamics. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "PETE 3919 and senior standing"
+  }
+]

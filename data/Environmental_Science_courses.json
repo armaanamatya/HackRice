@@ -1,0 +1,98 @@
+[
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 1101",
+    "title": "Fundamentals of Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 1660",
+    "title": "Introduction to Analysis",
+    "description": "In-depth analysis of analysis principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 2344",
+    "title": "Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 1584 or equivalent"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 2413",
+    "title": "Applied Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 1112 or equivalent"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 3561",
+    "title": "Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 2515 and junior standing"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 3894",
+    "title": "Advanced Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 2489 and junior standing"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 3874",
+    "title": "Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 2215 and junior standing"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 4498",
+    "title": "Senior Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 3373 and senior standing"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 4341",
+    "title": "Senior Theory",
+    "description": "Advanced exploration of theory covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 3172 and senior standing"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 4699",
+    "title": "Special Topics in Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 3051 and senior standing"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 7999",
+    "title": "Advanced Theory",
+    "description": "Examination of key concepts and methodologies in theory. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 3568 and senior standing"
+  },
+  {
+    "department": "Environmental Science",
+    "code": "ENVS 6689",
+    "title": "Special Topics in Theory",
+    "description": "Comprehensive study of theory with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "ENVS 3416 and senior standing"
+  }
+]

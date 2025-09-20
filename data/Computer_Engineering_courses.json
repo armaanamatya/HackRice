@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 1206",
+    "title": "Fundamentals of Design",
+    "description": "Fundamental concepts and applications of design. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 1499",
+    "title": "Fundamentals of Dynamics",
+    "description": "Examination of key concepts and methodologies in dynamics. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 2794",
+    "title": "Systems",
+    "description": "In-depth analysis of systems principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "EECE 1364 or equivalent"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 2508",
+    "title": "Intermediate Thermodynamics",
+    "description": "Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "EECE 1605 or equivalent"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 3000",
+    "title": "Controls",
+    "description": "In-depth analysis of controls principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 2756 and junior standing"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 3733",
+    "title": "Innovation",
+    "description": "Advanced exploration of innovation covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 2170 and junior standing"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 3644",
+    "title": "Design",
+    "description": "In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 2853 and junior standing"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 4597",
+    "title": "Special Topics in Materials",
+    "description": "Comprehensive study of materials with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 3726 and senior standing"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 4605",
+    "title": "Special Topics in Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 3757 and senior standing"
+  },
+  {
+    "department": "Computer Engineering",
+    "code": "EECE 4254",
+    "title": "Advanced Design",
+    "description": "In-depth analysis of design principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "EECE 3993 and senior standing"
+  }
+]

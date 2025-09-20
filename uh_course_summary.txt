@@ -1,0 +1,116 @@
+UNIVERSITY OF HOUSTON - COMPREHENSIVE COURSE CATALOG SUMMARY
+============================================================
+Total Courses: 640
+Total Departments: 56
+
+DEPARTMENTS AND COURSE COUNTS:
+----------------------------------------
+Biochemistry: 15 courses
+Computer Science: 15 courses
+Pharmaceutical Sciences: 15 courses
+Hotel and Restaurant Management: 15 courses
+Public Affairs: 15 courses
+Chemical Engineering: 14 courses
+Mathematics: 14 courses
+Finance: 14 courses
+Management: 14 courses
+Music: 14 courses
+Health and Human Performance: 14 courses
+Pharmacology: 14 courses
+Nursing: 14 courses
+Mechanical Engineering: 13 courses
+Earth and Atmospheric Sciences: 13 courses
+Communications: 13 courses
+History: 13 courses
+Sociology: 13 courses
+Theatre: 13 courses
+Industrial Design: 13 courses
+Social Work: 13 courses
+Anthropology: 12 courses
+Philosophy: 12 courses
+Psychology: 12 courses
+Architecture: 12 courses
+Mexican American Studies: 12 courses
+Environmental Science: 12 courses
+Biology: 11 courses
+Statistics: 11 courses
+Business Administration: 11 courses
+Marketing: 11 courses
+Art: 11 courses
+Economics: 11 courses
+Political Science: 11 courses
+Women's Studies: 11 courses
+Biomedical Engineering: 10 courses
+Computer Engineering: 10 courses
+Physics: 10 courses
+Entrepreneurship: 10 courses
+English: 10 courses
+Optometry: 10 courses
+Religious Studies: 10 courses
+Civil Engineering: 9 courses
+Electrical Engineering: 9 courses
+Accounting: 9 courses
+Information Systems: 9 courses
+Educational Psychology: 9 courses
+African American Studies: 9 courses
+Interdisciplinary Studies: 9 courses
+Industrial Engineering: 8 courses
+Petroleum Engineering: 8 courses
+Chemistry: 8 courses
+Supply Chain Management: 8 courses
+Spanish: 8 courses
+Curriculum and Instruction: 8 courses
+Medical Sciences: 8 courses
+
+SAMPLE COURSES BY DEPARTMENT:
+----------------------------------------
+
+BIOCHEMISTRY:
+  BIOC 1769: Principles of Physical Chemistry
+  BIOC 1917: Introduction to Physical Chemistry
+  BIOC 2341: Applied Analytical Chemistry
+
+COMPUTER SCIENCE:
+  COSC 1802: Principles of Web Development
+  COSC 1218: Principles of Machine Learning
+  COSC 2158: Intermediate Database Systems
+
+PHARMACEUTICAL SCIENCES:
+  PHAR 1022: Fundamentals of Methods
+  PHAR 1310: Fundamentals of Analysis
+  PHAR 2578: Analysis
+
+HOTEL AND RESTAURANT MANAGEMENT:
+  HRMA 1854: Principles of Applications
+  HRMA 1762: Introduction to Research
+  HRMA 2417: Methods
+
+PUBLIC AFFAIRS:
+  PUAD 1014: Fundamentals of Applications
+  PUAD 1665: Principles of Theory
+  PUAD 2803: Research
+
+CHEMICAL ENGINEERING:
+  CHEE 1195: Fundamentals of Ethics
+  CHEE 1585: Introduction to Thermodynamics
+  CHEE 2735: Applied Systems
+
+MATHEMATICS:
+  MATH 1036: Introduction to Real Analysis
+  MATH 1547: Introduction to Differential Equations
+  MATH 2322: Applied Calculus
+
+FINANCE:
+  FINA 1971: Fundamentals of Theory
+  FINA 1487: Fundamentals of Research
+  FINA 2664: Applied Methods
+
+MANAGEMENT:
+  MGMT 1490: Introduction to Methods
+  MGMT 1813: Principles of Methods
+  MGMT 2107: Research
+
+MUSIC:
+  MUSI 1943: Introduction to Theory
+  MUSI 1715: Principles of Analysis
+  MUSI 2294: Methods

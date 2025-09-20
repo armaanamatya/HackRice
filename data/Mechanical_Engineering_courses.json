@@ -1,0 +1,106 @@
+[
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 1695",
+    "title": "Fundamentals of Ethics",
+    "description": "Comprehensive study of ethics with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 1867",
+    "title": "Principles of Systems",
+    "description": "Comprehensive study of systems with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 2111",
+    "title": "Intermediate Innovation",
+    "description": "Examination of key concepts and methodologies in innovation. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 1552 or equivalent"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 2214",
+    "title": "Intermediate Dynamics",
+    "description": "Advanced exploration of dynamics covering current research and industry practices.",
+    "credit_hours": "2",
+    "prerequisites": "MECE 1986 or equivalent"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 3841",
+    "title": "Advanced Systems",
+    "description": "In-depth analysis of systems principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "MECE 2801 and junior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 3560",
+    "title": "Innovation",
+    "description": "Comprehensive study of innovation with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 2683 and junior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 3625",
+    "title": "Materials",
+    "description": "In-depth analysis of materials principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 2421 and junior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 4798",
+    "title": "Advanced Systems",
+    "description": "Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 3280 and senior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 4922",
+    "title": "Advanced Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 3888 and senior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 4173",
+    "title": "Senior Materials",
+    "description": "Comprehensive study of materials with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "MECE 3730 and senior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 6728",
+    "title": "Senior Thermodynamics",
+    "description": "Advanced exploration of thermodynamics covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 3864 and senior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 6689",
+    "title": "Special Topics in Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 3109 and senior standing"
+  },
+  {
+    "department": "Mechanical Engineering",
+    "code": "MECE 7318",
+    "title": "Senior Analysis",
+    "description": "Comprehensive study of analysis with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "MECE 3766 and senior standing"
+  }
+]

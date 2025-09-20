@@ -1,0 +1,74 @@
+[
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 1289",
+    "title": "Principles of Research Methods",
+    "description": "In-depth analysis of research methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 1047",
+    "title": "Introduction to Social Psychology",
+    "description": "Fundamental concepts and applications of social psychology. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 2077",
+    "title": "Statistics",
+    "description": "Advanced exploration of statistics covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "EPSY 1651 or equivalent"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 2130",
+    "title": "Research Methods",
+    "description": "Comprehensive study of research methods with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "EPSY 1526 or equivalent"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 3147",
+    "title": "Advanced Social Psychology",
+    "description": "Comprehensive study of social psychology with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "EPSY 2993 and junior standing"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 3977",
+    "title": "Social Psychology",
+    "description": "Advanced exploration of social psychology covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "EPSY 2519 and junior standing"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 3822",
+    "title": "Learning",
+    "description": "Examination of key concepts and methodologies in learning. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "EPSY 2342 and junior standing"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 4643",
+    "title": "Special Topics in Social Psychology",
+    "description": "In-depth analysis of social psychology principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "EPSY 3807 and senior standing"
+  },
+  {
+    "department": "Educational Psychology",
+    "code": "EPSY 4426",
+    "title": "Special Topics in Abnormal Psychology",
+    "description": "Examination of key concepts and methodologies in abnormal psychology. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "EPSY 3957 and senior standing"
+  }
+]

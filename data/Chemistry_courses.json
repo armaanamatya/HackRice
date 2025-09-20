@@ -1,0 +1,66 @@
+[
+  {
+    "department": "Chemistry",
+    "code": "CHEM 1930",
+    "title": "Fundamentals of Biochemistry",
+    "description": "Examination of key concepts and methodologies in biochemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 1763",
+    "title": "Introduction to Biochemistry",
+    "description": "In-depth analysis of biochemistry principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 2334",
+    "title": "Applied Organic Chemistry",
+    "description": "Advanced exploration of organic chemistry covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 1560 or equivalent"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 2471",
+    "title": "Intermediate Environmental Chemistry",
+    "description": "Examination of key concepts and methodologies in environmental chemistry. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 1728 or equivalent"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 3557",
+    "title": "Medicinal Chemistry",
+    "description": "Advanced exploration of medicinal chemistry covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 2660 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 3053",
+    "title": "Biochemistry",
+    "description": "Fundamental concepts and applications of biochemistry. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 2068 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 3530",
+    "title": "Organic Chemistry",
+    "description": "Comprehensive study of organic chemistry with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 2466 and junior standing"
+  },
+  {
+    "department": "Chemistry",
+    "code": "CHEM 4364",
+    "title": "Senior Analytical Chemistry",
+    "description": "In-depth analysis of analytical chemistry principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "CHEM 3938 and senior standing"
+  }
+]

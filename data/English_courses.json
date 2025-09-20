@@ -1,0 +1,82 @@
+[
+  {
+    "department": "English",
+    "code": "ENGL 1860",
+    "title": "Principles of Writing",
+    "description": "In-depth analysis of writing principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 1965",
+    "title": "Principles of Creative Writing",
+    "description": "Comprehensive study of creative writing with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 2742",
+    "title": "American Literature",
+    "description": "Fundamental concepts and applications of american literature. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 1163 or equivalent"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 2967",
+    "title": "Intermediate Technical Writing",
+    "description": "In-depth analysis of technical writing principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 1946 or equivalent"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 3320",
+    "title": "Advanced American Literature",
+    "description": "Examination of key concepts and methodologies in american literature. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 2761 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 3509",
+    "title": "American Literature",
+    "description": "Advanced exploration of american literature covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 2459 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 3789",
+    "title": "Advanced Writing",
+    "description": "Advanced exploration of writing covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 2324 and junior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 4909",
+    "title": "Advanced Technical Writing",
+    "description": "Fundamental concepts and applications of technical writing. Designed for students pursuing careers in related fields.",
+    "credit_hours": "2",
+    "prerequisites": "ENGL 3273 and senior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 4143",
+    "title": "Advanced Composition",
+    "description": "Examination of key concepts and methodologies in composition. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 3482 and senior standing"
+  },
+  {
+    "department": "English",
+    "code": "ENGL 4476",
+    "title": "Special Topics in World Literature",
+    "description": "In-depth analysis of world literature principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "ENGL 3967 and senior standing"
+  }
+]

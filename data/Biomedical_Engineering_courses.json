@@ -1,0 +1,82 @@
+[
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 1825",
+    "title": "Principles of Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 1540",
+    "title": "Principles of Ethics",
+    "description": "Examination of key concepts and methodologies in ethics. Includes hands-on experience and case studies.",
+    "credit_hours": "1",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 2945",
+    "title": "Systems",
+    "description": "Fundamental concepts and applications of systems. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 1526 or equivalent"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 2163",
+    "title": "Thermodynamics",
+    "description": "Examination of key concepts and methodologies in thermodynamics. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 1643 or equivalent"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 3090",
+    "title": "Advanced Design",
+    "description": "Comprehensive study of design with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 2816 and junior standing"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 3363",
+    "title": "Controls",
+    "description": "Examination of key concepts and methodologies in controls. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "BIOE 2779 and junior standing"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 3146",
+    "title": "Innovation",
+    "description": "Advanced exploration of innovation covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 2505 and junior standing"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 4901",
+    "title": "Advanced Project Management",
+    "description": "In-depth analysis of project management principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "4",
+    "prerequisites": "BIOE 3780 and senior standing"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 4882",
+    "title": "Advanced Thermodynamics",
+    "description": "In-depth analysis of thermodynamics principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "2",
+    "prerequisites": "BIOE 3911 and senior standing"
+  },
+  {
+    "department": "Biomedical Engineering",
+    "code": "BIOE 4687",
+    "title": "Advanced Project Management",
+    "description": "Comprehensive study of project management with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "2",
+    "prerequisites": "BIOE 3164 and senior standing"
+  }
+]

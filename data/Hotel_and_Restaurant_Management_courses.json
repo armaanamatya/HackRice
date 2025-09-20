@@ -1,0 +1,122 @@
+[
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 1854",
+    "title": "Principles of Applications",
+    "description": "Advanced exploration of applications covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 1762",
+    "title": "Introduction to Research",
+    "description": "Comprehensive study of research with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "None"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 2417",
+    "title": "Methods",
+    "description": "Examination of key concepts and methodologies in methods. Includes hands-on experience and case studies.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 1039 or equivalent"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 2112",
+    "title": "Intermediate Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 1298 or equivalent"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 3111",
+    "title": "Applications",
+    "description": "In-depth analysis of applications principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 2679 and junior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 3790",
+    "title": "Methods",
+    "description": "In-depth analysis of methods principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 2589 and junior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 3848",
+    "title": "Methods",
+    "description": "Advanced exploration of methods covering current research and industry practices.",
+    "credit_hours": "4",
+    "prerequisites": "HRMA 2515 and junior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 4522",
+    "title": "Senior Analysis",
+    "description": "Fundamental concepts and applications of analysis. Designed for students pursuing careers in related fields.",
+    "credit_hours": "1",
+    "prerequisites": "HRMA 3607 and senior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 4625",
+    "title": "Special Topics in Analysis",
+    "description": "Examination of key concepts and methodologies in analysis. Includes hands-on experience and case studies.",
+    "credit_hours": "4",
+    "prerequisites": "HRMA 3069 and senior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 4137",
+    "title": "Advanced Analysis",
+    "description": "Advanced exploration of analysis covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 3095 and senior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 7812",
+    "title": "Special Topics in Practice",
+    "description": "Advanced exploration of practice covering current research and industry practices.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 3474 and senior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 6131",
+    "title": "Special Topics in Theory",
+    "description": "Fundamental concepts and applications of theory. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 3070 and senior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 7624",
+    "title": "Advanced Applications",
+    "description": "Comprehensive study of applications with emphasis on theoretical foundations and practical applications.",
+    "credit_hours": "4",
+    "prerequisites": "HRMA 3013 and senior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 7019",
+    "title": "Special Topics in Applications",
+    "description": "Fundamental concepts and applications of applications. Designed for students pursuing careers in related fields.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 3027 and senior standing"
+  },
+  {
+    "department": "Hotel and Restaurant Management",
+    "code": "HRMA 6086",
+    "title": "Senior Theory",
+    "description": "In-depth analysis of theory principles. Students will develop critical thinking and problem-solving skills.",
+    "credit_hours": "3",
+    "prerequisites": "HRMA 3032 and senior standing"
+  }
+]
