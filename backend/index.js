@@ -28,6 +28,14 @@ app.get('/api/test', (req, res) => {
 const userRoutes = require('./routes/users');
 app.use('/api/users', userRoutes);
 
+// Schedule routes
+const scheduleRoutes = require('./routes/schedule');
+app.use('/api/schedule', scheduleRoutes);
+
+// Course routes
+const courseRoutes = require('./routes/courses');
+app.use('/api/courses', courseRoutes);
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

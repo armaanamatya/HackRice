@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { 
   IconHome, 
-  IconCalendar, 
   IconUsers, 
   IconUser, 
   IconLogout,
@@ -15,6 +14,7 @@ import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
 import ScheduleReviewForm from './ScheduleReviewForm';
 import InteractiveScheduleDisplay from './InteractiveScheduleDisplay';
+import ToastContainer, { showSuccessToast, showErrorToast } from './ToastContainer';
 import SettingsDropdown from './SettingsDropdown'; // Import SettingsDropdown
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../utils/localStorageUtils';
 
@@ -61,10 +61,39 @@ const DashboardPage = ({
     setViewMode('reviewer');
   };
 
-  const handleScheduleValidated = (validatedClasses) => {
-    setCurrentSchedule(validatedClasses);
-    setOcrParsedClasses(null); // Clear review data
-    setViewMode('display');
+  const handleScheduleValidated = async (validatedClasses) => {
+    try {
+      // Save courses to database
+      const response = await fetch('/api/courses', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: userData?._id,
+          courses: validatedClasses,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to save courses');
+      }
+
+      console.log('Courses saved successfully to database');
+      showSuccessToast('Schedule saved successfully! Your courses have been updated.');
+      
+      setCurrentSchedule(validatedClasses);
+      setOcrParsedClasses(null); // Clear review data
+      setViewMode('display');
+      
+      // Call the parent callback if it exists
+      if (onScheduleUpdate) {
+        onScheduleUpdate(validatedClasses);
+      }
+    } catch (error) {
+      console.error('Error saving courses:', error);
+      showErrorToast(`Failed to save courses: ${error.message}`);
+    }
   };
 
   const handleBackToUpload = () => {
@@ -86,7 +115,7 @@ const DashboardPage = ({
   const renderContent = () => {
     switch (viewMode) {
       case 'uploader':
-        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} />;
+        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} userId={userData?._id} />;
       case 'reviewer':
         return (
           <ScheduleReviewForm
@@ -104,13 +133,12 @@ const DashboardPage = ({
           />
         );
       default:
-        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} />;
+        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} userId={userData?._id} />;
     }
   };
 
   const navigationItems = [
     { id: 'dashboard', label: 'Dashboard', icon: IconHome },
-    { id: 'schedule', label: 'Schedule', icon: IconCalendar },
     { id: 'connections', label: 'Connections', icon: IconUsers },
     { id: 'profile', label: 'Profile', icon: IconUser },
   ];
@@ -270,6 +298,9 @@ const DashboardPage = ({
           </div>
         </main>
       </div>
+      
+      {/* Toast Notifications */}
+      <ToastContainer />
     </div>
   );
 };
