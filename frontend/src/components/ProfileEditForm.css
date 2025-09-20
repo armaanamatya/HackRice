@@ -1,0 +1,145 @@
+.profile-edit-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: var(--bg-light);
+  min-height: 100vh;
+  color: var(--text-color);
+}
+
+.profile-edit-form-container h2 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  text-shadow: var(--shadow-medium);
+}
+
+.profile-edit-form {
+  background: linear-gradient(145deg, var(--bg-dark), var(--bg-light));
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-medium);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 30px;
+  border: 1px solid var(--accent-color);
+}
+
+.profile-edit-form .form-group {
+  margin-bottom: 20px;
+}
+
+.profile-edit-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.profile-edit-form input[type="text"],
+.profile-edit-form input[type="number"],
+.profile-edit-form select,
+.profile-edit-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius-sm);
+  font-size: 1em;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-edit-form input:focus,
+.profile-edit-form select:focus,
+.profile-edit-form textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), 0.2);
+  outline: none;
+}
+
+.profile-edit-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: var(--shadow-light);
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-edit-form-container {
+    padding: 20px 10px;
+  }
+
+  .profile-edit-form-container h2 {
+    font-size: 2em;
+  }
+
+  .profile-edit-form {
+    padding: 20px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-button,
+  .cancel-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-edit-form-container h2 {
+    font-size: 1.8em;
+  }
+
+  .profile-edit-form {
+    padding: 15px;
+  }
+
+  .submit-button,
+  .cancel-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
