@@ -1,123 +1,36 @@
 import React, { useState, useEffect } from 'react'
 import { useAuth0 } from '@auth0/auth0-react'
 import UserProfileForm from './components/UserProfileForm'
+import DashboardPage from './components/DashboardPage'
 import './App.css'
 
 function App() {
-  const { loginWithRedirect, logout, isAuthenticated, isLoading, user, getAccessTokenSilently, getIdTokenClaims } = useAuth0();
-  const [showProfileForm, setShowProfileForm] = useState(false);
+  const [currentPage, setCurrentPage] = useState('landing'); // 'landing', 'profileForm', 'dashboard'
+  const [userData, setUserData] = useState(null);
 
-  const handleSignUp = () => {
-    loginWithRedirect({
-      authorizationParams: {
-        screen_hint: 'signup'
-      }
-    });
+  const handleCreateProfileClick = () => {
+    setCurrentPage('profileForm');
   };
 
-  const handleLogin = () => {
-    loginWithRedirect();
+  const handleProfileSubmit = (data) => {
+    setUserData(data);
+    setCurrentPage('dashboard');
   };
 
-  const handleLogout = () => {
-    logout({ 
-      logoutParams: { returnTo: window.location.origin } 
-    });
-    setShowProfileForm(false);
+  const handleNavigateToDashboard = () => {
+    setCurrentPage('dashboard');
   };
 
-  const handleProfileSubmit = () => {
-    setShowProfileForm(false);
-    // Potentially show a success message or redirect to a dashboard
-  };
-
-  const handleGetStarted = () => {
-    if (isAuthenticated) {
-      setShowProfileForm(true);
-    } else {
-      handleSignUp();
-    }
-  };
-
-  // Log user profile info and sync with MongoDB when authenticated
-  useEffect(() => {
-    if (isAuthenticated && user) {
-      // Console log all user profile information
-      console.log('Auth0 User Profile:', {
-        sub: user.sub,
-        name: user.name,
-        email: user.email,
-        picture: user.picture,
-        email_verified: user.email_verified,
-        updated_at: user.updated_at,
-        ...user
-      });
-
-      // Get and log tokens
-      const logTokens = async () => {
-        try {
-          const accessToken = await getAccessTokenSilently();
-          const idTokenClaims = await getIdTokenClaims();
-          
-          console.log('Access Token:', accessToken);
-          console.log('ID Token Claims:', idTokenClaims);
-          console.log('Check localStorage for auth tokens:', Object.keys(localStorage).filter(key => key.includes('auth0')));
-        } catch (error) {
-          console.error('Error getting tokens:', error);
-        }
-      };
-
-      logTokens();
-
-      // Sync user with MongoDB
-      const syncUserWithMongoDB = async () => {
-        try {
-          const response = await fetch('/api/users/auth0-sync', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              name: user.name || user.email,
-              email: user.email
-            })
-          });
-
-          const data = await response.json();
-          
-          if (response.ok) {
-            console.log('User synced with MongoDB:', data);
-          } else {
-            console.error('Failed to sync user with MongoDB:', data.message);
-          }
-        } catch (error) {
-          console.error('Error syncing user with MongoDB:', error);
-        }
-      };
-
-      syncUserWithMongoDB();
-    }
-  }, [isAuthenticated, user]);
-
-  if (isLoading) {
-    return (
-      <div className="app" style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center', 
-        height: '100vh' 
-      }}>
-        <div>Loading...</div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="app">
-      {showProfileForm ? (
-        <UserProfileForm onSubmit={handleProfileSubmit} />
-      ) : (
-        <>
+  // Render different pages based on currentPage state
+  switch (currentPage) {
+    case 'profileForm':
+      return <UserProfileForm onSubmit={handleProfileSubmit} />;
+    case 'dashboard':
+      return <DashboardPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />;
+    case 'landing':
+    default:
+      return (
+        <div className="app">
           {/* Header */}
           <header className="header">
             <div className="container">
@@ -215,10 +128,9 @@ function App() {
               <p><a href="mailto:info@hackrice15.com" style={{ color: '#b0b0b0', textDecoration: 'none' }}>info@hackrice15.com</a></p>
             </div>
           </footer>
-        </>
-      )}
-    </div>
-  )
+        </div>
+      );
+  }
 }
 
 export default App

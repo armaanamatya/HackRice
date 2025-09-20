@@ -22,9 +22,9 @@ const UserProfileForm = ({ onSubmit }) => {
     e.preventDefault();
     console.log('User Profile Data:', formData);
     alert('Profile Created Successfully!');
-    // Call the onSubmit prop to hide the form after submission
+    // Call the onSubmit prop to hide the form after submission and pass data
     if (onSubmit) {
-      onSubmit();
+      onSubmit(formData);
     }
     // In a real application, you would send this data to a backend API
   };
