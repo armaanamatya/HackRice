@@ -1,17 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './UserProfileForm.css';
+import './ProfileEditForm.css';
 
-const UserProfileForm = ({ onSubmit, initialData }) => {
-  const navigate = useNavigate(); // Initialize useNavigate
-
+/**
+ * ProfileEditForm component for editing user profile information.
+ * @param {Object} props - The component props.
+ * @param {Object} props.initialData - The initial user data to pre-populate the form.
+ * @param {function} props.onProfileUpdated - Callback function after successful profile update.
+ * @param {function} props.onCancel - Callback function to cancel editing.
+ */
+const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
   const [formData, setFormData] = useState({
-    name: initialData?.name || '',
-    age: initialData?.age || '',
-    year: initialData?.year || '',
-    major: initialData?.major || '',
-    bio: initialData?.bio || '',
+    name: '',
+    age: '',
+    year: '',
+    major: '',
+    bio: '',
   });
+
+  useEffect(() => {
+    if (initialData) {
+      setFormData({
+        name: initialData.name || '',
+        age: initialData.age || '',
+        year: initialData.year || '',
+        major: initialData.major || '',
+        bio: initialData.bio || '',
+      });
+    }
+  }, [initialData]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +42,7 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`/api/users/complete-profile/${initialData._id}`, {
+      const response = await fetch(`/api/users/${initialData._id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -36,25 +53,24 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
       const data = await response.json();
 
       if (response.ok) {
-        alert('Profile Created Successfully!');
-        if (onSubmit) {
-          // Pass the updated user data (including profileCompleted: true) back to App.jsx
-          onSubmit(data.user);
+        alert('Profile updated successfully!');
+        if (onProfileUpdated) {
+          onProfileUpdated(data.user); // Pass the updated user data back
         }
       } else {
         console.error('Profile update failed:', data.message);
-        alert(`Error: ${data.message}`);
+        alert(`Error updating profile: ${data.message}`);
       }
     } catch (error) {
-      console.error('Error submitting profile:', error);
-      alert('An error occurred while creating your profile.');
+      console.error('Error submitting profile update:', error);
+      alert('An error occurred while updating your profile.');
     }
   };
 
   return (
-    <div className="user-profile-form-container">
-      <h2>Create Your Profile</h2>
-      <form onSubmit={handleSubmit} className="user-profile-form">
+    <div className="profile-edit-form-container">
+      <h2>Edit Your Profile</h2>
+      <form onSubmit={handleSubmit} className="profile-edit-form">
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -109,10 +125,13 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="submit-button">Create Profile</button>
+        <div className="form-actions">
+          <button type="submit" className="submit-button">Save Changes</button>
+          <button type="button" onClick={onCancel} className="cancel-button">Cancel</button>
+        </div>
       </form>
     </div>
   );
 };
 
-export default UserProfileForm;
+export default ProfileEditForm;

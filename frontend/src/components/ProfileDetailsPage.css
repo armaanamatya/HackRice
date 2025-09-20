@@ -83,6 +83,46 @@
   transform: translateY(-2px);
 }
 
+.profile-actions {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-top: 30px;
+}
+
+.edit-profile-button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: var(--shadow-light);
+}
+
+.edit-profile-button:hover {
+  background-color: #a3393e; /* Slightly darker secondary color on hover */
+  transform: translateY(-2px);
+}
+
+.delete-account-button {
+  background-color: #dc3545; /* Red for destructive action */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: var(--shadow-light);
+}
+
+.delete-account-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+  transform: translateY(-2px);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .profile-details-container {
@@ -109,6 +149,24 @@
 
   .profile-info p {
     font-size: 1em;
+  }
+
+  .back-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .edit-profile-button,
+  .delete-account-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px; /* Limit width of stacked buttons */
   }
 }
 
