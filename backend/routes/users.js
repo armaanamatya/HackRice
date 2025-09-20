@@ -70,7 +70,7 @@ router.post("/auth0-sync", async (req, res) => {
 
     // Create new user
     user = new User({
-      name: name || email,
+      name: name || email, // Use name from Auth0, fallback to email
       email: email.toLowerCase(), // Ensure email is always lowercase in DB
       university: university,
       profileCompleted: false, // New users have not completed profile yet
@@ -116,6 +116,9 @@ router.patch("/:id", async (req, res) => {
     if (req.body.bio != null) {
       user.bio = req.body.bio;
     }
+    if (req.body.profileCompleted != null) {
+      user.profileCompleted = req.body.profileCompleted;
+    }
 
     const updatedUser = await user.save();
     res.json({ message: "Profile updated successfully", user: updatedUser });
@@ -152,6 +155,7 @@ router.patch("/complete-profile/:id", async (req, res) => {
     user.year = req.body.year || user.year;
     user.major = req.body.major || user.major;
     user.bio = req.body.bio || user.bio;
+    user.email = req.body.email || user.email; // Add this line to update email
     user.profileCompleted = true; // Mark profile as completed
 
     const updatedUser = await user.save();

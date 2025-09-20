@@ -11,6 +11,7 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
     year: initialData?.year || "",
     major: initialData?.major || "",
     bio: initialData?.bio || "",
+    email: initialData?.email || "", // Add email to formData state
   });
 
   const handleChange = (e) => {
@@ -54,9 +55,11 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
     }
   };
 
+  const isEditMode = initialData?.name;
+
   return (
     <div className="user-profile-form-container">
-      <h2>Create Your Profile</h2>
+      <h2>{isEditMode ? "Edit Your Profile" : "Create Your Profile"}</h2>
       <form onSubmit={handleSubmit} className="user-profile-form">
         <div className="form-group">
           <label htmlFor="name">Name</label>
@@ -119,7 +122,7 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
           ></textarea>
         </div>
         <button type="submit" className="submit-button">
-          Create Profile
+          {isEditMode ? "Update Profile" : "Create Profile"}
         </button>
       </form>
     </div>

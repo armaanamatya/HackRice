@@ -16,6 +16,7 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
     year: "",
     major: "",
     bio: "",
+    email: "", // Add email to formData state
   });
 
   useEffect(() => {
@@ -26,6 +27,7 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
         year: initialData.year || "",
         major: initialData.major || "",
         bio: initialData.bio || "",
+        email: initialData.email || "", // Add email to formData state
       });
     }
   }, [initialData]);

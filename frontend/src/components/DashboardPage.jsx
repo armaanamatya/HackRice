@@ -136,6 +136,15 @@ const DashboardPage = ({
     setSidebarCollapsed(!sidebarCollapsed);
   };
 
+  // Helper function to check if a string is an email
+  const isEmail = (text) => /^[\w-.]+@[\w-.]+\.[\w-.]+$/.test(text);
+
+  const displayName = (
+    userData?.profileCompleted === false && isEmail(userData?.name)
+      ? "User"
+      : userData?.name || "User"
+  );
+
   return (
     <div className="dashboard-layout">
       {/* Sidebar */}
@@ -228,7 +237,7 @@ const DashboardPage = ({
         <main className="dashboard-content">
           <div className="content-header">
             <h1 className="page-title">
-              Welcome back, {userData?.name || 'User'}!
+              Welcome back, {displayName}!
             </h1>
             <p className="page-subtitle">
               Manage your academic schedule and connect with classmates

@@ -30,8 +30,9 @@ import "./ProfileDetailsPage.css";
  * @param {Object} props - The component props.
  * @param {UserProfileData} props.userData - The user's profile data.
  * @param {function} props.onBackToDashboard - Function to navigate back to the dashboard.
+ * @param {function} props.setUserData - Function to update the user data in the parent component.
  */
-const ProfileDetailsPage = ({ userData, onBackToDashboard }) => {
+const ProfileDetailsPage = ({ userData, setUserData, onBackToDashboard }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   if (!userData) {
@@ -56,6 +57,12 @@ const ProfileDetailsPage = ({ userData, onBackToDashboard }) => {
   }
 
   const profileFields = [
+    {
+      icon: IconUser,
+      label: "Name",
+      value: userData.name || "Not provided",
+      type: "text"
+    },
     {
       icon: IconMail,
       label: "Email",
@@ -110,8 +117,8 @@ const ProfileDetailsPage = ({ userData, onBackToDashboard }) => {
         {isEditing ? (
           <ProfileEditForm 
             initialData={userData}
-            onSave={(updatedData) => {
-              // Handle save logic here
+            onProfileUpdated={(updatedData) => {
+              setUserData(updatedData); // Update user data in parent state
               setIsEditing(false);
             }}
             onCancel={() => setIsEditing(false)}

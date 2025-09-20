@@ -69,10 +69,12 @@ function App() {
   };
 
   useEffect(() => {
+    console.log("Auth status changed. isAuthenticated:", isAuthenticated, "user:", user);
     if (isAuthenticated && user) {
       // Fetch or sync user data from your backend
       const syncUserWithBackend = async () => {
         try {
+          console.log("Syncing user with backend...");
           const response = await fetch("/api/users/auth0-sync", {
             method: "POST",
             headers: {
@@ -88,6 +90,8 @@ function App() {
 
           if (response.ok) {
             setUserData(data.user); // Set the full user data from backend
+            console.log("User data from backend:", data.user);
+            console.log("User ID from backend:", data.user?._id);
 
             // Conditional redirection based on profileCompleted status
             if (data.user && !data.user.profileCompleted) {
@@ -367,10 +371,14 @@ function App() {
       <Route
         path="/create-profile"
         element={
-          <UserProfileForm
-            onSubmit={handleProfileSubmit}
-            initialData={userData}
-          />
+          userData && userData._id ? (
+            <UserProfileForm
+              onSubmit={handleProfileSubmit}
+              initialData={userData}
+            />
+          ) : (
+            <div>Loading profile data...</div> // Or a loading spinner
+          )
         }
       />
       <Route
