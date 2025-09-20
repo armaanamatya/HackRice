@@ -14,6 +14,7 @@ import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
 import ScheduleReviewForm from './ScheduleReviewForm';
 import InteractiveScheduleDisplay from './InteractiveScheduleDisplay';
+import ToastContainer, { showSuccessToast, showErrorToast } from './ToastContainer';
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../utils/localStorageUtils';
 
 /**
@@ -76,6 +77,7 @@ const DashboardPage = ({
       }
 
       console.log('Courses saved successfully to database');
+      showSuccessToast('Schedule saved successfully! Your courses have been updated.');
       
       setCurrentSchedule(validatedClasses);
       setOcrParsedClasses(null); // Clear review data
@@ -87,7 +89,7 @@ const DashboardPage = ({
       }
     } catch (error) {
       console.error('Error saving courses:', error);
-      alert(`Failed to save courses: ${error.message}`);
+      showErrorToast(`Failed to save courses: ${error.message}`);
     }
   };
 
@@ -275,6 +277,9 @@ const DashboardPage = ({
           </div>
         </main>
       </div>
+      
+      {/* Toast Notifications */}
+      <ToastContainer />
     </div>
   );
 };
