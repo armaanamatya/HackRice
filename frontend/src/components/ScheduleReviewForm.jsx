@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ParsedClassData
  */
 
+import './ScheduleReviewForm.css';
+
 /**
  * @typedef {object} ClassDataWithId
  * @property {string} id - Unique ID for the class.
