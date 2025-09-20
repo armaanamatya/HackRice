@@ -48,13 +48,6 @@ router.post("/auth0-sync", async (req, res) => {
     return res.status(400).json({ message: "Email is required" });
   }
 
-  const allowedDomains = ["rice.edu", "utd.edu", "uh.edu", "cougarnet.uh.edu"];
-  const emailDomain = email.split("@")[1];
-
-  if (!allowedDomains.includes(emailDomain)) {
-    return res.status(400).json({ message: "Invalid email domain. Only Rice, UTD, or UH emails are allowed." });
-  }
-
   try {
     // Check if user already exists
     let user = await User.findOne({ email: email.toLowerCase() });
