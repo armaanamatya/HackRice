@@ -5,8 +5,10 @@ import DashboardPage from './components/DashboardPage'
 import './App.css'
 
 function App() {
+  const { isAuthenticated, user, loginWithRedirect, logout } = useAuth0();
   const [currentPage, setCurrentPage] = useState('landing'); // 'landing', 'profileForm', 'dashboard'
   const [userData, setUserData] = useState(null);
+  const [showProfileForm, setShowProfileForm] = useState(false);
 
   const handleCreateProfileClick = () => {
     setCurrentPage('profileForm');
@@ -19,6 +21,22 @@ function App() {
 
   const handleNavigateToDashboard = () => {
     setCurrentPage('dashboard');
+  };
+
+  const handleLogin = () => {
+    loginWithRedirect();
+  };
+
+  const handleSignUp = () => {
+    loginWithRedirect({ screen_hint: 'signup' });
+  };
+
+  const handleLogout = () => {
+    logout({ returnTo: window.location.origin });
+  };
+
+  const handleGetStarted = () => {
+    loginWithRedirect();
   };
 
   // Render different pages based on currentPage state

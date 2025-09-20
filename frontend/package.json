@@ -10,12 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@auth0/auth0-react": "^2.5.0",
-=======
     "date-fns": "^4.1.0",
     "framer-motion": "^12.23.16",
->>>>>>> 0f81089 (Skeleton additions)
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tesseract.js": "^6.0.1"
