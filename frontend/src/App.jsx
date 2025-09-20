@@ -53,19 +53,41 @@ function App() {
   };
 
   const handleLogin = () => {
-    loginWithRedirect();
+    // Store login intent to differentiate from signup
+    sessionStorage.setItem('auth_intent', 'login');
+    loginWithRedirect({
+      authorizationParams: {
+        redirect_uri: `http://localhost:5173/dashboard`,
+        prompt: 'login'
+      }
+    });
   };
 
   const handleSignUp = () => {
-    loginWithRedirect({ screen_hint: "signup" });
+    // Store signup intent to differentiate from login
+    sessionStorage.setItem('auth_intent', 'signup');
+    loginWithRedirect({ 
+      screen_hint: "signup",
+      authorizationParams: {
+        redirect_uri: `http://localhost:5173/create-profile`,
+        prompt: 'login'
+      }
+    });
   };
 
   const handleLogout = () => {
-    logout({ returnTo: window.location.origin });
+    logout({ returnTo: "http://localhost:5173"});
   };
 
   const handleGetStarted = () => {
-    loginWithRedirect();
+    // Store signup intent for new users
+    sessionStorage.setItem('auth_intent', 'signup');
+    loginWithRedirect({
+      authorizationParams: {
+        redirect_uri: `http://localhost:5173/create-profile`,
+        prompt: 'login'
+      }
+    });
   };
 
   useEffect(() => {
@@ -94,17 +116,23 @@ function App() {
             console.log("User ID from backend:", data.user?._id);
 
             // Conditional redirection based on profileCompleted status
+            const currentPath = window.location.pathname;
+            
             if (data.user && !data.user.profileCompleted) {
-              // If profile is not completed, redirect to profile creation
-              if (window.location.pathname !== "/create-profile") {
+              // If profile is not completed, ensure user is on profile creation page
+              if (currentPath !== "/create-profile") {
                 navigate("/create-profile");
               }
             } else if (data.user && data.user.profileCompleted) {
-              // If profile is completed, redirect to dashboard
-              if (window.location.pathname !== "/dashboard") {
+              // If profile is completed and user is on profile page or landing, redirect to dashboard
+              if (currentPath === "/create-profile" || currentPath === "/") {
                 navigate("/dashboard");
               }
+              // If user is already on dashboard or other protected routes, let them stay
             }
+            
+            // Clear auth intent after processing
+            sessionStorage.removeItem('auth_intent');
           } else {
             console.error("Backend sync failed:", data.message);
             // Optionally handle error, e.g., redirect to an error page or show a message
@@ -174,7 +202,7 @@ function App() {
               </button>
             </div>
           ) : (
-            <button className="cta-button" onClick={handleGetStarted}>
+            <button className="cta-button" onClick={handleSignUp}>
               Get Started
             </button>
           )}
@@ -333,7 +361,7 @@ function App() {
       <section className="cta-section" id="cta-section">
         <div className="container">
           <h2>Ready to transform your academic experience?</h2>
-          <button className="cta-button" onClick={handleGetStarted}>
+          <button className="cta-button" onClick={handleSignUp}>
             Join Scedulr
           </button>
         </div>

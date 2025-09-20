@@ -14,37 +14,69 @@ const ScheduleUploader = ({ onScheduleParsed }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [parsedClasses, setParsedClasses] = useState(null); // To store parsed data for review
 
-  const worker = createWorker({
-    logger: m => {
-      if (m.status === 'recognizing text') {
-        setOcrProgress(m.progress);
-        setOcrStatus('Recognizing Text...');
-      } else if (m.status === 'loading tesseract core') {
-        setOcrStatus('Loading OCR Core...');
-      } else if (m.status === 'initializing tesseract') {
-        setOcrStatus('Initializing OCR...');
-      } else if (m.status === 'loading language traineddata') {
-        setOcrStatus(`Loading Language Data: ${Math.round(m.progress * 100)}%`);
-      }
-    },
-  });
+  // Create worker instance - we'll initialize it in the doOCR function
 
   const doOCR = async (imageFile) => {
     setIsLoading(true);
     setOcrStatus('Starting OCR...');
     setImage(URL.createObjectURL(imageFile)); // Set image preview immediately
 
-    await worker.load();
-    await worker.loadLanguage('eng');
-    await worker.initialize('eng');
-    const { data: { text } } = await worker.recognize(imageFile);
+    let worker = null;
+    try {
+      // Create and initialize worker
+      worker = await createWorker('eng', 1, {
+        logger: m => {
+          console.log('Tesseract worker:', m);
+          if (m.status === 'recognizing text') {
+            setOcrProgress(m.progress);
+            setOcrStatus('Recognizing Text...');
+          } else if (m.status === 'loading tesseract core') {
+            setOcrStatus('Loading OCR Core...');
+          } else if (m.status === 'initializing tesseract') {
+            setOcrStatus('Initializing OCR...');
+          } else if (m.status === 'loading language traineddata') {
+            setOcrStatus(`Loading Language Data: ${Math.round(m.progress * 100)}%`);
+          }
+        },
+      });
 
-    setOcrStatus('OCR Complete!');
-    setIsLoading(false);
-    await worker.terminate();
+      const { data: { text } } = await worker.recognize(imageFile);
 
-    const classes = parseScheduleText(text);
-    setParsedClasses(classes); // Store parsed classes for review
+      setOcrStatus('OCR Complete!');
+      setIsLoading(false);
+
+      console.log('=== OCR RESULTS ===');
+      console.log('Raw OCR extracted text:', text);
+      console.log('Text length:', text.length);
+      console.log('Text lines:', text.split('\n'));
+      
+      const classes = parseScheduleText(text);
+      console.log('=== PARSING RESULTS ===');
+      console.log('Number of classes parsed:', classes.length);
+      console.log('Parsed classes:', classes);
+      
+      if (classes.length === 0) {
+        console.warn('⚠️ No classes were parsed from the OCR text. This might indicate:');
+        console.warn('1. The text format doesn\'t match the expected pattern');
+        console.warn('2. The OCR quality is poor');
+        console.warn('3. The schedule format is different from expected');
+      }
+      
+      setParsedClasses(classes); // Store parsed classes for review
+    } catch (error) {
+      console.error('OCR Error:', error);
+      setOcrStatus(`OCR Failed: ${error.message}`);
+      setIsLoading(false);
+    } finally {
+      // Always try to terminate the worker
+      if (worker) {
+        try {
+          await worker.terminate();
+        } catch (terminateError) {
+          console.error('Error terminating worker:', terminateError);
+        }
+      }
+    }
   };
 
   const handleImageChange = (e) => {
@@ -109,6 +141,11 @@ const ScheduleUploader = ({ onScheduleParsed }) => {
         {image && !isLoading && (
           <div className="image-preview-container">
             <img src={image} alt="Schedule Preview" className="schedule-preview" />
+          </div>
+        )}
+        {ocrStatus && !isLoading && ocrStatus.includes('Failed') && (
+          <div className="error-message">
+            <p>{ocrStatus}</p>
           </div>
         )}
       </div>
