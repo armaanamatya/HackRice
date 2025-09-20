@@ -69,7 +69,7 @@ function App() {
     loginWithRedirect({ 
       screen_hint: "signup",
       authorizationParams: {
-        redirect_uri: `http://localhost:5173/dashboard`,
+        redirect_uri: `http://localhost:5173/create-profile`,
         prompt: 'login'
       }
     });
@@ -79,16 +79,16 @@ function App() {
     logout({ returnTo: "http://localhost:5173"});
   };
 
-  // const handleGetStarted = () => {
-  //   // Store signup intent for new users
-  //   sessionStorage.setItem('auth_intent', 'signup');
-  //   loginWithRedirect({
-  //     authorizationParams: {
-  //       redirect_uri: `http://localhost:5173/dashboard`,
-  //       prompt: 'login'
-  //     }
-  //   });
-  // };
+  const handleGetStarted = () => {
+    // Store signup intent for new users
+    sessionStorage.setItem('auth_intent', 'signup');
+    loginWithRedirect({
+      authorizationParams: {
+        redirect_uri: `http://localhost:5173/create-profile`,
+        prompt: 'login'
+      }
+    });
+  };
 
   useEffect(() => {
     if (isAuthenticated && user) {
@@ -111,24 +111,20 @@ function App() {
           if (response.ok) {
             setUserData(data.user); // Set the full user data from backend
 
-            // Conditional redirection based on profileCompleted status and auth intent
+            // Conditional redirection based on profileCompleted status
             const currentPath = window.location.pathname;
-            const authIntent = sessionStorage.getItem('auth_intent');
             
             if (data.user && !data.user.profileCompleted) {
-              // If profile is not completed, redirect to profile creation
+              // If profile is not completed, ensure user is on profile creation page
               if (currentPath !== "/create-profile") {
                 navigate("/create-profile");
               }
             } else if (data.user && data.user.profileCompleted) {
-              // If profile is completed, check auth intent for new users
-              if (authIntent === 'signup' && currentPath === "/dashboard") {
-                // New user with completed profile, redirect to create-profile to update info
-                navigate("/create-profile");
-              } else if (currentPath === "/create-profile" || currentPath === "/") {
-                // Existing user or completed signup, go to dashboard
+              // If profile is completed and user is on profile page or landing, redirect to dashboard
+              if (currentPath === "/create-profile" || currentPath === "/") {
                 navigate("/dashboard");
               }
+              // If user is already on dashboard or other protected routes, let them stay
             }
             
             // Clear auth intent after processing
