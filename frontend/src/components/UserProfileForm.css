@@ -29,6 +29,7 @@
 
 .user-profile-form input[type="text"],
 .user-profile-form input[type="number"],
+.user-profile-form input[type="email"],
 .user-profile-form select,
 .user-profile-form textarea {
   width: 100%;

@@ -13,6 +13,7 @@ import {
 } from '@tabler/icons-react';
 import ProfileEditForm from "./ProfileEditForm";
 import "./ProfileDetailsPage.css";
+import { detectUniversityFromEmail } from "../utils/universityUtils";
 
 /**
  * @typedef {Object} UserProfileData
@@ -34,6 +35,18 @@ import "./ProfileDetailsPage.css";
  */
 const ProfileDetailsPage = ({ userData, setUserData, onBackToDashboard }) => {
   const [isEditing, setIsEditing] = useState(false);
+
+  useEffect(() => {
+    if (userData && userData.email && !userData.university) {
+      const detectedUniversity = detectUniversityFromEmail(userData.email);
+      if (detectedUniversity) {
+        setUserData((prevData) => ({
+          ...prevData,
+          university: detectedUniversity,
+        }));
+      }
+    }
+  }, [userData, setUserData]);
 
   if (!userData) {
     return (

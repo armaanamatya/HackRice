@@ -40,6 +40,7 @@
 
 .profile-edit-form input[type="text"],
 .profile-edit-form input[type="number"],
+.profile-edit-form input[type="email"],
 .profile-edit-form select,
 .profile-edit-form textarea {
   width: 100%;

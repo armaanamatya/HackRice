@@ -40,9 +40,26 @@ router.post("/", async (req, res) => {
   }
 });
 
+const getUniversityFromEmail = (email) => {
+  const domain = email.split('@')[1];
+  switch (domain) {
+    case 'rice.edu':
+      return 'Rice University';
+    case 'utd.edu':
+    case 'utdallas.edu':
+      return 'University of Texas at Dallas';
+    case 'uh.edu':
+    case 'cougarnet.uh.edu':
+      return 'University of Houston';
+    // Add more cases for other universities if needed
+    default:
+      return 'Other';
+  }
+};
+
 // Sync Auth0 user with MongoDB
 router.post("/auth0-sync", async (req, res) => {
-  const { name, email, university } = req.body;
+  const { name, email } = req.body; // Remove university from destructuring
 
   if (!email) {
     return res.status(400).json({ message: "Email is required" });
@@ -54,9 +71,9 @@ router.post("/auth0-sync", async (req, res) => {
 
     if (user) {
       // Update existing user if name or university changed
-      if (user.name !== name || user.university !== university) {
-        user.name = name;
-        user.university = university;
+      if (user.name !== name || user.university !== getUniversityFromEmail(email)) {
+        user.name = name; // Always update name if provided by Auth0
+        user.university = getUniversityFromEmail(email);
         // Preserve existing profileCompleted status
         await user.save();
         console.log("Updated existing user:", user.email);
@@ -70,9 +87,9 @@ router.post("/auth0-sync", async (req, res) => {
 
     // Create new user
     user = new User({
-      name: name || email, // Use name from Auth0, fallback to email
+      name: name || "", // Use name from Auth0, fallback to an empty string
       email: email.toLowerCase(), // Ensure email is always lowercase in DB
-      university: university,
+      university: getUniversityFromEmail(email),
       profileCompleted: false, // New users have not completed profile yet
     });
 
@@ -156,6 +173,7 @@ router.patch("/complete-profile/:id", async (req, res) => {
     user.major = req.body.major || user.major;
     user.bio = req.body.bio || user.bio;
     user.email = req.body.email || user.email; // Add this line to update email
+    user.university = getUniversityFromEmail(user.email); // Auto-detect and set university
     user.profileCompleted = true; // Mark profile as completed
 
     const updatedUser = await user.save();
