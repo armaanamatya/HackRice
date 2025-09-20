@@ -27,6 +27,7 @@ body {
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
   --border-radius-lg: 24px;
+  --info-color: #007bff; /* Added info color */
 }
 
 .app {
