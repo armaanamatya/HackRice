@@ -82,6 +82,45 @@
   color: #555;
 }
 
+.settings-icon-container {
+  /* Existing styles for settings icon container */
+}
+
+.dashboard-logout-button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  padding: 8px 15px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 15px; /* Add some space between icons/buttons */
+  box-shadow: var(--shadow-light);
+}
+
+.dashboard-logout-button:hover {
+  background-color: #e04a4a; /* A slightly darker red on hover */
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments for the logout button */
+@media (max-width: 768px) {
+  .dashboard-logout-button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-logout-button {
+    padding: 5px 10px;
+    font-size: 0.7em;
+    margin-left: 8px;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .dashboard-navbar {

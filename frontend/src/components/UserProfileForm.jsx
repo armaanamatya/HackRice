@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './UserProfileForm.css';
 
-const UserProfileForm = ({ onSubmit }) => {
+const UserProfileForm = ({ onSubmit, initialData }) => {
   const [formData, setFormData] = useState({
-    name: '',
-    age: '',
-    year: '',
-    major: '',
-    bio: '',
+    name: initialData?.name || '',
+    age: initialData?.age || '',
+    year: initialData?.year || '',
+    major: initialData?.major || '',
+    bio: initialData?.bio || '',
   });
 
   const handleChange = (e) => {
@@ -22,11 +22,9 @@ const UserProfileForm = ({ onSubmit }) => {
     e.preventDefault();
     console.log('User Profile Data:', formData);
     alert('Profile Created Successfully!');
-    // Call the onSubmit prop to hide the form after submission and pass data
     if (onSubmit) {
       onSubmit(formData);
     }
-    // In a real application, you would send this data to a backend API
   };
 
   return (

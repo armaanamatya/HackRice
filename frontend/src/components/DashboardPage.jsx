@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom'; // Import useNavigate and Link
 import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
 import ScheduleReviewForm from './ScheduleReviewForm';
@@ -10,10 +11,20 @@ import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../uti
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
  */
 
-const DashboardPage = ({ userData, onBackToDashboard }) => {
+const DashboardPage = ({
+  userData,
+  onBackToDashboard, // This prop might become redundant with react-router-dom
+  onNavigateToMatcher, // This prop might become redundant with react-router-dom
+  onNavigateToProfileDetails, // This prop might become redundant with react-router-dom
+  onScheduleUpdate,
+  userSchedule,
+  onLogout,
+}) => {
   const [currentSchedule, setCurrentSchedule] = useState(null); // The final, validated schedule
   const [ocrParsedClasses, setOcrParsedClasses] = useState(null); // Data from OCR for review
   const [viewMode, setViewMode] = useState('uploader'); // 'uploader', 'reviewer', 'display'
+
+  const navigate = useNavigate(); // Initialize useNavigate
 
   // Auth0 Placeholder: Get user ID from Auth0 context
   // const { user, isAuthenticated } = useAuth0();
@@ -93,14 +104,21 @@ const DashboardPage = ({ userData, onBackToDashboard }) => {
       <header className="dashboard-header">
         <div className="container">
           <nav className="dashboard-navbar">
-            <a href="#" className="dashboard-logo" onClick={onBackToDashboard}>Scedulr</a>
+            <Link to="/dashboard" className="dashboard-logo">Scedulr</Link> {/* Use Link for logo */}
             <ul className="dashboard-nav-links">
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Settings</a></li>
+              <li><Link to="/dashboard/matcher">Matcher</Link></li> {/* Use Link for Matcher */}
+              <li><Link to="#">Community</Link></li> {/* Placeholder for Community link */}
+              <li><Link to="#">Settings</Link></li> {/* Placeholder for Settings link */}
             </ul>
-            <div className="profile-icon-container">
-              {/* Auth0 Placeholder: display user.picture or user.initials */}
-              <span className="profile-initial">{userData?.name ? userData.name.charAt(0).toUpperCase() : 'U'}</span>
+            <div className="dashboard-icons-group">
+              <div className="profile-icon-container" onClick={() => navigate('/dashboard/profile')}> {/* Use navigate for profile */}
+                {/* Auth0 Placeholder: display user.picture or user.initials */}
+                <span className="profile-initial">{userData?.name ? userData.name.charAt(0).toUpperCase() : 'U'}</span>
+              </div>
+              <div className="settings-icon-container">
+                <Link to="#settings" className="settings-gear-icon">⚙️</Link> {/* Use Link for settings */}
+              </div>
+              <button onClick={onLogout} className="dashboard-logout-button">Logout</button>
             </div>
           </nav>
         </div>
