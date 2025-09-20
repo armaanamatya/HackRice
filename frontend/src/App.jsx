@@ -1,18 +1,116 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useAuth0 } from '@auth0/auth0-react'
 import UserProfileForm from './components/UserProfileForm'
 import './App.css'
 
 function App() {
+  const { loginWithRedirect, logout, isAuthenticated, isLoading, user, getAccessTokenSilently, getIdTokenClaims } = useAuth0();
   const [showProfileForm, setShowProfileForm] = useState(false);
 
-  const handleCreateProfileClick = () => {
-    setShowProfileForm(true);
+  const handleSignUp = () => {
+    loginWithRedirect({
+      authorizationParams: {
+        screen_hint: 'signup'
+      }
+    });
+  };
+
+  const handleLogin = () => {
+    loginWithRedirect();
+  };
+
+  const handleLogout = () => {
+    logout({ 
+      logoutParams: { returnTo: window.location.origin } 
+    });
+    setShowProfileForm(false);
   };
 
   const handleProfileSubmit = () => {
     setShowProfileForm(false);
     // Potentially show a success message or redirect to a dashboard
   };
+
+  const handleGetStarted = () => {
+    if (isAuthenticated) {
+      setShowProfileForm(true);
+    } else {
+      handleSignUp();
+    }
+  };
+
+  // Log user profile info and sync with MongoDB when authenticated
+  useEffect(() => {
+    if (isAuthenticated && user) {
+      // Console log all user profile information
+      console.log('Auth0 User Profile:', {
+        sub: user.sub,
+        name: user.name,
+        email: user.email,
+        picture: user.picture,
+        email_verified: user.email_verified,
+        updated_at: user.updated_at,
+        ...user
+      });
+
+      // Get and log tokens
+      const logTokens = async () => {
+        try {
+          const accessToken = await getAccessTokenSilently();
+          const idTokenClaims = await getIdTokenClaims();
+          
+          console.log('Access Token:', accessToken);
+          console.log('ID Token Claims:', idTokenClaims);
+          console.log('Check localStorage for auth tokens:', Object.keys(localStorage).filter(key => key.includes('auth0')));
+        } catch (error) {
+          console.error('Error getting tokens:', error);
+        }
+      };
+
+      logTokens();
+
+      // Sync user with MongoDB
+      const syncUserWithMongoDB = async () => {
+        try {
+          const response = await fetch('/api/users/auth0-sync', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              name: user.name || user.email,
+              email: user.email
+            })
+          });
+
+          const data = await response.json();
+          
+          if (response.ok) {
+            console.log('User synced with MongoDB:', data);
+          } else {
+            console.error('Failed to sync user with MongoDB:', data.message);
+          }
+        } catch (error) {
+          console.error('Error syncing user with MongoDB:', error);
+        }
+      };
+
+      syncUserWithMongoDB();
+    }
+  }, [isAuthenticated, user]);
+
+  if (isLoading) {
+    return (
+      <div className="app" style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '100vh' 
+      }}>
+        <div>Loading...</div>
+      </div>
+    );
+  }
 
   return (
     <div className="app">
@@ -26,8 +124,14 @@ function App() {
               <nav className="navbar">
                 <a href="#hero" className="logo">Scedulr</a>
                 <div className="nav-buttons">
-                  <button className="nav-button sign-up-button" onClick={handleCreateProfileClick}>Sign Up</button>
-                  <button className="nav-button login-button">Login</button>
+                  {isAuthenticated ? (
+                    <button className="nav-button login-button" onClick={handleLogout}>Logout</button>
+                  ) : (
+                    <>
+                      <button className="nav-button sign-up-button" onClick={handleSignUp}>Sign Up</button>
+                      <button className="nav-button login-button" onClick={handleLogin}>Login</button>
+                    </>
+                  )}
                 </div>
               </nav>
             </div>
@@ -40,7 +144,14 @@ function App() {
               <p className="hero-subtitle">
                 Connect with classmates, build communities, and excel academically
               </p>
-              <button className="cta-button" onClick={handleCreateProfileClick}>Get Started</button>
+              {isAuthenticated && user ? (
+                <div style={{ textAlign: 'center' }}>
+                  <p style={{ marginBottom: '20px', color: '#fff' }}>Welcome, {user.name || user.email}!</p>
+                  <button className="cta-button" onClick={() => setShowProfileForm(true)}>Create Your Profile</button>
+                </div>
+              ) : (
+                <button className="cta-button" onClick={handleGetStarted}>Get Started</button>
+              )}
             </div>
           </section>
 
@@ -93,7 +204,7 @@ function App() {
           <section className="cta-section" id="cta-section">
             <div className="container">
               <h2>Ready to transform your academic experience?</h2>
-              <button className="cta-button" onClick={handleCreateProfileClick}>Join Scedulr</button>
+              <button className="cta-button" onClick={handleGetStarted}>Join Scedulr</button>
             </div>
           </section>
 

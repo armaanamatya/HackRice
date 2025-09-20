@@ -40,6 +40,52 @@ router.post('/', async (req, res) => {
   }
 });
 
+// Sync Auth0 user with MongoDB
+router.post('/auth0-sync', async (req, res) => {
+  const { name, email } = req.body;
+
+  if (!email) {
+    return res.status(400).json({ message: 'Email is required' });
+  }
+
+  try {
+    // Check if user already exists
+    let user = await User.findOne({ email: email.toLowerCase() });
+
+    if (user) {
+      // Update existing user if name changed
+      if (user.name !== name) {
+        user.name = name;
+        await user.save();
+        console.log('Updated existing user:', user.email);
+      }
+      return res.status(200).json({ 
+        message: 'User already exists', 
+        user: user,
+        isNew: false 
+      });
+    }
+
+    // Create new user
+    user = new User({
+      name: name || email,
+      email: email.toLowerCase()
+    });
+
+    const savedUser = await user.save();
+    console.log('Created new user in MongoDB:', savedUser.email);
+    
+    res.status(201).json({ 
+      message: 'User created successfully', 
+      user: savedUser,
+      isNew: true 
+    });
+  } catch (error) {
+    console.error('Error syncing Auth0 user:', error);
+    res.status(400).json({ message: error.message });
+  }
+});
+
 // Update user
 router.patch('/:id', async (req, res) => {
   try {
