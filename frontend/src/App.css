@@ -439,17 +439,25 @@ body {
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 2rem 1.5rem;
   justify-content: center;
   align-items: stretch;
 }
 
+/* Add staggered layout for visual interest */
+.features-grid .feature-card:nth-child(2n+1) {
+  transform: translateY(-10px);
+}
+
+.features-grid .feature-card:nth-child(3n+2) {
+  transform: translateY(8px);
+}
+
 .feature-card {
   background: var(--bg-light);
-  border-radius: var(--border-radius-lg);
+  border: none;
   transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-light);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
   overflow: hidden;
   position: relative;
   display: flex;
@@ -463,20 +471,15 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  height: 3px;
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-strong);
-  border-color: rgba(0, 112, 243, 0.15);
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.15);
 }
 
 .feature-card:hover::before {
@@ -489,14 +492,14 @@ body {
   justify-content: center;
   width: 60px;
   height: 60px;
-  border-radius: var(--border-radius-lg);
   background: linear-gradient(
     135deg,
     rgba(0, 112, 243, 0.1),
-    rgba(124, 58, 237, 0.05)
+    rgba(0, 112, 243, 0.05)
   );
   margin: 2rem 2rem 1.5rem 2rem;
   transition: all 0.3s ease;
+  clip-path: circle(50%);
 }
 
 .feature-icon {
@@ -505,11 +508,7 @@ body {
 }
 
 .feature-card:hover .feature-icon-wrapper {
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   transform: scale(1.05);
 }
 
@@ -544,13 +543,13 @@ body {
   background: rgba(0, 112, 243, 0.1);
   color: var(--primary-color);
   padding: 0.4rem 0.8rem;
-  border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   align-self: flex-start;
   transition: all 0.3s ease;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 100%, 8px 100%);
 }
 
 .feature-card:hover .feature-badge {
@@ -596,17 +595,25 @@ body {
 .university-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1.5rem 1rem;
   margin-bottom: 3rem;
+}
+
+/* Add alternating layout for university cards */
+.university-grid .university-card:nth-child(odd) {
+  transform: translateX(-5px);
+}
+
+.university-grid .university-card:nth-child(even) {
+  transform: translateX(5px);
 }
 
 .university-card {
   background: var(--bg-light);
   padding: 1.8rem;
-  border-radius: var(--border-radius-lg);
+  border: none;
   transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-light);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -621,19 +628,14 @@ body {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .university-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-strong);
-  border-color: rgba(0, 112, 243, 0.15);
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.15);
 }
 
 .university-card:hover::before {
@@ -647,11 +649,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: var(--border-radius-md);
   overflow: hidden;
   transition: all 0.3s ease;
-  background: var(--bg-light);
-  border: 1px solid var(--border-color);
+  background: rgba(0, 112, 243, 0.05);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .university-logo img {
@@ -686,7 +687,19 @@ body {
 .university-cta {
   text-align: center;
   padding: 2rem 0;
-  border-top: 1px solid var(--border-color);
+  position: relative;
+}
+
+.university-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
+  opacity: 0.3;
 }
 
 .university-cta p {
@@ -790,6 +803,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+  
+  .features-grid .feature-card:nth-child(2n+1),
+  .features-grid .feature-card:nth-child(3n+2) {
+    transform: none;
+  }
 
   @media (max-width: 768px) {
     .hero-title {
@@ -822,6 +840,16 @@ body {
 
     .feature-card {
       padding: 2rem;
+    }
+    
+    .features-grid .feature-card:nth-child(2n+1),
+    .features-grid .feature-card:nth-child(3n+2) {
+      transform: none;
+    }
+    
+    .university-grid .university-card:nth-child(odd),
+    .university-grid .university-card:nth-child(even) {
+      transform: none;
     }
 
     .feature-icon {

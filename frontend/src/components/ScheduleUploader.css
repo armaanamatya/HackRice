@@ -5,8 +5,7 @@
   margin: 3rem auto;
   padding: 2rem;
   background: var(--bg-light);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-medium);
+  border-radius: 8px;
   color: var(--text-color);
   text-align: center;
 }
@@ -33,7 +32,7 @@
   min-height: 250px;
   padding: 2rem;
   border: 2px dashed #d1d5db; /* Lighter gray border */
-  border-radius: var(--border-radius-md);
+  border-radius: 6px;
   background-color: #f9fafb; /* Very light gray background */
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -133,7 +132,7 @@
   max-width: 100%;
   max-height: 250px; /* Limit preview height */
   height: auto;
-  border-radius: var(--border-radius-sm);
+  border-radius: 4px;
   object-fit: contain;
 }
 
@@ -181,8 +180,8 @@
 .upload-status-message {
   margin-top: 1.5rem;
   padding: 1rem;
-  border-radius: var(--border-radius-md);
-  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+  border-left: 4px solid var(--primary-color);
   background-color: #f0f9ff;
   text-align: left;
 }

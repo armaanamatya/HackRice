@@ -3,8 +3,7 @@
   margin: 4rem auto 4rem 270px; /* Adjusted left margin for sidebar (250px + 20px default) */
   padding: 3rem;
   background: var(--bg-light);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-medium);
+  border-radius: 6px;
   color: var(--text-color);
   text-align: center;
 }
@@ -22,22 +21,20 @@
 }
 
 .back-button {
-  background: #6c757d;
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;
-  border-radius: var(--border-radius-lg);
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
-  box-shadow: var(--shadow-light);
   margin-bottom: 2rem;
 }
 
 .back-button:hover {
-  background: #5a6268;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-medium);
+  opacity: 0.9;
 }
 
 .no-schedule-message,
@@ -105,23 +102,35 @@
 .match-results {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem 2rem;
   margin-top: 3rem; /* Adjusted margin */
+}
+
+/* Create interesting staggered layout */
+.match-results .user-card:nth-child(3n+1) {
+  transform: translateY(-15px);
+}
+
+.match-results .user-card:nth-child(4n+2) {
+  transform: translateY(10px);
+}
+
+.match-results .user-card:nth-child(5n+3) {
+  transform: translateY(-8px);
 }
 
 .user-card {
   background: #f8f9fa;
   padding: 1.5rem;
-  border-radius: var(--border-radius-md);
-  box-shadow: var(--shadow-light);
+  border-radius: 6px;
   border: 1px solid #eee;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .user-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-medium);
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
 }
 
 .user-card h4 {
