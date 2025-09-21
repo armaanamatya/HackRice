@@ -44,7 +44,7 @@ router.get("/", async (req, res) => {
 router.get("/search", async (req, res) => {
   try {
     console.log('Search request received:', req.query);
-    const { name, university } = req.query;
+    const { name, university, userUniversity } = req.query;
     const query = {};
 
     // Must have at least a name to search
@@ -61,8 +61,10 @@ router.get("/search", async (req, res) => {
       ];
     }
 
-    if (university && university !== 'Other') {
-      query.university = university;
+    // Apply university filter - prioritize userUniversity (automatic) over manual university filter
+    const targetUniversity = userUniversity || university;
+    if (targetUniversity && targetUniversity !== 'Other') {
+      query.university = targetUniversity;
     }
 
     console.log('Search query:', query);

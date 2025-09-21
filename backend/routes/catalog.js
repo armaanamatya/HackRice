@@ -108,13 +108,22 @@ router.get("/", async (req, res) => {
       credit_hours, 
       level,
       page = 1, 
-      limit = 50 
+      limit = 50,
+      userUniversity // Add userUniversity parameter
     } = req.query;
 
     console.log("Catalog search request:", req.query);
 
     const allCourses = await loadAllCourses();
     let filteredCourses = [...allCourses];
+
+    // Apply university filter - prioritize userUniversity over manual university filter
+    const targetUniversity = userUniversity || university;
+    if (targetUniversity && targetUniversity !== 'all') {
+      filteredCourses = filteredCourses.filter(course => 
+        course.university === targetUniversity
+      );
+    }
 
     // Apply search filter
     if (search && search.trim()) {
@@ -131,13 +140,6 @@ router.get("/", async (req, res) => {
     if (department && department !== 'all') {
       filteredCourses = filteredCourses.filter(course => 
         course.department?.toLowerCase() === department.toLowerCase()
-      );
-    }
-
-    // Apply university filter
-    if (university && university !== 'all') {
-      filteredCourses = filteredCourses.filter(course => 
-        course.university === university
       );
     }
 
