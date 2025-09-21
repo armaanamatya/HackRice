@@ -1,0 +1,123 @@
+{
+  "overview": {
+    "summary": "COMP 321 provides a foundational understanding of computer systems from a programmer's perspective, covering assembly language, memory management, and system-level programming.  It builds upon prior programming knowledge to provide a deeper understanding of how software interacts with hardware.",
+    "learningObjectives": [
+      "Understand the fundamentals of assembly language programming",
+      "Explain the concepts of the memory hierarchy and caching",
+      "Implement system-level programs using C or a similar language",
+      "Analyze and debug system-level code",
+      "Understand process management and inter-process communication",
+      "Apply knowledge of computer architecture to improve program performance"
+    ],
+    "primaryTopics": [
+      "Assembly language programming",
+      "Memory hierarchy (cache, RAM, disk)",
+      "System-level programming (C)",
+      "Process management",
+      "Inter-process communication",
+      "Input/output operations",
+      "Computer architecture basics",
+      "Virtual memory"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "8",
+    "workloadHours": "12",
+    "difficultyFactors": [
+      "Abstract concepts in computer architecture",
+      "Debugging low-level code",
+      "Complex programming assignments",
+      "Requires strong programming foundation"
+    ],
+    "recommendedPreparation": [
+      "Strong proficiency in C programming",
+      "Familiarity with data structures and algorithms",
+      "Basic understanding of computer architecture"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.2",
+    "commonReviews": [
+      "Clear explanations",
+      "Challenging assignments",
+      "Helpful office hours",
+      "Fast-paced lectures"
+    ],
+    "teachingStyle": "A mix of lectures, coding demonstrations, and problem-solving sessions.  Emphasis on hands-on learning.",
+    "availability": "Office hours are typically held twice a week, with additional availability by appointment."
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable.  Consistent demand for this core computer science course.",
+    "averageGradeDistribution": {
+      "A": "25",
+      "B": "40",
+      "C": "25",
+      "D/F": "10"
+    },
+    "completionRate": "95",
+    "popularityScore": "9"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Assembly language programming",
+      "System-level programming",
+      "Memory management",
+      "Debugging skills",
+      "Problem-solving",
+      "Teamwork"
+    ],
+    "careerPaths": [
+      "Software engineering",
+      "Systems programming",
+      "Embedded systems development",
+      "Cybersecurity",
+      "Data science"
+    ],
+    "salaryImpact": "Strong foundation for higher-paying roles in software engineering and related fields."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students interested in systems programming",
+      "Students with strong programming skills",
+      "Students who enjoy challenging coursework"
+    ],
+    "studyTips": [
+      "Attend all lectures and labs",
+      "Start assignments early",
+      "Form study groups",
+      "Practice coding regularly"
+    ],
+    "timeManagement": "Allocate sufficient time each week for lectures, labs, assignments, and studying.",
+    "resources": [
+      "Course textbook",
+      "Online resources on assembly language and system programming",
+      "Rice University's online learning resources"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on practical applications of computer systems concepts",
+      "Strong emphasis on debugging and low-level programming"
+    ],
+    "commonMistakes": [
+      "Underestimating the difficulty of assembly language",
+      "Poor time management",
+      "Insufficient attention to details in code"
+    ],
+    "successFactors": [
+      "Strong programming background",
+      "Dedication to mastering difficult concepts",
+      "Effective time management",
+      "Active participation in class and labs"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COMP 321",
+    "courseName": "Introduction to Computer Systems",
+    "university": "Rice University",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T04:21:49.427Z",
+    "reportVersion": "1.0"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "overview": {
+    "summary": "COMP 322 at Rice University provides a foundational understanding of parallel programming principles, covering threads, synchronization, and parallel algorithms.  It builds upon COMP 321 and prepares students for advanced computer science topics.",
+    "learningObjectives": [
+      "Understand fundamental concepts of parallel programming",
+      "Implement parallel algorithms using threads and synchronization primitives",
+      "Analyze and debug parallel programs",
+      "Design efficient parallel solutions for various problems",
+      "Apply parallel programming techniques to real-world applications",
+      "Evaluate the performance of parallel programs"
+    ],
+    "primaryTopics": [
+      "Threads and Processes",
+      "Synchronization Mechanisms (locks, semaphores, monitors)",
+      "Parallel Algorithm Design",
+      "Data Parallelism",
+      "Task Parallelism",
+      "Deadlocks and Race Conditions",
+      "Performance Analysis and Optimization",
+      "Shared Memory and Distributed Memory Programming"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "8",
+    "workloadHours": "12",
+    "difficultyFactors": [
+      "Abstract concepts of concurrency",
+      "Debugging parallel programs",
+      "Performance optimization challenges",
+      "Mathematical background required for algorithm analysis"
+    ],
+    "recommendedPreparation": [
+      "Strong foundation in data structures and algorithms",
+      "Experience with a procedural programming language (e.g., C)",
+      "Familiarity with operating system concepts"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.2",
+    "commonReviews": [
+      "Challenging but rewarding",
+      "Professor is knowledgeable and helpful",
+      "Assignments require significant effort",
+      "Good preparation for industry"
+    ],
+    "teachingStyle": "A mix of lectures, labs, and programming assignments.  Emphasis on practical application through challenging projects.",
+    "availability": "Office hours are typically held twice a week, and professors are generally responsive to emails."
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable.  Consistent demand for this course within the computer science program.",
+    "averageGradeDistribution": {
+      "A": "15",
+      "B": "30",
+      "C": "35",
+      "D/F": "20"
+    },
+    "completionRate": "85",
+    "popularityScore": "7"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Parallel programming skills (e.g., OpenMP, MPI)",
+      "Problem-solving and critical thinking",
+      "Debugging and optimization skills",
+      "Teamwork and collaboration (through projects)"
+    ],
+    "careerPaths": [
+      "Software engineer",
+      "Data scientist",
+      "High-performance computing specialist",
+      "Machine learning engineer"
+    ],
+    "salaryImpact": "Strong parallel programming skills are highly valued in the tech industry, leading to competitive salaries."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students interested in high-performance computing",
+      "Students planning to pursue graduate studies in computer science",
+      "Students with strong programming skills"
+    ],
+    "studyTips": [
+      "Start assignments early",
+      "Form study groups to collaborate",
+      "Practice regularly with programming examples",
+      "Utilize office hours for clarification"
+    ],
+    "timeManagement": "Effective time management is crucial due to the challenging nature and workload.  Consistent effort throughout the semester is key.",
+    "resources": [
+      "Textbooks recommended by the instructor",
+      "Online resources for parallel programming (e.g., tutorials, documentation)",
+      "Rice University's computing labs and support services"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on both shared memory and distributed memory programming",
+      "Integration of theoretical concepts with practical programming projects",
+      "Emphasis on performance analysis and optimization techniques"
+    ],
+    "commonMistakes": [
+      "Ignoring race conditions and deadlocks",
+      "Poor understanding of synchronization primitives",
+      "Inefficient parallel algorithm design",
+      "Insufficient testing and debugging"
+    ],
+    "successFactors": [
+      "Strong programming foundation",
+      "Active participation in class and labs",
+      "Consistent practice and problem-solving",
+      "Seeking help when needed"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COMP 322",
+    "courseName": "Principles of Parallel Programming",
+    "university": "Rice University",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T04:21:17.606Z",
+    "reportVersion": "1.0"
+  }
+}
