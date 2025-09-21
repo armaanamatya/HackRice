@@ -22,6 +22,7 @@ import ToastContainer, {
 import SettingsDropdown from "./SettingsDropdown";
 import SearchResultsDropdown from "./SearchResultsDropdown";
 import ChatSidebar from "./ChatSidebar";
+<<<<<<< HEAD
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from "../utils/localStorageUtils";
 import "../utils/clearStorage";
 import ClassesPage from "./ClassesPage";
@@ -29,6 +30,14 @@ import ClassesPage from "./ClassesPage";
 /**
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
  */
+=======
+import {
+  saveScheduleToLocalStorage,
+  loadScheduleFromLocalStorage,
+} from "../utils/localStorageUtils";
+import "../utils/clearStorage";
+import ClassesPage from "./ClassesPage";
+>>>>>>> c50863c (all classes cards + bookmark feature)
 
 const DashboardPage = ({
   userData,
@@ -317,6 +326,16 @@ const DashboardPage = ({
 
     const handler = setTimeout(async () => {
       try {
+<<<<<<< HEAD
+=======
+        console.log(
+          "Searching for:",
+          searchQuery,
+          "at university:",
+          userData?.university
+        );
+
+>>>>>>> c50863c (all classes cards + bookmark feature)
         const searchParams = new URLSearchParams();
         searchParams.append("name", searchQuery.trim());
         if (userUniversity && userUniversity !== "Other") {
@@ -356,7 +375,13 @@ const DashboardPage = ({
 
   return (
     <div className="dashboard-layout">
+<<<<<<< HEAD
       <aside className={`dashboard-sidebar ${sidebarCollapsed ? "collapsed" : ""}`}>
+=======
+      <aside
+        className={`dashboard-sidebar ${sidebarCollapsed ? "collapsed" : ""}`}
+      >
+>>>>>>> c50863c (all classes cards + bookmark feature)
         <div className="sidebar-header">
           <div className="sidebar-logo">
             <h2>skedulr</h2>
