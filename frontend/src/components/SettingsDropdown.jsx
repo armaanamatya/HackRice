@@ -6,8 +6,6 @@ const SETTINGS_STORAGE_KEY = 'userSettings';
 const SettingsDropdown = ({ isOpen, onClose }) => {
   const [settings, setSettings] = useState({
     publicSchedule: false,
-    messageRequests: true,
-    classGroupChats: true,
   });
 
   const dropdownRef = useRef(null);
@@ -65,28 +63,6 @@ const SettingsDropdown = ({ isOpen, onClose }) => {
             id="publicSchedule"
             checked={settings.publicSchedule}
             onChange={() => handleToggleChange('publicSchedule')}
-          />
-        </div>
-        <div className="setting-item">
-          <label htmlFor="messageRequests">Allow message requests</label>
-          <input
-            type="checkbox"
-            id="messageRequests"
-            checked={settings.messageRequests}
-            onChange={() => handleToggleChange('messageRequests')}
-          />
-        </div>
-      </div>
-
-      <div className="dropdown-section">
-        <h4>Communication</h4>
-        <div className="setting-item">
-          <label htmlFor="classGroupChats">Add me to class group chats</label>
-          <input
-            type="checkbox"
-            id="classGroupChats"
-            checked={settings.classGroupChats}
-            onChange={() => handleToggleChange('classGroupChats')}
           />
         </div>
       </div>

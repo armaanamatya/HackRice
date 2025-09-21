@@ -21,10 +21,7 @@ import ToastContainer, {
 import SettingsDropdown from "./SettingsDropdown"; // Import SettingsDropdown
 import SearchResultsDropdown from "./SearchResultsDropdown"; // Import SearchResultsDropdown
 import ChatSidebar from "./ChatSidebar"; // Import ChatSidebar
-import {
-  saveScheduleToLocalStorage,
-  loadScheduleFromLocalStorage,
-} from "../utils/localStorageUtils";
+
 import "../utils/clearStorage"; // Import storage debugging utilities
 import ClassesPage from "./ClassesPage"; // Added ClassesPage import
 
@@ -48,7 +45,7 @@ const DashboardPage = ({
   const [viewMode, setViewMode] = useState("uploader");
   const [activeNavItem, setActiveNavItem] = useState("dashboard");
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [showSettingsDropdown, setShowSettingsDropdown] = useState(false); // New state for dropdown
+  const [showSettingsDropdown, setShowSettingsDropdown] = useState(false);
   const [savedCourses, setSavedCourses] = useState(null);
   const [isLoadingCourses, setIsLoadingCourses] = useState(true);
   const [searchQuery, setSearchQuery] = useState(""); // New state for search query
@@ -331,6 +328,7 @@ const DashboardPage = ({
   const toggleSettingsDropdown = () => {
     setShowSettingsDropdown((prev) => !prev);
   };
+
 
   const handleSearchInputChange = (e) => {
     setSearchQuery(e.target.value);

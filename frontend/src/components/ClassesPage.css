@@ -150,7 +150,7 @@
 
 .search-input {
   width: 100%;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem;
   font-size: 1rem;
   border: 1px solid #d1d5db;
   border-radius: 4px;
@@ -169,14 +169,6 @@
   border-color: var(--primary-color);
 }
 
-.search-icon {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #9ca3af;
-  pointer-events: none;
-}
 
 .clear-search {
   position: absolute;

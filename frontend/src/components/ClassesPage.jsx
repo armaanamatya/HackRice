@@ -266,10 +266,6 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
           {/* Search and Filters */}
           <div className="search-filters-section">
             <div className="search-bar">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="search-icon">
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="M21 21l-4.35-4.35"></path>
-              </svg>
               <input
                 type="text"
                 placeholder="Search courses by name, code, or description..."
