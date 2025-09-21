@@ -11,6 +11,7 @@ import UserProfileForm from "./components/UserProfileForm";
 import DashboardPage from "./components/DashboardPage";
 import MatcherPage from "./components/MatcherPage";
 import ProfileDetailsPage from "./components/ProfileDetailsPage";
+import ClassesPage from "./components/ClassesPage"; // Import the new ClassesPage
 // import SettingsPage from "./components/SettingsPage"; // Import the new SettingsPage
 import { detectUniversityFromEmail } from "./utils/universityUtils";
 // Using actual logos from public folder
@@ -45,8 +46,12 @@ function App() {
     navigate("/dashboard/matcher");
   };
 
-  const handleNavigateToProfileDetails = () => {
-    navigate("/dashboard/profile");
+  const handleNavigateToProfileDetails = (userId) => {
+    navigate(userId ? `/dashboard/profile/${userId}` : `/dashboard/profile/${userData?._id}`);
+  };
+
+  const handleNavigateToClasses = () => {
+    navigate("/dashboard/classes");
   };
 
   // const handleNavigateToSettings = () => {
@@ -437,6 +442,7 @@ function App() {
               onScheduleUpdate={handleUserScheduleUpdate}
               userSchedule={userSchedule}
               onLogout={handleLogout}
+              onNavigateToClasses={handleNavigateToClasses} // Pass the new prop here
               // onNavigateToSettings={handleNavigateToSettings} // Pass the new prop here
             />
           </ProtectedRoute>
@@ -454,14 +460,22 @@ function App() {
         }
       />
       <Route
-        path="/dashboard/profile"
+        path="/dashboard/profile/:userId"
         element={
           <ProtectedRoute>
             <ProfileDetailsPage
-              userData={userData}
-              setUserData={setUserData}
+              // userData={userData} // ProfileDetailsPage will fetch its own data
+              // setUserData={setUserData} // No longer needed here as ProfileDetailsPage manages its own data
               onBackToDashboard={handleNavigateToDashboard}
             />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/dashboard/classes"
+        element={
+          <ProtectedRoute>
+            <ClassesPage />
           </ProtectedRoute>
         }
       />
