@@ -47,6 +47,10 @@ const userSchema = new mongoose.Schema({
     type: [String],
     default: [],
   },
+  profilePicture: {
+    type: String,
+    required: false,
+  },
 });
 
 module.exports = mongoose.model("User", userSchema);

@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
 const UserSchedule = require("../models/UserSchedule"); // Added import for UserSchedule
+const multer = require("multer");
+const path = require("path");
+const fs = require("fs");
 
 // Helper function to check if a string is an email
 const isEmail = (text) => /^[\w-.]+@[\w-.]+\.[\w-.]+$/.test(text);
@@ -24,6 +27,41 @@ const getUniversityFromEmail = (email) => {
       return 'Other';
   }
 };
+
+// Configure multer for profile picture uploads
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const uploadDir = path.join(__dirname, '../uploads/profile-pictures');
+    // Create directory if it doesn't exist
+    if (!fs.existsSync(uploadDir)) {
+      fs.mkdirSync(uploadDir, { recursive: true });
+    }
+    cb(null, uploadDir);
+  },
+  filename: function (req, file, cb) {
+    // Generate unique filename with timestamp and original extension
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    const fileExtension = path.extname(file.originalname);
+    cb(null, `profile-${uniqueSuffix}${fileExtension}`);
+  }
+});
+
+// File filter to only allow image files
+const fileFilter = (req, file, cb) => {
+  if (file.mimetype.startsWith('image/')) {
+    cb(null, true);
+  } else {
+    cb(new Error('Only image files are allowed!'), false);
+  }
+};
+
+const upload = multer({ 
+  storage: storage,
+  fileFilter: fileFilter,
+  limits: {
+    fileSize: 5 * 1024 * 1024 // 5MB limit
+  }
+});
 
 // Health check / test route
 router.get("/health", (req, res) => {
@@ -84,7 +122,8 @@ router.get("/search", async (req, res) => {
       major: user.major,
       year: user.year,
       bio: user.bio,
-      profileCompleted: user.profileCompleted
+      profileCompleted: user.profileCompleted,
+      profilePicture: user.profilePicture
     }));
     
     res.json(mappedUsers);
@@ -332,7 +371,7 @@ router.get("/match-by-classes/:userId", async (req, res) => {
     const otherUserSchedules = await UserSchedule.find({ user_id: { $ne: userId } }).populate({
       path: 'user_id',
       match: userFilterQuery, // Apply filters here
-      select: 'name email major year interests' // Select interests field
+      select: 'name email major year interests profilePicture' // Select interests and profilePicture fields
     });
 
     let matchedStudents = [];
@@ -371,6 +410,7 @@ router.get("/match-by-classes/:userId", async (req, res) => {
           major: otherScheduleDoc.user_id.major,
           year: otherScheduleDoc.user_id.year,
           interests: otherScheduleDoc.user_id.interests,
+          profilePicture: otherScheduleDoc.user_id.profilePicture,
           commonClassesCount: commonClassesCount,
           commonClasses: commonClassesDetails,
         });
@@ -384,6 +424,83 @@ router.get("/match-by-classes/:userId", async (req, res) => {
   } catch (error) {
     console.error("Error matching users by classes:", error);
     res.status(500).json({ message: "Error matching users by classes", error: error.message });
+  }
+});
+
+// Upload profile picture
+router.post("/upload-profile-picture/:userId", upload.single('profilePicture'), async (req, res) => {
+  try {
+    const { userId } = req.params;
+    
+    if (!req.file) {
+      return res.status(400).json({ message: "No file uploaded" });
+    }
+
+    // Find the user
+    const user = await User.findById(userId);
+    if (!user) {
+      // If file was uploaded but user not found, clean up the file
+      fs.unlinkSync(req.file.path);
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Delete old profile picture if it exists
+    if (user.profilePicture) {
+      const oldImagePath = path.join(__dirname, '../uploads/profile-pictures', path.basename(user.profilePicture));
+      if (fs.existsSync(oldImagePath)) {
+        fs.unlinkSync(oldImagePath);
+      }
+    }
+
+    // Update user with new profile picture path
+    const profilePictureUrl = `/uploads/profile-pictures/${req.file.filename}`;
+    user.profilePicture = profilePictureUrl;
+    await user.save();
+
+    res.json({
+      message: "Profile picture uploaded successfully",
+      profilePicture: profilePictureUrl,
+      user: user
+    });
+  } catch (error) {
+    console.error("Error uploading profile picture:", error);
+    // Clean up uploaded file on error
+    if (req.file) {
+      fs.unlinkSync(req.file.path);
+    }
+    res.status(500).json({ message: "Error uploading profile picture", error: error.message });
+  }
+});
+
+// Delete profile picture
+router.delete("/delete-profile-picture/:userId", async (req, res) => {
+  try {
+    const { userId } = req.params;
+    
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    // Delete the profile picture file if it exists
+    if (user.profilePicture) {
+      const imagePath = path.join(__dirname, '../uploads/profile-pictures', path.basename(user.profilePicture));
+      if (fs.existsSync(imagePath)) {
+        fs.unlinkSync(imagePath);
+      }
+    }
+
+    // Remove profile picture from user record
+    user.profilePicture = null;
+    await user.save();
+
+    res.json({
+      message: "Profile picture deleted successfully",
+      user: user
+    });
+  } catch (error) {
+    console.error("Error deleting profile picture:", error);
+    res.status(500).json({ message: "Error deleting profile picture", error: error.message });
   }
 });
 

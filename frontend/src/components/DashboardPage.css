@@ -317,6 +317,13 @@
   font-size: 0.9rem;
 }
 
+/* ProfilePicture component in the navbar */
+.user-avatar-component {
+  width: 40px !important;
+  height: 40px !important;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
 .user-info {
   display: flex;
   flex-direction: column;

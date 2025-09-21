@@ -14,8 +14,9 @@ import {
 } from '@tabler/icons-react';
 import ProfileEditForm from "./ProfileEditForm";
 import SchedulePopup from './SchedulePopup'; // Import SchedulePopup instead
+import ProfilePicture from './ProfilePicture';
+import ProfilePictureUpload from './ProfilePictureUpload';
 import "./ProfileDetailsPage.css";
-import { detectUniversityFromEmail } from "../utils/universityUtils";
 import { useParams } from 'react-router-dom'; // Import useParams
 
 /**
@@ -36,7 +37,7 @@ import { useParams } from 'react-router-dom'; // Import useParams
  * @param {function} props.onBackToDashboard - Function to navigate back to the dashboard.
  * @param {function} props.setUserData - Function to update the user data in the parent component.
  */
-const ProfileDetailsPage = ({ onBackToDashboard }) => {
+const ProfileDetailsPage = ({ onBackToDashboard, onUserDataUpdate, currentUserData }) => {
   const { userId: rawUserId } = useParams(); // Get userId from URL parameters
   const userId = rawUserId ? decodeURIComponent(rawUserId) : null; // Decode URL-encoded userId
   
@@ -48,6 +49,8 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
   const [error, setError] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [showSchedulePopup, setShowSchedulePopup] = useState(false); // State for popup
+  const [uploadMessage, setUploadMessage] = useState(null);
+  const [uploadError, setUploadError] = useState(null);
 
   useEffect(() => {
     const fetchUserProfile = async () => {
@@ -90,6 +93,38 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
       setError("No user ID provided.");
     }
   }, [userId]);
+
+  // Handle profile picture upload success
+  const handleUploadSuccess = (profilePictureUrl) => {
+    setUserProfile(prev => ({
+      ...prev,
+      profilePicture: profilePictureUrl
+    }));
+    
+    // If this is the current user's profile, update the global userData as well
+    if (currentUserData && userProfile && currentUserData._id === userProfile._id && onUserDataUpdate) {
+      onUserDataUpdate({
+        ...currentUserData,
+        profilePicture: profilePictureUrl
+      });
+    }
+    
+    const message = profilePictureUrl 
+      ? 'Profile picture updated successfully!' 
+      : 'Profile picture removed successfully!';
+    setUploadMessage(message);
+    setUploadError(null);
+    // Clear message after 3 seconds
+    setTimeout(() => setUploadMessage(null), 3000);
+  };
+
+  // Handle profile picture upload error
+  const handleUploadError = (errorMessage) => {
+    setUploadError(errorMessage);
+    setUploadMessage(null);
+    // Clear error after 5 seconds
+    setTimeout(() => setUploadError(null), 5000);
+  };
 
   // Old useEffect for university detection - no longer needed if backend handles this
   /*
@@ -238,8 +273,15 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
             {/* Profile Overview Card */}
             <div className="profile-overview-card">
               <div className="profile-avatar-section">
-                <div className="profile-avatar">
-                  {userProfile.name?.charAt(0).toUpperCase() || "U"}
+                <div className="profile-avatar-container">
+                  <ProfilePictureUpload
+                    currentPicture={userProfile.profilePicture}
+                    fallbackText={userProfile.name}
+                    userId={userProfile._id}
+                    onUploadSuccess={handleUploadSuccess}
+                    onUploadError={handleUploadError}
+                    size="xlarge"
+                  />
                 </div>
                 <div className="profile-basic-info">
                   <h2 className="profile-name">{userProfile.name || "Unknown User"}</h2>
@@ -249,6 +291,18 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
                       : userProfile.year || userProfile.major || "Student"
                     }
                   </p>
+                  
+                  {/* Upload status messages */}
+                  {uploadMessage && (
+                    <div className="upload-message success">
+                      {uploadMessage}
+                    </div>
+                  )}
+                  {uploadError && (
+                    <div className="upload-message error">
+                      {uploadError}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

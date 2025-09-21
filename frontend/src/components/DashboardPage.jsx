@@ -24,6 +24,7 @@ import ToastContainer, {
 import SettingsDropdown from "./SettingsDropdown";
 import SearchResultsDropdown from "./SearchResultsDropdown";
 import ChatSidebar from "./ChatSidebar";
+import ProfilePicture from "./ProfilePicture";
 import "../utils/clearStorage";
 import ClassesPage from "./ClassesPage";
 
@@ -438,9 +439,13 @@ const DashboardPage = ({
             </div>
 
             <div className="user-profile" onClick={handleProfileClick}>
-              <div className="user-avatar">
-                {userData?.name ? userData.name.charAt(0).toUpperCase() : "U"}
-              </div>
+              <ProfilePicture
+                src={userData?.profilePicture}
+                fallbackText={userData?.name}
+                size="small"
+                alt={`${userData?.name || 'User'}'s profile picture`}
+                className="user-avatar-component"
+              />
               <div className="user-info">
                 <span className="user-name">{userData?.name || "User"}</span>
                 <span className="user-email">{userData?.email}</span>

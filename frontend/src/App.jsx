@@ -63,6 +63,10 @@ function App() {
     setUserSchedule(schedule);
   };
 
+  const handleUserDataUpdate = (updatedUserData) => {
+    setUserData(updatedUserData);
+  };
+
   const handleSignUp = () => {
     sessionStorage.setItem("auth_intent", "signup");
     loginWithRedirect({
@@ -427,6 +431,8 @@ function App() {
             <ProtectedRoute>
               <ProfileDetailsPage
                 onBackToDashboard={handleNavigateToDashboard}
+                onUserDataUpdate={handleUserDataUpdate}
+                currentUserData={userData}
               />
             </ProtectedRoute>
           }
