@@ -9,7 +9,13 @@ import {
   IconSend,
   IconX,
   IconChevronRight,
-  IconChevronLeft
+  IconChevronLeft,
+  IconTrash,
+  IconDots,
+  IconPin,
+  IconPinFilled,
+  IconBellOff,
+  IconBell
 } from '@tabler/icons-react';
 import './ChatSidebar.css';
 
@@ -20,6 +26,9 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
   const [newMessage, setNewMessage] = useState('');
   const [showNewChatModal, setShowNewChatModal] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [conversationToDelete, setConversationToDelete] = useState(null);
+  const [openMenuId, setOpenMenuId] = useState(null);
   
   const { socket, isConnected, sendMessage } = useSocket();
   const { user } = useAuth0();
@@ -43,7 +52,7 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
     if (isConnected && user?.sub) {
       fetchConversations();
     }
-  }, [isConnected, user?.sub]); // Remove fetchConversations from dependencies
+  }, [isConnected, user?.sub, fetchConversations]);
 
   // Listen for custom group chat events from ScheduleCalendar
   useEffect(() => {
@@ -60,7 +69,7 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
     return () => {
       window.removeEventListener('groupChatJoined', handleGroupChatJoined);
     };
-  }, [user?.sub]); // Remove fetchConversations from dependencies
+  }, [user?.sub, fetchConversations]);
 
   useEffect(() => {
     if (!socket) return;
@@ -95,12 +104,42 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
       }));
     });
 
+    // Listen for conversation deletion
+    socket.on('conversation:deleted', ({ conversationId }) => {
+      setConversations(prev => prev.filter(conv => conv._id !== conversationId));
+      setMessages(prev => {
+        const newMessages = { ...prev };
+        delete newMessages[conversationId];
+        return newMessages;
+      });
+      
+      // If the deleted conversation was selected, clear selection
+      if (selectedConversation && selectedConversation._id === conversationId) {
+        setSelectedConversation(null);
+      }
+    });
+
     return () => {
       socket.off('message:new');
       socket.off('conversation:new');
       socket.off('conversation:messages');
+      socket.off('conversation:deleted');
     };
-  }, [socket]);
+  }, [socket, selectedConversation]);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (openMenuId && !event.target.closest('.conversation-menu-container')) {
+        setOpenMenuId(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [openMenuId]);
 
   const handleConversationSelect = (conversation) => {
     setSelectedConversation(conversation);
@@ -117,6 +156,112 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
       sendMessage(selectedConversation._id, newMessage.trim());
       setNewMessage('');
     }
+  };
+
+  const handleDeleteConversation = async (conversation) => {
+    try {
+      const response = await fetch(`/api/chat/conversations/${conversation._id}?userId=${user.sub}`, {
+        method: 'DELETE',
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to delete conversation');
+      }
+
+      // Remove conversation from local state
+      setConversations(prev => prev.filter(conv => conv._id !== conversation._id));
+      setMessages(prev => {
+        const newMessages = { ...prev };
+        delete newMessages[conversation._id];
+        return newMessages;
+      });
+
+      // If the deleted conversation was selected, clear selection
+      if (selectedConversation && selectedConversation._id === conversation._id) {
+        setSelectedConversation(null);
+      }
+
+      setShowDeleteModal(false);
+      setConversationToDelete(null);
+    } catch (error) {
+      console.error('Error deleting conversation:', error);
+      alert(`Failed to delete conversation: ${error.message}`);
+    }
+  };
+
+  const confirmDeleteConversation = (conversation) => {
+    setConversationToDelete(conversation);
+    setShowDeleteModal(true);
+    setOpenMenuId(null);
+  };
+
+  const handlePinConversation = async (conversation) => {
+    try {
+      const response = await fetch(`/api/chat/conversations/${conversation._id}/pin`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: user.sub,
+          pinned: !conversation.isPinned
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to pin/unpin conversation');
+      }
+
+      // Update local state
+      setConversations(prev => prev.map(conv => 
+        conv._id === conversation._id 
+          ? { ...conv, isPinned: !conv.isPinned }
+          : conv
+      ));
+      
+      setOpenMenuId(null);
+    } catch (error) {
+      console.error('Error pinning conversation:', error);
+      alert(`Failed to pin conversation: ${error.message}`);
+    }
+  };
+
+  const handleMuteConversation = async (conversation) => {
+    try {
+      const response = await fetch(`/api/chat/conversations/${conversation._id}/mute`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: user.sub,
+          muted: !conversation.isMuted
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to mute/unmute conversation');
+      }
+
+      // Update local state
+      setConversations(prev => prev.map(conv => 
+        conv._id === conversation._id 
+          ? { ...conv, isMuted: !conv.isMuted }
+          : conv
+      ));
+      
+      setOpenMenuId(null);
+    } catch (error) {
+      console.error('Error muting conversation:', error);
+      alert(`Failed to mute conversation: ${error.message}`);
+    }
+  };
+
+  const toggleMenu = (conversationId) => {
+    setOpenMenuId(openMenuId === conversationId ? null : conversationId);
   };
 
   const formatLastActivity = (date) => {
@@ -204,31 +349,112 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
                   <div
                     key={conversation._id}
                     className={`conversation-item ${conversation.unreadCount > 0 ? 'unread' : ''}`}
-                    onClick={() => handleConversationSelect(conversation)}
                   >
-                    <div className="conversation-avatar">
-                      <div className="avatar-placeholder">
-                        {getConversationName(conversation).charAt(0).toUpperCase()}
+                    <div 
+                      className="conversation-content"
+                      onClick={() => handleConversationSelect(conversation)}
+                    >
+                      <div className="conversation-avatar">
+                        <div className="avatar-placeholder">
+                          {getConversationName(conversation).charAt(0).toUpperCase()}
+                        </div>
+                        {conversation.unreadCount > 0 && (
+                          <span className="unread-badge">
+                            {conversation.unreadCount > 9 ? '9+' : conversation.unreadCount}
+                          </span>
+                        )}
                       </div>
-                      {conversation.unreadCount > 0 && (
-                        <span className="unread-badge">
-                          {conversation.unreadCount > 9 ? '9+' : conversation.unreadCount}
-                        </span>
-                      )}
-                    </div>
-                    
-                    <div className="conversation-info">
-                      <div className="conversation-header">
-                        <span className="conversation-name">
-                          {getConversationName(conversation)}
-                        </span>
-                        <span className="conversation-time">
-                          {formatLastActivity(conversation.lastActivity)}
-                        </span>
+                      
+                      <div className="conversation-info">
+                        <div className="conversation-header">
+                          <div className="conversation-name-container">
+                            <span className="conversation-name">
+                              {getConversationName(conversation)}
+                            </span>
+                            {conversation.isPinned && (
+                              <IconPinFilled size={12} className="pin-indicator" />
+                            )}
+                            {conversation.isMuted && (
+                              <IconBellOff size={12} className="mute-indicator" />
+                            )}
+                          </div>
+                          <div className="conversation-header-right">
+                            <span className="conversation-time">
+                              {formatLastActivity(conversation.lastActivity)}
+                            </span>
+                            <div className="conversation-menu-container">
+                              <button
+                                className="conversation-menu-btn"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  toggleMenu(conversation._id);
+                                }}
+                                title="More options"
+                              >
+                                <IconDots size={16} />
+                              </button>
+                              
+                              {openMenuId === conversation._id && (
+                                <div className="conversation-menu-dropdown">
+                                  <button
+                                    className="menu-item"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      handlePinConversation(conversation);
+                                    }}
+                                  >
+                                    {conversation.isPinned ? (
+                                      <>
+                                        <IconPin size={16} />
+                                        <span>Unpin</span>
+                                      </>
+                                    ) : (
+                                      <>
+                                        <IconPinFilled size={16} />
+                                        <span>Pin</span>
+                                      </>
+                                    )}
+                                  </button>
+                                  
+                                  <button
+                                    className="menu-item"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      handleMuteConversation(conversation);
+                                    }}
+                                  >
+                                    {conversation.isMuted ? (
+                                      <>
+                                        <IconBell size={16} />
+                                        <span>Unmute</span>
+                                      </>
+                                    ) : (
+                                      <>
+                                        <IconBellOff size={16} />
+                                        <span>Mute</span>
+                                      </>
+                                    )}
+                                  </button>
+                                  
+                                  <button
+                                    className="menu-item delete"
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      confirmDeleteConversation(conversation);
+                                    }}
+                                  >
+                                    <IconTrash size={16} />
+                                    <span>Delete</span>
+                                  </button>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        <p className="last-message">
+                          {getLastMessagePreview(conversation)}
+                        </p>
                       </div>
-                      <p className="last-message">
-                        {getLastMessagePreview(conversation)}
-                      </p>
                     </div>
                   </div>
                 ))}
@@ -296,6 +522,42 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
           currentUserId={user?.sub}
           currentUserDbId={userData?._id} // Pass the database ID
         />
+      )}
+
+      {showDeleteModal && conversationToDelete && (
+        <div className="modal-overlay" onClick={(e) => e.target === e.currentTarget && setShowDeleteModal(false)}>
+          <div className="delete-confirmation-modal">
+            <div className="modal-header">
+              <h3>Delete Conversation</h3>
+              <button onClick={() => setShowDeleteModal(false)} className="close-btn">×</button>
+            </div>
+            
+            <div className="modal-content">
+              <p>
+                Are you sure you want to delete this conversation with{' '}
+                <strong>{getConversationName(conversationToDelete)}</strong>?
+              </p>
+              <p className="warning-text">
+                This action cannot be undone. All messages in this conversation will be permanently deleted.
+              </p>
+            </div>
+            
+            <div className="modal-actions">
+              <button 
+                className="btn-cancel"
+                onClick={() => setShowDeleteModal(false)}
+              >
+                Cancel
+              </button>
+              <button 
+                className="btn-delete"
+                onClick={() => handleDeleteConversation(conversationToDelete)}
+              >
+                Delete Conversation
+              </button>
+            </div>
+          </div>
+        </div>
       )}
       </div>
 

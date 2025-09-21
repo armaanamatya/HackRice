@@ -33,23 +33,30 @@ router.get('/conversations', async (req, res) => {
       includeArchived: includeArchived === 'true'
     });
 
-    // Get unread counts for each conversation
-    const conversationsWithUnread = await Promise.all(
+    // Get unread counts and user-specific settings for each conversation
+    const conversationsWithMetadata = await Promise.all(
       conversations.map(async (conv) => {
         const unreadCount = await Message.countDocuments({
           conversationId: conv._id,
           'readBy.user': { $ne: userId }
         });
         
+        // Check if user has muted this conversation
+        const isMuted = conv.settings?.muteNotifications?.some(
+          m => m.user.toString() === userId.toString()
+        ) || false;
+        
         return {
           ...conv,
-          unreadCount
+          unreadCount,
+          isMuted,
+          isPinned: conv.isPinned || false
         };
       })
     );
 
     res.json({
-      conversations: conversationsWithUnread,
+      conversations: conversationsWithMetadata,
       page: parseInt(page),
       limit: parseInt(limit)
     });
@@ -418,6 +425,164 @@ router.delete('/conversations/:id/participants/:userId', async (req, res) => {
   } catch (error) {
     console.error('Error removing participant:', error);
     res.status(500).json({ message: 'Failed to remove participant' });
+  }
+});
+
+// PATCH /api/chat/conversations/:id/pin - Pin/unpin a conversation
+router.patch('/conversations/:id/pin', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { userId, pinned } = req.body;
+    
+    if (!userId) {
+      return res.status(400).json({ message: 'User ID required' });
+    }
+
+    // Convert Auth0 ID to database ID if needed
+    let dbUserId = userId;
+    if (typeof userId === 'string' && userId.startsWith('auth0|')) {
+      const user = await User.findOne({ auth0Id: userId });
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      dbUserId = user._id;
+    }
+
+    const conversation = await Conversation.findById(id);
+    
+    if (!conversation) {
+      return res.status(404).json({ message: 'Conversation not found' });
+    }
+    
+    // Check if user is participant
+    if (!conversation.isParticipant(dbUserId)) {
+      return res.status(403).json({ message: 'Not authorized to pin this conversation' });
+    }
+    
+    // Update pin status in user's settings (this would typically be stored per user)
+    // For now, we'll add a simple isPinned field to the conversation
+    conversation.isPinned = pinned;
+    await conversation.save();
+    
+    res.json({ message: `Conversation ${pinned ? 'pinned' : 'unpinned'} successfully`, isPinned: pinned });
+  } catch (error) {
+    console.error('Error pinning conversation:', error);
+    res.status(500).json({ message: 'Failed to pin conversation' });
+  }
+});
+
+// PATCH /api/chat/conversations/:id/mute - Mute/unmute a conversation
+router.patch('/conversations/:id/mute', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { userId, muted } = req.body;
+    
+    if (!userId) {
+      return res.status(400).json({ message: 'User ID required' });
+    }
+
+    // Convert Auth0 ID to database ID if needed
+    let dbUserId = userId;
+    if (typeof userId === 'string' && userId.startsWith('auth0|')) {
+      const user = await User.findOne({ auth0Id: userId });
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      dbUserId = user._id;
+    }
+
+    const conversation = await Conversation.findById(id);
+    
+    if (!conversation) {
+      return res.status(404).json({ message: 'Conversation not found' });
+    }
+    
+    // Check if user is participant
+    if (!conversation.isParticipant(dbUserId)) {
+      return res.status(403).json({ message: 'Not authorized to mute this conversation' });
+    }
+    
+    // Handle mute notifications in the conversation settings
+    if (muted) {
+      // Add user to muted notifications if not already there
+      const existingMute = conversation.settings.muteNotifications.find(
+        m => m.user.toString() === dbUserId.toString()
+      );
+      
+      if (!existingMute) {
+        conversation.settings.muteNotifications.push({
+          user: dbUserId,
+          until: null // Mute indefinitely
+        });
+      }
+    } else {
+      // Remove user from muted notifications
+      conversation.settings.muteNotifications = conversation.settings.muteNotifications.filter(
+        m => m.user.toString() !== dbUserId.toString()
+      );
+    }
+    
+    await conversation.save();
+    
+    res.json({ message: `Conversation ${muted ? 'muted' : 'unmuted'} successfully`, isMuted: muted });
+  } catch (error) {
+    console.error('Error muting conversation:', error);
+    res.status(500).json({ message: 'Failed to mute conversation' });
+  }
+});
+
+// DELETE /api/chat/conversations/:id - Delete a conversation
+router.delete('/conversations/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const auth0Id = req.query.userId; // In production, get from auth token
+    
+    if (!auth0Id) {
+      return res.status(400).json({ message: 'User ID required' });
+    }
+
+    // Convert Auth0 ID to database ID
+    const userId = await getUserIdFromAuth0(auth0Id);
+    if (!userId) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    
+    const conversation = await Conversation.findById(id);
+    
+    if (!conversation) {
+      return res.status(404).json({ message: 'Conversation not found' });
+    }
+    
+    // Check if user is participant
+    if (!conversation.isParticipant(userId)) {
+      return res.status(403).json({ message: 'Not authorized to delete this conversation' });
+    }
+    
+    // For group conversations, only admins can delete
+    if ((conversation.type === 'group' || conversation.type === 'broadcast') && 
+        !conversation.isAdmin(userId)) {
+      return res.status(403).json({ message: 'Only admins can delete group conversations' });
+    }
+    
+    // Delete all messages in the conversation
+    await Message.deleteMany({ conversationId: id });
+    
+    // Delete the conversation
+    await Conversation.findByIdAndDelete(id);
+    
+    // Notify all participants via Socket.io
+    const io = req.app.get('io');
+    conversation.participants.forEach(participantId => {
+      io.to(`user:${participantId}`).emit('conversation:deleted', {
+        conversationId: id,
+        deletedBy: userId
+      });
+    });
+    
+    res.json({ message: 'Conversation deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting conversation:', error);
+    res.status(500).json({ message: 'Failed to delete conversation' });
   }
 });
 
