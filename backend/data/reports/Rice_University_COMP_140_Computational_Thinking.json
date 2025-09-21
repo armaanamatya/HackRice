@@ -1,0 +1,118 @@
+{
+  "overview": {
+    "summary": "COMP 140 at Rice University provides a foundational introduction to computational thinking and programming using Python.  Students learn problem-solving techniques applicable to various fields.",
+    "learningObjectives": [
+      "Understand fundamental programming concepts",
+      "Develop proficiency in Python programming",
+      "Apply computational thinking to solve problems",
+      "Design and implement algorithms",
+      "Work effectively with data structures",
+      "Communicate technical ideas clearly"
+    ],
+    "primaryTopics": [
+      "Introduction to Python",
+      "Data types and structures",
+      "Control flow and loops",
+      "Functions and modules",
+      "Object-oriented programming",
+      "Algorithm design and analysis",
+      "Data visualization",
+      "Basic debugging techniques"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "6",
+    "workloadHours": "8-10",
+    "difficultyFactors": [
+      "Programming concepts can be abstract",
+      "Requires consistent practice and debugging",
+      "Assignments can be challenging"
+    ],
+    "recommendedPreparation": [
+      "High school algebra",
+      "Basic problem-solving skills"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.2",
+    "commonReviews": [
+      "Helpful and approachable professors",
+      "Well-structured lectures",
+      "Challenging but rewarding assignments"
+    ],
+    "teachingStyle": "A mix of lectures, hands-on coding exercises, and group projects is common.",
+    "availability": "Office hours are typically available; accessibility varies by professor."
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable; consistently popular introductory course.",
+    "averageGradeDistribution": {
+      "A": "25",
+      "B": "40",
+      "C": "25",
+      "D/F": "10"
+    },
+    "completionRate": "90",
+    "popularityScore": "8"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Programming skills in Python",
+      "Problem-solving abilities",
+      "Algorithmic thinking",
+      "Data analysis skills",
+      "Teamwork and collaboration"
+    ],
+    "careerPaths": [
+      "Software engineering",
+      "Data science",
+      "Web development",
+      "Cybersecurity"
+    ],
+    "salaryImpact": "Provides a strong foundation for entry-level roles in tech, leading to competitive salaries."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students interested in computer science",
+      "Students with a strong problem-solving aptitude",
+      "Students looking for a career in technology"
+    ],
+    "studyTips": [
+      "Attend lectures and labs regularly",
+      "Practice coding consistently",
+      "Seek help from TAs and professors when needed",
+      "Work with study partners"
+    ],
+    "timeManagement": "Dedicate sufficient time to assignments and projects; start early to avoid last-minute crunch.",
+    "resources": [
+      "Python documentation",
+      "Rice University's online learning resources",
+      "Recommended textbook (if applicable)"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on computational thinking alongside programming",
+      "Integration of real-world examples"
+    ],
+    "commonMistakes": [
+      "Ignoring error messages",
+      "Insufficient code commenting",
+      "Late submission of assignments"
+    ],
+    "successFactors": [
+      "Consistent practice",
+      "Active participation in class",
+      "Seeking help when needed",
+      "Effective time management"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COMP 140",
+    "courseName": "Computational Thinking",
+    "university": "Rice University",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T04:08:17.273Z",
+    "reportVersion": "1.0"
+  }
+}

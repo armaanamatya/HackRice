@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Report Generation Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f8fafc;
+            color: #1f2937;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+            margin: 0 0 0.5rem;
+        }
+        
+        .header p {
+            color: #6b7280;
+            font-size: 1.125rem;
+        }
+        
+        .demo-controls {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .course-select {
+            display: flex;
+            gap: 1rem;
+            align-items: end;
+            flex-wrap: wrap;
+        }
+        
+        .form-group {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        
+        select, button {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        select {
+            background: white;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        button:hover {
+            transform: translateY(-1px);
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .report-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: none;
+        }
+        
+        .report-header {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .report-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin: 0 0 0.5rem;
+        }
+        
+        .report-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .meta-badge {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .report-content {
+            padding: 2rem;
+        }
+        
+        .report-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 0 0 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .difficulty-meter {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .meter-bar {
+            flex: 1;
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .meter-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        
+        .rating-stars {
+            display: flex;
+            gap: 2px;
+        }
+        
+        .star {
+            color: #fbbf24;
+        }
+        
+        .star.empty {
+            color: #d1d5db;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+        }
+        
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e5e7eb;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .error {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #dc2626;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        
+        .list {
+            padding-left: 1.5rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🤖 AI Course Reports</h1>
+        <p>Generate comprehensive course analysis with AI-powered insights</p>
+    </div>
+    
+    <div class="demo-controls">
+        <div class="course-select">
+            <div class="form-group">
+                <label for="courseSelect">Select a Course</label>
+                <select id="courseSelect">
+                    <option value="">Loading courses...</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button id="generateBtn" onclick="generateReport()" disabled>
+                    Generate AI Report
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="reportContainer" class="report-container"></div>
+    
+    <script>
+        let courses = [];
+        
+        // Load available courses
+        async function loadCourses() {
+            try {
+                const response = await fetch('/api/catalog?limit=10');
+                const data = await response.json();
+                courses = data.courses || [];
+                
+                const select = document.getElementById('courseSelect');
+                select.innerHTML = '<option value="">Select a course...</option>';
+                
+                courses.forEach((course, index) => {
+                    const option = document.createElement('option');
+                    option.value = index;
+                    option.textContent = `${course.code} - ${course.title} (${course.university})`;
+                    select.appendChild(option);
+                });
+                
+                document.getElementById('generateBtn').disabled = false;
+            } catch (error) {
+                console.error('Error loading courses:', error);
+                document.getElementById('courseSelect').innerHTML = 
+                    '<option value="">Error loading courses</option>';
+            }
+        }
+        
+        // Generate course report
+        async function generateReport() {
+            const selectElement = document.getElementById('courseSelect');
+            const courseIndex = selectElement.value;
+            
+            if (!courseIndex) {
+                alert('Please select a course first');
+                return;
+            }
+            
+            const course = courses[courseIndex];
+            const container = document.getElementById('reportContainer');
+            
+            // Show loading state
+            container.style.display = 'block';
+            container.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <h3>Generating AI Report</h3>
+                    <p>Analyzing course details, professor ratings, and career insights...</p>
+                </div>
+            `;
+            
+            try {
+                const params = new URLSearchParams();
+                if (course.university) params.append('university', course.university);
+                
+                const response = await fetch(`/api/reports/${encodeURIComponent(course.code)}?${params.toString()}`);
+                const report = await response.json();
+                
+                if (!response.ok) {
+                    throw new Error(report.message || 'Failed to generate report');
+                }
+                
+                displayReport(report);
+                
+            } catch (error) {
+                console.error('Error generating report:', error);
+                container.innerHTML = `
+                    <div class="error">
+                        <strong>Report Generation Failed</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            }
+        }
+        
+        // Display the generated report
+        function displayReport(report) {
+            const container = document.getElementById('reportContainer');
+            
+            const difficultyColor = getDifficultyColor(report.difficulty?.difficultyRating);
+            const difficultyPercent = (parseInt(report.difficulty?.difficultyRating) || 0) * 10;
+            const stars = generateStars(parseFloat(report.professors?.averageRating) || 0);
+            
+            container.innerHTML = `
+                <div class="report-header">
+                    <h2 class="report-title">${report.metadata?.courseCode} - ${report.metadata?.courseName}</h2>
+                    <div class="report-meta">
+                        <span class="meta-badge">${report.metadata?.university}</span>
+                        <span class="meta-badge">${report.metadata?.department}</span>
+                        ${report.cached ? '<span class="meta-badge" style="background: #fef3c7; color: #92400e;">Cached</span>' : ''}
+                    </div>
+                </div>
+                
+                <div class="report-content">
+                    <div class="report-section">
+                        <h3 class="section-title">📋 Course Overview</h3>
+                        <p>${report.overview?.summary || 'No summary available'}</p>
+                        
+                        <div class="grid">
+                            <div>
+                                <h4>Learning Objectives</h4>
+                                <ul class="list">
+                                    ${(report.overview?.learningObjectives || []).map(obj => `<li>${obj}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Primary Topics</h4>
+                                <ul class="list">
+                                    ${(report.overview?.primaryTopics || []).map(topic => `<li>${topic}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3 class="section-title">📊 Difficulty Analysis</h3>
+                        <div class="grid">
+                            <div>
+                                <h4>Difficulty Rating</h4>
+                                <div class="difficulty-meter">
+                                    <div class="meter-bar">
+                                        <div class="meter-fill" style="width: ${difficultyPercent}%; background: ${difficultyColor};"></div>
+                                    </div>
+                                    <span><strong>${report.difficulty?.difficultyRating || 'N/A'}/10</strong></span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Weekly Workload</h4>
+                                <p><strong>${report.difficulty?.workloadHours || 'N/A'}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3 class="section-title">👨‍🏫 Professor Insights</h3>
+                        <div>
+                            <h4>Average Rating</h4>
+                            <div class="rating-stars">
+                                ${stars}
+                                <span style="margin-left: 8px;">(${report.professors?.averageRating || 'N/A'})</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <h4>Teaching Style</h4>
+                            <p>${report.professors?.teachingStyle || 'No information available'}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3 class="section-title">💼 Career Prospects</h3>
+                        <div class="grid">
+                            <div>
+                                <h4>Skills Gained</h4>
+                                <ul class="list">
+                                    ${(report.careerProspects?.skillsGained || []).map(skill => `<li>${skill}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Career Paths</h4>
+                                <ul class="list">
+                                    ${(report.careerProspects?.careerPaths || []).map(path => `<li>${path}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="report-section">
+                        <h3 class="section-title">💡 Recommendations</h3>
+                        <div class="grid">
+                            <div>
+                                <h4>Study Tips</h4>
+                                <ul class="list">
+                                    ${(report.recommendations?.studyTips || []).map(tip => `<li>${tip}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Best For</h4>
+                                <ul class="list">
+                                    ${(report.recommendations?.bestFor || []).map(type => `<li>${type}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e5e7eb; color: #6b7280; font-size: 0.875rem;">
+                        Report generated on ${new Date(report.metadata?.generatedAt).toLocaleDateString()}
+                        ${report.cached ? ` • Cached ${report.cacheAge || 0} minutes ago` : ''}
+                        <br>
+                        <em>This report is AI-generated and should be used as a guide. Verify with official university sources.</em>
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Helper functions
+        function getDifficultyColor(rating) {
+            const num = parseInt(rating) || 0;
+            if (num <= 3) return '#4ade80';
+            if (num <= 6) return '#f59e0b';
+            if (num <= 8) return '#f97316';
+            return '#ef4444';
+        }
+        
+        function generateStars(rating) {
+            const fullStars = Math.floor(rating);
+            const hasHalf = rating % 1 >= 0.5;
+            const emptyStars = 5 - fullStars - (hasHalf ? 1 : 0);
+            
+            let stars = '';
+            for (let i = 0; i < fullStars; i++) stars += '<span class="star">★</span>';
+            if (hasHalf) stars += '<span class="star">★</span>';
+            for (let i = 0; i < emptyStars; i++) stars += '<span class="star empty">☆</span>';
+            
+            return stars;
+        }
+        
+        // Load courses when page loads
+        loadCourses();
+    </script>
+</body>
+</html>

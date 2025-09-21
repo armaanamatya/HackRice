@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import CourseReportModal from './CourseReportModal';
 import './ClassesPage.css';
 
 const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
@@ -21,6 +22,12 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
   });
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [enrolledCourses, setEnrolledCourses] = useState([]);
+  const [reportModal, setReportModal] = useState({
+    isOpen: false,
+    loading: false,
+    error: null,
+    report: null
+  });
 
   const ITEMS_PER_PAGE = 20;
 
@@ -125,6 +132,55 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
   // Check if course is enrolled
   const isCourseEnrolled = (courseCode) => {
     return enrolledCourseCodes.has(courseCode?.toUpperCase());
+  };
+
+  // Generate course report
+  const generateCourseReport = async (course) => {
+    setReportModal({
+      isOpen: true,
+      loading: true,
+      error: null,
+      report: null
+    });
+
+    try {
+      const params = new URLSearchParams();
+      if (course.university) params.append('university', course.university);
+      
+      const response = await fetch(`/api/reports/${encodeURIComponent(course.code)}?${params.toString()}`);
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to generate report');
+      }
+      
+      const reportData = await response.json();
+      
+      setReportModal({
+        isOpen: true,
+        loading: false,
+        error: null,
+        report: reportData
+      });
+    } catch (error) {
+      console.error('Error generating course report:', error);
+      setReportModal({
+        isOpen: true,
+        loading: false,
+        error: error.message,
+        report: null
+      });
+    }
+  };
+
+  // Close report modal
+  const closeReportModal = () => {
+    setReportModal({
+      isOpen: false,
+      loading: false,
+      error: null,
+      report: null
+    });
   };
 
   // Course card component
@@ -470,10 +526,35 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
                   </div>
                 </div>
               )}
+              
+              {/* Report Generation Button */}
+              <div className="modal-actions">
+                <button 
+                  onClick={() => generateCourseReport(selectedCourse)}
+                  className="generate-report-btn"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M9 19c-5 0-8-1.344-8-3v-4.5c0-1.656 3-3 8-3s8 1.344 8 3V16c0 1.656-3 3-8 3z"/>
+                    <path d="M9 11c5 0 8-1.344 8-3s-3-3-8-3-8 1.344-8 3 3 3 8 3z"/>
+                    <circle cx="17" cy="4" r="3"/>
+                    <path d="m21 7-6 6"/>
+                  </svg>
+                  Generate AI Report
+                </button>
+              </div>
             </div>
           </div>
         </div>
       )}
+      
+      {/* Course Report Modal */}
+      <CourseReportModal
+        report={reportModal.report}
+        isOpen={reportModal.isOpen}
+        onClose={closeReportModal}
+        loading={reportModal.loading}
+        error={reportModal.error}
+      />
     </div>
   );
 };
