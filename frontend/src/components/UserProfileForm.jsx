@@ -12,6 +12,7 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
     major: initialData?.major || "",
     bio: initialData?.bio || "",
     email: initialData?.email || "", // Add email to formData state
+    interests: initialData?.interests || [], // Initialize interests as an array
   });
 
   const [emailError, setEmailError] = useState("");
@@ -146,6 +147,19 @@ const UserProfileForm = ({ onSubmit, initialData }) => {
             onChange={handleChange}
             rows="5"
             required
+          ></textarea>
+        </div>
+        <div className="form-group">
+          <label htmlFor="interests">Interests (comma-separated)</label>
+          <textarea
+            id="interests"
+            name="interests"
+            value={formData.interests.join(", ")}
+            onChange={(e) => setFormData({
+              ...formData,
+              interests: e.target.value.split(",").map(item => item.trim()),
+            })}
+            rows="3"
           ></textarea>
         </div>
         <button type="submit" className="submit-button">

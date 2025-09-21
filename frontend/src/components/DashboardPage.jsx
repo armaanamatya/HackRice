@@ -42,6 +42,7 @@ const DashboardPage = ({
   onScheduleUpdate,
   userSchedule,
   onNavigateToClasses, // Add new prop here
+  userUniversity, // Add new prop here
   // onNavigateToSettings, // Add new prop here
 }) => {
   const [currentSchedule, setCurrentSchedule] = useState(null);
@@ -370,8 +371,8 @@ const DashboardPage = ({
         // Construct the search URL with proper encoding
         const searchParams = new URLSearchParams();
         searchParams.append("name", searchQuery.trim());
-        if (userData?.university && userData.university !== "Other") {
-          searchParams.append("university", userData.university);
+        if (userUniversity && userUniversity !== "Other") {
+          searchParams.append("university", userUniversity);
         }
 
         const searchUrl = `/api/users/search?${searchParams.toString()}`;
@@ -406,7 +407,7 @@ const DashboardPage = ({
     return () => {
       clearTimeout(handler);
     };
-  }, [searchQuery, userData?.university]);
+  }, [searchQuery, userUniversity]);
 
   // Helper function to check if a string is an email
   const isEmail = (text) => /^[\w-.]+@[\w-.]+\.[\w-.]+$/.test(text);

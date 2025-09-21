@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
+const UserSchedule = require("../models/UserSchedule"); // Added import for UserSchedule
 
 // Helper function to check if a string is an email
 const isEmail = (text) => /^[\w-.]+@[\w-.]+\.[\w-.]+$/.test(text);
@@ -232,6 +233,9 @@ router.patch("/:id", async (req, res) => {
     if (req.body.profileCompleted != null) {
       user.profileCompleted = req.body.profileCompleted;
     }
+    if (req.body.interests != null) {
+      user.interests = req.body.interests;
+    }
 
     const updatedUser = await user.save();
     res.json({ message: "Profile updated successfully", user: updatedUser });
@@ -282,5 +286,103 @@ router.patch("/complete-profile/:id", async (req, res) => {
   }
 });
 
+// New API endpoint for class-based matching
+router.get("/match-by-classes/:userId", async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const { major, year, interests } = req.query; // Remove university from filters
+
+    // 1. Retrieve Current User's Schedule
+    const currentUserScheduleDoc = await UserSchedule.findOne({ user_id: userId });
+
+    if (!currentUserScheduleDoc || currentUserScheduleDoc.courses.length === 0) {
+      return res.status(404).json({ message: "Current user has no schedule uploaded." });
+    }
+
+    const currentUserCourses = currentUserScheduleDoc.courses;
+
+    // Get the current user's university
+    const currentUser = await User.findById(userId);
+    if (!currentUser) {
+      return res.status(404).json({ message: "Current user not found." });
+    }
+    const currentUserUniversity = currentUser.university;
+
+    // Build query for other users based on filters
+    const userFilterQuery = { _id: { $ne: userId } };
+    // Implicitly filter by the current user's university
+    if (currentUserUniversity && currentUserUniversity !== 'Other') {
+      userFilterQuery.university = currentUserUniversity;
+    }
+    if (major) {
+      userFilterQuery.major = major;
+    }
+    if (year) {
+      userFilterQuery.year = year;
+    }
+    if (interests) {
+      // Assuming interests is a comma-separated string
+      const interestArray = interests.split(',').map(item => item.trim());
+      userFilterQuery.interests = { $in: interestArray };
+    }
+
+    // 2. Find Other Users with Schedules and their User details, applying filters
+    const otherUserSchedules = await UserSchedule.find({ user_id: { $ne: userId } }).populate({
+      path: 'user_id',
+      match: userFilterQuery, // Apply filters here
+      select: 'name email major year interests' // Select interests field
+    });
+
+    let matchedStudents = [];
+
+    for (const otherScheduleDoc of otherUserSchedules) {
+      // Only consider users that passed the populate match filter
+      if (!otherScheduleDoc.user_id) continue;
+
+      const otherUserCourses = otherScheduleDoc.courses;
+      let commonClassesCount = 0;
+      let commonClassesDetails = [];
+
+      currentUserCourses.forEach(currentUserCourse => {
+        otherUserCourses.forEach(otherUserCourse => {
+          // Check for common classes based on course code, days, start and end times
+          const isCourseCodeMatch = currentUserCourse.courseCode === otherUserCourse.courseCode;
+          const isDayMatch = currentUserCourse.days.some(day => otherUserCourse.days.includes(day));
+          // Assuming time comparison needs to be exact for simplicity or define an overlap function
+          const isTimeMatch = currentUserCourse.startTime === otherUserCourse.startTime && currentUserCourse.endTime === otherUserCourse.endTime;
+
+          if (isCourseCodeMatch && isDayMatch && isTimeMatch) {
+            commonClassesCount++;
+            commonClassesDetails.push({
+              courseCode: currentUserCourse.courseCode,
+              courseName: currentUserCourse.courseName,
+            });
+          }
+        });
+      });
+
+      if (commonClassesCount > 0) {
+        matchedStudents.push({
+          _id: otherScheduleDoc.user_id._id,
+          name: otherScheduleDoc.user_id.name,
+          email: otherScheduleDoc.user_id.email,
+          major: otherScheduleDoc.user_id.major,
+          year: otherScheduleDoc.user_id.year,
+          interests: otherScheduleDoc.user_id.interests,
+          commonClassesCount: commonClassesCount,
+          commonClasses: commonClassesDetails,
+        });
+      }
+    }
+
+    // 4. Order by Common Classes (most common first)
+    matchedStudents.sort((a, b) => b.commonClassesCount - a.commonClassesCount);
+
+    res.json(matchedStudents);
+  } catch (error) {
+    console.error("Error matching users by classes:", error);
+    res.status(500).json({ message: "Error matching users by classes", error: error.message });
+  }
+});
 
 module.exports = router;
