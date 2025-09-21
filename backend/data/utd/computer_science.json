@@ -1,0 +1,98 @@
+[
+  {
+    "code": "CS 1336",
+    "title": "Programming Fundamentals",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Introduction to programming using an object-oriented language. Topics include data types, control structures, functions, arrays, and object-oriented design.",
+    "prerequisites": "None"
+  },
+  {
+    "code": "CS 1337",
+    "title": "Computer Science I",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Fundamental concepts of computer science including algorithms, data structures, and software development methodologies. Emphasis on object-oriented programming.",
+    "prerequisites": "CS 1336 or equivalent"
+  },
+  {
+    "code": "CS 2305",
+    "title": "Discrete Mathematics for Computing I",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Introduction to discrete mathematics relevant to computer science. Topics include logic, set theory, functions, relations, combinatorics, and graph theory.",
+    "prerequisites": "MATH 2413"
+  },
+  {
+    "code": "CS 2336",
+    "title": "Computer Science II",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Advanced data structures and algorithms. Topics include abstract data types, linked lists, stacks, queues, trees, and hashing. Introduction to algorithm analysis.",
+    "prerequisites": "CS 1337 and MATH 2413"
+  },
+  {
+    "code": "CS 3305",
+    "title": "Discrete Mathematics for Computing II",
+    "credit_hours": "3",
+    "department": "Computer Science",
+    "description": "Further topics in discrete mathematics for computing. Includes advanced graph theory, recurrence relations, and algebraic structures.",
+    "prerequisites": "CS 2305"
+  },
+  {
+    "code": "CS 3345",
+    "title": "Data Structures and Introduction to Algorithmic Analysis",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Comprehensive study of data structures and advanced techniques for algorithm analysis. Includes heaps, balanced trees, and amortized analysis.",
+    "prerequisites": "CS 2336"
+  },
+  {
+    "code": "CS 3354",
+    "title": "Software Engineering",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Principles and practices of software engineering, including requirements elicitation, design, implementation, testing, and maintenance. Team projects.",
+    "prerequisites": "CS 2336"
+  },
+  {
+    "code": "CS 3377",
+    "title": "Organization of Programming Languages",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Study of programming language paradigms, syntax, semantics, and implementation issues. Comparison of functional, imperative, and object-oriented languages.",
+    "prerequisites": "CS 2336"
+  },
+  {
+    "code": "CS 4347",
+    "title": "Database Systems",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Principles of database management systems. Topics include data models, relational algebra, SQL, database design, and transaction processing.",
+    "prerequisites": "CS 3345"
+  },
+  {
+    "code": "CS 4348",
+    "title": "Operating Systems Concepts",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Introduction to operating system design and implementation. Topics include process management, memory management, file systems, and concurrency.",
+    "prerequisites": "CS 3345 and CE 2370 or EE 2310"
+  },
+  {
+    "code": "CS 4352",
+    "title": "Algorithms and Complexity",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Advanced algorithms and computational complexity theory. Topics include NP-completeness, approximation algorithms, and randomized algorithms.",
+    "prerequisites": "CS 3345 and CS 3305"
+  },
+  {
+    "code": "CS 4361",
+    "title": "Introduction to Artificial Intelligence",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Overview of artificial intelligence concepts, including search techniques, knowledge representation, machine learning, and expert systems.",
+    "prerequisites": "CS 3345"
+  }
+]

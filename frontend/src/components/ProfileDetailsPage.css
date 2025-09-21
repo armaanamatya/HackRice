@@ -489,6 +489,22 @@
   opacity: 0.2;
 }
 
+.interests-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.interest-tag {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 /* Responsive Design */
 @media (max-width: 968px) {
   .profile-content {

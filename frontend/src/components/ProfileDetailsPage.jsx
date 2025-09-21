@@ -50,8 +50,20 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
         if (!response.ok) {
           throw new Error(`Failed to fetch user profile: ${response.statusText}`);
         }
-        const data = await response.json();
-        setUserProfile(data); // Set the fetched user data
+        const userData = await response.json();
+
+        // Fetch user schedule
+        const scheduleResponse = await fetch(`/api/courses/${userId}`);
+        if (!scheduleResponse.ok) {
+          // Log and continue if schedule not found, don't block profile display
+          console.warn(`Could not fetch schedule for user ${userId}: ${scheduleResponse.statusText}`);
+          userData.schedule = []; // Set empty schedule if not found
+        } else {
+          const scheduleData = await scheduleResponse.json();
+          userData.schedule = scheduleData.courses || [];
+        }
+
+        setUserProfile(userData); // Set the fetched user data including schedule
       } catch (err) {
         console.error("Error fetching user profile:", err);
         setError(err.message);
@@ -267,6 +279,21 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
                   </div>
                   <div className="bio-content">
                     <p>{userProfile.bio}</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Interests Section */}
+              {userProfile.interests && userProfile.interests.length > 0 && (
+                <div className="profile-section">
+                  <div className="section-header">
+                    <IconUserCircle size={20} className="section-icon" />
+                    <h3 className="section-title">Interests</h3>
+                  </div>
+                  <div className="interests-content">
+                    {userProfile.interests.map((interest, index) => (
+                      <span key={index} className="interest-tag">{interest}</span>
+                    ))}
                   </div>
                 </div>
               )}

@@ -19,6 +19,7 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
     bio: "",
     email: "", // Add email to formData state
     university: "", // Add university to formData state
+    interests: [], // Initialize interests as an array
   });
 
   useEffect(() => {
@@ -31,6 +32,7 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
         bio: initialData.bio || "",
         email: initialData.email || "", // Add email to formData state
         university: initialData.university || "", // Add university to formData state
+        interests: initialData.interests || [], // Add interests to formData state
       });
     }
   }, [initialData]);
@@ -165,6 +167,19 @@ const ProfileEditForm = ({ initialData, onProfileUpdated, onCancel }) => {
             onChange={handleChange}
             rows="5"
             required
+          ></textarea>
+        </div>
+        <div className="form-group">
+          <label htmlFor="interests">Interests (comma-separated)</label>
+          <textarea
+            id="interests"
+            name="interests"
+            value={formData.interests.join(", ")}
+            onChange={(e) => setFormData({
+              ...formData,
+              interests: e.target.value.split(",").map(item => item.trim()),
+            })}
+            rows="3"
           ></textarea>
         </div>
         <div className="form-actions">

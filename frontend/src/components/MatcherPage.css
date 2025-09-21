@@ -180,6 +180,44 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.filter-input,
+.filter-select {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-size: 1rem;
+  flex: 1;
+  min-width: 150px;
+  max-width: 220px;
+  background: var(--bg-card);
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(var(--accent-color-rgb), 0.2);
+  outline: none;
+}
+
+.filter-select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%20197.3L159.9%2069.1c-3.8-3.9-8.8-5.9-13.9-5.9s-10.1%202-13.9%205.9L5.4%20197.3c-7.2%207.2-7.2%2018.8%200%2026.1%207.2%207.2%2018.8%207.2%2026.1%200l124.9-125.7%20125.7%20125.7c7.2%207.2%2018.8%207.2%2026.1%200C294.2%20216.1%20294.2%20204.5%20287%20197.3z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 0.8em auto;
+  padding-right: 2.5rem; /* Make space for the arrow */
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .matcher-page-container {
@@ -211,5 +249,15 @@
 
   .match-results {
     grid-template-columns: 1fr;
+  }
+
+  .filters-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-input,
+  .filter-select {
+    max-width: 100%;
   }
 }

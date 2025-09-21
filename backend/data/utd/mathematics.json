@@ -1,0 +1,66 @@
+[
+  {
+    "code": "MATH 2413",
+    "title": "Calculus I",
+    "department": "Mathematics",
+    "credit_hours": "4",
+    "description": "Limits, continuity, derivatives, and integrals of functions of a single variable, with applications.",
+    "prerequisites": "Pre-Calculus"
+  },
+  {
+    "code": "MATH 2414",
+    "title": "Calculus II",
+    "department": "Mathematics",
+    "credit_hours": "4",
+    "description": "Techniques of integration, applications of calculus, infinite sequences and series, parametric equations, and polar coordinates.",
+    "prerequisites": "MATH 2413"
+  },
+  {
+    "code": "MATH 2415",
+    "title": "Calculus III",
+    "department": "Mathematics",
+    "credit_hours": "4",
+    "description": "Vector functions, partial derivatives, multiple integrals, and topics in vector calculus.",
+    "prerequisites": "MATH 2414"
+  },
+  {
+    "code": "MATH 2418",
+    "title": "Linear Algebra",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "Vector spaces, linear transformations, matrices, determinants, eigenvalues, eigenvectors, and applications.",
+    "prerequisites": "MATH 2414"
+  },
+  {
+    "code": "MATH 2420",
+    "title": "Differential Equations",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "First-order and higher-order differential equations, series solutions, Laplace transforms, and systems of linear differential equations.",
+    "prerequisites": "MATH 2414"
+  },
+  {
+    "code": "MATH 3310",
+    "title": "Abstract Algebra",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "Introduction to group theory, rings, and fields.",
+    "prerequisites": "MATH 2418 and MATH 2305 (Discrete Math)"
+  },
+  {
+    "code": "MATH 3311",
+    "title": "Real Analysis",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "Rigorous treatment of real numbers, sequences, series, continuity, differentiation, and integration.",
+    "prerequisites": "MATH 2415 and MATH 2305"
+  },
+  {
+    "code": "MATH 3350",
+    "title": "Partial Differential Equations",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "Introduction to partial differential equations, Fourier series, and boundary value problems.",
+    "prerequisites": "MATH 2420"
+  }
+]

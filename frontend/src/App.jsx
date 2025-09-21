@@ -478,6 +478,7 @@ function App() {
               userSchedule={userSchedule}
               onLogout={handleLogout}
               onNavigateToClasses={handleNavigateToClasses} // Pass the new prop here
+              userUniversity={userData?.university} // Pass user's university
               // onNavigateToSettings={handleNavigateToSettings} // Pass the new prop here
             />
           </ProtectedRoute>
@@ -490,6 +491,8 @@ function App() {
             <MatcherPage
               onBackToDashboard={handleNavigateToDashboard}
               currentUserSchedule={userSchedule}
+              userId={userData?._id} // Pass userId to MatcherPage
+              userUniversity={userData?.university} // Pass userUniversity to MatcherPage
             />
           </ProtectedRoute>
         }
