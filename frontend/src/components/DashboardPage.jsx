@@ -413,7 +413,6 @@ const DashboardPage = ({
                 value={searchQuery}
                 onChange={handleSearchInputChange}
               />
-              <IconSearch size={24} />
               {(searchQuery.length > 0 || isSearching || searchError) && (
                 <SearchResultsDropdown
                   results={searchResults}

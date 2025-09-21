@@ -91,9 +91,51 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData, isPopupMode 
   // Handle course hover
   const handleCourseMouseEnter = (course, event) => {
     const rect = event.target.getBoundingClientRect();
+    const calendarContainer = event.target.closest('.schedule-calendar-container');
+    const calendarRect = calendarContainer.getBoundingClientRect();
+    
+    const menuWidth = 220;
+    const menuHeight = 120;
+    const gap = 8;
+    
+    // Calculate position relative to the calendar container
+    const relativeRect = {
+      left: rect.left - calendarRect.left,
+      right: rect.right - calendarRect.left,
+      top: rect.top - calendarRect.top,
+      bottom: rect.bottom - calendarRect.top
+    };
+    
+    let x, y;
+    
+    // Try positioning to the right of the class box first
+    x = relativeRect.right + gap;
+    y = relativeRect.top;
+    
+    // If menu would overflow the calendar on the right, position to the left
+    if (x + menuWidth > calendarRect.width - 20) {
+      x = relativeRect.left - menuWidth - gap;
+    }
+    
+    // If menu would overflow on the left, position it inside with minimal gap
+    if (x < 20) {
+      x = 20;
+    }
+    
+    // If menu would overflow at the bottom, move it up
+    if (y + menuHeight > calendarRect.height - 20) {
+      y = calendarRect.height - menuHeight - 20;
+    }
+    
+    // If menu would overflow at the top, move it down
+    if (y < 20) {
+      y = 20;
+    }
+    
+    // Convert back to viewport coordinates for fixed positioning
     setContextMenuPosition({
-      x: rect.right + 10,
-      y: rect.top,
+      x: x + calendarRect.left,
+      y: y + calendarRect.top
     });
     setHoveredCourse(course);
   };
