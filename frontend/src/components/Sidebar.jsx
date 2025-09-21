@@ -31,6 +31,11 @@ const Sidebar = ({ userName, onLogout }) => {
             </Link>
           </li>
           <li>
+            <Link to="/dashboard/connections" className="sidebar-nav-item">
+              Connections
+            </Link>
+          </li>
+          <li>
             <Link to="/dashboard/profile" className="sidebar-nav-item">
               Profile
             </Link>
