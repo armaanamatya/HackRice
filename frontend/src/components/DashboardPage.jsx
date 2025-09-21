@@ -297,7 +297,6 @@ const DashboardPage = ({
     { id: "dashboard", label: "Dashboard", icon: IconHome },
     { id: "classes", label: "Classes", icon: IconBook2 }, // New Classes item
     { id: "connections", label: "Connections", icon: IconUsers },
-    { id: "profile", label: "Profile", icon: IconUser },
   ];
 
   const handleNavigation = (itemId) => {
@@ -307,15 +306,19 @@ const DashboardPage = ({
       case "connections":
         if (onNavigateToMatcher) onNavigateToMatcher();
         break;
-      case "profile":
-        if (onNavigateToProfileDetails) onNavigateToProfileDetails();
-        break;
       case "classes": // Handle navigation to classes page
         if (onNavigateToClasses) onNavigateToClasses();
         break;
       default:
         // Handle other navigation items
         break;
+    }
+  };
+
+  // Add handler for profile click
+  const handleProfileClick = () => {
+    if (onNavigateToProfileDetails) {
+      onNavigateToProfileDetails(); // This will navigate to the current user's profile
     }
   };
 
@@ -522,7 +525,7 @@ const DashboardPage = ({
               />
             </div>
 
-            <div className="user-profile">
+            <div className="user-profile" onClick={handleProfileClick}>
               <div className="user-avatar">
                 {userData?.name ? userData.name.charAt(0).toUpperCase() : "U"}
               </div>
