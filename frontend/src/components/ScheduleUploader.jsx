@@ -26,7 +26,7 @@ const UploadIcon = () => (
   </svg>
 );
 
-const ScheduleUploader = ({ onScheduleParsed, userId }) => {
+const ScheduleUploader = ({ onScheduleParsed, onScheduleValidated, userId, userData }) => {
   const [file, setFile] = useState(null);
   const [filePreview, setFilePreview] = useState(null);
   const [uploadStatus, setUploadStatus] = useState("");
@@ -140,12 +140,18 @@ const ScheduleUploader = ({ onScheduleParsed, userId }) => {
   };
 
   const handleScheduleValidated = async (validatedClasses) => {
-    // ... (Your existing logic is perfect here)
+    // If parent provided onScheduleValidated, use that instead
+    if (onScheduleValidated) {
+      onScheduleValidated(validatedClasses);
+      return;
+    }
+
+    // Fallback: handle it ourselves (for standalone usage)
     try {
       const response = await fetch("/api/courses", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId, courses: validatedClasses }),
+        body: JSON.stringify({ userId: userData?._id || userId, courses: validatedClasses }),
       });
       if (!response.ok) throw new Error("Failed to save courses");
       showSuccessToast("Schedule saved successfully to your dashboard!");

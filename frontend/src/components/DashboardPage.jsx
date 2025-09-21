@@ -14,9 +14,11 @@ import './DashboardPage.css';
 import ScheduleUploader from './ScheduleUploader';
 import ScheduleReviewForm from './ScheduleReviewForm';
 import InteractiveScheduleDisplay from './InteractiveScheduleDisplay';
+import ScheduleCalendar from './ScheduleCalendar';
 import ToastContainer, { showSuccessToast, showErrorToast } from './ToastContainer';
 import SettingsDropdown from './SettingsDropdown'; // Import SettingsDropdown
 import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from '../utils/localStorageUtils';
+import '../utils/clearStorage'; // Import storage debugging utilities
 
 /**
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
@@ -37,24 +39,100 @@ const DashboardPage = ({
   const [activeNavItem, setActiveNavItem] = useState('dashboard');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [showSettingsDropdown, setShowSettingsDropdown] = useState(false); // New state for dropdown
+  const [savedCourses, setSavedCourses] = useState(null);
+  const [isLoadingCourses, setIsLoadingCourses] = useState(true);
 
   const userId = userData?.id || 'guest';
 
-  useEffect(() => {
-    // Load schedule from localStorage on component mount
-    const loadedSchedule = loadScheduleFromLocalStorage(userId);
-    if (loadedSchedule) {
-      setCurrentSchedule(loadedSchedule);
-      setViewMode('display');
+  // Clear localStorage to ensure database is authoritative
+  const clearLocalStorageData = () => {
+    const keys = Object.keys(localStorage);
+    const scheduleKeys = keys.filter(key => key.startsWith('schedule_'));
+    scheduleKeys.forEach(key => {
+      console.log('Clearing localStorage key:', key);
+      localStorage.removeItem(key);
+    });
+  };
+
+  // Fetch saved courses from database
+  const fetchSavedCourses = async () => {
+    if (!userData?._id) {
+      console.log('No userData._id, skipping course fetch');
+      setIsLoadingCourses(false);
+      return;
     }
-  }, [userId]);
+
+    console.log('Fetching saved courses from database for userId:', userData._id);
+
+    try {
+      const response = await fetch(`/api/courses/${userData._id}`);
+      console.log('API response status:', response.status);
+      
+      if (response.ok) {
+        const data = await response.json();
+        console.log('API response data:', data);
+        
+        if (data.courses && data.courses.length > 0) {
+          console.log('Found courses in database:', data.courses.length);
+          setSavedCourses(data.courses);
+          setCurrentSchedule(data.courses); // Update currentSchedule too
+          setViewMode('calendar');
+          
+          // Clear any conflicting localStorage data
+          console.log('Clearing localStorage since we have database data');
+          localStorage.removeItem(`schedule_${userId}`);
+        } else {
+          console.log('No courses found in database, switching to uploader');
+          setSavedCourses(null);
+          setCurrentSchedule(null);
+          setViewMode('uploader');
+          
+          // Clear localStorage as well since database is authoritative
+          localStorage.removeItem(`schedule_${userId}`);
+        }
+      } else {
+        console.log('API request failed, switching to uploader');
+        setSavedCourses(null);
+        setCurrentSchedule(null);
+        setViewMode('uploader');
+      }
+    } catch (error) {
+      console.error('Error fetching saved courses:', error);
+      setSavedCourses(null);
+      setCurrentSchedule(null);
+      setViewMode('uploader');
+    } finally {
+      setIsLoadingCourses(false);
+    }
+  };
 
   useEffect(() => {
-    // Save schedule to localStorage whenever currentSchedule changes
-    if (currentSchedule) {
-      saveScheduleToLocalStorage(userId, currentSchedule);
-    }
-  }, [currentSchedule, userId]);
+    // Clear localStorage first to ensure database is authoritative
+    clearLocalStorageData();
+    // Then fetch from database
+    fetchSavedCourses();
+  }, [userData?._id]);
+
+  // DISABLED: LocalStorage loading - database is now authoritative
+  // useEffect(() => {
+  //   // Load schedule from localStorage on component mount
+  //   const loadedSchedule = loadScheduleFromLocalStorage(userId);
+  //   if (loadedSchedule) {
+  //     setCurrentSchedule(loadedSchedule);
+  //     // Don't override viewMode if we already have saved courses
+  //     if (!savedCourses) {
+  //       setViewMode('display');
+  //     }
+  //   }
+  // }, [userId, savedCourses]);
+
+  // DISABLED: LocalStorage saving - database is primary storage now
+  // useEffect(() => {
+  //   // Save schedule to localStorage whenever currentSchedule changes
+  //   if (currentSchedule) {
+  //     saveScheduleToLocalStorage(userId, currentSchedule);
+  //   }
+  // }, [currentSchedule, userId]);
 
   const handleScheduleParsed = (parsedData) => {
     setOcrParsedClasses(parsedData);
@@ -63,6 +141,12 @@ const DashboardPage = ({
 
   const handleScheduleValidated = async (validatedClasses) => {
     try {
+      console.log('DashboardPage: handleScheduleValidated called with:', {
+        userId: userData?._id,
+        courseCount: validatedClasses?.length,
+        courses: validatedClasses
+      });
+
       // Save courses to database
       const response = await fetch('/api/courses', {
         method: 'POST',
@@ -76,15 +160,20 @@ const DashboardPage = ({
       });
 
       if (!response.ok) {
-        throw new Error('Failed to save courses');
+        const errorData = await response.json().catch(() => ({ message: response.statusText }));
+        console.error('API Error:', errorData);
+        throw new Error(`Failed to save courses: ${errorData.message}`);
       }
 
-      console.log('Courses saved successfully to database');
+      const responseData = await response.json();
+      console.log('Courses saved successfully to database:', responseData);
       showSuccessToast('Schedule saved successfully! Your courses have been updated.');
       
+      // Update saved courses and switch to calendar view
+      setSavedCourses(validatedClasses);
       setCurrentSchedule(validatedClasses);
       setOcrParsedClasses(null); // Clear review data
-      setViewMode('display');
+      setViewMode('calendar');
       
       // Call the parent callback if it exists
       if (onScheduleUpdate) {
@@ -113,9 +202,41 @@ const DashboardPage = ({
   };
 
   const renderContent = () => {
+    // Show loading state while fetching courses
+    if (isLoadingCourses) {
+      return (
+        <div className="loading-container">
+          <div className="loading-spinner"></div>
+          <p>Loading your schedule...</p>
+        </div>
+      );
+    }
+
     switch (viewMode) {
+      case 'calendar':
+        console.log('Rendering calendar with courses from savedCourses:', savedCourses);
+        return (
+          <ScheduleCalendar
+            courses={savedCourses || []}
+            onEditSchedule={() => {
+              // Switch to uploader for editing
+              console.log('Edit schedule clicked, clearing saved courses');
+              setSavedCourses(null);
+              setCurrentSchedule(null);
+              setViewMode('uploader');
+            }}
+            userData={userData}
+          />
+        );
       case 'uploader':
-        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} userId={userData?._id} />;
+        return (
+          <ScheduleUploader 
+            onScheduleParsed={handleScheduleParsed} 
+            onScheduleValidated={handleScheduleValidated}
+            userId={userData?._id} 
+            userData={userData}
+          />
+        );
       case 'reviewer':
         return (
           <ScheduleReviewForm
@@ -133,7 +254,14 @@ const DashboardPage = ({
           />
         );
       default:
-        return <ScheduleUploader onScheduleParsed={handleScheduleParsed} userId={userData?._id} />;
+        return (
+          <ScheduleUploader 
+            onScheduleParsed={handleScheduleParsed} 
+            onScheduleValidated={handleScheduleValidated}
+            userId={userData?._id} 
+            userData={userData}
+          />
+        );
     }
   };
 
