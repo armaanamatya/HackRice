@@ -1029,3 +1029,152 @@ body {
     }
   }
 }
+
+/* ===== UI ENHANCEMENTS ===== */
+
+/* Add subtle hover animations to all cards */
+.feature-card,
+.university-card,
+.user-card,
+.course-event,
+.content-body {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover state with subtle glow effect */
+.feature-card:hover,
+.university-card:hover,
+.user-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 
+    0 8px 25px rgba(0, 112, 243, 0.15),
+    0 0 40px rgba(0, 112, 243, 0.05) !important;
+}
+
+/* Add subtle entrance animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Stagger animation for feature cards */
+.features-grid .feature-card:nth-child(1) { animation-delay: 0.1s; }
+.features-grid .feature-card:nth-child(2) { animation-delay: 0.2s; }
+.features-grid .feature-card:nth-child(3) { animation-delay: 0.3s; }
+.features-grid .feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Floating animation for hero title */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-title {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Add accent highlights to important elements */
+.cta-button,
+.edit-schedule-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::after,
+.edit-schedule-btn::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, 
+    var(--primary-color), 
+    var(--secondary-color), 
+    var(--accent-color)
+  );
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover::after,
+.edit-schedule-btn:hover::after {
+  opacity: 1;
+  animation: gradient-shift 3s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0%, 100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(30deg); }
+}
+
+/* Add subtle dot pattern to hero */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(0, 112, 243, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Enhanced focus states */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color) !important;
+  box-shadow: 
+    0 0 0 3px rgba(0, 112, 243, 0.1),
+    0 0 20px rgba(0, 112, 243, 0.1) !important;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 20px rgba(6, 255, 165, 0.3);
+}
+
+/* Enhance university cards on hover */
+.university-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.university-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(0, 112, 243, 0.1) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.university-card:hover::after {
+  width: 300%;
+  height: 300%;
+}

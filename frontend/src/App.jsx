@@ -424,8 +424,13 @@ function App() {
 
   // A protected route component that renders children only if authenticated
   const ProtectedRoute = ({ children }) => {
+    useEffect(() => {
+      if (!isAuthenticated) {
+        navigate("/");
+      }
+    }, [isAuthenticated]);
+
     if (!isAuthenticated) {
-      navigate("/");
       return (
         <div className="app-loading-container">
           <div className="app-loading-card">

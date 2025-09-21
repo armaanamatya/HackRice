@@ -220,3 +220,204 @@
     min-height: 200px;
   }
 }
+
+/* ===== SCHEDULE UPLOADER ENHANCEMENTS ===== */
+
+/* Enhanced drop zone with glassmorphism */
+.schedule-uploader-container {
+  background: rgba(255, 255, 255, 0.9) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add subtle animation to header */
+.uploader-header h2 {
+  background: linear-gradient(
+    135deg,
+    var(--text-color) 0%,
+    var(--primary-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+/* Enhanced drop zone hover effects */
+.drop-zone {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.drop-zone::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(0, 112, 243, 0.05) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.drop-zone:hover::before {
+  width: 150%;
+  height: 150%;
+}
+
+.drop-zone.is-dragging::before {
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(6, 255, 165, 0.1) 0%, transparent 70%);
+}
+
+/* Animated upload icon */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.upload-icon {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Enhanced browse text with hover effect */
+.browse-text {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.browse-text::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.drop-zone:hover .browse-text::after {
+  width: 100%;
+}
+
+/* Enhanced loading spinner */
+.loading-spinner {
+  position: relative;
+  border: none !important;
+}
+
+.loading-spinner::before,
+.loading-spinner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+.loading-spinner::before {
+  border-top-color: var(--primary-color);
+  animation: spin 1.5s linear infinite;
+}
+
+.loading-spinner::after {
+  border-bottom-color: var(--accent-color);
+  animation: spin 1.5s linear infinite reverse;
+  animation-delay: 0.25s;
+}
+
+/* Enhanced file preview with glass effect */
+.file-preview-wrapper {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Animated remove button */
+.remove-file-button {
+  transition: all 0.3s ease !important;
+}
+
+.remove-file-button:hover {
+  transform: rotate(90deg) scale(1.1);
+}
+
+/* Enhanced status messages */
+.upload-status-message {
+  position: relative;
+  overflow: hidden;
+  animation: slideInUp 0.5s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.upload-status-message::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    var(--accent-color) 100%
+  );
+  animation: heightGrow 0.5s ease-out;
+}
+
+.upload-status-message.error::before {
+  background: linear-gradient(
+    180deg,
+    #e74c3c 0%,
+    #c0392b 100%
+  );
+}
+
+@keyframes heightGrow {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+/* Add progress bar effect for uploading */
+.status-indicator::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  animation: progressBar 2s ease-in-out infinite;
+}
+
+@keyframes progressBar {
+  0% { width: 0; left: 0; }
+  50% { width: 100%; left: 0; }
+  100% { width: 0; left: 100%; }
+}

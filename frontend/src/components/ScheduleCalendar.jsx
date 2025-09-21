@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from "react";
 import "./ScheduleCalendar.css";
 
-const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
+const ScheduleCalendar = ({ courses = [], onEditSchedule, userData, isPopupMode = false, allowEditing = true }) => {
   const [hoveredCourse, setHoveredCourse] = useState(null);
   const [contextMenuPosition, setContextMenuPosition] = useState({
     x: 0,
@@ -173,26 +173,33 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
       <div className="schedule-calendar-container">
         <div className="calendar-header">
           <div className="header-content">
-            <h2 className="header-title">Your Weekly Schedule</h2>
+            <h2 className="header-title">
+              {isPopupMode ? `${userData?.name || 'User'}'s Weekly Schedule` : 'Your Weekly Schedule'}
+            </h2>
             <p className="header-subtitle">
-              No courses found. Upload your schedule to get started!
+              {isPopupMode 
+                ? `${userData?.name || 'This user'} hasn't uploaded their schedule yet.`
+                : 'No courses found. Upload your schedule to get started!'
+              }
             </p>
           </div>
-          <button className="edit-schedule-btn" onClick={onEditSchedule}>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-              <polyline points="17,8 12,3 7,8" />
-              <line x1="12" y1="3" x2="12" y2="15" />
-            </svg>
-            Upload Schedule
-          </button>
+          {allowEditing && (
+            <button className="edit-schedule-btn" onClick={onEditSchedule}>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="17,8 12,3 7,8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+              Upload Schedule
+            </button>
+          )}
         </div>
       </div>
     );
@@ -224,21 +231,23 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
             </div>
           </div>
         </div>
-        <div className="header-actions">
-          <button className="edit-schedule-btn" onClick={onEditSchedule}>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="m18 2 4 4-12 12H6v-4L18 2Z" />
-            </svg>
-            Edit Schedule
-          </button>
-        </div>
+        {allowEditing && (
+          <div className="header-actions">
+            <button className="edit-schedule-btn" onClick={onEditSchedule}>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="m18 2 4 4-12 12H6v-4L18 2Z" />
+              </svg>
+              Edit Schedule
+            </button>
+          </div>
+        )}
       </div>
 
       <div className="week-calendar-wrapper">
