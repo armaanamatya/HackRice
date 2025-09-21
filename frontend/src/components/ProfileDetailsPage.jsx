@@ -9,10 +9,11 @@ import {
   IconEdit, 
   IconArrowLeft,
   IconMapPin,
-  IconUserCircle
+  IconUserCircle,
+  IconEye
 } from '@tabler/icons-react';
 import ProfileEditForm from "./ProfileEditForm";
-import InteractiveScheduleDisplay from './InteractiveScheduleDisplay'; // Import InteractiveScheduleDisplay
+import SchedulePopup from './SchedulePopup'; // Import SchedulePopup instead
 import "./ProfileDetailsPage.css";
 import { detectUniversityFromEmail } from "../utils/universityUtils";
 import { useParams } from 'react-router-dom'; // Import useParams
@@ -36,16 +37,24 @@ import { useParams } from 'react-router-dom'; // Import useParams
  * @param {function} props.setUserData - Function to update the user data in the parent component.
  */
 const ProfileDetailsPage = ({ onBackToDashboard }) => {
-  const { userId } = useParams(); // Get userId from URL parameters
+  const { userId: rawUserId } = useParams(); // Get userId from URL parameters
+  const userId = rawUserId ? decodeURIComponent(rawUserId) : null; // Decode URL-encoded userId
+  
+  // Debug logging - can be removed later
+  console.log('ProfileDetailsPage - Loading profile for userId:', userId);
+  
   const [userProfile, setUserProfile] = useState(null); // Local state for the displayed user's profile
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
+  const [showSchedulePopup, setShowSchedulePopup] = useState(false); // State for popup
 
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
         setLoading(true);
+        
+        // Use the decoded userId directly
         const response = await fetch(`/api/users/${userId}`);
         if (!response.ok) {
           throw new Error(`Failed to fetch user profile: ${response.statusText}`);
@@ -55,8 +64,7 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
         // Fetch user schedule
         const scheduleResponse = await fetch(`/api/courses/${userId}`);
         if (!scheduleResponse.ok) {
-          // Log and continue if schedule not found, don't block profile display
-          console.warn(`Could not fetch schedule for user ${userId}: ${scheduleResponse.statusText}`);
+          // Silently handle schedule not found - user may not have uploaded one yet
           userData.schedule = []; // Set empty schedule if not found
         } else {
           const scheduleData = await scheduleResponse.json();
@@ -283,6 +291,49 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
                 </div>
               )}
 
+              {/* User Schedule Section - Moved below About Me */}
+              {userProfile.schedule && userProfile.schedule.length > 0 ? (
+                <div className="profile-section">
+                  <div className="section-header">
+                    <IconCalendar size={20} className="section-icon" />
+                    <h3 className="section-title">Schedule</h3>
+                  </div>
+                  <div className="schedule-preview-wrapper">
+                    <div className="schedule-preview-card">
+                      <div className="schedule-stats">
+                        <div className="stat-item">
+                          <span className="stat-number">{userProfile.schedule.length}</span>
+                          <span className="stat-label">Courses</span>
+                        </div>
+                        <div className="stat-item">
+                          <span className="stat-number">
+                            {new Set(userProfile.schedule.map(course => course.days?.join('') || '')).size}
+                          </span>
+                          <span className="stat-label">Days</span>
+                        </div>
+                      </div>
+                      <button 
+                        className="view-schedule-button"
+                        onClick={() => setShowSchedulePopup(true)}
+                      >
+                        <IconEye size={18} />
+                        View Full Schedule
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="profile-section">
+                  <div className="section-header">
+                    <IconCalendar size={20} className="section-icon" />
+                    <h3 className="section-title">Schedule</h3>
+                  </div>
+                  <div className="no-schedule-available">
+                    <p>This user hasn't uploaded their schedule yet.</p>
+                  </div>
+                </div>
+              )}
+
               {/* Interests Section */}
               {userProfile.interests && userProfile.interests.length > 0 && (
                 <div className="profile-section">
@@ -297,28 +348,18 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
                   </div>
                 </div>
               )}
-
-              {/* User Schedule Section */}
-              {userProfile.schedule && userProfile.schedule.length > 0 && (
-                <div className="profile-section">
-                  <div className="section-header">
-                    <IconCalendar size={20} className="section-icon" />
-                    <h3 className="section-title">Schedule</h3>
-                  </div>
-                  <div className="schedule-display-wrapper">
-                    <InteractiveScheduleDisplay 
-                      schedule={userProfile.schedule} 
-                      // No edit or import options for viewing another user's schedule
-                      onEditSchedule={() => { /* no-op */ }} 
-                      onImportSchedule={() => { /* no-op */ }} 
-                    />
-                  </div>
-                </div>
-              )}
             </div>
           </>
         )}
       </div>
+
+      {/* Schedule Popup */}
+      <SchedulePopup
+        isOpen={showSchedulePopup}
+        onClose={() => setShowSchedulePopup(false)}
+        schedule={userProfile?.schedule || []}
+        userData={userProfile}
+      />
     </div>
   );
 };

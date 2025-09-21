@@ -261,3 +261,104 @@
     max-width: 100%;
   }
 }
+
+/* ===== MATCHER PAGE ENHANCEMENTS ===== */
+
+/* Enhanced user cards with glassmorphism */
+.user-card {
+  background: rgba(248, 249, 250, 0.8) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add shimmer effect to user cards */
+.user-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.3), 
+    transparent
+  );
+  transition: left 0.8s ease;
+}
+
+.user-card:hover::before {
+  left: 100%;
+}
+
+/* Entrance animation for match results */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.match-results .user-card {
+  animation: slideInUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.match-results .user-card:nth-child(1) { animation-delay: 0.1s; }
+.match-results .user-card:nth-child(2) { animation-delay: 0.15s; }
+.match-results .user-card:nth-child(3) { animation-delay: 0.2s; }
+.match-results .user-card:nth-child(4) { animation-delay: 0.25s; }
+.match-results .user-card:nth-child(5) { animation-delay: 0.3s; }
+.match-results .user-card:nth-child(6) { animation-delay: 0.35s; }
+
+/* Enhanced common class tags */
+.common-class-tag {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.common-class-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Connect button pulse effect */
+.connect-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.connect-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.connect-button:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+/* Enhanced filter inputs */
+.filter-input:focus,
+.filter-select:focus {
+  transform: translateY(-1px);
+  box-shadow: 
+    0 0 0 3px rgba(0, 112, 243, 0.1),
+    0 5px 15px rgba(0, 112, 243, 0.1) !important;
+}

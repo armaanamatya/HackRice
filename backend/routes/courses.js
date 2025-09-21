@@ -22,7 +22,31 @@ router.get("/exists/:userId", async (req, res) => {
 router.get("/:userId", async (req, res) => {
   try {
     const { userId } = req.params;
-    const userSchedule = await UserSchedule.findOne({ user_id: userId });
+    console.log("=== COURSES API DEBUG ===");
+    console.log("Received userId:", userId);
+    console.log("userId type:", typeof userId);
+    console.log("userId includes |:", userId.includes('|'));
+    
+    let userSchedule = null;
+    
+    // If userId looks like an Auth0 ID, find the user first to get their MongoDB ID
+    if (userId.includes('|')) {
+      console.log("Auth0 ID detected, looking up user first...");
+      const User = require('../models/User');
+      const user = await User.findOne({ auth0Id: userId });
+      console.log("Found user:", user ? user._id : 'Not found');
+      
+      if (user) {
+        console.log("Looking for schedule with MongoDB ID:", user._id);
+        userSchedule = await UserSchedule.findOne({ user_id: user._id });
+      }
+    } else {
+      // Try direct lookup with provided ID (MongoDB ObjectId)
+      console.log("MongoDB ID detected, direct lookup...");
+      userSchedule = await UserSchedule.findOne({ user_id: userId });
+    }
+    
+    console.log("Found schedule:", userSchedule ? 'Yes' : 'No');
     
     if (!userSchedule) {
       return res.json({ courses: [] }); // Return empty courses array if no schedule found
