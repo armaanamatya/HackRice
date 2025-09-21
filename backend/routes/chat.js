@@ -421,4 +421,135 @@ router.delete('/conversations/:id/participants/:userId', async (req, res) => {
   }
 });
 
+// POST /api/chat/join-course-group - Join or create a course-based group chat
+router.post('/join-course-group', async (req, res) => {
+  try {
+    const { userId, courseCode, courseName, university } = req.body;
+    
+    if (!userId || !courseCode || !university) {
+      return res.status(400).json({ message: 'Missing required fields: userId, courseCode, university' });
+    }
+
+    // Convert Auth0 ID to database ID if needed
+    let dbUserId = userId;
+    if (typeof userId === 'string' && userId.startsWith('auth0|')) {
+      const user = await User.findOne({ auth0Id: userId });
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+      dbUserId = user._id;
+    }
+
+    // Validate user exists
+    const user = await User.findById(dbUserId);
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    // Check if user's university matches
+    if (user.university !== university) {
+      return res.status(403).json({ message: 'You can only join groups for your university' });
+    }
+
+    // Generate group name and description
+    const groupName = `${courseCode} - ${university}`;
+    const groupDescription = courseName ? `Group chat for ${courseCode}: ${courseName} at ${university}` : `Group chat for ${courseCode} at ${university}`;
+
+    // Check if a group already exists for this course and university
+    let existingConversation = await Conversation.findOne({
+      type: 'group',
+      'metadata.courseCode': courseCode,
+      'metadata.university': university
+    });
+
+    if (existingConversation) {
+      // Check if user is already a participant
+      if (existingConversation.participants.includes(dbUserId)) {
+        await existingConversation.populate('participants', 'name email profilePicture auth0Id university major year');
+        return res.json({
+          message: 'Already a member of this group',
+          conversation: existingConversation
+        });
+      }
+
+      // Add user to existing group
+      existingConversation.participants.push(dbUserId);
+      await existingConversation.save();
+      await existingConversation.populate('participants', 'name email profilePicture auth0Id university major year');
+
+      // Notify existing participants
+      const io = req.app.get('io');
+      io.to(`conversation:${existingConversation._id}`).emit('participant:joined', {
+        conversationId: existingConversation._id,
+        user: {
+          _id: user._id,
+          name: user.name,
+          email: user.email,
+          profilePicture: user.profilePicture,
+          auth0Id: user.auth0Id,
+          university: user.university,
+          major: user.major,
+          year: user.year
+        }
+      });
+
+      return res.json({
+        message: 'Successfully joined the group',
+        conversation: existingConversation
+      });
+    }
+
+    // Find other users from the same university for this course
+    const UserSchedule = require('../models/UserSchedule');
+    const otherStudents = await UserSchedule.find({
+      'courses.courseCode': courseCode,
+      user_id: { $ne: dbUserId }
+    }).populate({
+      path: 'user_id',
+      match: { university: university },
+      select: 'name email profilePicture auth0Id university major year'
+    });
+
+    // Filter out null populated users and get user IDs
+    const potentialParticipants = otherStudents
+      .filter(schedule => schedule.user_id)
+      .map(schedule => schedule.user_id._id);
+
+    // Add the requesting user to participants
+    const allParticipants = [dbUserId, ...potentialParticipants.slice(0, 19)]; // Limit to 20 total participants
+
+    // Create new group conversation
+    const conversation = await Conversation.create({
+      type: 'group',
+      participants: allParticipants,
+      name: groupName,
+      description: groupDescription,
+      metadata: {
+        courseCode: courseCode,
+        courseName: courseName,
+        university: university,
+        createdBy: dbUserId,
+        groupType: 'course'
+      },
+      admins: [dbUserId] // Creator is admin
+    });
+
+    await conversation.populate('participants', 'name email profilePicture auth0Id university major year');
+
+    // Notify all participants via Socket.io
+    const io = req.app.get('io');
+    allParticipants.forEach(participantId => {
+      io.to(`user:${participantId}`).emit('conversation:new', conversation);
+    });
+
+    res.status(201).json({
+      message: 'Successfully created and joined the group',
+      conversation: conversation
+    });
+  } catch (error) {
+    console.error('Error joining course group:', error);
+    res.status(500).json({ message: 'Failed to join course group' });
+  }
+});
+
 module.exports = router;

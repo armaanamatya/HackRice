@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import CourseReportModal from './CourseReportModal';
 import './ClassesPage.css';
 
-const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
+const ClassesPage = ({ userData, onBackToDashboard }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [selectedUniversity, setSelectedUniversity] = useState('all');
@@ -56,7 +56,7 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
   }, [enrolledCourses]);
 
   // Fetch courses from catalog
-  const fetchCourses = async (page = 1) => {
+  const fetchCourses = useCallback(async (page = 1) => {
     setLoading(true);
     setError(null);
 
@@ -89,14 +89,14 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [searchQuery, selectedDepartment, selectedUniversity, selectedCreditHours, selectedLevel]);
 
   // Fetch courses when filters change
   useEffect(() => {
     if (activeTab === 'catalog') {
       fetchCourses(1);
     }
-  }, [searchQuery, selectedDepartment, selectedUniversity, selectedCreditHours, selectedLevel, activeTab]);
+  }, [searchQuery, selectedDepartment, selectedUniversity, selectedCreditHours, selectedLevel, activeTab, fetchCourses]);
 
   // Handle page change
   const handlePageChange = (page) => {
@@ -114,20 +114,6 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
     setCurrentPage(1);
   };
 
-  // Get course level badge
-  const getCourseLevelBadge = (code) => {
-    const courseNumber = code?.match(/\d+/)?.[0];
-    if (!courseNumber) return null;
-    
-    const num = parseInt(courseNumber);
-    if (num >= 7000) return { label: 'Doctoral', color: 'purple' };
-    if (num >= 5000) return { label: 'Graduate', color: 'blue' };
-    if (num >= 4000) return { label: 'Senior', color: 'green' };
-    if (num >= 3000) return { label: 'Junior', color: 'orange' };
-    if (num >= 2000) return { label: 'Sophomore', color: 'yellow' };
-    if (num >= 1000) return { label: 'Freshman', color: 'red' };
-    return null;
-  };
 
   // Check if course is enrolled
   const isCourseEnrolled = (courseCode) => {
@@ -185,8 +171,6 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
 
   // Course card component
   const CourseCard = ({ course, isEnrolled = false }) => {
-    const levelBadge = getCourseLevelBadge(course.code);
-    
     return (
       <div 
         className={`course-card ${isEnrolled ? 'enrolled' : ''}`}
@@ -198,11 +182,6 @@ const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
             <h4 className="course-title">{course.title}</h4>
           </div>
           <div className="course-badges">
-            {levelBadge && (
-              <span className={`level-badge ${levelBadge.color}`}>
-                {levelBadge.label}
-              </span>
-            )}
             {isEnrolled && (
               <span className="enrolled-badge">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

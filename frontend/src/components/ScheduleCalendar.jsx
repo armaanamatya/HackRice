@@ -102,11 +102,62 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
     setHoveredCourse(null);
   };
 
-  // Handle joining group chat (placeholder for now)
-  const handleJoinGroupChat = (course) => {
+  // Handle joining group chat
+  const handleJoinGroupChat = async (course) => {
     console.log("Join group chat for:", course.courseCode);
-    // TODO: Implement group chat functionality
     setHoveredCourse(null);
+    
+    try {
+      // Get user's university from userData
+      const userUniversity = userData?.university;
+      if (!userUniversity || userUniversity === 'Other') {
+        console.error('User university not found or invalid');
+        alert('Unable to join group chat: University information not available');
+        return;
+      }
+
+      // Prepare request payload
+      const payload = {
+        userId: userData?.id || userData?._id, // Support both Auth0 ID and database ID
+        courseCode: course.courseCode,
+        courseName: course.courseName,
+        university: userUniversity
+      };
+
+      console.log('Joining course group with payload:', payload);
+
+      // Call the API to join/create group chat
+      const response = await fetch('/api/chat/join-course-group', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload)
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ message: response.statusText }));
+        throw new Error(errorData.message || 'Failed to join group chat');
+      }
+
+      const data = await response.json();
+      console.log('Successfully joined group chat:', data);
+
+      // Show success message
+      alert(`${data.message}! Group: "${data.conversation.name}" with ${data.conversation.participants.length} member(s).`);
+
+      // Optionally emit a custom event to notify chat sidebar to refresh
+      window.dispatchEvent(new CustomEvent('groupChatJoined', { 
+        detail: { 
+          conversation: data.conversation,
+          course: course
+        } 
+      }));
+
+    } catch (error) {
+      console.error('Error joining group chat:', error);
+      alert(`Failed to join group chat: ${error.message}`);
+    }
   };
 
   // Convert time to 12-hour format

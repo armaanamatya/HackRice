@@ -21,14 +21,46 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
   const [showNewChatModal, setShowNewChatModal] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
   
-  const { socket, isConnected, sendMessage, typingUsers, onlineUsers } = useSocket();
+  const { socket, isConnected, sendMessage } = useSocket();
   const { user } = useAuth0();
 
+  const fetchConversations = React.useCallback(async () => {
+    if (!user?.sub) {
+      console.log('No user.sub available for fetching conversations');
+      return;
+    }
+    
+    try {
+      const response = await fetch(`/api/chat/conversations?userId=${user.sub}`);
+      const data = await response.json();
+      setConversations(data.conversations || []);
+    } catch (error) {
+      console.error('Error fetching conversations:', error);
+    }
+  }, [user?.sub]);
+
   useEffect(() => {
-    if (isConnected && user) {
+    if (isConnected && user?.sub) {
       fetchConversations();
     }
-  }, [isConnected, user]);
+  }, [isConnected, user?.sub]); // Remove fetchConversations from dependencies
+
+  // Listen for custom group chat events from ScheduleCalendar
+  useEffect(() => {
+    const handleGroupChatJoined = (event) => {
+      console.log('Group chat joined event received:', event.detail);
+      // Refresh conversations to show the new group
+      if (user?.sub) {
+        fetchConversations();
+      }
+    };
+
+    window.addEventListener('groupChatJoined', handleGroupChatJoined);
+    
+    return () => {
+      window.removeEventListener('groupChatJoined', handleGroupChatJoined);
+    };
+  }, [user?.sub]); // Remove fetchConversations from dependencies
 
   useEffect(() => {
     if (!socket) return;
@@ -69,16 +101,6 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
       socket.off('conversation:messages');
     };
   }, [socket]);
-
-  const fetchConversations = async () => {
-    try {
-      const response = await fetch(`/api/chat/conversations?userId=${user.sub}`);
-      const data = await response.json();
-      setConversations(data.conversations || []);
-    } catch (error) {
-      console.error('Error fetching conversations:', error);
-    }
-  };
 
   const handleConversationSelect = (conversation) => {
     setSelectedConversation(conversation);
@@ -297,9 +319,7 @@ const NewChatModal = ({ onClose, onChatCreated, currentUserId, currentUserDbId }
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedUniversity, setSelectedUniversity] = useState('');
-  const [searchBy, setSearchBy] = useState('name'); // 'name', 'email', 'major'
   const [error, setError] = useState('');
-  const { user } = useAuth0();
 
   // Remove the useEffect and currentUserDbId state since we get it as prop
 
@@ -401,14 +421,6 @@ const NewChatModal = ({ onClose, onChatCreated, currentUserId, currentUserDbId }
     return () => clearTimeout(timeoutId);
   };
 
-  const getUniversityLogo = (university) => {
-    const logoMap = {
-      'University of Houston': '/University_of_Houston_Logo.svg',
-      'Rice University': '/Rice.webp',
-      'University of Texas at Dallas': '/UT_Dallas.png'
-    };
-    return logoMap[university] || null;
-  };
 
   return (
     <div className="modal-overlay" onClick={(e) => e.target === e.currentTarget && onClose()}>

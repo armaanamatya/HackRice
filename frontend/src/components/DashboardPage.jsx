@@ -280,7 +280,7 @@ const DashboardPage = ({
           />
         );
       case "classes": // New case for ClassesPage
-        return <ClassesPage userSchedule={userSchedule} />;
+        return <ClassesPage />;
       default:
         return (
           <ScheduleUploader
