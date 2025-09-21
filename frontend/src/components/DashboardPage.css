@@ -19,6 +19,7 @@
     );
   font-family: "Rubik", sans-serif;
   color: var(--text-color);
+  position: relative;
 }
 
 /* Sidebar Styles */
@@ -187,14 +188,21 @@
 /* Main Content Area */
 .dashboard-main {
   margin-left: 280px;
+  margin-right: 320px;
   flex: 1;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  transition: margin 0.3s ease;
 }
 
 .dashboard-sidebar.collapsed + .dashboard-main {
   margin-left: 80px;
+}
+
+/* Adjust main content when chat sidebar is collapsed */
+.dashboard-layout:has(.chat-sidebar.collapsed) .dashboard-main {
+  margin-right: 60px;
 }
 
 /* App Bar Styles */
@@ -400,6 +408,7 @@
 
   .dashboard-main {
     width: 100%;
+    margin-right: 0;
   }
 
   .mobile-menu-toggle {

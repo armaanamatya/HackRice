@@ -22,6 +22,7 @@ import ToastContainer, {
 } from "./ToastContainer";
 import SettingsDropdown from "./SettingsDropdown"; // Import SettingsDropdown
 import SearchResultsDropdown from "./SearchResultsDropdown"; // Import SearchResultsDropdown
+import ChatSidebar from "./ChatSidebar"; // Import ChatSidebar
 import {
   saveScheduleToLocalStorage,
   loadScheduleFromLocalStorage,
@@ -544,6 +545,9 @@ const DashboardPage = ({
           <div className="content-body">{renderContent()}</div>
         </main>
       </div>
+
+      {/* Chat Sidebar */}
+      <ChatSidebar userData={userData} />
 
       {/* Toast Notifications */}
       <ToastContainer />

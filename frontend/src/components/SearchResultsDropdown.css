@@ -42,17 +42,39 @@
 .search-result-item .user-info {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .search-result-item .user-name {
   font-weight: 500;
   color: var(--text-color);
   font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.search-result-item .user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  margin-bottom: 0.25rem;
 }
 
 .search-result-item .user-university {
   font-size: 0.85rem;
   color: var(--text-muted);
+  font-weight: 500;
+}
+
+.search-result-item .user-major {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.search-result-item .user-email {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  opacity: 0.8;
 }
 
 .search-message {

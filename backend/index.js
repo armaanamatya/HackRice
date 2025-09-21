@@ -44,8 +44,23 @@ app.use('/api/catalog', catalogRoutes);
 const reportRoutes = require('./routes/reports');
 app.use('/api/reports', reportRoutes);
 
+// Chat routes
+const chatRoutes = require('./routes/chat');
+app.use('/api/chat', chatRoutes);
+
+// Create HTTP server
+const http = require('http');
+const server = http.createServer(app);
+
+// Initialize Socket.io
+const { initializeSocketServer } = require('./socket/socketServer');
+const io = initializeSocketServer(server);
+
+// Make io accessible in routes
+app.set('io', io);
+
 // Start server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });

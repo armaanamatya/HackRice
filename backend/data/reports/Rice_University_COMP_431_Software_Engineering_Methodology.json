@@ -1,0 +1,122 @@
+{
+  "overview": {
+    "summary": "COMP 431 at Rice University provides a foundational understanding of software engineering principles, encompassing requirements analysis, design, and project management.  Students learn practical skills applicable to various software development contexts.",
+    "learningObjectives": [
+      "Understand and apply software requirements analysis techniques",
+      "Design robust and maintainable software systems using established design patterns",
+      "Manage software projects effectively using agile methodologies",
+      "Collaborate effectively in team-based software development projects",
+      "Apply software testing and quality assurance principles",
+      "Utilize version control systems and other software development tools"
+    ],
+    "primaryTopics": [
+      "Requirements Engineering",
+      "Software Design Patterns",
+      "Agile Project Management",
+      "Software Testing",
+      "Software Quality Assurance",
+      "Version Control",
+      "Software Development Tools",
+      "Teamwork and Collaboration"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "7",
+    "workloadHours": "10-15",
+    "difficultyFactors": [
+      "Rigorous project assignments",
+      "Conceptual complexity of design patterns",
+      "Teamwork dynamics",
+      "Time management demands"
+    ],
+    "recommendedPreparation": [
+      "Strong programming skills in Java or C++",
+      "Familiarity with data structures and algorithms",
+      "Basic understanding of object-oriented programming"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.0",
+    "commonReviews": [
+      "Helpful and knowledgeable professors",
+      "Challenging but rewarding assignments",
+      "Emphasis on practical application"
+    ],
+    "teachingStyle": "A mix of lectures, hands-on projects, and group work, often incorporating industry best practices and real-world case studies",
+    "availability": "Office hours typically offered weekly, with additional availability via email or appointment"
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable, consistently high demand among computer science majors",
+    "averageGradeDistribution": {
+      "A": "25",
+      "B": "40",
+      "C": "25",
+      "D/F": "10"
+    },
+    "completionRate": "90",
+    "popularityScore": "9"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Requirements analysis",
+      "Software design",
+      "Project management",
+      "Agile methodologies",
+      "Testing and QA",
+      "Teamwork",
+      "Problem-solving"
+    ],
+    "careerPaths": [
+      "Software Engineer",
+      "Software Architect",
+      "Project Manager",
+      "Data Scientist",
+      "DevOps Engineer"
+    ],
+    "salaryImpact": "Significant positive impact on starting salary for entry-level software engineering positions"
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students interested in software development careers",
+      "Students with a strong foundation in programming and problem-solving"
+    ],
+    "studyTips": [
+      "Active participation in class and group projects",
+      "Consistent effort throughout the semester",
+      "Seek help early when facing difficulties",
+      "Practice applying concepts through personal projects"
+    ],
+    "timeManagement": "Prioritize project milestones, break down large tasks into smaller manageable pieces, utilize project management tools",
+    "resources": [
+      "Head-First Design Patterns",
+      "Agile Software Development",
+      "Git documentation"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Emphasis on practical application through substantial projects",
+      "Integration of industry-standard tools and methodologies"
+    ],
+    "commonMistakes": [
+      "Poor time management",
+      "Insufficient planning for projects",
+      "Inadequate understanding of design patterns"
+    ],
+    "successFactors": [
+      "Active participation",
+      "Consistent effort",
+      "Effective teamwork",
+      "Proactive problem-solving"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COMP 431",
+    "courseName": "Software Engineering Methodology",
+    "university": "Rice University",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T04:34:47.833Z",
+    "reportVersion": "1.0"
+  }
+}
