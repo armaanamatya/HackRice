@@ -13,6 +13,7 @@ import DashboardPage from "./components/DashboardPage";
 import MatcherPage from "./components/MatcherPage";
 import ProfileDetailsPage from "./components/ProfileDetailsPage";
 import ClassesPage from "./components/ClassesPage"; // Import the new ClassesPage
+import ConnectionsPage from "./components/ConnectionsPage"; // Import the new ConnectionsPage
 import ChatPage from "./components/ChatPage"; // Import the new ChatPage
 import { SocketProvider } from "./contexts/SocketContext"; // Import Socket context
 // import SettingsPage from "./components/SettingsPage"; // Import the new SettingsPage
@@ -46,7 +47,7 @@ function App() {
   };
 
   const handleNavigateToMatcher = () => {
-    navigate("/dashboard/matcher");
+    navigate("/dashboard/connections");
   };
 
   const handleNavigateToProfileDetails = (userId) => {
@@ -465,59 +466,74 @@ function App() {
             )
           }
         />
-      <Route
-        path="/dashboard"
-        element={
-          <ProtectedRoute>
-            <DashboardPage
-              userData={userData}
-              onBackToDashboard={handleNavigateToDashboard}
-              onNavigateToMatcher={handleNavigateToMatcher}
-              onNavigateToProfileDetails={handleNavigateToProfileDetails}
-              onScheduleUpdate={handleUserScheduleUpdate}
-              userSchedule={userSchedule}
-              onLogout={handleLogout}
-              onNavigateToClasses={handleNavigateToClasses} // Pass the new prop here
-              userUniversity={userData?.university} // Pass user's university
-              // onNavigateToSettings={handleNavigateToSettings} // Pass the new prop here
-            />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/matcher"
-        element={
-          <ProtectedRoute>
-            <MatcherPage
-              onBackToDashboard={handleNavigateToDashboard}
-              currentUserSchedule={userSchedule}
-              userId={userData?._id} // Pass userId to MatcherPage
-              userUniversity={userData?.university} // Pass userUniversity to MatcherPage
-            />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/profile/:userId"
-        element={
-          <ProtectedRoute>
-            <ProfileDetailsPage
-              // userData={userData} // ProfileDetailsPage will fetch its own data
-              // setUserData={setUserData} // No longer needed here as ProfileDetailsPage manages its own data
-              onBackToDashboard={handleNavigateToDashboard}
-            />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/classes"
-        element={
-          <ProtectedRoute>
-            <ClassesPage userData={userData} userSchedule={userSchedule} onBackToDashboard={handleNavigateToDashboard} />
-          </ProtectedRoute>
-        }
-      />
-      {/* <Route
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage
+                userData={userData}
+                onBackToDashboard={handleNavigateToDashboard}
+                onNavigateToMatcher={handleNavigateToMatcher}
+                onNavigateToProfileDetails={handleNavigateToProfileDetails}
+                onScheduleUpdate={handleUserScheduleUpdate}
+                userSchedule={userSchedule}
+                onLogout={handleLogout}
+                onNavigateToClasses={handleNavigateToClasses} // Pass the new prop here
+                userUniversity={userData?.university} // Pass user's university
+                // onNavigateToSettings={handleNavigateToSettings} // Pass the new prop here
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/matcher"
+          element={
+            <ProtectedRoute>
+              <MatcherPage
+                onBackToDashboard={handleNavigateToDashboard}
+                currentUserSchedule={userSchedule}
+                userId={userData?._id} // Pass userId to MatcherPage
+                userUniversity={userData?.university} // Pass userUniversity to MatcherPage
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/profile/:userId"
+          element={
+            <ProtectedRoute>
+              <ProfileDetailsPage
+                // userData={userData} // ProfileDetailsPage will fetch its own data
+                // setUserData={setUserData} // No longer needed here as ProfileDetailsPage manages its own data
+                onBackToDashboard={handleNavigateToDashboard}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/classes"
+          element={
+            <ProtectedRoute>
+              <ClassesPage
+                userData={userData}
+                userSchedule={userSchedule}
+                onBackToDashboard={handleNavigateToDashboard}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/connections"
+          element={
+            <ProtectedRoute>
+              <ConnectionsPage
+                userData={userData}
+                onBackToDashboard={handleNavigateToDashboard}
+              />
+            </ProtectedRoute>
+          }
+        />
+        {/* <Route
         path="/dashboard/settings"
         element={
           <ProtectedRoute>
@@ -525,8 +541,8 @@ function App() {
           </ProtectedRoute>
         }
       /> */}
-      {/* Redirect any unhandled paths to the landing page or a 404 page */}
-      <Route path="*" element={<LandingPageContent />} />
+        {/* Redirect any unhandled paths to the landing page or a 404 page */}
+        <Route path="*" element={<LandingPageContent />} />
       </Routes>
     </SocketProvider>
   );
