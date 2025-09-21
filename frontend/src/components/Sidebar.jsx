@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import './Sidebar.css';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./Sidebar.css";
 
 /**
  * Sidebar component for navigation.
@@ -14,7 +14,9 @@ const Sidebar = ({ userName, onLogout }) => {
   return (
     <div className="sidebar-container">
       <div className="sidebar-header">
-        <Link to="/dashboard" className="sidebar-logo">Scedulr</Link>
+        <Link to="/dashboard" className="sidebar-logo">
+          skedulr
+        </Link>
       </div>
       <nav className="sidebar-nav">
         <ul className="sidebar-nav-links">

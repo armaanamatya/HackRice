@@ -47,7 +47,11 @@ function App() {
   };
 
   const handleNavigateToProfileDetails = (userId) => {
-    navigate(userId ? `/dashboard/profile/${userId}` : `/dashboard/profile/${userData?._id}`);
+    navigate(
+      userId
+        ? `/dashboard/profile/${userId}`
+        : `/dashboard/profile/${userData?._id}`
+    );
   };
 
   const handleNavigateToClasses = () => {
@@ -64,48 +68,53 @@ function App() {
 
   const handleLogin = () => {
     // Store login intent to differentiate from signup
-    sessionStorage.setItem('auth_intent', 'login');
+    sessionStorage.setItem("auth_intent", "login");
     loginWithRedirect({
       authorizationParams: {
         redirect_uri: `http://localhost:5173/dashboard`,
-        prompt: 'login'
-      }
+        prompt: "login",
+      },
     });
   };
 
   const handleSignUp = () => {
     // Store signup intent to differentiate from login
-    sessionStorage.setItem('auth_intent', 'signup');
-    loginWithRedirect({ 
+    sessionStorage.setItem("auth_intent", "signup");
+    loginWithRedirect({
       screen_hint: "signup",
       authorizationParams: {
         redirect_uri: `http://localhost:5173/create-profile`,
-        prompt: 'login'
-      }
+        prompt: "login",
+      },
     });
   };
 
   const handleLogout = () => {
-    logout({ returnTo: "http://localhost:5173"});
+    logout({ returnTo: "http://localhost:5173" });
   };
 
   const handleGetStarted = () => {
     // Store signup intent for new users
-    sessionStorage.setItem('auth_intent', 'signup');
+    sessionStorage.setItem("auth_intent", "signup");
     loginWithRedirect({
       authorizationParams: {
         redirect_uri: `http://localhost:5173/create-profile`,
-        prompt: 'login'
-      }
+        prompt: "login",
+      },
     });
   };
 
   useEffect(() => {
     const isMounted = {
-      current: true
+      current: true,
     };
 
-    console.log("Auth status changed. isAuthenticated:", isAuthenticated, "user:", user);
+    console.log(
+      "Auth status changed. isAuthenticated:",
+      isAuthenticated,
+      "user:",
+      user
+    );
     if (isAuthenticated && user) {
       // Fetch or sync user data from your backend
       const syncUserWithBackend = async () => {
@@ -128,11 +137,14 @@ function App() {
             setUserData(data.user); // Set the full user data from backend
             console.log("User data from backend:", data.user);
             console.log("User ID from backend:", data.user?._id);
-            console.log("Profile completed status from backend:", data.user?.profileCompleted);
+            console.log(
+              "Profile completed status from backend:",
+              data.user?.profileCompleted
+            );
 
             // Conditional redirection based on profileCompleted status
             const currentPath = window.location.pathname;
-            
+
             if (data.user && !data.user.profileCompleted) {
               // If profile is not completed, ensure user is on profile creation page
               if (currentPath !== "/create-profile") {
@@ -145,9 +157,9 @@ function App() {
               }
               // If user is already on dashboard or other protected routes, let them stay
             }
-            
+
             // Clear auth intent after processing
-            sessionStorage.removeItem('auth_intent');
+            sessionStorage.removeItem("auth_intent");
           } else if (isMounted.current) {
             console.error("Backend sync failed:", data.message);
             // Optionally handle error, e.g., redirect to an error page or show a message
@@ -178,7 +190,7 @@ function App() {
       {/* <header className="header">
         <div className="container">
           <nav className="navbar">
-            <a href="/" className="logo">Scedulr</a>
+            <a href="/" className="logo">Skedulr</a>
             <div className="nav-buttons">
               {isAuthenticated ? (
                 <button className="nav-button login-button" onClick={handleLogout}>Logout</button>
@@ -197,11 +209,11 @@ function App() {
       <section className="hero" id="hero">
         <div className="container">
           <h1 className="hero-title">
-            scedulr
+            skedulr
             {/* <span className="terminal-cursor">_</span> */}
           </h1>
           <p className="hero-subtitle">
-            connect with classmates, build communities, and excel academically
+            turning awkward schedules into effortless connections
           </p>
           {isAuthenticated && user ? (
             <div style={{ textAlign: "center" }}>
@@ -372,7 +384,7 @@ function App() {
           <div className="university-cta">
             <p>
               Don't see your university?{" "}
-              <a href="mailto:support@scedulr.com">Let us know!</a>
+              <a href="mailto:support@skedulr.com">Let us know!</a>
             </p>
           </div>
         </div>
@@ -383,7 +395,7 @@ function App() {
         <div className="container">
           <h2>Ready to transform your academic experience?</h2>
           <button className="cta-button" onClick={handleSignUp}>
-            Join Scedulr
+            Join Skedulr
           </button>
         </div>
       </section>
@@ -391,7 +403,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2025 Scedulr. Built for students, by students.</p>
+          <p>&copy; 2025 Skedulr. Built for students, by students.</p>
           <p>
             <a
               href="mailto:info@email.com"
@@ -408,7 +420,7 @@ function App() {
   // A protected route component that renders children only if authenticated
   const ProtectedRoute = ({ children }) => {
     if (!isAuthenticated) {
-      navigate('/');
+      navigate("/");
       return null; // or a loading spinner
     }
     return children;
