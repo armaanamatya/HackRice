@@ -1,0 +1,121 @@
+{
+  "overview": {
+    "summary": "COSC 1337, Programming Fundamentals II at the University of Houston, builds upon COSC 1336, introducing advanced programming concepts crucial for computer science students.",
+    "learningObjectives": [
+      "Understand and apply data structures",
+      "Master file processing techniques",
+      "Implement recursive algorithms",
+      "Apply object-oriented programming principles",
+      "Develop efficient and well-documented code",
+      "Debug and test complex programs"
+    ],
+    "primaryTopics": [
+      "Arrays and linked lists",
+      "Stacks and queues",
+      "Trees and graphs",
+      "File I/O and exception handling",
+      "Recursion and its applications",
+      "Object-oriented design principles",
+      "Inheritance and polymorphism",
+      "Software design and testing"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "7",
+    "workloadHours": "10-15",
+    "difficultyFactors": [
+      "Conceptual complexity of data structures",
+      "Debugging advanced code",
+      "Understanding object-oriented paradigms",
+      "Time commitment for programming assignments"
+    ],
+    "recommendedPreparation": [
+      "Strong foundation in COSC 1336",
+      "Familiarity with basic programming concepts",
+      "Problem-solving skills"
+    ]
+  },
+  "professors": {
+    "averageRating": "3.8",
+    "commonReviews": [
+      "Helpful TAs",
+      "Challenging assignments",
+      "Clear lectures",
+      "Gracious grading"
+    ],
+    "teachingStyle": "A mix of lectures, hands-on coding exercises, and group projects is common.",
+    "availability": "Office hours are typically available; accessibility varies by professor."
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable, consistently popular among computer science majors",
+    "averageGradeDistribution": {
+      "A": "20",
+      "B": "35",
+      "C": "30",
+      "D/F": "15"
+    },
+    "completionRate": "85",
+    "popularityScore": "8"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Problem-solving",
+      "Algorithm design",
+      "Data structures",
+      "Object-oriented programming",
+      "Software testing",
+      "Code debugging"
+    ],
+    "careerPaths": [
+      "Software engineer",
+      "Web developer",
+      "Data scientist",
+      "Game developer"
+    ],
+    "salaryImpact": "Strong foundation for higher-paying roles in software development."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students with a strong interest in programming",
+      "Students who are self-motivated and dedicated to practice"
+    ],
+    "studyTips": [
+      "Regular practice coding",
+      "Seek help from TAs and professors",
+      "Work in study groups",
+      "Start assignments early"
+    ],
+    "timeManagement": "Effective time management is crucial, especially with weekly assignments.",
+    "resources": [
+      "Required textbook",
+      "Online resources for data structures and algorithms",
+      "University tutoring services"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Emphasis on practical application through projects",
+      "Integration of current industry practices"
+    ],
+    "commonMistakes": [
+      "Ignoring edge cases in code",
+      "Poor code documentation",
+      "Lack of testing"
+    ],
+    "successFactors": [
+      "Consistent effort",
+      "Active participation in class",
+      "Seeking help when needed",
+      "Strong problem-solving abilities"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COSC 1337",
+    "courseName": "Programming Fundamentals II",
+    "university": "University of Houston",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T07:19:59.054Z",
+    "reportVersion": "1.0"
+  }
+}

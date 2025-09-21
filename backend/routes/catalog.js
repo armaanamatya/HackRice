@@ -19,57 +19,73 @@ async function loadAllCourses() {
   console.log("Loading course catalog data...");
   const allCourses = [];
 
-  // Load UH JSON files
-  const uhDataPath = path.join(__dirname, "../data/UH");
-  const riceDataPath = path.join(__dirname, "../data/rice");
-
   try {
-    // Load UH courses (JSON format)
-    if (fs.existsSync(uhDataPath)) {
-      const uhFiles = fs.readdirSync(uhDataPath).filter(file => file.endsWith('.json'));
+    // Load comprehensive UH courses
+    const uhComprehensivePath = path.join(__dirname, "../../uh_comprehensive_courses.json");
+    if (fs.existsSync(uhComprehensivePath)) {
+      try {
+        const fileContent = fs.readFileSync(uhComprehensivePath, 'utf8');
+        const courses = JSON.parse(fileContent);
+        
+        courses.forEach(course => {
+          allCourses.push({
+            ...course,
+            university: "University of Houston",
+            source: "UH"
+          });
+        });
+        console.log(`Loaded ${courses.length} UH courses from comprehensive file`);
+      } catch (error) {
+        console.error("Error loading UH comprehensive file:", error);
+      }
+    }
+
+    // Load comprehensive Rice courses
+    const riceComprehensivePath = path.join(__dirname, "../../rice_comprehensive_courses.json");
+    if (fs.existsSync(riceComprehensivePath)) {
+      try {
+        const fileContent = fs.readFileSync(riceComprehensivePath, 'utf8');
+        const courses = JSON.parse(fileContent);
+        
+        courses.forEach(course => {
+          allCourses.push({
+            ...course,
+            university: "Rice University",
+            source: "Rice"
+          });
+        });
+        console.log(`Loaded ${courses.length} Rice courses from comprehensive file`);
+      } catch (error) {
+        console.error("Error loading Rice comprehensive file:", error);
+      }
+    }
+
+    // Load UTD courses
+    const utdPath = path.join(__dirname, "../data/utd");
+    if (fs.existsSync(utdPath)) {
+      const utdFiles = fs.readdirSync(utdPath).filter(file => file.endsWith('.json'));
       
-      for (const file of uhFiles) {
+      for (const file of utdFiles) {
         try {
-          const filePath = path.join(uhDataPath, file);
+          const filePath = path.join(utdPath, file);
           const fileContent = fs.readFileSync(filePath, 'utf8');
           const courses = JSON.parse(fileContent);
           
           courses.forEach(course => {
             allCourses.push({
               ...course,
-              university: "University of Houston",
-              source: "UH"
+              university: "UT Dallas",
+              source: "UTD"
             });
           });
+          console.log(`Loaded UTD courses from ${file}`);
         } catch (error) {
-          console.error(`Error loading UH file ${file}:`, error);
+          console.error(`Error loading UTD file ${file}:`, error);
         }
       }
     }
 
-    // Load Rice courses (CSV format)
-    if (fs.existsSync(riceDataPath)) {
-      const riceFiles = fs.readdirSync(riceDataPath).filter(file => file.endsWith('.csv'));
-      
-      for (const file of riceFiles) {
-        try {
-          const filePath = path.join(riceDataPath, file);
-          const courses = await parseCsvFile(filePath);
-          
-          courses.forEach(course => {
-            allCourses.push({
-              ...course,
-              university: "Rice University",
-              source: "Rice"
-            });
-          });
-        } catch (error) {
-          console.error(`Error loading Rice file ${file}:`, error);
-        }
-      }
-    }
-
-    console.log(`Loaded ${allCourses.length} courses from catalog`);
+    console.log(`Loaded ${allCourses.length} total courses from catalog`);
     
     // Update cache
     coursesCache = allCourses;
@@ -80,19 +96,6 @@ async function loadAllCourses() {
     console.error("Error loading course catalog:", error);
     return [];
   }
-}
-
-// Helper function to parse CSV files
-function parseCsvFile(filePath) {
-  return new Promise((resolve, reject) => {
-    const courses = [];
-    
-    fs.createReadStream(filePath)
-      .pipe(csv())
-      .on('data', (data) => courses.push(data))
-      .on('end', () => resolve(courses))
-      .on('error', reject);
-  });
 }
 
 // GET /api/catalog - Get all courses with optional search and filters
@@ -173,9 +176,15 @@ router.get("/", async (req, res) => {
 
     // Sort courses
     filteredCourses.sort((a, b) => {
-      // First by department, then by code
+      // First by university
+      const uniCompare = (a.university || '').localeCompare(b.university || '');
+      if (uniCompare !== 0) return uniCompare;
+      
+      // Then by department
       const deptCompare = (a.department || '').localeCompare(b.department || '');
       if (deptCompare !== 0) return deptCompare;
+      
+      // Finally by code
       return (a.code || '').localeCompare(b.code || '');
     });
 
@@ -184,7 +193,7 @@ router.get("/", async (req, res) => {
     const endIndex = startIndex + parseInt(limit);
     const paginatedCourses = filteredCourses.slice(startIndex, endIndex);
 
-    // Get unique departments for filter options
+    // Get unique values for filters
     const departments = [...new Set(allCourses.map(course => course.department))].sort();
     const universities = [...new Set(allCourses.map(course => course.university))].sort();
     const creditHours = [...new Set(allCourses.map(course => course.credit_hours))].sort((a, b) => parseInt(a) - parseInt(b));

@@ -1,0 +1,124 @@
+{
+  "overview": {
+    "summary": "ACCT 133, Principles of Theory, provides an advanced exploration of accounting theories, connecting current research with practical industry applications.",
+    "learningObjectives": [
+      "Critically evaluate accounting theories and their implications",
+      "Apply theoretical frameworks to real-world accounting problems",
+      "Analyze current accounting research and its impact on practice",
+      "Develop advanced problem-solving skills in accounting",
+      "Communicate complex accounting concepts effectively",
+      "Understand the ethical considerations in accounting theory"
+    ],
+    "primaryTopics": [
+      "Financial accounting theory",
+      "Managerial accounting theory",
+      "Auditing theory",
+      "Accounting information systems",
+      "Behavioral accounting",
+      "Current accounting research trends",
+      "International accounting standards",
+      "Ethics in accounting"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "7",
+    "workloadHours": "10-12",
+    "difficultyFactors": [
+      "Advanced theoretical concepts",
+      "Rigorous analytical assignments",
+      "Emphasis on critical thinking and application",
+      "Time-consuming research projects"
+    ],
+    "recommendedPreparation": [
+      "Strong foundation in introductory accounting principles",
+      "Familiarity with statistical analysis",
+      "Proficiency in research methods"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.0",
+    "commonReviews": [
+      "Clear explanations",
+      "Challenging but fair grading",
+      "Helpful office hours",
+      "High expectations",
+      "Fast-paced lectures"
+    ],
+    "teachingStyle": "A mix of lecture, discussion, and case studies, often involving group work and presentations.",
+    "availability": "Generally available during scheduled office hours and by appointment"
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable; consistent demand within the accounting department.",
+    "averageGradeDistribution": {
+      "A": "20",
+      "B": "40",
+      "C": "30",
+      "D/F": "10"
+    },
+    "completionRate": "90",
+    "popularityScore": "7"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Critical thinking",
+      "Problem-solving",
+      "Analytical skills",
+      "Research skills",
+      "Communication skills",
+      "Advanced accounting knowledge"
+    ],
+    "careerPaths": [
+      "Public accounting",
+      "Corporate accounting",
+      "Government accounting",
+      "Academia"
+    ],
+    "salaryImpact": "This course enhances competitiveness for higher-paying accounting roles."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students with a strong interest in accounting theory",
+      "Students aiming for graduate studies in accounting",
+      "Students seeking challenging intellectual stimulation"
+    ],
+    "studyTips": [
+      "Regularly attend classes and participate in discussions",
+      "Form study groups for collaborative learning",
+      "Seek help from the professor and TAs when needed",
+      "Start working on assignments early"
+    ],
+    "timeManagement": "Prioritize assignments and allocate sufficient time for reading, research, and problem-solving.",
+    "resources": [
+      "Recommended textbook(s) will be listed on syllabus",
+      "Rice University library resources",
+      "Online accounting journals and databases"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on current accounting research",
+      "Integration of industry practices into theoretical concepts",
+      "Emphasis on critical thinking and analytical skills"
+    ],
+    "commonMistakes": [
+      "Insufficient preparation for exams",
+      "Late submission of assignments",
+      "Poor understanding of theoretical frameworks"
+    ],
+    "successFactors": [
+      "Active class participation",
+      "Consistent effort and dedication",
+      "Effective time management",
+      "Seeking help when needed"
+    ]
+  },
+  "metadata": {
+    "courseCode": "ACCT 133",
+    "courseName": "Principles of Theory",
+    "university": "Rice University",
+    "department": "Accounting",
+    "generatedAt": "2025-09-21T08:05:37.527Z",
+    "reportVersion": "1.0"
+  }
+}
