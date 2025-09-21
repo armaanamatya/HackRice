@@ -41,3 +41,5 @@ docs/
 # Claude
 .claude/
 CLAUDE.md
+
+*.md

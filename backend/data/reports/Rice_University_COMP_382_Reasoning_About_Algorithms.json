@@ -1,0 +1,123 @@
+{
+  "overview": {
+    "summary": "COMP 382 at Rice University provides a rigorous exploration of advanced algorithmic analysis techniques.  Students delve into complexity theory, graph algorithms, and dynamic programming, building a strong foundation for advanced computer science studies.",
+    "learningObjectives": [
+      "Understand fundamental concepts of algorithm analysis",
+      "Design and analyze efficient graph algorithms",
+      "Apply dynamic programming techniques to solve complex problems",
+      "Master asymptotic notation and complexity classes",
+      "Prove algorithm correctness and analyze runtime efficiency",
+      "Implement and evaluate algorithms using practical programming skills"
+    ],
+    "primaryTopics": [
+      "Asymptotic Notation (Big O)",
+      "Graph Algorithms (DFS, BFS, Dijkstra's, etc.)",
+      "Dynamic Programming",
+      "Complexity Theory (NP-completeness)",
+      "Greedy Algorithms",
+      "Algorithm Design Paradigms",
+      "Amortized Analysis",
+      "Advanced Data Structures"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "8",
+    "workloadHours": "12",
+    "difficultyFactors": [
+      "Rigorous mathematical proofs",
+      "Challenging problem sets",
+      "Fast-paced lectures",
+      "Need for strong programming skills"
+    ],
+    "recommendedPreparation": [
+      "Strong foundation in discrete mathematics",
+      "Proficiency in data structures and algorithms (COMP 182)",
+      "Experience with a programming language like Java or Python"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.2",
+    "commonReviews": [
+      "Clear explanations",
+      "Helpful office hours",
+      "Demanding but fair grading",
+      "Challenging assignments",
+      "Fast-paced lectures"
+    ],
+    "teachingStyle": "Typically a mix of lectures, problem-solving sessions, and coding assignments.  Emphasis on theoretical foundations and practical application.",
+    "availability": "Office hours are generally available, but accessibility may vary depending on the professor."
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable; consistently popular among Computer Science majors.",
+    "averageGradeDistribution": {
+      "A": "20",
+      "B": "35",
+      "C": "30",
+      "D/F": "15"
+    },
+    "completionRate": "90",
+    "popularityScore": "8"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Algorithmic design and analysis",
+      "Problem-solving skills",
+      "Mathematical reasoning",
+      "Coding proficiency",
+      "Teamwork (if projects are involved)"
+    ],
+    "careerPaths": [
+      "Software Engineer",
+      "Data Scientist",
+      "Algorithm Developer",
+      "Research Scientist"
+    ],
+    "salaryImpact": "Strong foundation in algorithms significantly improves job prospects and earning potential in tech industries."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students with a strong interest in theoretical computer science",
+      "Students aiming for graduate studies in computer science",
+      "Students who enjoy challenging coursework and problem-solving"
+    ],
+    "studyTips": [
+      "Attend all lectures and recitations",
+      "Actively participate in problem-solving sessions",
+      "Form study groups with classmates",
+      "Start assignments early",
+      "Practice consistently"
+    ],
+    "timeManagement": "Allocate sufficient time for lectures, assignments, and studying.  Prioritize tasks and break down large assignments into smaller, manageable chunks.",
+    "resources": [
+      "Introduction to Algorithms by Cormen et al.",
+      "Online resources on graph algorithms and dynamic programming",
+      "Rice University's online learning resources"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on rigorous mathematical analysis",
+      "Strong emphasis on proof techniques"
+    ],
+    "commonMistakes": [
+      "Ignoring edge cases in algorithms",
+      "Poor time management",
+      "Insufficient practice with algorithm design"
+    ],
+    "successFactors": [
+      "Strong mathematical background",
+      "Consistent practice and problem-solving",
+      "Active participation in class",
+      "Seeking help when needed"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COMP 382",
+    "courseName": "Reasoning About Algorithms",
+    "university": "Rice University",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T04:19:04.806Z",
+    "reportVersion": "1.0"
+  }
+}
