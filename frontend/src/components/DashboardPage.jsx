@@ -5,9 +5,7 @@ import {
   IconUser,
   IconLogout,
   IconMenu2,
-  IconBell,
   IconSettings,
-  IconSearch,
   IconChevronLeft,
   IconBook2, // Added IconBook2
 } from "@tabler/icons-react";
@@ -486,7 +484,6 @@ const DashboardPage = ({
             </button>
 
             <div className="search-container">
-              <IconSearch size={20} className="search-icon" />
               <input
                 type="text"
                 placeholder="Search..."
@@ -507,10 +504,6 @@ const DashboardPage = ({
           </div>
 
           <div className="app-bar-right">
-            <button className="notification-button" aria-label="Notifications">
-              <IconBell size={20} />
-            </button>
-
             <div className="settings-dropdown-wrapper">
               <button
                 className="settings-button"

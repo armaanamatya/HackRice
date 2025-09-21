@@ -251,7 +251,7 @@
   background: var(--hover-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
-  padding: 0.5rem 0.75rem 0.5rem 2.5rem;
+  padding: 0.5rem 0.75rem;
   font-size: 0.9rem;
   color: var(--text-color);
   width: 300px;
@@ -264,12 +264,6 @@
   box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
 }
 
-.search-icon {
-  position: absolute;
-  left: 0.75rem;
-  color: var(--light-text-color);
-  z-index: 1;
-}
 
 .app-bar-right {
   display: flex;
@@ -277,7 +271,6 @@
   gap: 1rem;
 }
 
-.notification-button,
 .settings-button {
   background: none;
   border: none;
@@ -288,7 +281,6 @@
   transition: all 0.3s ease;
 }
 
-.notification-button:hover,
 .settings-button:hover {
   background: var(--hover-bg);
   color: var(--text-color);
@@ -450,7 +442,6 @@
     gap: 0.5rem;
   }
 
-  .notification-button,
   .settings-button {
     padding: 0.4rem;
   }
