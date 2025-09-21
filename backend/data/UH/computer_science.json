@@ -1,0 +1,82 @@
+[
+  {
+    "code": "COSC 1301",
+    "title": "Introduction to Computing",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Introduction to the field of computer science. Overview of computer hardware, software, programming languages, data structures, algorithms, and applications of computing.",
+    "prerequisites": "None"
+  },
+  {
+    "code": "COSC 1336",
+    "title": "Programming Fundamentals I",
+    "department": "Computer Science",
+    "credit_hours": "3", 
+    "description": "Introduction to computer programming with emphasis on systematic program design, problem-solving methods, and algorithm development using a structured, high-level programming language.",
+    "prerequisites": "COSC 1301 or equivalent programming experience"
+  },
+  {
+    "code": "COSC 1337",
+    "title": "Programming Fundamentals II",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Continuation of Programming Fundamentals I. Advanced programming concepts including data structures, file processing, recursion, and object-oriented programming principles.",
+    "prerequisites": "COSC 1336"
+  },
+  {
+    "code": "COSC 2336",
+    "title": "Data Structures and Algorithms I",
+    "department": "Computer Science", 
+    "credit_hours": "3",
+    "description": "Introduction to the analysis of algorithms and their associated data structures. Topics include stacks, queues, lists, trees, sorting, and searching algorithms.",
+    "prerequisites": "COSC 1337 and MATH 1431"
+  },
+  {
+    "code": "COSC 2430", 
+    "title": "Data Structures and Algorithms II",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Advanced data structures and algorithm analysis. Topics include graphs, advanced sorting algorithms, dynamic programming, and algorithm complexity analysis.",
+    "prerequisites": "COSC 2336"
+  },
+  {
+    "code": "COSC 3380",
+    "title": "Database Systems",
+    "department": "Computer Science",
+    "credit_hours": "3", 
+    "description": "Introduction to database systems including conceptual design, logical design, and physical design of databases. Topics include ER modeling, normalization, SQL, and transaction processing.",
+    "prerequisites": "COSC 2430"
+  },
+  {
+    "code": "COSC 3360",
+    "title": "Operating Systems",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Principles of operating system design and implementation. Topics include process management, memory management, file systems, and concurrency control.",
+    "prerequisites": "COSC 2430 and COSC 2425"
+  },
+  {
+    "code": "COSC 4353",
+    "title": "Software Engineering", 
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Principles and practices of software engineering including requirements analysis, design methodologies, implementation strategies, testing, and project management.",
+    "prerequisites": "COSC 3380"
+  },
+  {
+    "code": "COSC 4377",
+    "title": "Computer Networks",
+    "department": "Computer Science",
+    "credit_hours": "3",
+    "description": "Introduction to computer networks and data communications. Topics include network protocols, network architectures, and network security.",
+    "prerequisites": "COSC 3360"
+  },
+  {
+    "code": "COSC 5350",
+    "title": "Machine Learning",
+    "department": "Computer Science", 
+    "credit_hours": "3",
+    "description": "Introduction to machine learning algorithms and techniques. Topics include supervised learning, unsupervised learning, neural networks, and deep learning.",
+    "prerequisites": "COSC 4353 and MATH 3321"
+  }
+]

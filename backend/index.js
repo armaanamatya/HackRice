@@ -36,6 +36,10 @@ app.use('/api/schedule', scheduleRoutes);
 const courseRoutes = require('./routes/courses');
 app.use('/api/courses', courseRoutes);
 
+// Catalog routes
+const catalogRoutes = require('./routes/catalog');
+app.use('/api/catalog', catalogRoutes);
+
 // Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

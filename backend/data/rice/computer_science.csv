@@ -1,0 +1,11 @@
+code,title,department,credit_hours,description,prerequisites
+COMP 140,Computational Thinking,Computer Science,4,"Introduction to computational thinking and programming. Problem-solving techniques using Python programming language.","None"
+COMP 182,Algorithmic Thinking,Computer Science,4,"Introduction to algorithms and data structures. Fundamental algorithms for sorting, searching, and graph traversal.","COMP 140"
+COMP 215,Introduction to Program Design,Computer Science,4,"Object-oriented programming design and implementation using Java. Software design principles and patterns.","COMP 182"  
+COMP 321,Introduction to Computer Systems,Computer Science,4,"Computer systems from a programmer's perspective. Assembly language, memory hierarchy, and system-level programming.","COMP 215"
+COMP 322,Principles of Parallel Programming,Computer Science,4,"Principles of parallel programming including threads, synchronization, and parallel algorithms.","COMP 321"
+COMP 382,Reasoning About Algorithms,Computer Science,4,"Advanced algorithmic analysis including complexity theory, graph algorithms, and dynamic programming.","COMP 182"
+COMP 421,Operating Systems and Concurrent Programming,Computer Science,4,"Operating system principles including process management, memory management, and concurrency control.","COMP 321"
+COMP 431,Software Engineering Methodology,Computer Science,4,"Software engineering principles including requirements analysis, design patterns, and project management.","COMP 215"
+COMP 440,Artificial Intelligence,Computer Science,4,"Introduction to artificial intelligence including search algorithms, machine learning, and knowledge representation.","COMP 382"
+COMP 545,Machine Learning,Computer Science,4,"Advanced machine learning techniques including deep learning, reinforcement learning, and statistical learning theory.","COMP 440 and MATH 355"
