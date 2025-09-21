@@ -132,10 +132,6 @@ const CourseReportModal = ({ report, isOpen, onClose, loading, error }) => {
           <div className="loading-container">
             <div className="loading-spinner large"></div>
             <h3>Generating Course Report</h3>
-            <p style={{ marginBottom: "50px" }}>
-              AI is researching course details, professor ratings, and career
-              insights...
-            </p>
           </div>
         </div>
       </div>

@@ -18,6 +18,7 @@ import ProfilePicture from './ProfilePicture';
 import ProfilePictureUpload from './ProfilePictureUpload';
 import "./ProfileDetailsPage.css";
 import { useParams } from 'react-router-dom'; // Import useParams
+import { isSchedulePubliclyVisible } from '../utils/settingsUtils'; // Import the new utility
 
 /**
  * @typedef {Object} UserProfileData
@@ -93,6 +94,12 @@ const ProfileDetailsPage = ({ onBackToDashboard, onUserDataUpdate, currentUserDa
       setError("No user ID provided.");
     }
   }, [userId]);
+
+  // Check if schedule should be visible based on privacy settings
+  const shouldShowSchedule = userProfile && isSchedulePubliclyVisible(
+    userProfile._id || userProfile.id, 
+    currentUserData?._id || currentUserData?.id
+  );
 
   // Handle profile picture upload success
   const handleUploadSuccess = (profilePictureUrl) => {
@@ -346,46 +353,61 @@ const ProfileDetailsPage = ({ onBackToDashboard, onUserDataUpdate, currentUserDa
               )}
 
               {/* User Schedule Section - Moved below About Me */}
-              {userProfile.schedule && userProfile.schedule.length > 0 ? (
-                <div className="profile-section">
-                  <div className="section-header">
-                    <IconCalendar size={20} className="section-icon" />
-                    <h3 className="section-title">Schedule</h3>
-                  </div>
-                  <div className="schedule-preview-wrapper">
-                    <div className="schedule-preview-card">
-                      <div className="schedule-stats">
-                        <div className="stat-item">
-                          <span className="stat-number">{userProfile.schedule.length}</span>
-                          <span className="stat-label">Courses</span>
+              {shouldShowSchedule ? (
+                userProfile.schedule && userProfile.schedule.length > 0 ? (
+                  <div className="profile-section">
+                    <div className="section-header">
+                      <IconCalendar size={20} className="section-icon" />
+                      <h3 className="section-title">Schedule</h3>
+                    </div>
+                    <div className="schedule-preview-wrapper">
+                      <div className="schedule-preview-card">
+                        <div className="schedule-stats">
+                          <div className="stat-item">
+                            <span className="stat-number">{userProfile.schedule.length}</span>
+                            <span className="stat-label">Courses</span>
+                          </div>
+                          <div className="stat-item">
+                            <span className="stat-number">
+                              {new Set(userProfile.schedule.map(course => course.days?.join('') || '')).size}
+                            </span>
+                            <span className="stat-label">Days</span>
+                          </div>
                         </div>
-                        <div className="stat-item">
-                          <span className="stat-number">
-                            {new Set(userProfile.schedule.map(course => course.days?.join('') || '')).size}
-                          </span>
-                          <span className="stat-label">Days</span>
-                        </div>
+                        <button 
+                          className="view-schedule-button"
+                          onClick={() => setShowSchedulePopup(true)}
+                        >
+                          <IconEye size={18} />
+                          View Full Schedule
+                        </button>
                       </div>
-                      <button 
-                        className="view-schedule-button"
-                        onClick={() => setShowSchedulePopup(true)}
-                      >
-                        <IconEye size={18} />
-                        View Full Schedule
-                      </button>
                     </div>
                   </div>
-                </div>
+                ) : (
+                  <div className="profile-section">
+                    <div className="section-header">
+                      <IconCalendar size={20} className="section-icon" />
+                      <h3 className="section-title">Schedule</h3>
+                    </div>
+                    <div className="no-schedule-available">
+                      <p>This user hasn't uploaded their schedule yet.</p>
+                    </div>
+                  </div>
+                )
               ) : (
-                <div className="profile-section">
-                  <div className="section-header">
-                    <IconCalendar size={20} className="section-icon" />
-                    <h3 className="section-title">Schedule</h3>
+                // Show message when schedule is private
+                userId !== (currentUserData?._id || currentUserData?.id) && (
+                  <div className="profile-section">
+                    <div className="section-header">
+                      <IconCalendar size={20} className="section-icon" />
+                      <h3 className="section-title">Schedule</h3>
+                    </div>
+                    <div className="no-schedule-available">
+                      <p>This user has chosen to keep their schedule private.</p>
+                    </div>
                   </div>
-                  <div className="no-schedule-available">
-                    <p>This user hasn't uploaded their schedule yet.</p>
-                  </div>
-                </div>
+                )
               )}
 
               {/* Interests Section */}
@@ -408,12 +430,14 @@ const ProfileDetailsPage = ({ onBackToDashboard, onUserDataUpdate, currentUserDa
       </div>
 
       {/* Schedule Popup */}
-      <SchedulePopup
-        isOpen={showSchedulePopup}
-        onClose={() => setShowSchedulePopup(false)}
-        schedule={userProfile?.schedule || []}
-        userData={userProfile}
-      />
+      {shouldShowSchedule && (
+        <SchedulePopup
+          isOpen={showSchedulePopup}
+          onClose={() => setShowSchedulePopup(false)}
+          schedule={userProfile?.schedule || []}
+          userData={userProfile}
+        />
+      )}
     </div>
   );
 };
