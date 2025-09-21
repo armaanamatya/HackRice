@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import CourseReportModal from './CourseReportModal';
+import CourseCard from './shared/CourseCard';
 import './ClassesPage.css';
 
 const ClassesPage = ({ userData, onBackToDashboard }) => {
@@ -22,6 +23,7 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
   });
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [enrolledCourses, setEnrolledCourses] = useState([]);
+  const [bookmarkedCourses, setBookmarkedCourses] = useState([]);
   const [reportModal, setReportModal] = useState({
     isOpen: false,
     loading: false,
@@ -33,21 +35,29 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
 
   // Fetch enrolled courses from the user's schedule
   useEffect(() => {
-    const fetchEnrolledCourses = async () => {
+    const fetchUserData = async () => {
       if (!userData?._id) return;
 
       try {
-        const response = await fetch(`/api/courses/${userData._id}`);
-        if (response.ok) {
-          const data = await response.json();
+        // Fetch enrolled courses
+        const enrolledResponse = await fetch(`/api/courses/${userData._id}`);
+        if (enrolledResponse.ok) {
+          const data = await enrolledResponse.json();
           setEnrolledCourses(data.courses || []);
         }
+
+        // Fetch bookmarked courses
+        const bookmarkedResponse = await fetch(`/api/bookmarks/${userData._id}`);
+        if (bookmarkedResponse.ok) {
+          const bookmarks = await bookmarkedResponse.json();
+          setBookmarkedCourses(bookmarks || []);
+        }
       } catch (error) {
-        console.error('Error fetching enrolled courses:', error);
+        console.error('Error fetching user data:', error);
       }
     };
 
-    fetchEnrolledCourses();
+    fetchUserData();
   }, [userData]);
 
   // Memoized enrolled course codes for quick lookup
@@ -169,45 +179,76 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
     });
   };
 
-  // Course card component
-  const CourseCard = ({ course, isEnrolled = false }) => {
-    return (
-      <div 
-        className={`course-card ${isEnrolled ? 'enrolled' : ''}`}
-        onClick={() => setSelectedCourse(course)}
-      >
-        <div className="course-header">
-          <div className="course-code-title">
-            <h3 className="course-code">{course.code}</h3>
-            <h4 className="course-title">{course.title}</h4>
-          </div>
-          <div className="course-badges">
-            {isEnrolled && (
-              <span className="enrolled-badge">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <polyline points="20,6 9,17 4,12"></polyline>
-                </svg>
-                Enrolled
-              </span>
-            )}
-          </div>
-        </div>
-        
-        <div className="course-meta">
-          <span className="department">{course.department}</span>
-          <span className="university">{course.university}</span>
-          <span className="credit-hours">{course.credit_hours} Credit Hours</span>
-        </div>
-        
-        <p className="course-description">{course.description}</p>
-        
-        {course.prerequisites && course.prerequisites !== 'None' && (
-          <div className="prerequisites">
-            <strong>Prerequisites:</strong> {course.prerequisites}
-          </div>
-        )}
-      </div>
+  // Handle bookmark toggle
+  const handleBookmarkToggle = async (course) => {
+    if (!userData?._id) return;
+
+    const isCurrentlyBookmarked = bookmarkedCourses.some(
+      bookmark => bookmark.course_code === course.code && bookmark.university === course.university
     );
+
+    try {
+      if (isCurrentlyBookmarked) {
+        // Remove bookmark
+        await fetch(
+          `/api/bookmarks/${userData._id}/${course.code}/${course.university}`,
+          { method: 'DELETE' }
+        );
+        setBookmarkedCourses(prev => 
+          prev.filter(b => b.course_code !== course.code || b.university !== course.university)
+        );
+      } else {
+        // Add bookmark
+        const response = await fetch('/api/bookmarks', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            userId: userData._id,
+            courseCode: course.code,
+            university: course.university
+          })
+        });
+        const newBookmark = await response.json();
+        setBookmarkedCourses(prev => [...prev, newBookmark]);
+      }
+    } catch (error) {
+      console.error('Error toggling bookmark:', error);
+      alert('Failed to update bookmark. Please try again.');
+    }
+  };
+
+  // Handle adding/updating note
+  const handleAddNote = async (course, note) => {
+    if (!userData?._id) return;
+
+    try {
+      const response = await fetch(
+        `/api/bookmarks/${userData._id}/${course.code}/${course.university}`,
+        {
+          method: 'PATCH',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ notes: note })
+        }
+      );
+
+      if (!response.ok) throw new Error('Failed to update note');
+
+      const updatedBookmark = await response.json();
+      setBookmarkedCourses(prev =>
+        prev.map(b =>
+          b.course_code === course.code && b.university === course.university
+            ? updatedBookmark
+            : b
+        )
+      );
+    } catch (error) {
+      console.error('Error updating note:', error);
+      throw error;
+    }
   };
 
   return (
@@ -372,6 +413,13 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
                       key={`${course.code}-${course.university}`} 
                       course={course} 
                       isEnrolled={isCourseEnrolled(course.code)}
+                      isBookmarked={bookmarkedCourses.some(
+                        b => b.course_code === course.code && b.university === course.university
+                      )}
+                      onBookmarkToggle={handleBookmarkToggle}
+                      onAddNote={handleAddNote}
+                      userData={userData}
+                      onClick={() => setSelectedCourse(course)}
                     />
                   ))}
                 </div>

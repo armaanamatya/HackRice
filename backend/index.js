@@ -36,6 +36,14 @@ app.use('/api/schedule', scheduleRoutes);
 const courseRoutes = require('./routes/courses');
 app.use('/api/courses', courseRoutes);
 
+// Bookmark routes
+const bookmarkRoutes = require('./routes/bookmarks');
+app.use('/api/bookmarks', bookmarkRoutes);
+
+// New: Catalog Courses routes
+const catalogCourseRoutes = require('./routes/catalogCourses');
+app.use('/api/catalog-courses', catalogCourseRoutes);
+
 // Catalog routes
 const catalogRoutes = require('./routes/catalog');
 app.use('/api/catalog', catalogRoutes);
