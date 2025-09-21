@@ -352,51 +352,6 @@
   align-items: flex-end;
 }
 
-/* Level Badges */
-.level-badge {
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-}
-
-.level-badge.red {
-  background: #fef2f2;
-  color: #dc2626;
-  border: 1px solid #fecaca;
-}
-
-.level-badge.yellow {
-  background: #fffbeb;
-  color: #d97706;
-  border: 1px solid #fed7aa;
-}
-
-.level-badge.orange {
-  background: #fff7ed;
-  color: #ea580c;
-  border: 1px solid #fdba74;
-}
-
-.level-badge.green {
-  background: #f0fdf4;
-  color: #16a34a;
-  border: 1px solid #bbf7d0;
-}
-
-.level-badge.blue {
-  background: #eff6ff;
-  color: #2563eb;
-  border: 1px solid #c7d2fe;
-}
-
-.level-badge.purple {
-  background: #faf5ff;
-  color: #9333ea;
-  border: 1px solid #d8b4fe;
-}
 
 .enrolled-badge {
   display: flex;

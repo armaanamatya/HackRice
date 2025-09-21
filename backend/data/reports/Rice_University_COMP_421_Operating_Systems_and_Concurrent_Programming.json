@@ -1,0 +1,121 @@
+{
+  "overview": {
+    "summary": "COMP 421 at Rice University provides a rigorous foundation in operating systems and concurrent programming principles.  Students learn about process and memory management, and crucial concurrency control mechanisms. The course is demanding but rewarding for those interested in systems-level programming.",
+    "learningObjectives": [
+      "Understand fundamental operating system concepts",
+      "Design and implement concurrent programs",
+      "Analyze and solve concurrency issues",
+      "Manage system resources effectively",
+      "Apply operating system principles to real-world problems",
+      "Critically evaluate different operating system designs"
+    ],
+    "primaryTopics": [
+      "Process Management",
+      "Memory Management (Virtual Memory, Paging)",
+      "Concurrency Control (Synchronization primitives)",
+      "Deadlocks",
+      "Scheduling Algorithms",
+      "File Systems",
+      "I/O Systems",
+      "Security"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "8",
+    "workloadHours": "12",
+    "difficultyFactors": [
+      "Complex concepts",
+      "Heavy programming assignments",
+      "Rigorous theoretical understanding required",
+      "High level of mathematical maturity needed for some topics"
+    ],
+    "recommendedPreparation": [
+      "Strong programming skills in C or C++",
+      "Understanding of data structures and algorithms",
+      "Solid foundation in computer architecture"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.2",
+    "commonReviews": [
+      "Challenging but rewarding",
+      "Professor is knowledgeable and helpful",
+      "Assignments are difficult but teach valuable skills",
+      "Grading can be tough"
+    ],
+    "teachingStyle": "Lecture-based with significant hands-on programming assignments and potentially project work",
+    "availability": "Office hours typically available, but accessibility may vary depending on professor"
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable, consistently high demand among computer science majors",
+    "averageGradeDistribution": {
+      "A": "20",
+      "B": "35",
+      "C": "30",
+      "D/F": "15"
+    },
+    "completionRate": "90",
+    "popularityScore": "9"
+  },
+  "careerProspects": {
+    "industryRelevance": "10",
+    "skillsGained": [
+      "System programming",
+      "Concurrency control",
+      "Operating system design",
+      "Problem-solving",
+      "Debugging",
+      "Teamwork (if project-based)"
+    ],
+    "careerPaths": [
+      "Software Engineer",
+      "System Administrator",
+      "Database Administrator",
+      "Cloud Engineer",
+      "Research Scientist"
+    ],
+    "salaryImpact": "Significantly improves job prospects and salary potential for software engineering and related roles"
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students with strong programming skills and a passion for systems programming",
+      "Students interested in pursuing careers in software engineering or related fields"
+    ],
+    "studyTips": [
+      "Start assignments early",
+      "Form study groups",
+      "Utilize office hours effectively",
+      "Practice coding frequently"
+    ],
+    "timeManagement": "Allocate sufficient time for assignments, readings, and studying; consistent effort is key",
+    "resources": [
+      "Operating System Concepts (Silberschatz, Galvin, Gagne)",
+      "Modern Operating Systems (Andrew S. Tanenbaum)",
+      "Rice University's online course resources"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on practical application through challenging programming assignments",
+      "Emphasis on both theoretical understanding and hands-on experience"
+    ],
+    "commonMistakes": [
+      "Underestimating the workload",
+      "Procrastinating on assignments",
+      "Lack of understanding of fundamental concepts"
+    ],
+    "successFactors": [
+      "Strong programming skills",
+      "Consistent effort and time management",
+      "Effective collaboration and seeking help when needed"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COMP 421",
+    "courseName": "Operating Systems and Concurrent Programming",
+    "university": "Rice University",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T06:55:24.832Z",
+    "reportVersion": "1.0"
+  }
+}
