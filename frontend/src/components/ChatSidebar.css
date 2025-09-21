@@ -158,6 +158,11 @@
   color: white;
   font-weight: 600;
   font-size: 14px;
+  /* Fix for vertical text issue */
+  writing-mode: initial;
+  text-orientation: mixed;
+  text-align: center;
+  line-height: 1;
 }
 
 .unread-badge {
@@ -173,6 +178,12 @@
   min-width: 16px;
   text-align: center;
   line-height: 12px;
+  /* Fix for vertical text issue */
+  writing-mode: initial;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .conversation-info {
@@ -255,13 +266,20 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  /* Ensure minimum width for proper text flow */
+  min-width: 200px;
 }
 
 .message {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 80%;
+  min-width: 80px;
   position: relative;
+  /* Ensure proper text direction */
+  direction: ltr !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
 }
 
 .message.own {
@@ -287,17 +305,38 @@
   border-radius: 12px;
   font-size: 13px;
   line-height: 1.4;
-  word-wrap: break-word;
   border: 1px solid #e0e0e0;
   position: relative;
-  width: 100%;
   box-sizing: border-box;
+  /* Critical fixes for text wrapping */
+  min-width: 120px !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: none !important;
+  /* Force horizontal text direction */
+  direction: ltr !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
+  /* Prevent vertical text rendering */
+  text-align: left !important;
+  /* Additional fixes for stubborn vertical text */
+  display: block !important;
+  flex-direction: row !important;
+  vertical-align: baseline !important;
 }
 
 .message.own .message-content {
   background: #1976d2;
   color: white;
   border-color: #1976d2;
+  text-align: left !important;
+  direction: ltr !important;
+  writing-mode: horizontal-tb !important;
+  text-orientation: mixed !important;
 }
 
 .message-time {
@@ -509,6 +548,7 @@
   border-bottom: none;
 }
 
+/* Fix for user avatar in search results */
 .user-result .user-avatar {
   width: 36px;
   height: 36px;
@@ -521,6 +561,11 @@
   font-weight: 600;
   font-size: 14px;
   margin-right: 12px;
+  /* Fix for vertical text issue */
+  writing-mode: initial;
+  text-orientation: mixed;
+  text-align: center;
+  line-height: 1;
 }
 
 .user-info {
@@ -910,4 +955,23 @@
 
 .delete-confirmation-modal .btn-delete:hover {
   background-color: #cc0000;
+}
+
+/* Fix for student avatar in modal */
+.student-avatar .avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  /* Fix for vertical text issue */
+  writing-mode: initial;
+  text-orientation: mixed;
+  text-align: center;
+  line-height: 1;
 }
