@@ -19,25 +19,16 @@ import ToastContainer, {
   showSuccessToast,
   showErrorToast,
 } from "./ToastContainer";
-import SettingsDropdown from "./SettingsDropdown"; // Import SettingsDropdown
-import SearchResultsDropdown from "./SearchResultsDropdown"; // Import SearchResultsDropdown
-import ChatSidebar from "./ChatSidebar"; // Import ChatSidebar
-
-import "../utils/clearStorage"; // Import storage debugging utilities
-import ClassesPage from "./ClassesPage"; // Added ClassesPage import
+import SettingsDropdown from "./SettingsDropdown";
+import SearchResultsDropdown from "./SearchResultsDropdown";
+import ChatSidebar from "./ChatSidebar";
+import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from "../utils/localStorageUtils";
+import "../utils/clearStorage";
+import ClassesPage from "./ClassesPage";
 
 /**
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
  */
-import SettingsDropdown from "./SettingsDropdown";
-import SearchResultsDropdown from "./SearchResultsDropdown";
-import ChatSidebar from "./ChatSidebar";
-import {
-  saveScheduleToLocalStorage,
-  loadScheduleFromLocalStorage,
-} from "../utils/localStorageUtils";
-import "../utils/clearStorage";
-import ClassesPage from "./ClassesPage";
 
 const DashboardPage = ({
   userData,
@@ -81,10 +72,7 @@ const DashboardPage = ({
       return;
     }
 
-    console.log(
-      "Fetching saved courses from database for userId:",
-      userData._id
-    );
+    console.log("Fetching saved courses from database for userId:", userData._id);
 
     try {
       const response = await fetch(`/api/courses/${userData._id}`);
@@ -156,18 +144,14 @@ const DashboardPage = ({
       });
 
       if (!response.ok) {
-        const errorData = await response
-          .json()
-          .catch(() => ({ message: response.statusText }));
+        const errorData = await response.json().catch(() => ({ message: response.statusText }));
         console.error("API Error:", errorData);
         throw new Error(`Failed to save courses: ${errorData.message}`);
       }
 
       const responseData = await response.json();
       console.log("Courses saved successfully to database:", responseData);
-      showSuccessToast(
-        "Schedule saved successfully! Your courses have been updated."
-      );
+      showSuccessToast("Schedule saved successfully! Your courses have been updated.");
 
       setSavedCourses(validatedClasses);
       setCurrentSchedule(validatedClasses);
@@ -211,10 +195,6 @@ const DashboardPage = ({
 
     switch (viewMode) {
       case "calendar":
-        console.log(
-          "Rendering calendar with courses from savedCourses:",
-          savedCourses
-        );
         return (
           <ScheduleCalendar
             courses={savedCourses || []}
@@ -295,13 +275,6 @@ const DashboardPage = ({
     }
   };
 
-  // Add handler for profile click
-  const handleProfileClick = () => {
-    if (onNavigateToProfileDetails) {
-      onNavigateToProfileDetails(); // This will navigate to the current user's profile
-    }
-  };
-
   const handleLogoutClick = () => {
     if (onLogout) onLogout();
   };
@@ -344,13 +317,6 @@ const DashboardPage = ({
 
     const handler = setTimeout(async () => {
       try {
-        console.log(
-          "Searching for:",
-          searchQuery,
-          "at university:",
-          userData?.university
-        );
-
         const searchParams = new URLSearchParams();
         searchParams.append("name", searchQuery.trim());
         if (userUniversity && userUniversity !== "Other") {
@@ -358,24 +324,14 @@ const DashboardPage = ({
         }
 
         const searchUrl = `/api/users/search?${searchParams.toString()}`;
-        console.log("Search URL:", searchUrl);
-
         const response = await fetch(searchUrl);
 
-        console.log("Search response status:", response.status);
-
         if (!response.ok) {
-          const errorData = await response
-            .json()
-            .catch(() => ({ message: response.statusText }));
-          throw new Error(
-            errorData.message || `Search failed: ${response.status}`
-          );
+          const errorData = await response.json().catch(() => ({ message: response.statusText }));
+          throw new Error(errorData.message || `Search failed: ${response.status}`);
         }
 
         const data = await response.json();
-        console.log("Search results:", data);
-
         setSearchResults(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error("Search error:", error);
@@ -400,18 +356,12 @@ const DashboardPage = ({
 
   return (
     <div className="dashboard-layout">
-      <aside
-        className={`dashboard-sidebar ${sidebarCollapsed ? "collapsed" : ""}`}
-      >
+      <aside className={`dashboard-sidebar ${sidebarCollapsed ? "collapsed" : ""}`}>
         <div className="sidebar-header">
           <div className="sidebar-logo">
             <h2>skedulr</h2>
           </div>
-          <button
-            className="sidebar-toggle"
-            onClick={toggleSidebar}
-            aria-label="Toggle sidebar"
-          >
+          <button className="sidebar-toggle" onClick={toggleSidebar} aria-label="Toggle sidebar">
             <IconChevronLeft size={20} />
           </button>
         </div>
@@ -423,9 +373,7 @@ const DashboardPage = ({
               return (
                 <li key={item.id} className="nav-item">
                   <button
-                    className={`nav-link ${
-                      activeNavItem === item.id ? "active" : ""
-                    }`}
+                    className={`nav-link ${activeNavItem === item.id ? "active" : ""}`}
                     onClick={() => handleNavigation(item.id)}
                   >
                     <IconComponent size={20} className="nav-icon" />
@@ -448,11 +396,7 @@ const DashboardPage = ({
       <div className="dashboard-main">
         <header className="dashboard-app-bar">
           <div className="app-bar-left">
-            <button
-              className="mobile-menu-toggle"
-              onClick={toggleSidebar}
-              aria-label="Toggle menu"
-            >
+            <button className="mobile-menu-toggle" onClick={toggleSidebar} aria-label="Toggle menu">
               <IconMenu2 size={24} />
             </button>
 
@@ -485,10 +429,7 @@ const DashboardPage = ({
               >
                 <IconSettings size={20} />
               </button>
-              <SettingsDropdown
-                isOpen={showSettingsDropdown}
-                onClose={toggleSettingsDropdown}
-              />
+              <SettingsDropdown isOpen={showSettingsDropdown} onClose={toggleSettingsDropdown} />
             </div>
 
             <div className="user-profile" onClick={handleProfileClick}>
@@ -506,9 +447,7 @@ const DashboardPage = ({
         <main className="dashboard-content">
           <div className="content-header">
             <h1 className="page-title">Welcome back, {displayName}!</h1>
-            <p className="page-subtitle">
-              Manage your academic schedule and connect with classmates
-            </p>
+            <p className="page-subtitle">Manage your academic schedule and connect with classmates</p>
           </div>
 
           <div className="content-body">{renderContent()}</div>
