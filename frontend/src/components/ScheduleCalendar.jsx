@@ -55,10 +55,34 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
         events[dayKey].push({
           ...course,
           startPosition,
+          endPosition,
           duration,
           displayTime: `${startTime} - ${endTime}`,
+          startTime,
+          endTime,
         });
       });
+    });
+
+    // Sort events by start time for each day and add gaps
+    Object.keys(events).forEach((dayKey) => {
+      events[dayKey].sort((a, b) => a.startPosition - b.startPosition);
+      
+      // Add gaps between consecutive classes
+      for (let i = 0; i < events[dayKey].length; i++) {
+        const currentEvent = events[dayKey][i];
+        const nextEvent = events[dayKey][i + 1];
+        
+        // If there's a next event and it starts exactly when current ends (back-to-back)
+        if (nextEvent && Math.abs(nextEvent.startPosition - (currentEvent.startPosition + currentEvent.duration)) <= 2) {
+          // Add a small gap (3px) by reducing current event duration
+          const gapSize = 3;
+          currentEvent.duration = Math.max(currentEvent.duration - gapSize, 15); // Minimum 15px height
+          
+          // Also ensure next event starts slightly later to create visual separation
+          nextEvent.startPosition = currentEvent.startPosition + currentEvent.duration + gapSize;
+        }
+      }
     });
 
     return events;

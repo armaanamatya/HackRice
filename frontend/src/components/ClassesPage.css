@@ -30,20 +30,18 @@
   background: rgba(255, 255, 255, 0.95);
   color: #374151;
   border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 0.875rem;
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .back-to-dashboard-btn:hover {
   background: rgba(255, 255, 255, 1);
-  border-color: #3b82f6;
-  box-shadow: 0 8px 25px -5px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
   transform: translateY(-1px);
 }
 
@@ -75,7 +73,7 @@
   line-height: 1.1;
   letter-spacing: -0.025em;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #1f2937 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -104,7 +102,7 @@
   padding: 0.75rem 1.5rem;
   background: #f9fafb;
   border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
+  border-radius: 4px;
   color: #6b7280;
   font-size: 0.875rem;
   font-weight: 500;
@@ -119,10 +117,9 @@
 }
 
 .tab-button.active {
-  background: #3b82f6;
-  border-color: #3b82f6;
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
+  border-color: var(--primary-color);
   color: white;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .tab-count {
@@ -156,7 +153,7 @@
   padding: 1rem 1rem 1rem 3rem;
   font-size: 1rem;
   border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
+  border-radius: 4px;
   background: white;
   color: #1f2937;
   outline: none;
@@ -169,8 +166,7 @@
 }
 
 .search-input:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: var(--primary-color);
 }
 
 .search-icon {
@@ -217,7 +213,7 @@
 .filter-select {
   padding: 0.75rem 1rem;
   border: 1px solid #d1d5db;
-  border-radius: 0.5rem;
+  border-radius: 4px;
   background: white;
   color: #1f2937;
   font-size: 0.875rem;
@@ -228,8 +224,7 @@
 }
 
 .filter-select:focus {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: var(--primary-color);
 }
 
 .filter-select option {
@@ -274,23 +269,23 @@
   margin: 0;
 }
 
-/* Course Grid */
+/* Course Grid - Even Distribution */
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .course-card {
   background: white;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
+  border: none;
+  border-radius: 4px;
   padding: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   position: relative;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 .course-card::before {
@@ -300,16 +295,14 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .course-card:hover {
-  border-color: #3b82f6;
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
 }
 
 .course-card:hover::before {
@@ -317,8 +310,8 @@
 }
 
 .course-card.enrolled {
-  border-color: #10b981;
   background: rgba(16, 185, 129, 0.02);
+  box-shadow: 0 2px 8px 0 rgba(16, 185, 129, 0.2);
 }
 
 .course-card.enrolled::before {
@@ -563,16 +556,17 @@
 .enrolled-courses-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .enrolled-course-card {
   background: white;
-  border: 1px solid #10b981;
-  border-radius: 0.5rem;
+  border: none;
+  border-radius: 4px;
   padding: 1.5rem;
   transition: all 0.3s ease;
   position: relative;
+  box-shadow: 0 2px 8px 0 rgba(16, 185, 129, 0.2);
 }
 
 .enrolled-course-card::before {
@@ -588,7 +582,7 @@
 
 .enrolled-course-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px 0 rgba(16, 185, 129, 0.3);
 }
 
 .course-schedule {
@@ -655,13 +649,12 @@
 .course-modal {
   background: white;
   border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
+  border-radius: 8px;
   padding: 0;
   max-width: 600px;
   width: 100%;
   max-height: 80vh;
   overflow: hidden;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .modal-header {
@@ -784,11 +777,11 @@
 }
 
 .generate-report-btn {
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: 6px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -796,15 +789,13 @@
   align-items: center;
   gap: 0.5rem;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
   position: relative;
   overflow: hidden;
 }
 
 .generate-report-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
-  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  opacity: 0.9;
 }
 
 .generate-report-btn:active {

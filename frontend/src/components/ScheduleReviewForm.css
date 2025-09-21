@@ -22,8 +22,8 @@
   display: inline-flex;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(0, 112, 243, 0.1);
+  border: 1px solid rgba(0, 112, 243, 0.2);
   border-radius: 50px;
   margin-bottom: 1.5rem;
 }
@@ -31,7 +31,7 @@
 .badge-text {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #3b82f6;
+  color: var(--primary-color);
   letter-spacing: 0.025em;
 }
 
@@ -41,7 +41,7 @@
   line-height: 1.1;
   letter-spacing: -0.025em;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #1f2937 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -74,8 +74,8 @@
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(59, 130, 246, 0.03) 0%,
-    rgba(99, 102, 241, 0.02) 100%
+    rgba(0, 0, 0, 0.01) 0%,
+    rgba(0, 112, 243, 0.02) 100%
   );
   pointer-events: none;
   border-radius: 0.5rem;
@@ -90,8 +90,21 @@
 .classes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 0.75rem;
+  gap: 1rem 0.75rem;
   margin-bottom: 1.5rem;
+}
+
+/* Add staggered layout for visual interest */
+.classes-grid .class-card:nth-child(4n+1) {
+  transform: translateY(-8px);
+}
+
+.classes-grid .class-card:nth-child(6n+3) {
+  transform: translateY(6px);
+}
+
+.classes-grid .class-card:nth-child(8n+5) {
+  transform: translateY(-4px);
 }
 
 /* Empty State */
@@ -147,13 +160,13 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6, #6366f1);
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .class-card:hover {
-  border-color: #3b82f6;
+  border-color: var(--primary-color);
 }
 
 .class-card:hover::before {
@@ -161,7 +174,7 @@
 }
 
 .class-card:focus-within {
-  border-color: #3b82f6;
+  border-color: var(--primary-color);
 }
 
 /* Card Content */
@@ -193,7 +206,7 @@
 }
 
 .course-name:focus {
-  border-bottom-color: #3b82f6;
+  border-bottom-color: var(--primary-color);
 }
 
 .course-name::placeholder {
