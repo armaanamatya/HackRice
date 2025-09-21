@@ -421,7 +421,17 @@ function App() {
   const ProtectedRoute = ({ children }) => {
     if (!isAuthenticated) {
       navigate("/");
-      return null; // or a loading spinner
+      return (
+        <div className="app-loading-container">
+          <div className="app-loading-card">
+            <div className="app-loading-spinner"></div>
+            <div className="app-loading-content">
+              <h3>Redirecting</h3>
+              <p>Taking you to the login page...</p>
+            </div>
+          </div>
+        </div>
+      );
     }
     return children;
   };
@@ -438,7 +448,15 @@ function App() {
               initialData={userData}
             />
           ) : (
-            <div>Loading profile data...</div> // Or a loading spinner
+            <div className="app-loading-container">
+              <div className="app-loading-card">
+                <div className="app-loading-spinner"></div>
+                <div className="app-loading-content">
+                  <h3>Loading Profile</h3>
+                  <p>Preparing your profile setup...</p>
+                </div>
+              </div>
+            </div>
           )
         }
       />

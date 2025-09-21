@@ -94,12 +94,17 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
             <IconArrowLeft size={20} />
             <span>Back to Dashboard</span>
           </button>
-          <h1 className="page-title">Loading Profile...</h1>
+          <h1 className="page-title">Profile</h1>
         </div>
         <div className="profile-content">
-          <div className="empty-state">
-            <IconUserCircle size={64} className="empty-icon" />
-            <h3>Loading profile data...</h3>
+          <div className="loading-state">
+            <div className="loading-container">
+              <div className="loading-spinner"></div>
+              <div className="loading-content">
+                <h3>Loading Profile</h3>
+                <p>Please wait while we fetch the profile information...</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -117,10 +122,24 @@ const ProfileDetailsPage = ({ onBackToDashboard }) => {
           <h1 className="page-title">Profile</h1>
         </div>
         <div className="profile-content">
-          <div className="empty-state">
-            <IconUserCircle size={64} className="empty-icon" />
-            <h3>{error ? `Error: ${error}` : "No Profile Data"}</h3>
-            <p>{error ? "Failed to load profile." : "No profile information is available at the moment."}</p>
+          <div className="error-state">
+            <div className="error-container">
+              <div className="error-icon">
+                <IconUserCircle size={48} />
+              </div>
+              <div className="error-content">
+                <h3>{error ? "Unable to Load Profile" : "No Profile Data"}</h3>
+                <p>{error ? error : "No profile information is available at the moment."}</p>
+                {error && (
+                  <button 
+                    onClick={() => window.location.reload()} 
+                    className="retry-button"
+                  >
+                    Try Again
+                  </button>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
