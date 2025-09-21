@@ -11,6 +11,7 @@ import {
 import UserProfileForm from "./components/UserProfileForm";
 import DashboardPage from "./components/DashboardPage";
 import MatcherPage from "./components/MatcherPage";
+import ConnectionsPage from "./components/ConnectionsPage";
 import ProfileDetailsPage from "./components/ProfileDetailsPage";
 import ClassesPage from "./components/ClassesPage";
 import ChatPage from "./components/ChatPage";
@@ -24,10 +25,6 @@ function App() {
   const [userData, setUserData] = useState(null);
   const [userSchedule, setUserSchedule] = useState(null);
   const navigate = useNavigate();
-
-  const handleCreateProfileClick = () => {
-    navigate("/create-profile");
-  };
 
   const handleProfileSubmit = (data) => {
     setUserData((prevData) => ({
@@ -66,16 +63,6 @@ function App() {
     setUserSchedule(schedule);
   };
 
-  const handleLogin = () => {
-    sessionStorage.setItem("auth_intent", "login");
-    loginWithRedirect({
-      authorizationParams: {
-        redirect_uri: `http://localhost:5173/dashboard`,
-        prompt: "login",
-      },
-    }); 
-  };
-
   const handleSignUp = () => {
     sessionStorage.setItem("auth_intent", "signup");
     loginWithRedirect({
@@ -89,16 +76,6 @@ function App() {
 
   const handleLogout = () => {
     logout({ returnTo: "http://localhost:5173" });
-  };
-
-  const handleGetStarted = () => {
-    sessionStorage.setItem("auth_intent", "signup");
-    loginWithRedirect({
-      authorizationParams: {
-        redirect_uri: `http://localhost:5173/create-profile`,
-        prompt: "login",
-      },
-    });
   };
 
   useEffect(() => {
@@ -358,7 +335,7 @@ function App() {
       if (!isAuthenticated) {
         navigate("/");
       }
-    }, [isAuthenticated]);
+    });
 
     if (!isAuthenticated) {
       return (
@@ -421,6 +398,17 @@ function App() {
           }
         />
         <Route
+          path="/dashboard/connections"
+          element={
+            <ProtectedRoute>
+              <ConnectionsPage
+                userData={userData}
+                onBackToDashboard={handleNavigateToDashboard}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
           path="/dashboard/matcher"
           element={
             <ProtectedRoute>
@@ -455,7 +443,6 @@ function App() {
         path="/dashboard/bookmarks"
         element={
           <ProtectedRoute>
-            <BookmarkedCoursesPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />
             <BookmarkedCoursesPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />
           </ProtectedRoute>
         }
