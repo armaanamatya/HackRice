@@ -2,6 +2,28 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
 
+// Helper function to check if a string is an email
+const isEmail = (text) => /^[\w-.]+@[\w-.]+\.[\w-.]+$/.test(text);
+
+// Helper function to determine university from email
+const getUniversityFromEmail = (email) => {
+  if (!email) return "Other";
+  const domain = email.split("@")[1];
+  switch (domain) {
+    case 'rice.edu':
+      return 'Rice University';
+    case 'utd.edu':
+    case 'utdallas.edu':
+      return 'University of Texas at Dallas';
+    case 'uh.edu':
+    case 'cougarnet.uh.edu':
+      return 'University of Houston';
+    // Add more cases for other universities if needed
+    default:
+      return 'Other';
+  }
+};
+
 // Health check / test route
 router.get("/health", (req, res) => {
   res.json({ status: "Users API is working!", timestamp: new Date().toISOString() });
@@ -76,23 +98,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-const getUniversityFromEmail = (email) => {
-  const domain = email.split('@')[1];
-  switch (domain) {
-    case 'rice.edu':
-      return 'Rice University';
-    case 'utd.edu':
-    case 'utdallas.edu':
-      return 'University of Texas at Dallas';
-    case 'uh.edu':
-    case 'cougarnet.uh.edu':
-      return 'University of Houston';
-    // Add more cases for other universities if needed
-    default:
-      return 'Other';
-  }
-};
-
 // Sync Auth0 user with MongoDB
 router.post("/auth0-sync", async (req, res) => {
   const { name, email } = req.body; // Remove university from destructuring
@@ -107,13 +112,16 @@ router.post("/auth0-sync", async (req, res) => {
 
     if (user) {
       // Update existing user if name or university changed
-      if (user.name !== name || user.university !== getUniversityFromEmail(email)) {
-        user.name = name; // Always update name if provided by Auth0
-        user.university = getUniversityFromEmail(email);
-        // Preserve existing profileCompleted status
-        await user.save();
-        console.log("Updated existing user:", user.email);
+      // Only update name from Auth0 if profile is not completed or if the existing name is still an email (meaning it hasn't been set by the user)
+      if (!user.profileCompleted && (user.name !== name || isEmail(user.name))) {
+        user.name = name; // Update name from Auth0 if profile not completed or name is still an email
       }
+      if (user.university !== getUniversityFromEmail(email)) {
+        user.university = getUniversityFromEmail(email);
+      }
+      // Preserve existing profileCompleted status
+      await user.save();
+      console.log("Updated existing user:", user.email);
       return res.status(200).json({
         message: "User already exists",
         user: user,
