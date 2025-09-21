@@ -132,6 +132,8 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
 
   // Generate course report
   const generateCourseReport = async (course) => {
+    console.log('Generating report for course:', course);
+    
     setReportModal({
       isOpen: true,
       loading: true,
@@ -141,13 +143,30 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
 
     try {
       const params = new URLSearchParams();
-      if (course.university) params.append('university', course.university);
+      // Use course.university if available, otherwise fall back to userData.university
+      const university = course.university || userData?.university;
+      if (university) params.append('university', university);
       
+      console.log(`Fetching report: /api/reports/${encodeURIComponent(course.code)}?${params.toString()}`);
       const response = await fetch(`/api/reports/${encodeURIComponent(course.code)}?${params.toString()}`);
       
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || 'Failed to generate report');
+        console.error('Report generation failed:', errorData);
+        
+        // Construct a more informative error message
+        let errorMessage = errorData.message || 'Failed to generate report';
+        if (errorData.debug) {
+          errorMessage += `\n\nDebug Info:\n- Searched for: "${errorData.courseCode}"\n- University: ${errorData.university || 'None'}\n- Total courses in catalog: ${errorData.debug.totalCoursesInCatalog}`;
+          if (errorData.debug.sampleCourses?.length > 0) {
+            errorMessage += '\n- Sample courses found:';
+            errorData.debug.sampleCourses.forEach(c => {
+              errorMessage += `\n  • ${c.code} (${c.university})`;
+            });
+          }
+        }
+        
+        throw new Error(errorMessage);
       }
       
       const reportData = await response.json();

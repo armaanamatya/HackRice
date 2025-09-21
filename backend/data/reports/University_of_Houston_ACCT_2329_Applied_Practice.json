@@ -1,0 +1,119 @@
+{
+  "overview": {
+    "summary": "ACCT 2329: Applied Practice provides foundational accounting concepts and their practical applications, preparing students for entry-level accounting roles.",
+    "learningObjectives": [
+      "Apply fundamental accounting principles to real-world scenarios",
+      "Prepare and interpret financial statements",
+      "Understand accounting software and applications",
+      "Analyze financial data for decision-making",
+      "Develop problem-solving and critical thinking skills in accounting contexts",
+      "Communicate accounting information effectively"
+    ],
+    "primaryTopics": [
+      "Financial accounting principles",
+      "Accounting cycle",
+      "Financial statement preparation and analysis",
+      "Ratio analysis",
+      "Cost accounting fundamentals",
+      "Accounting software applications",
+      "Ethics in accounting",
+      "Basic auditing concepts"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "6",
+    "workloadHours": "8-10",
+    "difficultyFactors": [
+      "Requires strong mathematical and analytical skills",
+      "Involves complex problem-solving",
+      "Heavy emphasis on practical application and assignments"
+    ],
+    "recommendedPreparation": [
+      "Strong foundation in algebra",
+      "Prior accounting coursework (ACCT 1697 or equivalent)"
+    ]
+  },
+  "professors": {
+    "averageRating": "3.8",
+    "commonReviews": [
+      "Clear explanations",
+      "Helpful office hours",
+      "Challenging assignments",
+      "Fast-paced lectures"
+    ],
+    "teachingStyle": "A mix of lectures, case studies, and hands-on assignments using accounting software.",
+    "availability": "Generally accessible during office hours and via email"
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable; consistent demand from accounting majors.",
+    "averageGradeDistribution": {
+      "A": "15%",
+      "B": "30%",
+      "C": "35%",
+      "D/F": "20%"
+    },
+    "completionRate": "85%",
+    "popularityScore": "7"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Financial statement analysis",
+      "Accounting software proficiency",
+      "Data analysis",
+      "Problem-solving",
+      "Critical thinking",
+      "Communication"
+    ],
+    "careerPaths": [
+      "Staff Accountant",
+      "Financial Analyst",
+      "Auditor",
+      "Bookkeeper",
+      "Budget Analyst"
+    ],
+    "salaryImpact": "Successful completion can improve job prospects and starting salaries for entry-level accounting positions."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students interested in accounting careers",
+      "Students with strong math and analytical skills",
+      "Students who are self-motivated and dedicated to practice"
+    ],
+    "studyTips": [
+      "Form study groups",
+      "Practice regularly with accounting software",
+      "Seek help from the professor or TA when needed"
+    ],
+    "timeManagement": "Consistent effort throughout the semester is essential; avoid procrastination.",
+    "resources": [
+      "University library resources",
+      "Accounting textbooks",
+      "Online accounting tutorials"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Hands-on experience with accounting software",
+      "Focus on practical applications relevant to the job market"
+    ],
+    "commonMistakes": [
+      "Failing to understand core concepts",
+      "Poor time management",
+      "Lack of practice"
+    ],
+    "successFactors": [
+      "Consistent effort",
+      "Active participation in class",
+      "Seeking help when needed"
+    ]
+  },
+  "metadata": {
+    "courseCode": "ACCT 2329",
+    "courseName": "Applied Practice",
+    "university": "University of Houston",
+    "department": "Accounting",
+    "generatedAt": "2025-09-21T10:24:36.046Z",
+    "reportVersion": "1.0"
+  }
+}

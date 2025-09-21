@@ -128,11 +128,9 @@ const CourseReportModal = ({ report, isOpen, onClose, loading, error }) => {
   if (loading) {
     return (
       <div className="report-modal-overlay">
-        <div className="report-modal loading">
           <div className="loading-container">
             <div className="loading-spinner large"></div>
             <h3>Generating Course Report</h3>
-          </div>
         </div>
       </div>
     );

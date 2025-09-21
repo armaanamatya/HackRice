@@ -1,0 +1,123 @@
+{
+  "overview": {
+    "summary": "ACCT 4810, Special Topics in Analysis, provides a deep dive into fundamental analytical concepts and their applications within accounting.  It's designed for University of Houston accounting seniors preparing for professional careers.",
+    "learningObjectives": [
+      "Develop proficiency in advanced analytical techniques",
+      "Apply analytical skills to solve complex accounting problems",
+      "Critically evaluate financial statements and reports",
+      "Improve communication skills through case studies and presentations",
+      "Understand the ethical considerations in financial analysis",
+      "Use analytical software and tools effectively"
+    ],
+    "primaryTopics": [
+      "Financial statement analysis",
+      "Ratio analysis",
+      "Cash flow analysis",
+      "Budgeting and forecasting",
+      "Risk assessment and management",
+      "Fraud detection and prevention",
+      "Business valuation",
+      "Data analytics in accounting"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "8",
+    "workloadHours": "10-15",
+    "difficultyFactors": [
+      "Complex analytical concepts",
+      "Heavy workload of assignments and projects",
+      "Requires strong foundation in accounting principles"
+    ],
+    "recommendedPreparation": [
+      "ACCT 3297",
+      "Strong quantitative skills",
+      "Proficiency in spreadsheet software"
+    ]
+  },
+  "professors": {
+    "averageRating": "3.8",
+    "commonReviews": [
+      "Clear explanations",
+      "Challenging assignments",
+      "Helpful during office hours",
+      "High expectations"
+    ],
+    "teachingStyle": "Typically involves lectures, case studies, group projects, and potentially guest speakers from the accounting industry.",
+    "availability": "Office hours typically scheduled twice a week, with additional availability by appointment"
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable, with consistent demand due to career relevance.",
+    "averageGradeDistribution": {
+      "A": "15",
+      "B": "30",
+      "C": "35",
+      "D/F": "20"
+    },
+    "completionRate": "85",
+    "popularityScore": "7"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Financial analysis",
+      "Data interpretation",
+      "Problem-solving",
+      "Critical thinking",
+      "Communication",
+      "Teamwork"
+    ],
+    "careerPaths": [
+      "Financial analyst",
+      "Internal auditor",
+      "Management accountant",
+      "Forensic accountant",
+      "Tax accountant"
+    ],
+    "salaryImpact": "Improved job prospects and potentially higher starting salaries in accounting and finance roles."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students with strong accounting backgrounds",
+      "Students pursuing careers in accounting or finance",
+      "Highly motivated and dedicated students"
+    ],
+    "studyTips": [
+      "Form study groups",
+      "Actively participate in class",
+      "Practice problem-solving regularly",
+      "Seek help from professor and TAs when needed"
+    ],
+    "timeManagement": "Prioritize assignments, break down large projects, and allocate sufficient time for studying.",
+    "resources": [
+      "Recommended textbook",
+      "University library resources",
+      "Accounting software tutorials"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on real-world applications",
+      "Industry guest speakers",
+      "Emphasis on professional development"
+    ],
+    "commonMistakes": [
+      "Procrastination",
+      "Lack of understanding of fundamental concepts",
+      "Poor time management"
+    ],
+    "successFactors": [
+      "Active participation in class",
+      "Consistent effort",
+      "Seeking help when needed",
+      "Effective time management"
+    ]
+  },
+  "metadata": {
+    "courseCode": "ACCT 4810",
+    "courseName": "Special Topics in Analysis",
+    "university": "University of Houston",
+    "department": "Accounting",
+    "generatedAt": "2025-09-21T10:25:48.372Z",
+    "reportVersion": "1.0"
+  }
+}

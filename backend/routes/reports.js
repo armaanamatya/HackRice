@@ -102,21 +102,68 @@ router.get('/:courseCode', async (req, res) => {
     
     console.log(`Report request for course: ${courseCode}, university: ${university}`);
     
-    // First, get the course data from catalog
-    const catalogResponse = await fetch(`http://localhost:${process.env.PORT || 5000}/api/catalog`);
+    // First, get the course data from catalog with university filter
+    const catalogUrl = new URL(`http://localhost:${process.env.PORT || 5000}/api/catalog`);
+    if (university) {
+      catalogUrl.searchParams.append('university', university);
+    }
+    
+    console.log(`Fetching catalog from: ${catalogUrl.toString()}`);
+    const catalogResponse = await fetch(catalogUrl.toString());
     const catalogData = await catalogResponse.json();
     
-    // Find the specific course
-    const course = catalogData.courses?.find(c => 
-      c.code?.toLowerCase() === courseCode.toLowerCase() && 
+    console.log(`Catalog returned ${catalogData.courses?.length || 0} courses`);
+    
+    // Find the specific course - try exact match first, then normalized match
+    let course = catalogData.courses?.find(c => 
+      c.code === courseCode && 
       (!university || c.university === university)
     );
     
+    // If exact match fails, try case-insensitive and normalized matching
     if (!course) {
+      console.log(`Exact match failed for "${courseCode}", trying normalized matching...`);
+      course = catalogData.courses?.find(c => {
+        const normalizedCatalogCode = c.code?.toLowerCase().replace(/\s+/g, '');
+        const normalizedSearchCode = courseCode.toLowerCase().replace(/\s+/g, '');
+        return normalizedCatalogCode === normalizedSearchCode && 
+               (!university || c.university === university);
+      });
+    }
+    
+    // If still no match, try just course code without university filter for debugging
+    if (!course && university) {
+      console.log(`No match with university filter, trying without university filter...`);
+      course = catalogData.courses?.find(c => {
+        const normalizedCatalogCode = c.code?.toLowerCase().replace(/\s+/g, '');
+        const normalizedSearchCode = courseCode.toLowerCase().replace(/\s+/g, '');
+        return normalizedCatalogCode === normalizedSearchCode;
+      });
+      if (course) {
+        console.log(`Found course without university filter: ${course.code} from ${course.university}`);
+      }
+    }
+    
+    if (!course) {
+      // Provide debug information
+      const availableCourses = catalogData.courses?.slice(0, 10).map(c => ({
+        code: c.code,
+        university: c.university
+      }));
+      
       return res.status(404).json({ 
         message: 'Course not found in catalog',
         courseCode,
-        university 
+        university,
+        debug: {
+          totalCoursesInCatalog: catalogData.courses?.length || 0,
+          sampleCourses: availableCourses,
+          searchedWith: {
+            exact: courseCode,
+            normalized: courseCode.toLowerCase().replace(/\s+/g, ''),
+            university: university
+          }
+        }
       });
     }
     

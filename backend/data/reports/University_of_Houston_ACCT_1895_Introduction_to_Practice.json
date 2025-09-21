@@ -1,0 +1,115 @@
+{
+  "overview": {
+    "summary": "ACCT 1895, Introduction to Practice, provides foundational accounting knowledge and practical application skills relevant to future accounting professionals at the University of Houston.",
+    "learningObjectives": [
+      "Understand fundamental accounting principles",
+      "Apply accounting concepts to real-world scenarios",
+      "Develop problem-solving skills in accounting contexts",
+      "Enhance analytical and critical thinking abilities",
+      "Improve communication skills related to accounting",
+      "Gain familiarity with accounting software or tools"
+    ],
+    "primaryTopics": [
+      "Financial accounting basics",
+      "Accounting equation and transactions",
+      "Debits and credits",
+      "Financial statements (Income Statement, Balance Sheet, Cash Flow Statement)",
+      "Basic accounting cycles",
+      "Introduction to accounting software",
+      "Ethical considerations in accounting"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "4",
+    "workloadHours": "5",
+    "difficultyFactors": [
+      "Requires consistent effort and practice",
+      "Understanding debits and credits can be challenging for some students",
+      "Application of concepts to problem-solving needs practice"
+    ],
+    "recommendedPreparation": [
+      "Basic algebra skills",
+      "Strong attention to detail"
+    ]
+  },
+  "professors": {
+    "averageRating": "3.8",
+    "commonReviews": [
+      "Clear explanations",
+      "Helpful during office hours",
+      "Some find the pace too fast",
+      "Exams can be challenging"
+    ],
+    "teachingStyle": "A mix of lectures, in-class exercises, and potentially group work.  Teaching style will vary by professor.",
+    "availability": "Varies by professor; check individual professor's syllabus for office hours and contact information."
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable; consistently popular introductory course.",
+    "averageGradeDistribution": {
+      "A": "20",
+      "B": "35",
+      "C": "30",
+      "D/F": "15"
+    },
+    "completionRate": "85",
+    "popularityScore": "7"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Financial statement analysis",
+      "Problem-solving",
+      "Data interpretation",
+      "Accounting software proficiency",
+      "Communication skills"
+    ],
+    "careerPaths": [
+      "Public accounting",
+      "Corporate accounting",
+      "Government accounting",
+      "Forensic accounting"
+    ],
+    "salaryImpact": "Provides a strong foundation for higher-paying accounting positions in the future."
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students interested in accounting or finance",
+      "Students who enjoy problem-solving and detail-oriented work"
+    ],
+    "studyTips": [
+      "Consistent practice of accounting problems",
+      "Attend office hours for clarification",
+      "Form study groups for peer learning"
+    ],
+    "timeManagement": "Dedicate consistent study time each week.  Avoid procrastination.",
+    "resources": [
+      "University library resources",
+      "Accounting textbooks",
+      "Online accounting tutorials"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on practical application of concepts",
+      "May include guest lectures from professionals"
+    ],
+    "commonMistakes": [
+      "Not practicing enough problems",
+      "Misunderstanding of debits and credits",
+      "Poor time management"
+    ],
+    "successFactors": [
+      "Consistent effort",
+      "Active participation in class",
+      "Seeking help when needed"
+    ]
+  },
+  "metadata": {
+    "courseCode": "ACCT 1895",
+    "courseName": "Introduction to Practice",
+    "university": "University of Houston",
+    "department": "Accounting",
+    "generatedAt": "2025-09-21T10:24:11.748Z",
+    "reportVersion": "1.0"
+  }
+}
