@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   IconHome,
   IconUsers,
@@ -7,7 +7,9 @@ import {
   IconMenu2,
   IconSettings,
   IconChevronLeft,
-  IconBook2, // Added IconBook2
+  IconBook2,
+  IconBookmark,
+  IconSearch,
 } from "@tabler/icons-react";
 import "./DashboardPage.css";
 import ScheduleUploader from "./ScheduleUploader";
@@ -18,12 +20,12 @@ import ToastContainer, {
   showSuccessToast,
   showErrorToast,
 } from "./ToastContainer";
-import SettingsDropdown from "./SettingsDropdown"; // Import SettingsDropdown
-import SearchResultsDropdown from "./SearchResultsDropdown"; // Import SearchResultsDropdown
-import ChatSidebar from "./ChatSidebar"; // Import ChatSidebar
 
-import "../utils/clearStorage"; // Import storage debugging utilities
-import ClassesPage from "./ClassesPage"; // Added ClassesPage import
+import SettingsDropdown from "./SettingsDropdown";
+import SearchResultsDropdown from "./SearchResultsDropdown";
+import ChatSidebar from "./ChatSidebar";
+import "../utils/clearStorage";
+import ClassesPage from "./ClassesPage";
 
 /**
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
@@ -35,10 +37,9 @@ const DashboardPage = ({
   onNavigateToProfileDetails,
   onLogout,
   onScheduleUpdate,
-  userSchedule,
-  onNavigateToClasses, // Add new prop here
-  userUniversity, // Add new prop here
-  // onNavigateToSettings, // Add new prop here
+  onNavigateToClasses,
+  onNavigateToBookmarks,
+  userUniversity,
 }) => {
   const [currentSchedule, setCurrentSchedule] = useState(null);
   const [ocrParsedClasses, setOcrParsedClasses] = useState(null);
@@ -48,14 +49,13 @@ const DashboardPage = ({
   const [showSettingsDropdown, setShowSettingsDropdown] = useState(false);
   const [savedCourses, setSavedCourses] = useState(null);
   const [isLoadingCourses, setIsLoadingCourses] = useState(true);
-  const [searchQuery, setSearchQuery] = useState(""); // New state for search query
-  const [searchResults, setSearchResults] = useState([]); // New state for search results
-  const [isSearching, setIsSearching] = useState(false); // New state for search loading
-  const [searchError, setSearchError] = useState(null); // New state for search errors
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [searchError, setSearchError] = useState(null);
 
   const userId = userData?.id || "guest";
 
-  // Clear localStorage to ensure database is authoritative
   const clearLocalStorageData = () => {
     const keys = Object.keys(localStorage);
     const scheduleKeys = keys.filter((key) => key.startsWith("schedule_"));
@@ -65,18 +65,14 @@ const DashboardPage = ({
     });
   };
 
-  // Fetch saved courses from database
-  const fetchSavedCourses = async () => {
+  const fetchSavedCourses = useCallback(async () => {
     if (!userData?._id) {
       console.log("No userData._id, skipping course fetch");
       setIsLoadingCourses(false);
       return;
     }
 
-    console.log(
-      "Fetching saved courses from database for userId:",
-      userData._id
-    );
+    console.log("Fetching saved courses from database for userId:", userData._id);
 
     try {
       const response = await fetch(`/api/courses/${userData._id}`);
@@ -89,10 +85,9 @@ const DashboardPage = ({
         if (data.courses && data.courses.length > 0) {
           console.log("Found courses in database:", data.courses.length);
           setSavedCourses(data.courses);
-          setCurrentSchedule(data.courses); // Update currentSchedule too
+          setCurrentSchedule(data.courses);
           setViewMode("calendar");
 
-          // Clear any conflicting localStorage data
           console.log("Clearing localStorage since we have database data");
           localStorage.removeItem(`schedule_${userId}`);
         } else {
@@ -101,7 +96,6 @@ const DashboardPage = ({
           setCurrentSchedule(null);
           setViewMode("uploader");
 
-          // Clear localStorage as well since database is authoritative
           localStorage.removeItem(`schedule_${userId}`);
         }
       } else {
@@ -118,35 +112,12 @@ const DashboardPage = ({
     } finally {
       setIsLoadingCourses(false);
     }
-  };
+  }, [userData?._id, userId]);
 
   useEffect(() => {
-    // Clear localStorage first to ensure database is authoritative
     clearLocalStorageData();
-    // Then fetch from database
     fetchSavedCourses();
-  }, [userData?._id]);
-
-  // DISABLED: LocalStorage loading - database is now authoritative
-  // useEffect(() => {
-  //   // Load schedule from localStorage on component mount
-  //   const loadedSchedule = loadScheduleFromLocalStorage(userId);
-  //   if (loadedSchedule) {
-  //     setCurrentSchedule(loadedSchedule);
-  //     // Don't override viewMode if we already have saved courses
-  //     if (!savedCourses) {
-  //       setViewMode('display');
-  //     }
-  //   }
-  // }, [userId, savedCourses]);
-
-  // DISABLED: LocalStorage saving - database is primary storage now
-  // useEffect(() => {
-  //   // Save schedule to localStorage whenever currentSchedule changes
-  //   if (currentSchedule) {
-  //     saveScheduleToLocalStorage(userId, currentSchedule);
-  //   }
-  // }, [currentSchedule, userId]);
+  }, [userData?._id, fetchSavedCourses]);
 
   const handleScheduleParsed = (parsedData) => {
     setOcrParsedClasses(parsedData);
@@ -161,7 +132,6 @@ const DashboardPage = ({
         courses: validatedClasses,
       });
 
-      // Save courses to database
       const response = await fetch("/api/courses", {
         method: "POST",
         headers: {
@@ -174,26 +144,20 @@ const DashboardPage = ({
       });
 
       if (!response.ok) {
-        const errorData = await response
-          .json()
-          .catch(() => ({ message: response.statusText }));
+        const errorData = await response.json().catch(() => ({ message: response.statusText }));
         console.error("API Error:", errorData);
         throw new Error(`Failed to save courses: ${errorData.message}`);
       }
 
       const responseData = await response.json();
       console.log("Courses saved successfully to database:", responseData);
-      showSuccessToast(
-        "Schedule saved successfully! Your courses have been updated."
-      );
+      showSuccessToast("Schedule saved successfully! Your courses have been updated.");
 
-      // Update saved courses and switch to calendar view
       setSavedCourses(validatedClasses);
       setCurrentSchedule(validatedClasses);
-      setOcrParsedClasses(null); // Clear review data
+      setOcrParsedClasses(null);
       setViewMode("calendar");
 
-      // Call the parent callback if it exists
       if (onScheduleUpdate) {
         onScheduleUpdate(validatedClasses);
       }
@@ -205,12 +169,12 @@ const DashboardPage = ({
 
   const handleBackToUpload = () => {
     setOcrParsedClasses(null);
-    setCurrentSchedule(null); // Clear current schedule when going back to upload
+    setCurrentSchedule(null);
     setViewMode("uploader");
   };
 
   const handleEditSchedule = () => {
-    setOcrParsedClasses(currentSchedule); // Re-populate review form with current schedule
+    setOcrParsedClasses(currentSchedule);
     setViewMode("reviewer");
   };
 
@@ -220,7 +184,6 @@ const DashboardPage = ({
   };
 
   const renderContent = () => {
-    // Show loading state while fetching courses
     if (isLoadingCourses) {
       return (
         <div className="loading-container">
@@ -232,15 +195,10 @@ const DashboardPage = ({
 
     switch (viewMode) {
       case "calendar":
-        console.log(
-          "Rendering calendar with courses from savedCourses:",
-          savedCourses
-        );
         return (
           <ScheduleCalendar
             courses={savedCourses || []}
             onEditSchedule={() => {
-              // Switch to uploader for editing
               console.log("Edit schedule clicked, clearing saved courses");
               setSavedCourses(null);
               setCurrentSchedule(null);
@@ -274,7 +232,7 @@ const DashboardPage = ({
             onImportSchedule={handleImportSchedule}
           />
         );
-      case "classes": // New case for ClassesPage
+      case "classes":
         return <ClassesPage />;
       default:
         return (
@@ -290,7 +248,8 @@ const DashboardPage = ({
 
   const navigationItems = [
     { id: "dashboard", label: "Dashboard", icon: IconHome },
-    { id: "classes", label: "Classes", icon: IconBook2 }, // New Classes item
+    { id: "classes", label: "Classes", icon: IconBook2 },
+    { id: "bookmarks", label: "Bookmarked Courses", icon: IconBookmark },
     { id: "connections", label: "Connections", icon: IconUsers },
   ];
 
@@ -304,16 +263,20 @@ const DashboardPage = ({
       case "classes": // Handle navigation to classes page
         if (onNavigateToClasses) onNavigateToClasses();
         break;
+      case "profile":
+        if (onNavigateToProfileDetails) onNavigateToProfileDetails();
+        break;
+      case "bookmarks":
+        if (onNavigateToBookmarks) onNavigateToBookmarks();
+        break;
       default:
-        // Handle other navigation items
         break;
     }
   };
 
-  // Add handler for profile click
   const handleProfileClick = () => {
     if (onNavigateToProfileDetails) {
-      onNavigateToProfileDetails(); // This will navigate to the current user's profile
+      onNavigateToProfileDetails();
     }
   };
 
@@ -347,7 +310,6 @@ const DashboardPage = ({
       return;
     }
 
-    // Don't search for very short queries
     if (searchQuery.trim().length < 2) {
       setSearchResults([]);
       setIsSearching(false);
@@ -360,14 +322,6 @@ const DashboardPage = ({
 
     const handler = setTimeout(async () => {
       try {
-        console.log(
-          "Searching for:",
-          searchQuery,
-          "at university:",
-          userData?.university
-        );
-
-        // Construct the search URL with proper encoding
         const searchParams = new URLSearchParams();
         searchParams.append("name", searchQuery.trim());
         if (userUniversity && userUniversity !== "Other") {
@@ -375,24 +329,14 @@ const DashboardPage = ({
         }
 
         const searchUrl = `/api/users/search?${searchParams.toString()}`;
-        console.log("Search URL:", searchUrl);
-
         const response = await fetch(searchUrl);
 
-        console.log("Search response status:", response.status);
-
         if (!response.ok) {
-          const errorData = await response
-            .json()
-            .catch(() => ({ message: response.statusText }));
-          throw new Error(
-            errorData.message || `Search failed: ${response.status}`
-          );
+          const errorData = await response.json().catch(() => ({ message: response.statusText }));
+          throw new Error(errorData.message || `Search failed: ${response.status}`);
         }
 
         const data = await response.json();
-        console.log("Search results:", data);
-
         setSearchResults(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error("Search error:", error);
@@ -401,14 +345,13 @@ const DashboardPage = ({
       } finally {
         setIsSearching(false);
       }
-    }, 500); // 500ms debounce time
+    }, 500);
 
     return () => {
       clearTimeout(handler);
     };
   }, [searchQuery, userUniversity]);
 
-  // Helper function to check if a string is an email
   const isEmail = (text) => /^[\w-.]+@[\w-.]+\.[\w-.]+$/.test(text);
 
   const displayName =
@@ -418,19 +361,12 @@ const DashboardPage = ({
 
   return (
     <div className="dashboard-layout">
-      {/* Sidebar */}
-      <aside
-        className={`dashboard-sidebar ${sidebarCollapsed ? "collapsed" : ""}`}
-      >
+      <aside className={`dashboard-sidebar ${sidebarCollapsed ? "collapsed" : ""}`}>
         <div className="sidebar-header">
           <div className="sidebar-logo">
             <h2>skedulr</h2>
           </div>
-          <button
-            className="sidebar-toggle"
-            onClick={toggleSidebar}
-            aria-label="Toggle sidebar"
-          >
+          <button className="sidebar-toggle" onClick={toggleSidebar} aria-label="Toggle sidebar">
             <IconChevronLeft size={20} />
           </button>
         </div>
@@ -442,9 +378,7 @@ const DashboardPage = ({
               return (
                 <li key={item.id} className="nav-item">
                   <button
-                    className={`nav-link ${
-                      activeNavItem === item.id ? "active" : ""
-                    }`}
+                    className={`nav-link ${activeNavItem === item.id ? "active" : ""}`}
                     onClick={() => handleNavigation(item.id)}
                   >
                     <IconComponent size={20} className="nav-icon" />
@@ -461,23 +395,13 @@ const DashboardPage = ({
             <IconLogout size={20} className="nav-icon" />
             <span className="nav-label">Logout</span>
           </button>
-          {/* <button className="settings-button" aria-label="Settings" onClick={() => handleNavigation('settings')}>
-            <IconSettings size={20} className="nav-icon" />
-            <span className="nav-label">Settings</span>
-          </button> */}
         </div>
       </aside>
 
-      {/* Main Content Area */}
       <div className="dashboard-main">
-        {/* App Bar */}
         <header className="dashboard-app-bar">
           <div className="app-bar-left">
-            <button
-              className="mobile-menu-toggle"
-              onClick={toggleSidebar}
-              aria-label="Toggle menu"
-            >
+            <button className="mobile-menu-toggle" onClick={toggleSidebar} aria-label="Toggle menu">
               <IconMenu2 size={24} />
             </button>
 
@@ -489,13 +413,14 @@ const DashboardPage = ({
                 value={searchQuery}
                 onChange={handleSearchInputChange}
               />
+              <IconSearch size={24} />
               {(searchQuery.length > 0 || isSearching || searchError) && (
                 <SearchResultsDropdown
                   results={searchResults}
                   isLoading={isSearching}
                   error={searchError}
                   onClose={closeSearchResults}
-                  onUserClick={onNavigateToProfileDetails} // Pass the navigation prop
+                  onUserClick={onNavigateToProfileDetails}
                 />
               )}
             </div>
@@ -510,10 +435,7 @@ const DashboardPage = ({
               >
                 <IconSettings size={20} />
               </button>
-              <SettingsDropdown
-                isOpen={showSettingsDropdown}
-                onClose={toggleSettingsDropdown}
-              />
+              <SettingsDropdown isOpen={showSettingsDropdown} onClose={toggleSettingsDropdown} />
             </div>
 
             <div className="user-profile" onClick={handleProfileClick}>
@@ -528,23 +450,17 @@ const DashboardPage = ({
           </div>
         </header>
 
-        {/* Content Area */}
         <main className="dashboard-content">
           <div className="content-header">
             <h1 className="page-title">Welcome back, {displayName}!</h1>
-            <p className="page-subtitle">
-              Manage your academic schedule and connect with classmates
-            </p>
+            <p className="page-subtitle">Manage your academic schedule and connect with classmates</p>
           </div>
 
           <div className="content-body">{renderContent()}</div>
         </main>
       </div>
 
-      {/* Chat Sidebar */}
       <ChatSidebar userData={userData} />
-
-      {/* Toast Notifications */}
       <ToastContainer />
     </div>
   );

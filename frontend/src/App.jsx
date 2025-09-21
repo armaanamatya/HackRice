@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { Routes, Route, useNavigate } from "react-router-dom"; // Import React Router components
+import { Routes, Route, useNavigate } from "react-router-dom";
 import {
   IconUsers,
   IconBook,
@@ -12,16 +12,11 @@ import UserProfileForm from "./components/UserProfileForm";
 import DashboardPage from "./components/DashboardPage";
 import MatcherPage from "./components/MatcherPage";
 import ProfileDetailsPage from "./components/ProfileDetailsPage";
-import ClassesPage from "./components/ClassesPage"; // Import the new ClassesPage
-import ConnectionsPage from "./components/ConnectionsPage"; // Import the new ConnectionsPage
-import ChatPage from "./components/ChatPage"; // Import the new ChatPage
-import { SocketProvider } from "./contexts/SocketContext"; // Import Socket context
-// import SettingsPage from "./components/SettingsPage"; // Import the new SettingsPage
+import ClassesPage from "./components/ClassesPage";
+import ChatPage from "./components/ChatPage";
+import BookmarkedCoursesPage from "./components/BookmarkedCoursesPage";
+import { SocketProvider } from "./contexts/SocketContext";
 import { detectUniversityFromEmail } from "./utils/universityUtils";
-// Using actual logos from public folder
-// import utLogo from './assets/university-logos/ut.svg'
-// import tamuLogo from './assets/university-logos/tamu.svg'
-// import untLogo from './assets/university-logos/unt.svg'
 import "./App.css";
 
 function App() {
@@ -39,7 +34,8 @@ function App() {
       ...prevData,
       ...data,
     }));
-    navigate("/dashboard"); // Navigate to dashboard after profile submission
+    navigate("/dashboard");
+    navigate("/dashboard");
   };
 
   const handleNavigateToDashboard = () => {
@@ -62,27 +58,25 @@ function App() {
     navigate("/dashboard/classes");
   };
 
-  // const handleNavigateToSettings = () => {
-  //   navigate("/dashboard/settings");
-  // };
+  const handleNavigateToBookmarks = () => { 
+    navigate("/dashboard/bookmarks");
+  };
 
   const handleUserScheduleUpdate = (schedule) => {
     setUserSchedule(schedule);
   };
 
   const handleLogin = () => {
-    // Store login intent to differentiate from signup
     sessionStorage.setItem("auth_intent", "login");
     loginWithRedirect({
       authorizationParams: {
         redirect_uri: `http://localhost:5173/dashboard`,
         prompt: "login",
       },
-    });
+    }); 
   };
 
   const handleSignUp = () => {
-    // Store signup intent to differentiate from login
     sessionStorage.setItem("auth_intent", "signup");
     loginWithRedirect({
       screen_hint: "signup",
@@ -98,7 +92,6 @@ function App() {
   };
 
   const handleGetStarted = () => {
-    // Store signup intent for new users
     sessionStorage.setItem("auth_intent", "signup");
     loginWithRedirect({
       authorizationParams: {
@@ -120,7 +113,6 @@ function App() {
       user
     );
     if (isAuthenticated && user) {
-      // Fetch or sync user data from your backend
       const syncUserWithBackend = async () => {
         try {
           console.log("Syncing user with backend...");
@@ -139,7 +131,8 @@ function App() {
           const data = await response.json();
 
           if (isMounted.current && response.ok) {
-            setUserData(data.user); // Set the full user data from backend
+            setUserData(data.user);
+            setUserData(data.user);
             console.log("User data from backend:", data.user);
             console.log("User ID from backend:", data.user?._id);
             console.log(
@@ -147,37 +140,29 @@ function App() {
               data.user?.profileCompleted
             );
 
-            // Conditional redirection based on profileCompleted status
             const currentPath = window.location.pathname;
 
             if (data.user && !data.user.profileCompleted) {
-              // If profile is not completed, ensure user is on profile creation page
               if (currentPath !== "/create-profile") {
                 navigate("/create-profile");
               }
             } else if (data.user && data.user.profileCompleted) {
-              // If profile is completed and user is on profile page or landing, redirect to dashboard
               if (currentPath === "/create-profile" || currentPath === "/") {
                 navigate("/dashboard");
               }
-              // If user is already on dashboard or other protected routes, let them stay
             }
 
-            // Clear auth intent after processing
             sessionStorage.removeItem("auth_intent");
           } else if (isMounted.current) {
             console.error("Backend sync failed:", data.message);
-            // Optionally handle error, e.g., redirect to an error page or show a message
           }
         } catch (error) {
           if (isMounted.current) {
             console.error("Error syncing user with backend:", error);
-            // Handle network or other errors
           }
         }
       };
 
-      // Only sync if userData is not yet loaded or if user changes (e.g., after logout/login)
       if (!userData || userData.email !== user.email) {
         syncUserWithBackend();
       }
@@ -188,34 +173,12 @@ function App() {
     };
   }, [isAuthenticated, user, navigate, userData]);
 
-  // Landing Page Content (without header, as it will be handled by MainLayout for authenticated routes)
   const LandingPageContent = () => (
     <div className="app">
-      {/* Header */}
-      {/* <header className="header">
-        <div className="container">
-          <nav className="navbar">
-            <a href="/" className="logo">Skedulr</a>
-            <div className="nav-buttons">
-              {isAuthenticated ? (
-                <button className="nav-button login-button" onClick={handleLogout}>Logout</button>
-              ) : (
-                <>
-                  <button className="nav-button sign-up-button" onClick={handleSignUp}>Sign Up</button>
-                  <button className="nav-button login-button" onClick={handleLogin}>Login</button>
-                </>
-              )}
-            </div>
-          </nav>
-        </div>
-      </header> */}
-
-      {/* Hero Section */}
       <section className="hero" id="hero">
         <div className="container">
           <h1 className="hero-title">
             skedulr
-            {/* <span className="terminal-cursor">_</span> */}
           </h1>
           <p className="hero-subtitle">
             turning awkward schedules into effortless connections
@@ -231,7 +194,6 @@ function App() {
               >
                 Welcome, {user.name || "User"}!
               </p>
-              {/* Use navigate for profile creation */}
               <button
                 className="cta-button"
                 onClick={() => navigate("/create-profile")}
@@ -247,7 +209,6 @@ function App() {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="features" id="features">
         <div className="container">
           <div className="features-header">
@@ -317,7 +278,6 @@ function App() {
         </div>
       </section>
 
-      {/* University Support */}
       <section className="universities" id="universities">
         <div className="container">
           <div className="universities-header">
@@ -328,15 +288,6 @@ function App() {
             </p>
           </div>
           <div className="university-grid">
-            {/* <div className="university-card">
-              <div className="university-logo">
-                <img src={utLogo} alt="University of Texas" />
-              </div>
-              <div className="university-info">
-                <h3>University of Texas</h3>
-                <p>Austin</p>
-              </div>
-            </div> */}
             <div className="university-card">
               <div className="university-logo">
                 <img
@@ -358,24 +309,6 @@ function App() {
                 <p>Houston</p>
               </div>
             </div>
-            {/* <div className="university-card">
-              <div className="university-logo">
-                <img src={tamuLogo} alt="Texas A&M University" />
-              </div>
-              <div className="university-info">
-                <h3>Texas A&M</h3>
-                <p>College Station</p>
-              </div>
-            </div> */}
-            {/* <div className="university-card">
-              <div className="university-logo">
-                <img src={untLogo} alt="University of North Texas" />
-              </div>
-              <div className="university-info">
-                <h3>University of North Texas</h3>
-                <p>Denton</p>
-              </div>
-            </div> */}
             <div className="university-card">
               <div className="university-logo">
                 <img src="/UT_Dallas.png" alt="UT Dallas" />
@@ -395,7 +328,6 @@ function App() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="cta-section" id="cta-section">
         <div className="container">
           <h2>Ready to transform your academic experience?</h2>
@@ -405,7 +337,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="container">
           <p>&copy; 2025 Skedulr. Built for students, by students.</p>
@@ -422,7 +353,6 @@ function App() {
     </div>
   );
 
-  // A protected route component that renders children only if authenticated
   const ProtectedRoute = ({ children }) => {
     useEffect(() => {
       if (!isAuthenticated) {
@@ -482,10 +412,10 @@ function App() {
                 onNavigateToProfileDetails={handleNavigateToProfileDetails}
                 onScheduleUpdate={handleUserScheduleUpdate}
                 userSchedule={userSchedule}
-                onLogout={handleLogout}
-                onNavigateToClasses={handleNavigateToClasses} // Pass the new prop here
-                userUniversity={userData?.university} // Pass user's university
-                // onNavigateToSettings={handleNavigateToSettings} // Pass the new prop here
+              onLogout={handleLogout}
+              onNavigateToClasses={handleNavigateToClasses}
+              onNavigateToBookmarks={handleNavigateToBookmarks}
+              userUniversity={userData?.university}
               />
             </ProtectedRoute>
           }
@@ -497,8 +427,8 @@ function App() {
               <MatcherPage
                 onBackToDashboard={handleNavigateToDashboard}
                 currentUserSchedule={userSchedule}
-                userId={userData?._id} // Pass userId to MatcherPage
-                userUniversity={userData?.university} // Pass userUniversity to MatcherPage
+                userId={userData?._id}
+                userUniversity={userData?.university}
               />
             </ProtectedRoute>
           }
@@ -508,45 +438,28 @@ function App() {
           element={
             <ProtectedRoute>
               <ProfileDetailsPage
-                // userData={userData} // ProfileDetailsPage will fetch its own data
-                // setUserData={setUserData} // No longer needed here as ProfileDetailsPage manages its own data
                 onBackToDashboard={handleNavigateToDashboard}
               />
             </ProtectedRoute>
           }
         />
-        <Route
-          path="/dashboard/classes"
-          element={
-            <ProtectedRoute>
-              <ClassesPage
-                userData={userData}
-                userSchedule={userSchedule}
-                onBackToDashboard={handleNavigateToDashboard}
-              />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/dashboard/connections"
-          element={
-            <ProtectedRoute>
-              <ConnectionsPage
-                userData={userData}
-                onBackToDashboard={handleNavigateToDashboard}
-              />
-            </ProtectedRoute>
-          }
-        />
-        {/* <Route
-        path="/dashboard/settings"
+      <Route
+        path="/dashboard/classes"
         element={
           <ProtectedRoute>
-            <SettingsPage />
+            <ClassesPage userData={userData} userSchedule={userSchedule} onBackToDashboard={handleNavigateToDashboard} />
           </ProtectedRoute>
         }
-      /> */}
-        {/* Redirect any unhandled paths to the landing page or a 404 page */}
+      />
+      <Route
+        path="/dashboard/bookmarks"
+        element={
+          <ProtectedRoute>
+            <BookmarkedCoursesPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />
+            <BookmarkedCoursesPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />
+          </ProtectedRoute>
+        }
+      />
         <Route path="*" element={<LandingPageContent />} />
       </Routes>
     </SocketProvider>
