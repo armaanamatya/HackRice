@@ -2,7 +2,7 @@
  * @typedef {import('../utils/scheduleParser').ParsedClassData} ClassData
  */
 
-const STORAGE_KEY_PREFIX = 'scedulr_schedule_';
+const STORAGE_KEY_PREFIX = "scedulr_schedule_";
 
 /**
  * Saves schedule data to localStorage.
@@ -11,7 +11,10 @@ const STORAGE_KEY_PREFIX = 'scedulr_schedule_';
  */
 export const saveScheduleToLocalStorage = (userId, schedule) => {
   try {
-    localStorage.setItem(`${STORAGE_KEY_PREFIX}${userId}`, JSON.stringify(schedule));
+    localStorage.setItem(
+      `${STORAGE_KEY_PREFIX}${userId}`,
+      JSON.stringify(schedule)
+    );
     console.log(`Schedule saved for user ${userId}`);
   } catch (error) {
     console.error("Error saving schedule to localStorage:", error);
@@ -25,7 +28,9 @@ export const saveScheduleToLocalStorage = (userId, schedule) => {
  */
 export const loadScheduleFromLocalStorage = (userId) => {
   try {
-    const storedSchedule = localStorage.getItem(`${STORAGE_KEY_PREFIX}${userId}`);
+    const storedSchedule = localStorage.getItem(
+      `${STORAGE_KEY_PREFIX}${userId}`
+    );
     return storedSchedule ? JSON.parse(storedSchedule) : null;
   } catch (error) {
     console.error("Error loading schedule from localStorage:", error);
