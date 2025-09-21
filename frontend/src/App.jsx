@@ -6,12 +6,15 @@ import {
   IconBook,
   IconHome,
   IconChartBar,
+  IconMessageCircle,
 } from "@tabler/icons-react";
 import UserProfileForm from "./components/UserProfileForm";
 import DashboardPage from "./components/DashboardPage";
 import MatcherPage from "./components/MatcherPage";
 import ProfileDetailsPage from "./components/ProfileDetailsPage";
 import ClassesPage from "./components/ClassesPage"; // Import the new ClassesPage
+import ChatPage from "./components/ChatPage"; // Import the new ChatPage
+import { SocketProvider } from "./contexts/SocketContext"; // Import Socket context
 // import SettingsPage from "./components/SettingsPage"; // Import the new SettingsPage
 import { detectUniversityFromEmail } from "./utils/universityUtils";
 // Using actual logos from public folder
@@ -126,6 +129,7 @@ function App() {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
+              auth0Id: user.sub,
               name: user.name,
               email: user.email,
               university: detectUniversityFromEmail(user.email),
@@ -437,29 +441,30 @@ function App() {
   };
 
   return (
-    <Routes>
-      <Route path="/" element={<LandingPageContent />} />
-      <Route
-        path="/create-profile"
-        element={
-          userData && userData._id && !userData.profileCompleted ? (
-            <UserProfileForm
-              onSubmit={handleProfileSubmit}
-              initialData={userData}
-            />
-          ) : (
-            <div className="app-loading-container">
-              <div className="app-loading-card">
-                <div className="app-loading-spinner"></div>
-                <div className="app-loading-content">
-                  <h3>Loading Profile</h3>
-                  <p>Preparing your profile setup...</p>
+    <SocketProvider>
+      <Routes>
+        <Route path="/" element={<LandingPageContent />} />
+        <Route
+          path="/create-profile"
+          element={
+            userData && userData._id && !userData.profileCompleted ? (
+              <UserProfileForm
+                onSubmit={handleProfileSubmit}
+                initialData={userData}
+              />
+            ) : (
+              <div className="app-loading-container">
+                <div className="app-loading-card">
+                  <div className="app-loading-spinner"></div>
+                  <div className="app-loading-content">
+                    <h3>Loading Profile</h3>
+                    <p>Preparing your profile setup...</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          )
-        }
-      />
+            )
+          }
+        />
       <Route
         path="/dashboard"
         element={
@@ -519,7 +524,8 @@ function App() {
       /> */}
       {/* Redirect any unhandled paths to the landing page or a 404 page */}
       <Route path="*" element={<LandingPageContent />} />
-    </Routes>
+      </Routes>
+    </SocketProvider>
   );
 }
 

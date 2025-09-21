@@ -56,8 +56,12 @@ const SearchResultsDropdown = ({ results, isLoading, error, onClose, onUserClick
             {user.name ? user.name.charAt(0).toUpperCase() : 'U'}
           </div>
           <div className="user-info">
-            <span className="user-name">{user.name}</span>
-            <span className="user-university">{user.university}</span>
+            <span className="user-name">{user.name || 'Unknown User'}</span>
+            <span className="user-details">
+              {user.university && <span className="user-university">{user.university}</span>}
+              {user.major && <span className="user-major">{user.major}</span>}
+            </span>
+            {user.email && <span className="user-email">{user.email}</span>}
           </div>
         </div>
       ))}

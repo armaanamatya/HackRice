@@ -1,0 +1,126 @@
+{
+  "overview": {
+    "summary": "COMP 215 at Rice University provides a foundational understanding of object-oriented programming using Java, emphasizing design principles and patterns.",
+    "learningObjectives": [
+      "Understand core concepts of object-oriented programming",
+      "Design and implement Java programs using OOP principles",
+      "Apply software design patterns to solve programming problems",
+      "Write clean, efficient, and well-documented code",
+      "Utilize debugging and testing techniques",
+      "Collaborate effectively on software projects"
+    ],
+    "primaryTopics": [
+      "Object-Oriented Programming (OOP)",
+      "Java programming language",
+      "Data structures",
+      "Software design principles (SOLID)",
+      "Design patterns (e.g., Singleton, Factory)",
+      "Testing and debugging",
+      "Version control (Git)",
+      "Software development lifecycle"
+    ]
+  },
+  "difficulty": {
+    "difficultyRating": "7",
+    "workloadHours": "10-15",
+    "difficultyFactors": [
+      "Steep learning curve for OOP concepts",
+      "Rigorous programming assignments",
+      "Emphasis on design and code quality",
+      "Competitive classroom environment"
+    ],
+    "recommendedPreparation": [
+      "Strong foundation in programming fundamentals",
+      "Familiarity with basic data structures",
+      "Prior experience with any programming language"
+    ]
+  },
+  "professors": {
+    "averageRating": "4.0",
+    "commonReviews": [
+      "Challenging but rewarding coursework",
+      "Helpful TAs and office hours",
+      "Emphasis on practical application",
+      "Fast-paced lectures"
+    ],
+    "teachingStyle": "Combination of lectures, hands-on coding exercises, and group projects",
+    "availability": "Regular office hours, responsive to emails, typically accessible via Piazza"
+  },
+  "statistics": {
+    "enrollmentTrend": "Stable; consistently high demand due to its foundational nature",
+    "averageGradeDistribution": {
+      "A": "20",
+      "B": "35",
+      "C": "30",
+      "D/F": "15"
+    },
+    "completionRate": "90",
+    "popularityScore": "9"
+  },
+  "careerProspects": {
+    "industryRelevance": "9",
+    "skillsGained": [
+      "Object-oriented programming",
+      "Java proficiency",
+      "Software design",
+      "Problem-solving",
+      "Teamwork",
+      "Version control"
+    ],
+    "careerPaths": [
+      "Software Engineer",
+      "Web Developer",
+      "Data Scientist",
+      "Game Developer"
+    ],
+    "salaryImpact": "Significant positive impact on starting salaries for graduates"
+  },
+  "recommendations": {
+    "bestFor": [
+      "Students with strong problem-solving skills",
+      "Students interested in software engineering",
+      "Students who enjoy hands-on programming projects"
+    ],
+    "studyTips": [
+      "Attend all lectures and labs",
+      "Actively participate in class discussions",
+      "Form study groups with peers",
+      "Start assignments early",
+      "Seek help from TAs and professor"
+    ],
+    "timeManagement": "Prioritize assignments and dedicate sufficient time for coding and studying",
+    "resources": [
+      "Official Java documentation",
+      "Head First Java (book)",
+      "Effective Java (book)",
+      "Online coding platforms (e.g., LeetCode, HackerRank)"
+    ]
+  },
+  "additionalInsights": {
+    "uniqueAspects": [
+      "Focus on design patterns and software architecture",
+      "Emphasis on practical, industry-relevant projects",
+      "Strong emphasis on code quality and testing"
+    ],
+    "commonMistakes": [
+      "Poor understanding of OOP concepts",
+      "Insufficient testing of code",
+      "Poor code design and readability",
+      "Late submission of assignments"
+    ],
+    "successFactors": [
+      "Strong programming foundation",
+      "Consistent effort and dedication",
+      "Active participation in class and labs",
+      "Effective time management"
+    ]
+  },
+  "metadata": {
+    "courseCode": "COMP 215",
+    "courseName": "Introduction to Program Design",
+    "university": "Rice University",
+    "department": "Computer Science",
+    "generatedAt": "2025-09-21T04:34:26.838Z",
+    "reportVersion": "1.0"
+  }
+}

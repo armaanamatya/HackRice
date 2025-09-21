@@ -52,7 +52,12 @@ router.get("/search", async (req, res) => {
     }
 
     if (name) {
-      query.name = { $regex: name.trim(), $options: "i" }; // Case-insensitive search
+      // Search in name, email, and major fields
+      query.$or = [
+        { name: { $regex: name.trim(), $options: "i" } },
+        { email: { $regex: name.trim(), $options: "i" } },
+        { major: { $regex: name.trim(), $options: "i" } }
+      ];
     }
 
     if (university && university !== 'Other') {
@@ -60,20 +65,43 @@ router.get("/search", async (req, res) => {
     }
 
     console.log('Search query:', query);
-    const users = await User.find(query).select('-password -__v'); // Exclude password and version key from results
+    const users = await User.find(query)
+      .select('-password -__v') // Exclude password and version key from results
+      .limit(20) // Limit results for performance
+      .sort({ name: 1 }); // Sort by name alphabetically
     console.log(`Found ${users.length} users matching search criteria`);
     
-    res.json(users);
+    // Map the results to include auth0Id as _id for frontend compatibility
+    const mappedUsers = users.map(user => ({
+      _id: user.auth0Id, // Use auth0Id as the _id for frontend compatibility
+      dbId: user._id, // Include database ID for internal use
+      name: user.name,
+      email: user.email,
+      university: user.university,
+      major: user.major,
+      year: user.year,
+      bio: user.bio,
+      profileCompleted: user.profileCompleted
+    }));
+    
+    res.json(mappedUsers);
   } catch (error) {
     console.error('Search error:', error);
     res.status(500).json({ message: error.message });
   }
 });
 
-// Get single user
+// Get single user by Auth0 ID
 router.get("/:id", async (req, res) => {
   try {
-    const user = await User.findById(req.params.id);
+    // First try to find by auth0Id (for frontend compatibility)
+    let user = await User.findOne({ auth0Id: req.params.id });
+    
+    // If not found by auth0Id, try by MongoDB _id (for backward compatibility)
+    if (!user) {
+      user = await User.findById(req.params.id);
+    }
+    
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
@@ -100,28 +128,51 @@ router.post("/", async (req, res) => {
 
 // Sync Auth0 user with MongoDB
 router.post("/auth0-sync", async (req, res) => {
-  const { name, email } = req.body; // Remove university from destructuring
+  const { auth0Id, name, email } = req.body;
 
   if (!email) {
     return res.status(400).json({ message: "Email is required" });
   }
 
+  if (!auth0Id) {
+    return res.status(400).json({ message: "Auth0 ID is required" });
+  }
+
   try {
-    // Check if user already exists
-    let user = await User.findOne({ email: email.toLowerCase() });
+    // Check if user already exists (by email or auth0Id)
+    let user = await User.findOne({ 
+      $or: [
+        { email: email.toLowerCase() },
+        { auth0Id: auth0Id }
+      ]
+    });
 
     if (user) {
-      // Update existing user if name or university changed
-      // Only update name from Auth0 if profile is not completed or if the existing name is still an email (meaning it hasn't been set by the user)
-      if (!user.profileCompleted && (user.name !== name || isEmail(user.name))) {
-        user.name = name; // Update name from Auth0 if profile not completed or name is still an email
+      // Update existing user if needed
+      let updated = false;
+      
+      // Update auth0Id if missing
+      if (!user.auth0Id) {
+        user.auth0Id = auth0Id;
+        updated = true;
       }
+      
+      // Only update name from Auth0 if profile is not completed or if the existing name is still an email
+      if (!user.profileCompleted && (user.name !== name || isEmail(user.name))) {
+        user.name = name;
+        updated = true;
+      }
+      
       if (user.university !== getUniversityFromEmail(email)) {
         user.university = getUniversityFromEmail(email);
+        updated = true;
       }
-      // Preserve existing profileCompleted status
-      await user.save();
-      console.log("Updated existing user:", user.email);
+      
+      if (updated) {
+        await user.save();
+        console.log("Updated existing user:", user.email);
+      }
+      
       return res.status(200).json({
         message: "User already exists",
         user: user,
@@ -131,6 +182,7 @@ router.post("/auth0-sync", async (req, res) => {
 
     // Create new user
     user = new User({
+      auth0Id: auth0Id,
       name: name || "", // Use name from Auth0, fallback to an empty string
       email: email.toLowerCase(), // Ensure email is always lowercase in DB
       university: getUniversityFromEmail(email),
