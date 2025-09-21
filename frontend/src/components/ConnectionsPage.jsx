@@ -70,6 +70,11 @@ const ConnectionsPage = ({ userData, onBackToDashboard }) => {
       const params = new URLSearchParams();
       params.append('name', searchQuery);
       
+      // Add user university for automatic filtering
+      if (userData?.university) {
+        params.append('userUniversity', userData.university);
+      }
+      
       if (filters.university) params.append('university', filters.university);
       
       const response = await fetch(`/api/users/search?${params.toString()}`);
@@ -319,17 +324,6 @@ const ConnectionsPage = ({ userData, onBackToDashboard }) => {
                 <option value="3">Junior</option>
                 <option value="4">Senior</option>
                 <option value="5">Graduate</option>
-              </select>
-
-              <select
-                value={filters.university}
-                onChange={(e) => setFilters({...filters, university: e.target.value})}
-                className="filter-select"
-              >
-                <option value="">All Universities</option>
-                <option value="Rice University">Rice University</option>
-                <option value="University of Houston">University of Houston</option>
-                <option value="University of Texas at Dallas">UT Dallas</option>
               </select>
 
               <button type="button" onClick={resetFilters} className="reset-filters-btn">

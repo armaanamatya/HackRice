@@ -6,9 +6,7 @@ import './ClassesPage.css';
 const ClassesPage = ({ userData, onBackToDashboard }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
-  const [selectedUniversity, setSelectedUniversity] = useState('all');
   const [selectedCreditHours, setSelectedCreditHours] = useState('all');
-  const [selectedLevel, setSelectedLevel] = useState('all');
   const [activeTab, setActiveTab] = useState('catalog');
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -74,9 +72,13 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
       const params = new URLSearchParams();
       if (searchQuery.trim()) params.append('search', searchQuery.trim());
       if (selectedDepartment !== 'all') params.append('department', selectedDepartment);
-      if (selectedUniversity !== 'all') params.append('university', selectedUniversity);
       if (selectedCreditHours !== 'all') params.append('credit_hours', selectedCreditHours);
-      if (selectedLevel !== 'all') params.append('level', selectedLevel);
+      
+      // Add user university for automatic filtering
+      if (userData?.university) {
+        params.append('userUniversity', userData.university);
+      }
+      
       params.append('page', page);
       params.append('limit', ITEMS_PER_PAGE);
 
@@ -99,14 +101,14 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
     } finally {
       setLoading(false);
     }
-  }, [searchQuery, selectedDepartment, selectedUniversity, selectedCreditHours, selectedLevel]);
+  }, [searchQuery, selectedDepartment, selectedCreditHours, userData?.university]);
 
   // Fetch courses when filters change
   useEffect(() => {
     if (activeTab === 'catalog') {
       fetchCourses(1);
     }
-  }, [searchQuery, selectedDepartment, selectedUniversity, selectedCreditHours, selectedLevel, activeTab, fetchCourses]);
+  }, [searchQuery, selectedDepartment, selectedCreditHours, activeTab, fetchCourses]);
 
   // Handle page change
   const handlePageChange = (page) => {
@@ -118,9 +120,7 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
   const resetFilters = () => {
     setSearchQuery('');
     setSelectedDepartment('all');
-    setSelectedUniversity('all');
     setSelectedCreditHours('all');
-    setSelectedLevel('all');
     setCurrentPage(1);
   };
 
@@ -337,17 +337,6 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
               </select>
 
               <select
-                value={selectedUniversity}
-                onChange={(e) => setSelectedUniversity(e.target.value)}
-                className="filter-select"
-              >
-                <option value="all">All Universities</option>
-                {filters.universities.map(uni => (
-                  <option key={uni} value={uni}>{uni}</option>
-                ))}
-              </select>
-
-              <select
                 value={selectedCreditHours}
                 onChange={(e) => setSelectedCreditHours(e.target.value)}
                 className="filter-select"
@@ -356,20 +345,6 @@ const ClassesPage = ({ userData, onBackToDashboard }) => {
                 {filters.creditHours.map(hours => (
                   <option key={hours} value={hours}>{hours} Credits</option>
                 ))}
-              </select>
-
-              <select
-                value={selectedLevel}
-                onChange={(e) => setSelectedLevel(e.target.value)}
-                className="filter-select"
-              >
-                <option value="all">All Levels</option>
-                <option value="undergraduate">Undergraduate</option>
-                <option value="graduate">Graduate</option>
-                <option value="freshman">Freshman (1000-level)</option>
-                <option value="sophomore">Sophomore (2000-level)</option>
-                <option value="junior">Junior (3000-level)</option>
-                <option value="senior">Senior (4000-level)</option>
               </select>
 
               <button onClick={resetFilters} className="reset-filters-btn">
