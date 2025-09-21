@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import ProfilePicture from './ProfilePicture';
 import './ConnectionsPage.css';
 
 const ConnectionsPage = ({ userData, onBackToDashboard }) => {
@@ -14,15 +15,15 @@ const ConnectionsPage = ({ userData, onBackToDashboard }) => {
     university: ''
   });
 
-  // Fetch schedule matches on component mount
-  useEffect(() => {
-    if (userData?._id) {
-      fetchScheduleMatches();
-    }
-  }, [userData]);
+  // Calculate match percentage (simple algorithm)
+  const calculateMatchPercentage = useCallback((commonClasses) => {
+    // Assuming a typical student has 4-6 classes, calculate percentage
+    const maxPossibleClasses = 6;
+    return Math.min(Math.round((commonClasses / maxPossibleClasses) * 100), 100);
+  }, []);
 
   // Fetch schedule matches
-  const fetchScheduleMatches = async () => {
+  const fetchScheduleMatches = useCallback(async () => {
     if (!userData?._id) return;
 
     setLoading(true);
@@ -50,14 +51,14 @@ const ConnectionsPage = ({ userData, onBackToDashboard }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [userData?._id, calculateMatchPercentage]);
 
-  // Calculate match percentage (simple algorithm)
-  const calculateMatchPercentage = (commonClasses) => {
-    // Assuming a typical student has 4-6 classes, calculate percentage
-    const maxPossibleClasses = 6;
-    return Math.min(Math.round((commonClasses / maxPossibleClasses) * 100), 100);
-  };
+  // Fetch schedule matches on component mount
+  useEffect(() => {
+    if (userData?._id) {
+      fetchScheduleMatches();
+    }
+  }, [userData, fetchScheduleMatches]);
 
   // Search users with filters
   const searchUsers = async () => {
@@ -126,15 +127,6 @@ const ConnectionsPage = ({ userData, onBackToDashboard }) => {
     setAllUsers([]);
   };
 
-  // Get initials for avatar
-  const getInitials = (name) => {
-    return name
-      .split(' ')
-      .map(word => word.charAt(0))
-      .join('')
-      .toUpperCase()
-      .slice(0, 2);
-  };
 
   // Handle connect action (placeholder)
   const handleConnect = (user) => {
@@ -221,12 +213,15 @@ const ConnectionsPage = ({ userData, onBackToDashboard }) => {
             </div>
           ) : (
             <div className="matches-grid">
-              {matches.map((match, index) => (
+              {matches.map((match) => (
                 <div key={match._id} className="match-card">
                   <div className="match-header">
-                    <div className="user-avatar">
-                      {getInitials(match.name)}
-                    </div>
+                    <ProfilePicture
+                      src={match.profilePicture}
+                      fallbackText={match.name}
+                      size="medium"
+                      alt={`${match.name}'s profile picture`}
+                    />
                     <div className="user-info">
                       <h3 className="user-name">{match.name}</h3>
                       <p className="user-details">
@@ -372,9 +367,12 @@ const ConnectionsPage = ({ userData, onBackToDashboard }) => {
                 {allUsers.map((user) => (
                   <div key={user._id} className="user-card">
                     <div className="user-header">
-                      <div className="user-avatar">
-                        {getInitials(user.name)}
-                      </div>
+                      <ProfilePicture
+                        src={user.profilePicture}
+                        fallbackText={user.name}
+                        size="medium"
+                        alt={`${user.name}'s profile picture`}
+                      />
                       <div className="user-info">
                         <h3 className="user-name">{user.name}</h3>
                         <p className="user-details">
