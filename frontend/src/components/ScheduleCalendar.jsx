@@ -1,17 +1,28 @@
-import React, { useState, useMemo } from 'react';
-import './ScheduleCalendar.css';
+import React, { useState, useMemo } from "react";
+import "./ScheduleCalendar.css";
 
 const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
   const [hoveredCourse, setHoveredCourse] = useState(null);
-  const [contextMenuPosition, setContextMenuPosition] = useState({ x: 0, y: 0 });
+  const [contextMenuPosition, setContextMenuPosition] = useState({
+    x: 0,
+    y: 0,
+  });
 
   // Define weekdays
-  const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-  const dayAbbreviations = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  const weekdays = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  const dayAbbreviations = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
   // Time slots (7 AM to 10 PM)
   const timeSlots = [];
-  for (let hour = 7; hour <= 22; hour++) {
+  for (let hour = 1; hour <= 24; hour++) {
     timeSlots.push(`${hour}:00`);
   }
 
@@ -20,7 +31,7 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
     if (!courses || courses.length === 0) return {};
 
     const events = {};
-    
+
     courses.forEach((course) => {
       if (!course.days || course.days.length === 0) return;
 
@@ -29,23 +40,23 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
         if (!events[dayKey]) events[dayKey] = [];
 
         const startTime = course.startTime; // e.g., "09:00"
-        const endTime = course.endTime;     // e.g., "09:50"
-        
-        const startHour = parseInt(startTime.split(':')[0]);
-        const startMinute = parseInt(startTime.split(':')[1]);
-        const endHour = parseInt(endTime.split(':')[0]);
-        const endMinute = parseInt(endTime.split(':')[1]);
-        
+        const endTime = course.endTime; // e.g., "09:50"
+
+        const startHour = parseInt(startTime.split(":")[0]);
+        const startMinute = parseInt(startTime.split(":")[1]);
+        const endHour = parseInt(endTime.split(":")[0]);
+        const endMinute = parseInt(endTime.split(":")[1]);
+
         // Calculate position and height (30px per hour instead of 60px)
-        const startPosition = (startHour - 7) * 30 + (startMinute / 2); // 30px per hour from 7 AM
-        const endPosition = (endHour - 7) * 30 + (endMinute / 2);
+        const startPosition = (startHour - 7) * 30 + startMinute / 2; // 30px per hour from 7 AM
+        const endPosition = (endHour - 7) * 30 + endMinute / 2;
         const duration = endPosition - startPosition;
-        
+
         events[dayKey].push({
           ...course,
           startPosition,
           duration,
-          displayTime: `${startTime} - ${endTime}`
+          displayTime: `${startTime} - ${endTime}`,
         });
       });
     });
@@ -58,7 +69,7 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
     const rect = event.target.getBoundingClientRect();
     setContextMenuPosition({
       x: rect.right + 10,
-      y: rect.top
+      y: rect.top,
     });
     setHoveredCourse(course);
   };
@@ -69,16 +80,16 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
 
   // Handle joining group chat (placeholder for now)
   const handleJoinGroupChat = (course) => {
-    console.log('Join group chat for:', course.courseCode);
+    console.log("Join group chat for:", course.courseCode);
     // TODO: Implement group chat functionality
     setHoveredCourse(null);
   };
 
   // Convert time to 12-hour format
   const formatTime = (hour) => {
-    if (hour === 0) return '12 AM';
+    if (hour === 0) return "12 AM";
     if (hour < 12) return `${hour} AM`;
-    if (hour === 12) return '12 PM';
+    if (hour === 12) return "12 PM";
     return `${hour - 12} PM`;
   };
 
@@ -88,10 +99,19 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
         <div className="calendar-header">
           <div className="header-content">
             <h2 className="header-title">Your Weekly Schedule</h2>
-            <p className="header-subtitle">No courses found. Upload your schedule to get started!</p>
+            <p className="header-subtitle">
+              No courses found. Upload your schedule to get started!
+            </p>
           </div>
           <button className="edit-schedule-btn" onClick={onEditSchedule}>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="17,8 12,3 7,8" />
               <line x1="12" y1="3" x2="12" y2="15" />
@@ -109,7 +129,8 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
         <div className="header-content">
           <h2 className="header-title">Your Weekly Schedule</h2>
           <p className="header-subtitle">
-            Welcome back, {userData?.name || 'Student'}! Here's your weekly class schedule.
+            Welcome back, {userData?.name || "Student"}! Here's your weekly
+            class schedule.
           </p>
           <div className="schedule-stats">
             <div className="stat-item">
@@ -118,7 +139,11 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
             </div>
             <div className="stat-item">
               <span className="stat-number">
-                {courses.reduce((total, course) => total + (course.days ? course.days.length : 0), 0)}
+                {courses.reduce(
+                  (total, course) =>
+                    total + (course.days ? course.days.length : 0),
+                  0
+                )}
               </span>
               <span className="stat-label">Weekly Classes</span>
             </div>
@@ -126,7 +151,14 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
         </div>
         <div className="header-actions">
           <button className="edit-schedule-btn" onClick={onEditSchedule}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <path d="m18 2 4 4-12 12H6v-4L18 2Z" />
             </svg>
             Edit Schedule
@@ -138,7 +170,8 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
         <div className="week-calendar">
           {/* Time Column */}
           <div className="time-column">
-            <div className="time-header"></div> {/* Empty space for day headers */}
+            <div className="time-header"></div>{" "}
+            {/* Empty space for day headers */}
             {timeSlots.map((time) => (
               <div key={time} className="time-slot">
                 <span className="time-label">{formatTime(parseInt(time))}</span>
@@ -150,51 +183,68 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
           {dayAbbreviations.map((dayAbbr) => {
             const fullDay = weekdays[dayAbbreviations.indexOf(dayAbbr)];
             const dayEvents = weeklyEvents[dayAbbr] || [];
-            
+
             return (
               <div key={dayAbbr} className="day-column">
                 <div className="day-header">
                   <span className="day-name">{fullDay}</span>
                   <span className="day-abbr">{dayAbbr}</span>
                 </div>
-                
-                <div className="day-events" style={{ position: 'relative', height: `${timeSlots.length * 30}px` }}>
+
+                <div
+                  className="day-events"
+                  style={{
+                    position: "relative",
+                    height: `${timeSlots.length * 30}px`,
+                  }}
+                >
                   {dayEvents.map((event, index) => {
                     // Calculate duration in minutes for styling
                     const durationMinutes = event.duration * 2; // Since 0.5px per minute
-                    let eventClasses = 'course-event';
-                    
-                    if (durationMinutes >= 120) { // 2+ hours
-                      eventClasses += ' very-long-event';
-                    } else if (durationMinutes >= 90) { // 1.5+ hours
-                      eventClasses += ' long-event';
+                    let eventClasses = "course-event";
+
+                    if (durationMinutes >= 120) {
+                      // 2+ hours
+                      eventClasses += " very-long-event";
+                    } else if (durationMinutes >= 90) {
+                      // 1.5+ hours
+                      eventClasses += " long-event";
                     }
-                    
+
                     return (
                       <div
                         key={`${event.id}-${index}`}
                         className={eventClasses}
                         style={{
-                          position: 'absolute',
+                          position: "absolute",
                           top: `${event.startPosition}px`,
                           height: `${event.duration}px`,
-                          left: '4px',
-                          right: '4px',
-                          zIndex: 1
+                          left: "4px",
+                          right: "4px",
+                          zIndex: 1,
                         }}
                         onMouseEnter={(e) => handleCourseMouseEnter(event, e)}
                         onMouseLeave={handleCourseMouseLeave}
                       >
                         <div className="event-content">
-                          <div className="event-title" title={event.courseCode}>{event.courseCode}</div>
+                          <div className="event-title" title={event.courseCode}>
+                            {event.courseCode}
+                          </div>
                           {durationMinutes >= 60 && (
-                            <div className="event-time">{event.displayTime}</div>
+                            <div className="event-time">
+                              {event.displayTime}
+                            </div>
                           )}
                           {durationMinutes >= 90 && event.location && (
-                            <div className="event-location" title={event.location}>{event.location}</div>
+                            <div
+                              className="event-location"
+                              title={event.location}
+                            >
+                              {event.location}
+                            </div>
                           )}
                         </div>
-                    </div>
+                      </div>
                     );
                   })}
                 </div>
@@ -206,13 +256,13 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
 
       {/* Context Menu */}
       {hoveredCourse && (
-        <div 
+        <div
           className="context-menu"
           style={{
-            position: 'fixed',
+            position: "fixed",
             left: `${contextMenuPosition.x}px`,
             top: `${contextMenuPosition.y}px`,
-            zIndex: 1000
+            zIndex: 1000,
           }}
           onMouseEnter={() => setHoveredCourse(hoveredCourse)} // Keep menu open on hover
           onMouseLeave={handleCourseMouseLeave}
@@ -222,11 +272,18 @@ const ScheduleCalendar = ({ courses = [], onEditSchedule, userData }) => {
             {hoveredCourse.location && <p>{hoveredCourse.location}</p>}
           </div>
           <div className="context-menu-actions">
-            <button 
+            <button
               className="context-menu-btn"
               onClick={() => handleJoinGroupChat(hoveredCourse)}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
               </svg>
               Join Group Chat

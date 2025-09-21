@@ -1,35 +1,479 @@
-import React from 'react';
-import { IconBook2, IconClock, IconMapPin, IconUser } from '@tabler/icons-react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './ClassesPage.css';
 
-const ClassesPage = ({ userSchedule }) => {
-  if (!userSchedule || userSchedule.length === 0) {
+const ClassesPage = ({ userData, userSchedule = [], onBackToDashboard }) => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedDepartment, setSelectedDepartment] = useState('all');
+  const [selectedUniversity, setSelectedUniversity] = useState('all');
+  const [selectedCreditHours, setSelectedCreditHours] = useState('all');
+  const [selectedLevel, setSelectedLevel] = useState('all');
+  const [activeTab, setActiveTab] = useState('catalog');
+  const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [total, setTotal] = useState(0);
+  const [filters, setFilters] = useState({
+    departments: [],
+    universities: [],
+    creditHours: []
+  });
+  const [selectedCourse, setSelectedCourse] = useState(null);
+  const [enrolledCourses, setEnrolledCourses] = useState([]);
+
+  const ITEMS_PER_PAGE = 20;
+
+  // Fetch enrolled courses from the user's schedule
+  useEffect(() => {
+    const fetchEnrolledCourses = async () => {
+      if (!userData?._id) return;
+
+      try {
+        const response = await fetch(`/api/courses/${userData._id}`);
+        if (response.ok) {
+          const data = await response.json();
+          setEnrolledCourses(data.courses || []);
+        }
+      } catch (error) {
+        console.error('Error fetching enrolled courses:', error);
+      }
+    };
+
+    fetchEnrolledCourses();
+  }, [userData]);
+
+  // Memoized enrolled course codes for quick lookup
+  const enrolledCourseCodes = useMemo(() => {
+    return new Set(enrolledCourses.map(course => course.courseCode?.toUpperCase()));
+  }, [enrolledCourses]);
+
+  // Fetch courses from catalog
+  const fetchCourses = async (page = 1) => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const params = new URLSearchParams();
+      if (searchQuery.trim()) params.append('search', searchQuery.trim());
+      if (selectedDepartment !== 'all') params.append('department', selectedDepartment);
+      if (selectedUniversity !== 'all') params.append('university', selectedUniversity);
+      if (selectedCreditHours !== 'all') params.append('credit_hours', selectedCreditHours);
+      if (selectedLevel !== 'all') params.append('level', selectedLevel);
+      params.append('page', page);
+      params.append('limit', ITEMS_PER_PAGE);
+
+      const response = await fetch(`/api/catalog?${params.toString()}`);
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch courses');
+      }
+
+      const data = await response.json();
+      setCourses(data.courses || []);
+      setTotalPages(data.totalPages || 1);
+      setTotal(data.total || 0);
+      setCurrentPage(data.page || 1);
+      setFilters(data.filters || { departments: [], universities: [], creditHours: [] });
+    } catch (err) {
+      console.error('Error fetching courses:', err);
+      setError(err.message);
+      setCourses([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Fetch courses when filters change
+  useEffect(() => {
+    if (activeTab === 'catalog') {
+      fetchCourses(1);
+    }
+  }, [searchQuery, selectedDepartment, selectedUniversity, selectedCreditHours, selectedLevel, activeTab]);
+
+  // Handle page change
+  const handlePageChange = (page) => {
+    fetchCourses(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Reset filters
+  const resetFilters = () => {
+    setSearchQuery('');
+    setSelectedDepartment('all');
+    setSelectedUniversity('all');
+    setSelectedCreditHours('all');
+    setSelectedLevel('all');
+    setCurrentPage(1);
+  };
+
+  // Get course level badge
+  const getCourseLevelBadge = (code) => {
+    const courseNumber = code?.match(/\d+/)?.[0];
+    if (!courseNumber) return null;
+    
+    const num = parseInt(courseNumber);
+    if (num >= 7000) return { label: 'Doctoral', color: 'purple' };
+    if (num >= 5000) return { label: 'Graduate', color: 'blue' };
+    if (num >= 4000) return { label: 'Senior', color: 'green' };
+    if (num >= 3000) return { label: 'Junior', color: 'orange' };
+    if (num >= 2000) return { label: 'Sophomore', color: 'yellow' };
+    if (num >= 1000) return { label: 'Freshman', color: 'red' };
+    return null;
+  };
+
+  // Check if course is enrolled
+  const isCourseEnrolled = (courseCode) => {
+    return enrolledCourseCodes.has(courseCode?.toUpperCase());
+  };
+
+  // Course card component
+  const CourseCard = ({ course, isEnrolled = false }) => {
+    const levelBadge = getCourseLevelBadge(course.code);
+    
     return (
-      <div className="classes-page-container">
-        <h1>Your Classes</h1>
-        <p>You currently have no classes in your schedule. Please upload your schedule on the Dashboard.</p>
+      <div 
+        className={`course-card ${isEnrolled ? 'enrolled' : ''}`}
+        onClick={() => setSelectedCourse(course)}
+      >
+        <div className="course-header">
+          <div className="course-code-title">
+            <h3 className="course-code">{course.code}</h3>
+            <h4 className="course-title">{course.title}</h4>
+          </div>
+          <div className="course-badges">
+            {levelBadge && (
+              <span className={`level-badge ${levelBadge.color}`}>
+                {levelBadge.label}
+              </span>
+            )}
+            {isEnrolled && (
+              <span className="enrolled-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="20,6 9,17 4,12"></polyline>
+                </svg>
+                Enrolled
+              </span>
+            )}
+          </div>
+        </div>
+        
+        <div className="course-meta">
+          <span className="department">{course.department}</span>
+          <span className="university">{course.university}</span>
+          <span className="credit-hours">{course.credit_hours} Credit Hours</span>
+        </div>
+        
+        <p className="course-description">{course.description}</p>
+        
+        {course.prerequisites && course.prerequisites !== 'None' && (
+          <div className="prerequisites">
+            <strong>Prerequisites:</strong> {course.prerequisites}
+          </div>
+        )}
       </div>
     );
-  }
+  };
 
   return (
-    <div className="classes-page-container">
-      <h1>Your Classes</h1>
-      <p>Here's an overview of your current classes.</p>
-      <div className="class-list">
-        {userSchedule.map((classItem, index) => (
-          <div key={index} className="class-card">
-            <h2 className="class-name"><IconBook2 size={20} /> {classItem.course}</h2>
-            <div className="class-details">
-              <p><IconClock size={16} /> {classItem.startTime} - {classItem.endTime}</p>
-              <p><IconMapPin size={16} /> {classItem.location || 'N/A'}</p>
-              <p><IconUser size={16} /> {classItem.instructor || 'N/A'}</p>
-              <p className="class-days">Days: {classItem.days.join(', ')}</p>
-            </div>
-            {/* Future: Add button to view class details, study groups, etc. */}
+    <div className="classes-page">
+      {/* Fixed Back Button */}
+      {onBackToDashboard && (
+        <button onClick={onBackToDashboard} className="back-to-dashboard-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polyline points="9,18 15,12 9,6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" transform="rotate(180 12 12)"/>
+          </svg>
+          Back to Dashboard
+        </button>
+      )}
+
+      {/* Header */}
+      <div className="classes-header">
+        <div className="header-content">
+          <div className="hero-badge">
+            <span className="badge-text">Course Discovery</span>
           </div>
-        ))}
+          <h1 className="page-title">Course Catalog</h1>
+          <p className="page-subtitle">
+            Explore courses from multiple universities and track your enrolled classes
+          </p>
+        </div>
       </div>
+
+      {/* Tabs */}
+      <div className="tab-navigation">
+        <button 
+          className={`tab-button ${activeTab === 'catalog' ? 'active' : ''}`}
+          onClick={() => setActiveTab('catalog')}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          Course Catalog
+          {total > 0 && <span className="tab-count">({total})</span>}
+        </button>
+        
+        <button 
+          className={`tab-button ${activeTab === 'enrolled' ? 'active' : ''}`}
+          onClick={() => setActiveTab('enrolled')}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <polyline points="20,6 9,17 4,12"></polyline>
+          </svg>
+          Currently Enrolled
+          <span className="tab-count">({enrolledCourses.length})</span>
+        </button>
+      </div>
+
+      {activeTab === 'catalog' && (
+        <>
+          {/* Search and Filters */}
+          <div className="search-filters-section">
+            <div className="search-bar">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="search-icon">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35"></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="Search courses by name, code, or description..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="search-input"
+              />
+              {searchQuery && (
+                <button 
+                  onClick={() => setSearchQuery('')}
+                  className="clear-search"
+                >
+                  ×
+                </button>
+              )}
+            </div>
+
+            <div className="filters-row">
+              <select
+                value={selectedDepartment}
+                onChange={(e) => setSelectedDepartment(e.target.value)}
+                className="filter-select"
+              >
+                <option value="all">All Departments</option>
+                {filters.departments.map(dept => (
+                  <option key={dept} value={dept}>{dept}</option>
+                ))}
+              </select>
+
+              <select
+                value={selectedUniversity}
+                onChange={(e) => setSelectedUniversity(e.target.value)}
+                className="filter-select"
+              >
+                <option value="all">All Universities</option>
+                {filters.universities.map(uni => (
+                  <option key={uni} value={uni}>{uni}</option>
+                ))}
+              </select>
+
+              <select
+                value={selectedCreditHours}
+                onChange={(e) => setSelectedCreditHours(e.target.value)}
+                className="filter-select"
+              >
+                <option value="all">All Credit Hours</option>
+                {filters.creditHours.map(hours => (
+                  <option key={hours} value={hours}>{hours} Credits</option>
+                ))}
+              </select>
+
+              <select
+                value={selectedLevel}
+                onChange={(e) => setSelectedLevel(e.target.value)}
+                className="filter-select"
+              >
+                <option value="all">All Levels</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="graduate">Graduate</option>
+                <option value="freshman">Freshman (1000-level)</option>
+                <option value="sophomore">Sophomore (2000-level)</option>
+                <option value="junior">Junior (3000-level)</option>
+                <option value="senior">Senior (4000-level)</option>
+              </select>
+
+              <button onClick={resetFilters} className="reset-filters-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="1,4 1,10 7,10"></polyline>
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                </svg>
+                Reset
+              </button>
+            </div>
+          </div>
+
+          {/* Results */}
+          <div className="results-section">
+            {loading ? (
+              <div className="loading-container">
+                <div className="loading-spinner"></div>
+                <p>Loading courses...</p>
+              </div>
+            ) : error ? (
+              <div className="error-container">
+                <p>Error: {error}</p>
+                <button onClick={() => fetchCourses(currentPage)} className="retry-btn">
+                  Try Again
+                </button>
+              </div>
+            ) : (
+              <>
+                <div className="results-info">
+                  <p>
+                    {total > 0 
+                      ? `Showing ${((currentPage - 1) * ITEMS_PER_PAGE) + 1}-${Math.min(currentPage * ITEMS_PER_PAGE, total)} of ${total} courses`
+                      : 'No courses found'
+                    }
+                  </p>
+                </div>
+
+                <div className="courses-grid">
+                  {courses.map(course => (
+                    <CourseCard 
+                      key={`${course.code}-${course.university}`} 
+                      course={course} 
+                      isEnrolled={isCourseEnrolled(course.code)}
+                    />
+                  ))}
+                </div>
+
+                {/* Pagination */}
+                {totalPages > 1 && (
+                  <div className="pagination">
+                    <button 
+                      onClick={() => handlePageChange(currentPage - 1)}
+                      disabled={currentPage <= 1}
+                      className="pagination-btn"
+                    >
+                      Previous
+                    </button>
+                    
+                    <div className="pagination-info">
+                      Page {currentPage} of {totalPages}
+                    </div>
+                    
+                    <button 
+                      onClick={() => handlePageChange(currentPage + 1)}
+                      disabled={currentPage >= totalPages}
+                      className="pagination-btn"
+                    >
+                      Next
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+        </>
+      )}
+
+      {activeTab === 'enrolled' && (
+        <div className="enrolled-section">
+          <div className="enrolled-header">
+            <h2>Your Enrolled Courses</h2>
+            <p>Courses from your current schedule</p>
+          </div>
+          
+          {enrolledCourses.length === 0 ? (
+            <div className="empty-state">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              <h3>No enrolled courses</h3>
+              <p>Upload your schedule to see your enrolled courses here</p>
+            </div>
+          ) : (
+            <div className="enrolled-courses-grid">
+              {enrolledCourses.map((course, index) => (
+                <div key={`${course.id || index}`} className="enrolled-course-card">
+                  <div className="course-header">
+                    <h3 className="course-code">{course.courseCode}</h3>
+                    <div className="course-schedule">
+                      <div className="course-days">
+                        {course.days?.join(', ')}
+                      </div>
+                      <div className="course-time">
+                        {course.startTime} - {course.endTime}
+                      </div>
+                      {course.location && (
+                        <div className="course-location">{course.location}</div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Course Detail Modal */}
+      {selectedCourse && (
+        <div className="course-modal-overlay" onClick={() => setSelectedCourse(null)}>
+          <div className="course-modal" onClick={e => e.stopPropagation()}>
+            <div className="modal-header">
+              <div className="modal-title-section">
+                <h2>{selectedCourse.code}</h2>
+                <h3>{selectedCourse.title}</h3>
+              </div>
+              <button 
+                onClick={() => setSelectedCourse(null)}
+                className="modal-close"
+              >
+                ×
+              </button>
+            </div>
+            
+            <div className="modal-content">
+              <div className="course-details">
+                <div className="detail-row">
+                  <span className="detail-label">Department:</span>
+                  <span className="detail-value">{selectedCourse.department}</span>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-label">University:</span>
+                  <span className="detail-value">{selectedCourse.university}</span>
+                </div>
+                <div className="detail-row">
+                  <span className="detail-label">Credit Hours:</span>
+                  <span className="detail-value">{selectedCourse.credit_hours}</span>
+                </div>
+                {selectedCourse.prerequisites && selectedCourse.prerequisites !== 'None' && (
+                  <div className="detail-row">
+                    <span className="detail-label">Prerequisites:</span>
+                    <span className="detail-value">{selectedCourse.prerequisites}</span>
+                  </div>
+                )}
+              </div>
+              
+              <div className="course-description-full">
+                <h4>Course Description</h4>
+                <p>{selectedCourse.description}</p>
+              </div>
+              
+              {isCourseEnrolled(selectedCourse.code) && (
+                <div className="enrollment-status">
+                  <div className="enrolled-indicator">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <polyline points="20,6 9,17 4,12"></polyline>
+                    </svg>
+                    You are currently enrolled in this course
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -487,7 +487,7 @@ function App() {
         path="/dashboard/classes"
         element={
           <ProtectedRoute>
-            <ClassesPage />
+            <ClassesPage userData={userData} userSchedule={userSchedule} onBackToDashboard={handleNavigateToDashboard} />
           </ProtectedRoute>
         }
       />

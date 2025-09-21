@@ -10,7 +10,6 @@ import {
   IconSearch,
   IconChevronLeft,
   IconBook2, // Added IconBook2
-  IconCalendar,
 } from "@tabler/icons-react";
 import "./DashboardPage.css";
 import ScheduleUploader from "./ScheduleUploader";
@@ -294,7 +293,6 @@ const DashboardPage = ({
 
   const navigationItems = [
     { id: "dashboard", label: "Dashboard", icon: IconHome },
-    { id: "schedule", label: "Schedule", icon: IconCalendar },
     { id: "classes", label: "Classes", icon: IconBook2 }, // New Classes item
     { id: "connections", label: "Connections", icon: IconUsers },
     { id: "profile", label: "Profile", icon: IconUser },

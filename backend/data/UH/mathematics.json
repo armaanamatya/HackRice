@@ -1,0 +1,66 @@
+[
+  {
+    "code": "MATH 1431",
+    "title": "Calculus I",
+    "department": "Mathematics", 
+    "credit_hours": "4",
+    "description": "Differential calculus of algebraic and transcendental functions, applications to optimization and related rate problems, introduction to integration.",
+    "prerequisites": "MATH 1420 or equivalent"
+  },
+  {
+    "code": "MATH 1432", 
+    "title": "Calculus II",
+    "department": "Mathematics",
+    "credit_hours": "4",
+    "description": "Continuation of Calculus I. Integration techniques, applications of integration, infinite series, parametric equations, and polar coordinates.",
+    "prerequisites": "MATH 1431"
+  },
+  {
+    "code": "MATH 2433",
+    "title": "Calculus III", 
+    "department": "Mathematics",
+    "credit_hours": "4",
+    "description": "Multivariable calculus including partial derivatives, multiple integrals, vector fields, line and surface integrals, and Green's and Stokes' theorems.",
+    "prerequisites": "MATH 1432"
+  },
+  {
+    "code": "MATH 2431",
+    "title": "Differential Equations",
+    "department": "Mathematics",
+    "credit_hours": "3", 
+    "description": "First and higher order differential equations, series solutions, Laplace transforms, and applications to physical and engineering problems.",
+    "prerequisites": "MATH 1432"
+  },
+  {
+    "code": "MATH 3321",
+    "title": "Linear Algebra",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "Vector spaces, linear transformations, matrices, determinants, eigenvalues and eigenvectors, and applications.",
+    "prerequisites": "MATH 1432"
+  },
+  {
+    "code": "MATH 3338",
+    "title": "Discrete Mathematics",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "Logic, set theory, combinatorics, graph theory, and applications to computer science.",
+    "prerequisites": "MATH 1431"
+  },
+  {
+    "code": "MATH 4321",
+    "title": "Abstract Algebra",
+    "department": "Mathematics", 
+    "credit_hours": "3",
+    "description": "Groups, rings, fields, and their applications. Introduction to algebraic structures and their properties.",
+    "prerequisites": "MATH 3321"
+  },
+  {
+    "code": "MATH 4350",
+    "title": "Real Analysis",
+    "department": "Mathematics",
+    "credit_hours": "3",
+    "description": "Rigorous treatment of limits, continuity, differentiation, and integration of functions of one variable.",
+    "prerequisites": "MATH 2433"
+  }
+]
