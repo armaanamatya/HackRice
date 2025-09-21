@@ -137,29 +137,30 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
   const conversationMessages = selectedConversation ? messages[selectedConversation._id] || [] : [];
 
   return (
-    <div className={`chat-sidebar ${isCollapsed ? 'collapsed' : ''}`}>
-      <div className="chat-header">
-        <div className="chat-title">
-          <IconMessageCircle size={18} />
-          <span>Messages</span>
+    <>
+      <div className={`chat-sidebar ${isCollapsed ? 'collapsed' : ''}`}>
+        <div className="chat-header">
+          <div className="chat-title">
+            <IconMessageCircle size={18} />
+            <span>Messages</span>
+          </div>
+          <div className="chat-controls">
+            <button 
+              className="btn-icon"
+              onClick={() => setShowNewChatModal(true)}
+              title="New chat"
+            >
+              <IconPlus size={16} />
+            </button>
+            <button 
+              className="btn-icon"
+              onClick={() => setIsCollapsed(!isCollapsed)}
+              title={isCollapsed ? 'Expand' : 'Collapse'}
+            >
+              {isCollapsed ? <IconChevronLeft size={16} /> : <IconChevronRight size={16} />}
+            </button>
+          </div>
         </div>
-        <div className="chat-controls">
-          <button 
-            className="btn-icon"
-            onClick={() => setShowNewChatModal(true)}
-            title="New chat"
-          >
-            <IconPlus size={16} />
-          </button>
-          <button 
-            className="btn-icon"
-            onClick={() => setIsCollapsed(!isCollapsed)}
-            title={isCollapsed ? 'Expand' : 'Collapse'}
-          >
-            {isCollapsed ? <IconChevronLeft size={16} /> : <IconChevronRight size={16} />}
-          </button>
-        </div>
-      </div>
 
       <div className="chat-content">
         {!selectedConversation ? (
@@ -274,7 +275,19 @@ const ChatSidebar = ({ userData }) => { // Accept userData prop
           currentUserDbId={userData?._id} // Pass the database ID
         />
       )}
-    </div>
+      </div>
+
+      {/* Floating expand button when collapsed */}
+      {isCollapsed && (
+        <button 
+          className="chat-expand-btn"
+          onClick={() => setIsCollapsed(false)}
+          title="Expand Messages"
+        >
+          <IconChevronLeft size={20} />
+        </button>
+      )}
+    </>
   );
 };
 
