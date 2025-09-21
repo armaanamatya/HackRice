@@ -2,12 +2,48 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/User");
 
+// Health check / test route
+router.get("/health", (req, res) => {
+  res.json({ status: "Users API is working!", timestamp: new Date().toISOString() });
+});
+
 // Get all users
 router.get("/", async (req, res) => {
   try {
     const users = await User.find();
     res.json(users);
   } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+// Search users by name and optionally by university (must be before /:id route)
+router.get("/search", async (req, res) => {
+  try {
+    console.log('Search request received:', req.query);
+    const { name, university } = req.query;
+    const query = {};
+
+    // Must have at least a name to search
+    if (!name || name.trim().length === 0) {
+      return res.status(400).json({ message: "Name parameter is required" });
+    }
+
+    if (name) {
+      query.name = { $regex: name.trim(), $options: "i" }; // Case-insensitive search
+    }
+
+    if (university && university !== 'Other') {
+      query.university = university;
+    }
+
+    console.log('Search query:', query);
+    const users = await User.find(query).select('-password -__v'); // Exclude password and version key from results
+    console.log(`Found ${users.length} users matching search criteria`);
+    
+    res.json(users);
+  } catch (error) {
+    console.error('Search error:', error);
     res.status(500).json({ message: error.message });
   }
 });
@@ -186,25 +222,5 @@ router.patch("/complete-profile/:id", async (req, res) => {
   }
 });
 
-// Search users by name and optionally by university
-router.get("/search", async (req, res) => {
-  try {
-    const { name, university } = req.query;
-    const query = {};
-
-    if (name) {
-      query.name = { $regex: name, $options: "i" }; // Case-insensitive search
-    }
-
-    if (university && university !== 'Other') {
-      query.university = university;
-    }
-
-    const users = await User.find(query).select('-password'); // Exclude password from results
-    res.json(users);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
 
 module.exports = router;

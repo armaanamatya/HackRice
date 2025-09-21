@@ -332,19 +332,44 @@ const DashboardPage = ({
       return;
     }
 
+    // Don't search for very short queries
+    if (searchQuery.trim().length < 2) {
+      setSearchResults([]);
+      setIsSearching(false);
+      setSearchError(null);
+      return;
+    }
+
     setIsSearching(true);
     setSearchError(null);
 
     const handler = setTimeout(async () => {
       try {
-        const response = await fetch(
-          `/api/users/search?name=${searchQuery}&university=${userData?.university}`
-        );
-        if (!response.ok) {
-          throw new Error('Failed to fetch search results');
+        console.log('Searching for:', searchQuery, 'at university:', userData?.university);
+        
+        // Construct the search URL with proper encoding
+        const searchParams = new URLSearchParams();
+        searchParams.append('name', searchQuery.trim());
+        if (userData?.university && userData.university !== 'Other') {
+          searchParams.append('university', userData.university);
         }
+        
+        const searchUrl = `/api/users/search?${searchParams.toString()}`;
+        console.log('Search URL:', searchUrl);
+        
+        const response = await fetch(searchUrl);
+        
+        console.log('Search response status:', response.status);
+        
+        if (!response.ok) {
+          const errorData = await response.json().catch(() => ({ message: response.statusText }));
+          throw new Error(errorData.message || `Search failed: ${response.status}`);
+        }
+        
         const data = await response.json();
-        setSearchResults(data);
+        console.log('Search results:', data);
+        
+        setSearchResults(Array.isArray(data) ? data : []);
       } catch (error) {
         console.error("Search error:", error);
         setSearchError(error.message);
