@@ -12,18 +12,10 @@ import UserProfileForm from "./components/UserProfileForm";
 import DashboardPage from "./components/DashboardPage";
 import MatcherPage from "./components/MatcherPage";
 import ProfileDetailsPage from "./components/ProfileDetailsPage";
-<<<<<<< HEAD
-import ClassesPage from "./components/ClassesPage";
-import ConnectionsPage from "./components/ConnectionsPage"; // Import the new ConnectionsPage
-import ChatPage from "./components/ChatPage";
-import BookmarkedCoursesPage from "./components/BookmarkedCoursesPage";
-import { SocketProvider } from "./contexts/SocketContext";
-=======
 import ClassesPage from "./components/ClassesPage";
 import ChatPage from "./components/ChatPage";
 import BookmarkedCoursesPage from "./components/BookmarkedCoursesPage";
 import { SocketProvider } from "./contexts/SocketContext";
->>>>>>> c50863c (all classes cards + bookmark feature)
 import { detectUniversityFromEmail } from "./utils/universityUtils";
 import "./App.css";
 
@@ -42,6 +34,7 @@ function App() {
       ...prevData,
       ...data,
     }));
+    navigate("/dashboard");
     navigate("/dashboard");
   };
 
@@ -65,7 +58,7 @@ function App() {
     navigate("/dashboard/classes");
   };
 
-  const handleNavigateToBookmarks = () => {
+  const handleNavigateToBookmarks = () => { 
     navigate("/dashboard/bookmarks");
   };
 
@@ -80,7 +73,7 @@ function App() {
         redirect_uri: `http://localhost:5173/dashboard`,
         prompt: "login",
       },
-    });
+    }); 
   };
 
   const handleSignUp = () => {
@@ -138,6 +131,7 @@ function App() {
           const data = await response.json();
 
           if (isMounted.current && response.ok) {
+            setUserData(data.user);
             setUserData(data.user);
             console.log("User data from backend:", data.user);
             console.log("User ID from backend:", data.user?._id);
@@ -407,50 +401,48 @@ function App() {
             )
           }
         />
-      <Route
-        path="/dashboard"
-        element={
-          <ProtectedRoute>
-            <DashboardPage
-              userData={userData}
-              onBackToDashboard={handleNavigateToDashboard}
-              onNavigateToMatcher={handleNavigateToMatcher}
-              onNavigateToProfileDetails={handleNavigateToProfileDetails}
-              onScheduleUpdate={handleUserScheduleUpdate}
-              userSchedule={userSchedule}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage
+                userData={userData}
+                onBackToDashboard={handleNavigateToDashboard}
+                onNavigateToMatcher={handleNavigateToMatcher}
+                onNavigateToProfileDetails={handleNavigateToProfileDetails}
+                onScheduleUpdate={handleUserScheduleUpdate}
+                userSchedule={userSchedule}
               onLogout={handleLogout}
-              onNavigateToClasses={handleNavigateToClasses} // Pass the new prop here
-              userUniversity={userData?.university} // Pass user's university
-              // onNavigateToSettings={handleNavigateToSettings} // Pass the new prop here
-            />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/matcher"
-        element={
-          <ProtectedRoute>
-            <MatcherPage
-              onBackToDashboard={handleNavigateToDashboard}
-              currentUserSchedule={userSchedule}
-              userId={userData?._id} // Pass userId to MatcherPage
-              userUniversity={userData?.university} // Pass userUniversity to MatcherPage
-            />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/dashboard/profile/:userId"
-        element={
-          <ProtectedRoute>
-            <ProfileDetailsPage
-              // userData={userData} // ProfileDetailsPage will fetch its own data
-              // setUserData={setUserData} // No longer needed here as ProfileDetailsPage manages its own data
-              onBackToDashboard={handleNavigateToDashboard}
-            />
-          </ProtectedRoute>
-        }
-      />
+              onNavigateToClasses={handleNavigateToClasses}
+              onNavigateToBookmarks={handleNavigateToBookmarks}
+              userUniversity={userData?.university}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/matcher"
+          element={
+            <ProtectedRoute>
+              <MatcherPage
+                onBackToDashboard={handleNavigateToDashboard}
+                currentUserSchedule={userSchedule}
+                userId={userData?._id}
+                userUniversity={userData?.university}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/profile/:userId"
+          element={
+            <ProtectedRoute>
+              <ProfileDetailsPage
+                onBackToDashboard={handleNavigateToDashboard}
+              />
+            </ProtectedRoute>
+          }
+        />
       <Route
         path="/dashboard/classes"
         element={
@@ -459,16 +451,16 @@ function App() {
           </ProtectedRoute>
         }
       />
-      {/* <Route
-        path="/dashboard/settings"
+      <Route
+        path="/dashboard/bookmarks"
         element={
           <ProtectedRoute>
             <BookmarkedCoursesPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />
+            <BookmarkedCoursesPage userData={userData} onBackToDashboard={handleNavigateToDashboard} />
           </ProtectedRoute>
         }
-      /> */}
-      {/* Redirect any unhandled paths to the landing page or a 404 page */}
-      <Route path="*" element={<LandingPageContent />} />
+      />
+        <Route path="*" element={<LandingPageContent />} />
       </Routes>
     </SocketProvider>
   );

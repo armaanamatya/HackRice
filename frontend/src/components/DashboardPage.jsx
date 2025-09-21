@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   IconHome,
   IconUsers,
@@ -9,6 +9,7 @@ import {
   IconChevronLeft,
   IconBook2,
   IconBookmark,
+  IconSearch,
 } from "@tabler/icons-react";
 import "./DashboardPage.css";
 import ScheduleUploader from "./ScheduleUploader";
@@ -23,7 +24,6 @@ import ToastContainer, {
 import SettingsDropdown from "./SettingsDropdown";
 import SearchResultsDropdown from "./SearchResultsDropdown";
 import ChatSidebar from "./ChatSidebar";
-import { saveScheduleToLocalStorage, loadScheduleFromLocalStorage } from "../utils/localStorageUtils";
 import "../utils/clearStorage";
 import ClassesPage from "./ClassesPage";
 
@@ -37,7 +37,6 @@ const DashboardPage = ({
   onNavigateToProfileDetails,
   onLogout,
   onScheduleUpdate,
-  userSchedule,
   onNavigateToClasses,
   onNavigateToBookmarks,
   userUniversity,
@@ -66,14 +65,13 @@ const DashboardPage = ({
     });
   };
 
-  const fetchSavedCourses = async () => {
+  const fetchSavedCourses = useCallback(async () => {
     if (!userData?._id) {
       console.log("No userData._id, skipping course fetch");
       setIsLoadingCourses(false);
       return;
     }
 
-    console.log("Fetching saved courses from database for userId:", userData._id);
     console.log("Fetching saved courses from database for userId:", userData._id);
 
     try {
@@ -114,12 +112,12 @@ const DashboardPage = ({
     } finally {
       setIsLoadingCourses(false);
     }
-  };
+  }, [userData?._id, userId]);
 
   useEffect(() => {
     clearLocalStorageData();
     fetchSavedCourses();
-  }, [userData?._id]);
+  }, [userData?._id, fetchSavedCourses]);
 
   const handleScheduleParsed = (parsedData) => {
     setOcrParsedClasses(parsedData);
@@ -147,14 +145,12 @@ const DashboardPage = ({
 
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({ message: response.statusText }));
-        const errorData = await response.json().catch(() => ({ message: response.statusText }));
         console.error("API Error:", errorData);
         throw new Error(`Failed to save courses: ${errorData.message}`);
       }
 
       const responseData = await response.json();
       console.log("Courses saved successfully to database:", responseData);
-      showSuccessToast("Schedule saved successfully! Your courses have been updated.");
       showSuccessToast("Schedule saved successfully! Your courses have been updated.");
 
       setSavedCourses(validatedClasses);
@@ -265,11 +261,10 @@ const DashboardPage = ({
         if (onNavigateToMatcher) onNavigateToMatcher();
         break;
       case "classes": // Handle navigation to classes page
+        if (onNavigateToClasses) onNavigateToClasses();
+        break;
       case "profile":
         if (onNavigateToProfileDetails) onNavigateToProfileDetails();
-        break;
-      case "classes":
-        if (onNavigateToClasses) onNavigateToClasses();
         break;
       case "bookmarks":
         if (onNavigateToBookmarks) onNavigateToBookmarks();
@@ -339,8 +334,6 @@ const DashboardPage = ({
         if (!response.ok) {
           const errorData = await response.json().catch(() => ({ message: response.statusText }));
           throw new Error(errorData.message || `Search failed: ${response.status}`);
-          const errorData = await response.json().catch(() => ({ message: response.statusText }));
-          throw new Error(errorData.message || `Search failed: ${response.status}`);
         }
 
         const data = await response.json();
@@ -374,7 +367,6 @@ const DashboardPage = ({
             <h2>skedulr</h2>
           </div>
           <button className="sidebar-toggle" onClick={toggleSidebar} aria-label="Toggle sidebar">
-          <button className="sidebar-toggle" onClick={toggleSidebar} aria-label="Toggle sidebar">
             <IconChevronLeft size={20} />
           </button>
         </div>
@@ -386,7 +378,6 @@ const DashboardPage = ({
               return (
                 <li key={item.id} className="nav-item">
                   <button
-                    className={`nav-link ${activeNavItem === item.id ? "active" : ""}`}
                     className={`nav-link ${activeNavItem === item.id ? "active" : ""}`}
                     onClick={() => handleNavigation(item.id)}
                   >
@@ -411,7 +402,6 @@ const DashboardPage = ({
         <header className="dashboard-app-bar">
           <div className="app-bar-left">
             <button className="mobile-menu-toggle" onClick={toggleSidebar} aria-label="Toggle menu">
-            <button className="mobile-menu-toggle" onClick={toggleSidebar} aria-label="Toggle menu">
               <IconMenu2 size={24} />
             </button>
 
@@ -423,6 +413,7 @@ const DashboardPage = ({
                 value={searchQuery}
                 onChange={handleSearchInputChange}
               />
+              <IconSearch size={24} />
               {(searchQuery.length > 0 || isSearching || searchError) && (
                 <SearchResultsDropdown
                   results={searchResults}
@@ -445,10 +436,8 @@ const DashboardPage = ({
                 <IconSettings size={20} />
               </button>
               <SettingsDropdown isOpen={showSettingsDropdown} onClose={toggleSettingsDropdown} />
-              <SettingsDropdown isOpen={showSettingsDropdown} onClose={toggleSettingsDropdown} />
             </div>
 
-            <div className="user-profile" onClick={handleProfileClick}>
             <div className="user-profile" onClick={handleProfileClick}>
               <div className="user-avatar">
                 {userData?.name ? userData.name.charAt(0).toUpperCase() : "U"}
@@ -464,7 +453,6 @@ const DashboardPage = ({
         <main className="dashboard-content">
           <div className="content-header">
             <h1 className="page-title">Welcome back, {displayName}!</h1>
-            <p className="page-subtitle">Manage your academic schedule and connect with classmates</p>
             <p className="page-subtitle">Manage your academic schedule and connect with classmates</p>
           </div>
 
