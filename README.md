@@ -1,42 +1,65 @@
-# Skedulr
-Skedulr
+# 📅 Skedulr  
 
-Turn your class schedule into your social superpower.
+> **Turn your class schedule into your social superpower.**  
+Connect with classmates, form study groups, and build community — all from a single upload.  
 
-Starting college means being surrounded by thousands of new faces, but making connections can still feel intimidating. Skedulr makes it effortless by transforming something every student already has (their class schedule) into an instant gateway to friendships, study groups, and community.
+---
 
-With just one upload, Skedulr shows you who’s in your classes so you can connect, collaborate, and spark conversations without the awkward small talk.
+## 🌱 Inspiration  
 
-🚀 What We Built
+Starting college means being surrounded by thousands of new faces, but actually turning those faces into friendships? That’s awkward and intimidating.  
 
-Frontend: React (Vite)
+We realized every student already has a **class schedule** — so why not make it the easiest way to connect?  
 
-Backend: Express.js
+That’s where **Skedulr** comes in.  
 
-Database: MongoDB Atlas
+---
 
-Auth: Auth0 for secure authentication
+## 📲 What It Does  
 
-Schedule Parser: OCR + Google Gemini API to process PDFs, ICS files, screenshots, and messy images into clean, structured course data
+Skedulr transforms messy schedules into a **social dashboard** where students can:  
 
-🎯 Features
+- 👯 **See who’s in your classes** — instant icebreaker  
+- 📚 **Form study groups** — collaborate, not just cram  
+- 💬 **Spark conversations** — without the small talk  
+- 📊 **Interactive dashboard** — one glance shows overlaps and opportunities  
 
-Upload your class schedule once and get a full interactive dashboard
+---
 
-Instantly see classmates and overlaps across courses
+## 🛠️ How We Built It  
 
-Form study groups, make friends, and build community faster
+- **Frontend:** React (Vite)  
+- **Backend:** Express.js  
+- **Database:** MongoDB Atlas  
+- **Auth:** Auth0 for secure authentication  
+- **Schedule Parser:** OCR + Google Gemini API (handles PDFs, ICS files, screenshots, messy images)  
 
-Robust schedule parsing that works across formats and messy inputs
+---
 
-🌟 What We Learned
+## ✨ Features  
 
-We focused on designing around a real social pain point—breaking the ice at college—while balancing cutting-edge AI integration, full-stack development, and user-centric design under hackathon time pressure.
+| Core | Extras | Tech Magic |
+|------|--------|------------|
+| 🗓️ **Upload Schedule** — one-time setup | 👀 **Class Overlaps** — find classmates instantly | 🤖 **OCR + Gemini API** — parse even messy files |
+| 📊 **Interactive Dashboard** — clean view of all classes | 👯 **Study Group Discovery** | 🔒 **Auth0** — secure logins |
+| 🎯 **Scalable Stack** — built for hackathons & beyond | 🔮 **Future AI Recommendations** | ☁️ **MongoDB Atlas** — seamless scalability |  
 
-🔮 What’s Next
+---
 
-Expand beyond schedules into shared interests and campus events
+## 💡 What We Learned  
 
-AI-powered recommendations for study buddies, communities, and opportunities
+We focused on a **real pain point**: breaking the ice at college.  
 
-Grow Skedulr into the go-to platform for breaking the ice and building community on every campus
+Balancing **AI integration, full-stack development, and user-centric design** under hackathon pressure taught us how to build something cohesive, functional, and actually impactful.  
+
+---
+
+## 🔮 What’s Next  
+
+- 🎉 Expand beyond schedules → **shared interests & campus events**  
+- 🤖 Smarter **AI-powered recommendations** for friends & study buddies  
+- 🌍 Grow into the **go-to platform for community on every campus**  
+
+---
+
+🔥 **Skedulr** makes it easier to turn classmates into friends and campuses into communities.  
